@@ -1,13 +1,17 @@
----
-layout: default
----
-<h1>Hello world!</h1>
+<html>
+   <head>
+       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+       <title>My blog</title>
+       <link rel="icon" type="image/x-icon" href="../images/index.png">
+   </head>
+   <body>
+   <h1>Hello world!</h1>
 <p>This is the index page</p>
 <p>My post list:</p>
 <ul>
-   {% for post in site.posts %}
-       <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
-   {% endfor %}
+   
+       <li><a href="/2017/05/03/fist-post.html">my first post</a></li>
+   
 </ul>
 
 <!-- <!DOCTYPE html>
@@ -58,3 +62,6 @@ layout: default
 </html> -->
 
 
+
+   </body>
+<html>
