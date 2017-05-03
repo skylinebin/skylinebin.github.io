@@ -1,1 +1,49 @@
-encoding: utf-8
+# Site settings
+title: Lorem Ipsum - Web Developer
+description: "A blog about lorem ipsum ..."
+baseurl: "" # for test: remove string '/space-jekyll-templa' to ''
+url: "http://skylinebin.github.io/blog/" # for test: remove string 'http://victorvoid.github.io' to '' but in production: 'https://yourusername.githu.io'
+# User settings
+username: skylinebin
+user_title: skylinebin - FrontEnd
+email: whutliubin@gmail.com
+twitter_username: skylinebin
+github_username:  skylinebin
+gplus_username:  skylinebin
+disqus_username: skylinebin
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: /:title/
+
+
+# html minify
+compress_html:
+  clippings: all
+  comments: all
+  endings: []
+  profile: false
+
+# Links to include in menu navigation
+links:
+  - title: home
+    url: /
+  - title: my posts
+    url: /posts
+  - title: series
+    url: /series
+  - title: tags
+    url: /tags
+  - title: about me
+    url: /about
+# projects in header index
+projects:
+  - name: PythonSpider
+    url: https://github.com/skylinebin/PythonSpider
+  - name: HuaWeiOJAlgorithm
+    url: https://github.com/skylinebin/HuaWeiOJAlgorithm
+  - name: Intelligent-MedicalKit
+    url: https://github.com/skylinebin/Intelligent-MedicalKit
+# exclude my node related stuff
+exclude: ['package.json', 'src', 'node_modules']
