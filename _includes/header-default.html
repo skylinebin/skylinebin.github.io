@@ -10,7 +10,8 @@
             <span class="site-title">[{{site.username}}]</span>
         </h1>
 
-
+<div class="row">
+    <div class="col-lg-6">
         <ul class="recent">
             <p>Recent posts:</p>
              {% for post in site.posts limit:3%}
@@ -21,7 +22,8 @@
                 </li>
               {% endfor %}
         </ul>
-
+    </div>
+    <div class="col-lg-6">
         <ul class="recent">
             <p>Recent projects:</p>
              {% for project in site.projects limit:3%}
@@ -32,6 +34,9 @@
                 </li>
               {% endfor %}
         </ul>
+    </div>
+</div>
+
 
         <div class="icons-home">
             <a aria-label="Send email" title="Send me a e-mail" href="mailto:{{site.email}}">
