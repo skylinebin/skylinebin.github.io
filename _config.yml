@@ -1,5 +1,5 @@
 # Site settings
-title: Lorem Ipsum - Web Developer
+title: skylinebin - Web Developer
 description: "A blog about lorem ipsum ..."
 baseurl: "" # for test: remove string '/space-jekyll-templa' to ''
 url: "http://skylinebin.github.io/blog/" # for test: remove string 'http://victorvoid.github.io' to '' but in production: 'https://yourusername.githu.io'
@@ -7,11 +7,12 @@ url: "http://skylinebin.github.io/blog/" # for test: remove string 'http://victo
 username: skylinebin
 user_title: skylinebin - FrontEnd
 email: whutliubin@gmail.com
-twitter_username: skylinebin
+twitter_username: liubin1995
 github_username:  skylinebin
 gplus_username:  skylinebin
 disqus_username: skylinebin
 weibo_username: VirtualPets
+qq_id: "346821296"
 
 # Build settings
 markdown: kramdown
