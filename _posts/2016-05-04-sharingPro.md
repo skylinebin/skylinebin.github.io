@@ -13,8 +13,8 @@ twitter_text: 'How to use JavaScript to write EPC'
 ---
 
 #写EPC标签完成后学习到的东西
-	<span></span>
-	<br/><p>记录一下新浪的图标被修复了之前出现</p><br/>
+
+<br/>记录一下新浪的图标被修复了之前出现<br/>
 ##在首页修复之前
 <img src="../assets/img/shareEPC/repairsina.png" alt="主页之前的bug">
 ##首页修复之后

@@ -1,10 +1,10 @@
 # Site settings
-title: skylinebin - Web Developer
-description: "A blog about lorem ipsum ..."
+title: skylinebin - Full Stack Learner
+description: "A blog about skylinebin ..."
 baseurl: "" # for test: remove string '/space-jekyll-templa' to ''
 url: "http://skylinebin.github.io/blog/" # for test: remove string 'http://victorvoid.github.io' to '' but in production: 'https://yourusername.githu.io'
 # User settings
-username: skylinebin
+username: SkylineBin
 user_title: skylinebin - FrontEnd
 email: whutliubin@gmail.com
 twitter_username: liubin1995
