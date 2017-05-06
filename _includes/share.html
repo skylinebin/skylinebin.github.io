@@ -6,7 +6,11 @@
     onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;" title="Share on Twitter">
         <svg class="icon icon-twitter"><use xlink:href="#icon-twitter"></use></svg>
     </a>
-    <a aria-label="Share on Weibo" href="https://weibo.com/tweet?text=&quot;{{ page.twitter_text }}&quot;%20{{ site.url }}{{ page.url }}%20via%20&#64;{{ site.sina_username }}&hashtags={% for tag in page.tags %}{{tag}},{% endfor %}"
+    <a aria-label="Share on QQ" class="jiathis_button_cqq" rel="url={{ site.url }}{{ page.url }}"
+    onclick="window.open(this.href, 'QQ-share', 'width=550,height=235');return false;" title="Share on QQ">
+        <svg class="icon icon-QQ"><use xlink:href="#icon-QQ"></use></svg>
+    </a>
+    <a aria-label="Share on Weibo" class="jiathis_button_tsina" rel="http://service.weibo.com/share/share.php?url={{ site.url }}{{ page.url }}"
     onclick="window.open(this.href, 'sina-share', 'width=550,height=235');return false;" title="Share on Sina">
         <svg class="icon icon-sina-weibo"><use xlink:href="#icon-sina-weibo"></use></svg>
     </a>
@@ -20,5 +24,13 @@
     onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;" title="Share on Google+">
         <svg class="icon icon-google-plus"><use xlink:href="#icon-google-plus"></use></svg>
     </a>
+    <a aria-label="Share on QQZone" class="jiathis_button_qzone" rel="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url={{ site.url }}{{ page.url }}"
+    onclick="window.open(this.href, 'QQ-Zone-share', 'width=490,height=530');return false;" title="Share on QQZone">
+        <svg class="icon icon-QZone"><use xlink:href="#icon-QZone"></use></svg>
+    </a>
+
+<!-- JiaThis Button BEGIN -->
+<script type="text/javascript" src="http://v2.jiathis.com/code/jia.js?uid=" charset="utf-8"></script>
+<!-- JiaThis Button END -->
 
 </section>
