@@ -1670,9 +1670,12 @@ code {
 	max-width: 580px;
 }
 
-// .highlight code {
-// 	max-width: 450px;
-// }
+//评论系统宽度限制居中限制
+#uyan_frame {
+	margin: 0px auto;
+	max-width: 580px;
+}
+
 
 .highlight .hll {
     background-color: #ffc
