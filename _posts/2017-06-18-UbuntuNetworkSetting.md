@@ -110,6 +110,11 @@ NAT模式下默认会自动选取NAT设置，默认网关ip为 x.x.x.2,而上图
 	
 重新启用eth0，应该可以看到其配置。
 
+如果网络配置不能使用 sudo /etc/init.d/networking restart 启动，可以尝试使用以下代码重启网络服务：
+	
+	sudo service network-manager restart
+	
+
 测试NAT是否配置成功，可以ping主机ip，即192.168.157.1 ，效果如下图：
 
 ![ping主机](../assets/img/UbuntuNetwork/Image/pinglocal.png)
