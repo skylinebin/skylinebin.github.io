@@ -41,11 +41,11 @@ links:
     url: /about
 # projects in header index
 projects:
+  - name: Machine-Learning-Notes
+    url: https://github.com/skylinebin/Machine-Learning-Notes
   - name: PythonSpider
     url: https://github.com/skylinebin/PythonSpider
   - name: HuaWeiOJAlgorithm
     url: https://github.com/skylinebin/HuaWeiOJAlgorithm
-  - name: Intelligent-MedicalKit
-    url: https://github.com/skylinebin/Intelligent-MedicalKit
 # exclude my node related stuff
 exclude: ['package.json', 'src', 'node_modules']
