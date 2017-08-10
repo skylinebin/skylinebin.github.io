@@ -1676,6 +1676,15 @@ code {
 	max-width: 580px;
 }
 
+// 来得力评论系统居中显示
+#lv-container {
+    max-width: 580px;
+    margin: 0px auto;
+}
+#liverecomment{
+    max-width: 580px;
+    margin: 0px auto;
+}
 
 .highlight .hll {
     background-color: #ffc
