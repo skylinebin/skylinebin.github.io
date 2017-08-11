@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>用于测试“伪古风”诗句</title>
+<link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.min.css">
+<style type="text/css">
+.header {
+	text-align: center;
+}
+.headertitle {
+	margin-top: 10px;
+	margin-bottom: 15px;
+	text-align: center;
+	font-weight: bold;
+}
+.tempone {
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+.temptwo {
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+#poetryfiveone {
+	margin-top: 30px;
+	/*padding-left: 30px;*/
+	font-size: 19px;
+	font-weight: bold;
+	text-align: center;
+}
+#poetrysevenone {
+	margin-top: 30px;
+	/*padding-left: 30px;*/
+	font-size: 19px;
+	font-weight: bold;
+	text-align: center;
+}
+#poetryothers {
+	margin-top: 30px;
+	/*padding-left: 30px;*/
+	font-size: 19px;
+	font-weight: bold;
+	text-align: center;
+}
+.tocreate {
+	/*background-color: #f6f6f6;*/
+	margin-top: 30px;
+}
+#alternativeword {
+	border: 1px solid #ccc;
+}
+#motto {
+	margin-top: 40px;
+}
+.titletip {
+	font-size: 15px;
+	margin-left: 10px;
+}
+.becontent {
+	font-size: 15px !important;
+	margin-left: 10px;
+}
+.copyright {
+	text-align: center;
+}
+</style>
+</head>
+    <body>
+    <div class="container">
+	    <div class="col-md-12 jumbotron well">
+	    	<h2 class="headertitle">伪古风诗词生成器</h2>
+	    	<div id="alternativeword" class="col-md-12">
+	    	<p><strong>备用字:</strong>&nbsp;&nbsp;&nbsp;&nbsp;烟、倾、萧、墨、歌、弦、痴、泠、幽、离、覆、寂、情、思、恋、醉、浅、尘、念、葬、负、梦、韶、陌、落、琴、夜、君、殇</p>
+    		<p><strong>备用词:</strong>&nbsp;&nbsp;&nbsp;&nbsp;朱砂，韶华，江南，烟雨，迷离，红尘，寂寞，繁华，风华，苍老，红颜，天下，彼岸，浮生，伊人，青丝，白首，陌上，微凉，千年，倾城，断弦，长歌，悲欢，沧海，天涯，尘缘，情殇，忘川，碧落，奈何，指尖，盛世，长安，青鸾，凤凰，桃花，海棠，红妆，婆娑，轻狂，未央</p>
+    		</div>
+	    	<div class="tocreate col-md-12">
+		    	<div id="tempone" class="tempone col-md-10">
+		    		<button type="button" class="btn btn-info" onclick="createfivetemp();">生成伪古风诗词一</button><font class="titletip">(五言)</font>
+					<div id="poetryfiveone"></div>
+					<!-- <div id="poetryfivetwo"></div> -->
+	    		</div>
+		    	<div id="temptwo" class="temptwo col-md-10">
+		    		<button type="button" class="btn btn-info" onclick="createseventemp();">生成伪古风诗词二</button><font class="titletip">(七言)</font>
+					<div id="poetrysevenone"></div>
+	    		</div>
+		    	<div id="tempthree" class="tempthree col-md-10">
+		    		<button type="button" class="btn btn-info" onclick="createothertemp();">生成伪古风诗词三</button><font class="titletip">(长短句)</font>
+					<div id="poetryothers"></div>
+	    		</div>
+	    	</div>
+			<div class="divider"></div>
+
+			<div id="littletip" class="col-md-12">
+				<h3>小小提示:</h3>
+				<p class="becontent">1.五言诗词采用：词+字+词 的形式</p>
+				<p class="becontent">2.七言诗词采用：词+词+字+词 的形式</p>
+				<h3>思路来源:</h3>
+				<p class="becontent">大概是读初高中的时候，我也是很沉迷于这种没有营养，很“低级”,可称为伪古风的东西，前几天偶然刷知乎看到<strong><a href="https://www.zhihu.com/question/62160659/answer/211764353?utm_source=com.tencent.tim&utm_medium=social"> @古青 老师的回答</a></strong>，很认同这位知乎用户的观点，于是借用回答中的字和词做了一个简单的页面，希望能作为让自己多读书学习的一个激励点吧！</p>
+			</div>
+			<div id="motto" class="col-md-12">
+				<blockquote>
+					<p>
+						相信谎言的人必将在真理之前毁灭。
+					</p> <small><cite>赫尔巴特</cite></small>
+				</blockquote>
+			</div>
+
+		    <div class="copyright">
+		    	版权所有 &copy;  <a href="http://skylinebin.com">SkylineBin</a>
+		    </div>
+	    </div>
+
+    </div>
+
+
+        <!-- 如果要使用Bootstrap的js插件，必须先调入jQuery -->
+        <script src="../assets/js/jquery.min.js"></script>
+        <!-- 包括所有bootstrap的js插件或者可以根据需要使用的js插件调用　-->
+        <script src="../assets/js/bootstrap.min.js"></script>
+        <script type="text/javascript">
+        	var word=["烟","倾","萧","墨","歌","弦","痴","泠","幽","离","覆","寂","情","思","恋","醉","浅","尘","念","葬","负","梦","韶","陌","落","琴","夜","君","殇"];
+        	var phrase = ["朱砂","韶华","江南","烟雨","迷离","红尘","寂寞","繁华","风华","苍老","红颜","天下","彼岸","浮生","伊人","青丝","白首","陌上","微凉","千年","倾城","断弦","长歌","悲欢","沧海","天涯","尘缘","情殇","忘川","碧落","奈何","指尖","盛世","长安","青鸾","凤凰","桃花","海棠","红妆","婆娑","轻狂","未央"];
+        	function createfivetemp(){
+        		var phraselength = phrase.length;
+        		var wordlength = word.length;
+
+        		// var ranone = Math.floor(Math.random()*phraselength);
+        		// // document.getElementById("lonelyone").innerHTML = ranone;
+        		// var rantwo = Math.floor(Math.random()*wordlength);
+        		// // document.getElementById("lonelytwo").innerHTML = rantwo;
+        		// var ranones = Math.floor(Math.random()*wordlength);
+
+        		// 生成随机数方案一，有方案二可以选择抛弃方案一
+
+        		// while(ranones == ranone){
+        		// 	ranones = Math.floor(Math.random()*phraselength);
+        		// }
+        		// var poetryup = "";
+        		// poetryup = phrase[ranone]+word[rantwo]+phrase[ranones];
+        		// document.getElementById("poetryone").innerHTML = poetryup;
+
+        		// 方案二使用将数组乱序
+
+        		phrase.sort(function(){ return 0.5 - Math.random();});
+        		word.sort(function(){ return 0.5 - Math.random();});
+        		var poetrytwo = "";
+        		poetrytwo = phrase[0]+word[0]+phrase[1]+","+ phrase[2]+word[1]+phrase[3];
+        		document.getElementById("poetryfiveone").innerHTML = poetrytwo;
+        		// for(var sx in phrase){
+        		// 	console.log(sx);
+        		// 	console.log(phrase[sx]);
+        		// }
+        	}
+
+        	function createseventemp(){
+        		var phraselength = phrase.length;
+        		var wordlength = word.length;
+        		phrase.sort(function(){ return 0.5 - Math.random();});
+        		word.sort(function(){ return 0.5 - Math.random();});
+        		var poetrytwo = "";
+        		poetrytwo = phrase[0]+phrase[1]+word[0]+phrase[2]+","+ phrase[3]+phrase[4]+word[1]+phrase[5];
+        		document.getElementById("poetrysevenone").innerHTML = poetrytwo;
+        		// for(var sx in phrase){
+        		// 	console.log(sx);
+        		// 	console.log(phrase[sx]);
+        		// }
+        	}
+
+        	function createothertemp(){
+    			var phraselength = phrase.length;
+        		var wordlength = word.length;
+        		phrase.sort(function(){ return 0.5 - Math.random();});
+        		word.sort(function(){ return 0.5 - Math.random();});
+        		var poetrythree = "";
+        		poetrythree = phrase[0]+word[0]+","+phrase[1]+word[1]+","+word[2]+phrase[2]+phrase[3]+word[3];
+        		document.getElementById("poetryothers").innerHTML = poetrythree;
+        	}
+
+        	createfivetemp();
+        	createseventemp();
+        	createothertemp();
+        </script>
+    </body>
+</html>
