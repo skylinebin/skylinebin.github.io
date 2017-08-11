@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
+<html lang="pt-br">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>WebsiteIndex</title>
+<link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.min.css">
+
+<!-- author: SkylineBin -->
+<style type="text/css">
+.inputcolor {
+	height: 700px;
+}
+.showcolor {
+	height: 700px;
+	border: 1px solid #f2f2f2;
+	border-radius: 2px;
+}
+.colorseen {
+	height: 100px;
+	width: 100%;
+	margin-top: 10px;
+	border-radius: 2px;
+}
+.btnget {
+	margin-left: 15px;
+}
+.everyinput {
+	margin-top: 15px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+.showtitle {
+	/*text-align: center;*/
+	padding-left: 10px;
+}
+.htitle {
+	text-align: center;
+}
+</style>
+</head>
+    <body>
+    <div class="showtitle">
+    	<h1 class="htitle">调色工具表</h1>
+    </div>
+	<div class="container">
+		<div class="inputcolor col-lg-6 col-md-6">
+		<h2 class="htitle">输入颜色</h2>
+		<div class="everyinput">
+			<label>颜色一:</label>
+			<input type="text" id="color1" name="color1"><input type="button" onclick="showcolorone()" class="btn btn-success btnget" id="tocolorone" name="tocolorone" value="显示"><br />
+		</div>
+		<div class="everyinput">
+		<label>颜色二:</label>
+			<input type="text" id="color2" name="color2"><input type="button" onclick="showcolortwo()" class="btn btn-success btnget" id="tocolortwo" name="tocolortwo" value="显示"><br />
+		</div>
+		<div class="everyinput">
+			<label>颜色三:</label>
+			<input type="text" id="color3" name="color3"><input type="button" onclick="showcolorthree()" class="btn btn-success btnget" id="tocolorthree" name="tocolorthree" value="显示"><br />
+		</div>
+		<div class="everyinput">
+			<label>颜色四:</label>
+			<input type="text" id="color4" name="color4"><input type="button" onclick="showcolorfour()" class="btn btn-success btnget" id="tocolorfour" name="tocolorfour" value="显示"><br />
+		</div>
+		<div class="everyinput">
+			<label>颜色五:</label>
+			<input type="text" id="color5" name="color5"><input type="button" onclick="showcolorfive()" class="btn btn-success btnget" id="tocolorfive" name="tocolorfive" value="显示"><br />
+		</div>
+		</div>
+		<div class="showcolor col-lg-6 col-md-6">
+			<h2 class="htitle">输出配色</h2>
+			<div class="colorseen" id="showcolor1"></div>
+			<div class="colorseen" id="showcolor2"></div>
+			<div class="colorseen" id="showcolor3"></div>
+			<div class="colorseen" id="showcolor4"></div>
+			<div class="colorseen" id="showcolor5"></div>
+		</div>
+	</div>
+
+        <!-- 如果要使用Bootstrap的js插件，必须先调入jQuery -->
+        <script src="../assets/js/jquery.min.js"></script>
+        <!-- 包括所有bootstrap的js插件或者可以根据需要使用的js插件调用　-->
+        <script src="../assets/js/bootstrap.min.js"></script>
+        <script type="text/javascript">
+        //by SkylineBin
+        function showcolorone(){
+			$("#showcolor1").css({
+			background: $("#color1").val()
+			});
+        }
+        function showcolortwo(){
+			$("#showcolor2").css({
+			background: $("#color2").val()
+			});
+        }
+        function showcolorthree(){
+			$("#showcolor3").css({
+			background: $("#color3").val()
+			});
+        }
+        function showcolorfour(){
+			$("#showcolor4").css({
+			background: $("#color4").val()
+			});
+        }
+        function showcolorfive(){
+			$("#showcolor5").css({
+			background: $("#color5").val()
+			});
+        }
+
+        $("#color1").val("#33A9d4");
+        showcolorone();
+        $("#color2").val("#00b3ac");
+        showcolortwo();
+
+
+        </script>
+    </body>
+</html>
