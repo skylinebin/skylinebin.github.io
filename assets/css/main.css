@@ -1251,7 +1251,7 @@ body {
 }
 
 .post h1:before {
-    content: "#";
+    // content: "#";
     color: #5d4d7a;
     font-size: 2.5rem
 }
@@ -1371,7 +1371,7 @@ post .music-read {
 }
 
 .post-content h2:before {
-    content: '##';
+    // content: '##';
     font-size: 1.563rem
 }
 
