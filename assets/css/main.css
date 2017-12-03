@@ -1658,11 +1658,11 @@ pre span {
     overflow: auto;
     word-wrap: normal;
     border-radius: 0;
-    // padding: 20px;
+    padding: 20px;
     background-color: #2f2f33;
     color: #c1c2c3;
     margin: 0px auto;
-    // margin-bottom: 10px;
+    margin-bottom: 30px;
     max-width: 580px;
 }
 
