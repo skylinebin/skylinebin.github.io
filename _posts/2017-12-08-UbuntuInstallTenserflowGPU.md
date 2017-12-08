@@ -50,7 +50,9 @@ sudo update-initramfs -u
 
 ```
 <strong>重启</strong>系统(稳妥重启大法)
+
 Ubuntu窗口界面进入文本界面(Ctrl+Alt+F1),并登录账户
+
 先关闭图形化界面支持(x-window)
 
 ```
@@ -127,7 +129,7 @@ source /etc/profile
 
 ### 3.调整Python版本以及安装Tensorflow-gpu
 
-##### 将默认Python2.7改成自带的Python3.5.2
+#### 将默认Python2.7改成自带的Python3.5.2
 ctrl+Alt+T 打开终端
 ```
 python --version         #查当前默认Python版本
@@ -139,11 +141,11 @@ sudo rm /usr/bin/python   #移除以及链接的默认Python版本
 sudo ln -s /usr/bin/python3.5 /usr/bin/python   #建立新的链接默认Python改为Python3.5 若改回2.7同样操作
 
 ```
-##### 安装Python3的pip
+#### 安装Python3的pip
 ```
 sudo apt-get install python3-pip
 ```
-##### 安装Tensorflow-gpu
+#### 安装Tensorflow-gpu
 ```
 sudo python3 -m pip install tensorflow-gpu #若不确定默认Python的版本可使用
 ```
@@ -158,7 +160,7 @@ print(sess.run(hello))
 ```
 第三句的时候应该会运行Tensorflow，如果不报错基本就可以了
 
-安装keras
+#### 安装keras
 ```
 sudo python3 -m pip install keras
 ```
@@ -168,6 +170,7 @@ sudo python3 -m pip install keras
 ```
 sudo apt-get install python3-tk
 ```
+
 ### 4.安装Pycharm
 &nbsp;&nbsp;&nbsp;&nbsp;Pycharm是比较受欢迎的Python编辑器，一般有添加源安装和下载手动编译安装，为了简单就直接添加源安装吧。
 ```
@@ -182,5 +185,7 @@ sudo apt install pycharm-community
 sudo apt install pycharm
 
 ```
+
+
 ### 5.总结
 &nbsp;&nbsp;&nbsp;&nbsp;这次配置环境是在一台裸机上，本来没有系统，进入WinPE分了100G来给Ubuntu用，做启动盘(rufus软件好评),然后就是装系统和装显卡驱动，默认下载的CUDA是9.0，可能Ubuntu的Tensorflow-gpu源还没有更新CUDA库文件，致使安装失败，发现问题并且解决。还是挺费时间，但是也学到了一些基本的底层驱动的操作，应该勉强可以吧。
