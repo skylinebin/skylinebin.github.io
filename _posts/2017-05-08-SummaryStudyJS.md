@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Study new ways to solve problems by JavaScript"
+title:  "JavaScript处理数据总结(一)"
 date:   2017-05-08 17:37:31
 image: '/assets/img/singledog.png'
 description: 'About JavaScript'

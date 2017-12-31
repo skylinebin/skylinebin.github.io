@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "The way to set Network of Ubuntu in VMware"
+title:  "VMware虚拟机中Ubuntu网络环境配置"
 date:   2017-06-18 21:31:31
 image: '/assets/img/singledog.png'
 description: 'About Ubuntu'
@@ -63,15 +63,15 @@ NAT模式下默认会自动选取NAT设置，默认网关ip为 x.x.x.2,而上图
 首先在Ubuntu的终端里查看当前网络配置，这里使用ifconfig（与Win10里不同吧～）。看看有没有eth0和本地环回，这里只是提供查看。
 
 对于系统的配置，主要是在interfaces里，主要指令是：
-	
+
 	sudo vi /etc/network/interfaces
-	
+
 这里主要是对eth0进行配置，
 
 1.	如果动态获取ip,则可写入内容为：
 
 	auto eth0
-	
+
 	iface eth0 inet dhcp
 
 2.	如果是固定静态ip，则在interfaces里写入：
@@ -92,28 +92,28 @@ NAT模式下默认会自动选取NAT设置，默认网关ip为 x.x.x.2,而上图
 
 
 除了在interfaces里配置之外，还要在resolv.conf里配置域名服务器，终端中的指令为：
-	
+
 	sudo vim /etc/resolv.conf
-	
+
 在resolv.conf里填入
-	
+
 	nameserver 192.168.157.2
-	
+
 保存退出。然后重启网络配置,终端指令如下:
-	
+
 	sudo /etc/init.d/networking restart
-	
+
 如果不出意外的话,终端中的ifconfig可以看到有ip地址和网关的eth0，如果不能显示eth0的话，可以使用指令:
-	
+
 	sudo ifconfig eth0 down
 	sudo ifconfig eth0 up
-	
+
 重新启用eth0，应该可以看到其配置。
 
 如果网络配置不能使用 sudo /etc/init.d/networking restart 启动，可以尝试使用以下代码重启网络服务：
-	
+
 	sudo service network-manager restart
-	
+
 
 测试NAT是否配置成功，可以ping主机ip，即192.168.157.1 ，效果如下图：
 
@@ -124,9 +124,9 @@ NAT模式下默认会自动选取NAT设置，默认网关ip为 x.x.x.2,而上图
 ![ping主机](../assets/img/UbuntuNetwork/Image/pingbaidu.png)
 
 对于resolv.conf的配置，在下一重启后会被自动清除，为了写入系统配置，并保存下来，使用指令：
-	
+
 	sudo vi /etc/resolvconf/resolv.conf.d/base
-	
+
 
 在base里写入和resolv.conf里一样的内容，即nameserver 192.168.157.2，保存即可。
 

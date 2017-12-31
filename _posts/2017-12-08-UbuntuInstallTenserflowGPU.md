@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "How to install tensorflow-gpu in Ubuntu16.04"
+title:  "在Ubuntu16.04中安装tensorflow-gpu环境"
 date:   2017-12-08 23:25:31
 description: 'About DeepLearning Environment'
 tags:

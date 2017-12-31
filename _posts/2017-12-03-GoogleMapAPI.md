@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Summary of GoogleMap API"
+title:  "GoogleMap API 使用总结"
 image: ''
 date:   2017-12-02 01:06:21
 tags:

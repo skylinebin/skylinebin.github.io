@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Some shortcut commands in Windows system"
+title:  "Windows下的快捷指令操作"
 image: ''
 date:   2017-08-06 00:40:21
 tags:
