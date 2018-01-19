@@ -14,9 +14,10 @@ categories:
 twitter_text: '磁盘调度算法总结 '
 ---
 
-# 磁盘调度算法
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;这篇文章是参考好几篇博客而整理的关于磁盘I/O调度算法的内容，都比较基础，应该也挺重要。文中涉及到的代码的**完整源码**都放在了我的Github[关于算法部分](https://github.com/skylinebin/AlgorithmPractice/tree/master/Disk%20Scheduling%20Algorithm)关于算法部分当中了。
+
+## 磁盘调度算法  
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在操作系统中，各个进程可能会不断提出不同的对磁盘进行读/写操作的请求，有时候这些进程的发送请求的速度比磁盘响应的还要快，所以需要为每个磁盘设备建立一个等待队列，这就是磁盘调度。磁盘调度的目的是减少磁盘访问延迟，磁盘访问延迟可以定义为：  
 > 磁盘访问延迟 = 队列时间 + 控制器时间 + 寻道时间 + 旋转时间 + 传输时间  
@@ -82,6 +83,7 @@ public static void fcfssort(int[] dataA, int current){
     0  |  1 | 2 |  3 |  4 |  5
     ---|----|---|----|----|----
     29 | 84 | 1 | 89 | 51 | 94   
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;使用SSTF算法对磁盘磁道访问请求进行处理：  
 ```java  
 //@author SkylineBin
@@ -127,10 +129,10 @@ public static void sstfsort(int[] dataA, int current){
 4:  1---->84  移动83次
 5:  84---->89  移动5次
 6:  89---->94  移动5次
-
 磁道磁头总移动:152次
 -------------------------
 ```  
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;最短寻道时间优先（SSTF）算法性能会优于FCFS算法，但是会使距离当前磁道较远的磁道号长期得不到服务，也就是“饥饿”现象，因为要求访问的服务的序列号是动态产生的，即各个应用程序可能不断地提出访问不同的磁道号的请求。故不能保证平均寻道时间最短。   
 
 #### 3.电梯扫描算法（SCAN）  
@@ -145,6 +147,7 @@ public static void sstfsort(int[] dataA, int current){
     0  |  1 | 2 |  3 |  4 |  5
     ---|----|---|----|----|----
     29 | 84 | 1 | 89 | 51 | 94   
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;使用SCAN算法对磁盘磁道访问请求进行处理：  
 
 ![SCAN Algorithm Program](http://osaussnqu.bkt.clouddn.com/image/system/scan.png)
@@ -163,6 +166,7 @@ public static void sstfsort(int[] dataA, int current){
 磁道磁头总移动:134次
 -------------------------
 ```  
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;以上算法设计过程中要考虑当前磁头所在位置可能在所有请求的两侧，选取先扫描的方向是A或者是B对最终的结果也有影响。如下图所示，是选择先向高再向低的电梯扫描算法：  
 ```java  
 -------------------------
@@ -192,6 +196,7 @@ public static void sstfsort(int[] dataA, int current){
     0  |  1 | 2 |  3 |  4 |  5
     ---|----|---|----|----|----
     29 | 84 | 1 | 89 | 51 | 94  
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;使用SCAN算法对磁盘磁道访问请求进行处理：  
 
 ![CSCAN Algorithm Program](http://osaussnqu.bkt.clouddn.com/image/system/cscan.png)  
@@ -210,6 +215,7 @@ public static void sstfsort(int[] dataA, int current){
 磁道磁头总移动:144次
 -------------------------
 ```  
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;以上循环电梯扫描算法设计过程中要考虑当前磁头所在位置可能在所有请求的两侧，选取先扫描的方向是A或者是B对最终的结果也有影响，对于初始位置位于两侧的情况，在方向确定的情况下，执行的结果是一样的。  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;上述实验中使用到的数据生成使用的代码为：  
 ```java  
@@ -241,7 +247,7 @@ for(int i=0;i<totalnum;i++){
 
  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;操作系统选取电梯磁盘调度算法更好，因为在操作系统中要访问的服务磁盘柱面号是动态产生的，即各个应用程序可能不断地提出访问不同的磁道号的请求。最短寻道时间优先不能保证平均寻道时间最短。而电梯扫描算法既能获得较好的寻道性能，又能防止“饥饿”现象。所以操作系统中更适合采用电梯扫描算法。  
 
- ### 三、易错点  
+### 三、易错点  
  1. 电梯扫描算法中要注意题目所给的磁臂移动方向。  
  2. 做算法测试时，测试案例应该会有初始磁头在所有访问请求的两端的，这一点需要注意。  
 
