@@ -15,7 +15,7 @@ twitter_text: '磁盘调度算法总结 '
 ---
 
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;这篇文章是参考好几篇博客而整理的关于磁盘I/O调度算法的内容，都比较基础，应该也挺重要。文中涉及到的代码的**完整源码**都放在了我的Github[关于算法部分](https://github.com/skylinebin/AlgorithmPractice/tree/master/Disk%20Scheduling%20Algorithm)关于算法部分当中了。
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;这篇文章是参考好几篇博客而整理的关于磁盘I/O调度算法的内容，都比较基础，应该也挺重要。文中涉及到的代码的**完整源码**都放在了我的Github[关于算法部分](https://github.com/skylinebin/AlgorithmPractice/tree/master/Disk%20Scheduling%20Algorithm)当中了。
 
 ## 磁盘调度算法  
 
@@ -25,7 +25,7 @@ twitter_text: '磁盘调度算法总结 '
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;磁盘调度的目的是减小延迟，前两项可以忽略，寻道时间是磁盘访问延迟的主要考虑部分。因此，使用**磁盘调度算法**来尽可能减少磁盘寻道时间。  
 
 ### 一、磁盘调度算法
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;常用的磁盘调度算法通常有以下四种：FCFS、SSTF、SCAN、CSCAN。  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;常用的磁盘调度算法通常有以下四种：FCFS(先来先服务算法)、SSTF(最短寻道时间优先算法)、SCAN(电梯扫描算法)、CSCAN(循环电梯扫描算法)。  
 #### 1.先来先服务算法（FCFS, First Come First Serve）  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;先来先服务算法是一种最简单的磁盘调度算法，它**根据进程请求访问磁盘的先后次序进行调度**。  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;例如：当前磁道磁头位于地址为42的磁道，现有6条访问磁道请求。(模拟地址为0~99的磁盘磁道)  
