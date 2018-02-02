@@ -8,7 +8,7 @@ tags:
 - CODE
 - EPC
 categories:
-- Lorem ipsum
+- SkylineBin
 twitter_text: 'How to use JavaScript to write EPC'
 ---
 

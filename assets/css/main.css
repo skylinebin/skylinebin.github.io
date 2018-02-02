@@ -1115,11 +1115,13 @@ body {
     color: #c06a64;
     position: relative;
     margin: .625rem 0;
+    // margin: .625rem 25%;
+    // margin-left: 20%;
 }
 
 .tree-posts h3:before {
     content: "";
-    width: 100px;
+    width: 150px;
     height: 4px;
     position: absolute;
     bottom: 0;
@@ -1135,6 +1137,17 @@ body {
 .post-item .content {
     *zoom: 1;
 }
+
+.after-post {
+    margin-left: 13%;
+    margin-right: 15%;
+}
+
+.after-post h3 {
+    /* margin: auto; */
+    margin-left: 45%;
+}
+
 
 .post-item .content:before,
 .post-item .content:after {
@@ -1178,6 +1191,7 @@ body {
         text-align: inherit;
         width: 69.1%;
         margin-left: 0%;
+        // margin-left: 35%;
         margin-right: 3%
     }
     .post-item .content a:before,
