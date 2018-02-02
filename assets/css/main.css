@@ -1113,10 +1113,10 @@ body {
 
 .tree-posts h3 {
     color: #c06a64;
-    position: relative;
-    margin: .625rem 0;
-    // margin: .625rem 25%;
-    // margin-left: 20%;
+    /* position: relative; */
+    margin: .625rem 8rem;
+    /*  margin: .625rem 25%; */
+     /* margin-left: 20%; */
 }
 
 .tree-posts h3:before {
@@ -1136,6 +1136,7 @@ body {
 
 .post-item .content {
     *zoom: 1;
+    text-align: center;
 }
 
 .after-post {
