@@ -47,7 +47,7 @@ projects:
     url: https://github.com/skylinebin/Machine-Learning-Notes
   - name: PythonSpider
     url: https://github.com/skylinebin/PythonSpider
-  - name: HuaWeiOJAlgorithm
-    url: https://github.com/skylinebin/HuaWeiOJAlgorithm
+  - name: AlgorithmPractice
+    url: https://github.com/skylinebin/AlgorithmPractice
 # exclude my node related stuff
 exclude: ['package.json', 'src', 'node_modules']
