@@ -882,13 +882,14 @@ body.search-overlay:after {
 }
 
 .aboutme .showreason {
-	font-size: 1.2rem;
+	font-size: 1.3rem;
+  font-family: 'Open Sans', sans-serif;
 	line-height: 2rem;
 	margin: 0px auto;
 	width: auto;
 	height:auto;
 	text-align: left;
-	max-width: 450px;
+	max-width: 50rem;
 }
 
 .aboutme .post-title:before {
