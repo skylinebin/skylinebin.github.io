@@ -373,7 +373,7 @@ a .showmymenu,
 .dosearch {
     right: 10px;
     border-radius: .188rem;
-    background: #5d4d7a;
+    /* background: #5d4d7a; */
     padding: .125rem .188rem
 }
 
