@@ -37,8 +37,8 @@ print(tf.__version__)
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tensorflow中主要数据结构是张量，常用张量来操作计算图。可以把 **变量** 或者 **占位符** 声明为张量。  
 
-1. 固定张量  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;常有零张量、单位张量、指定常数填充张量和常数矩阵创建张量等几种。  
+1.固定张量  
+常有零张量、单位张量、指定常数填充张量和常数矩阵创建张量等几种。  
 
 ```python
 #创建固定维度的零张量
@@ -54,8 +54,8 @@ filled_tsr = tf.fill([row_dim,col_dim], 42)
 constant_tsr = tf.constant([1,2,3])
 ```
 
-2. 相似张量  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;新建与已有张量类似的张量。 
+2.相似张量  
+新建与已有张量类似的张量。 
 
 ```python
 # 新建与已有张量类似的张量
@@ -63,8 +63,8 @@ zero_similar = tf.zeros_like(constant_tsr)
 # ones_similar = tf.ones_like(constant_tsr)
 ``` 
 
-3. 序列张量  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;新建再指定序列内形成张量。 
+3.序列张量  
+新建再指定序列内形成张量。 
 
 ```python
 # 创建指定间隔的张量,包括结尾值
@@ -76,8 +76,8 @@ integer_seq_tsr = tf.range(start=6,limit=20,delta=3)
 # when start=6,limit=20, delta =3, output is [ 6  9 12 15 18]
 ``` 
 
-4. 随机张量  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;新建不同分布的随机书形成张量。 
+4.随机张量  
+新建不同分布的随机书形成张量。 
 
 ```python
 # 生成均匀分布的随机数
@@ -108,8 +108,8 @@ cropped_output_tsr = tf.random_crop(oldconstant_tsr,[3,1])
 ```  
 
 
-6. 张量使用与输出  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;创建计算图，在计算图中运行并输出张量结果。  
+6.张量使用与输出  
+创建计算图，在计算图中运行并输出张量结果。  
 
 ```python
 sess = tf.Session()
@@ -118,8 +118,8 @@ print('- - - - - - - - - - - - - - - - - - - -')
 print(sess.run(cropped_output_tsr))
 ```  
 
-7. 封装张量作为变量  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tensoeflow中的变量是通过tf.Variable( )函数得到的，过程是输入一个张量，返回一个变量。  
+7.封装张量作为变量  
+Tensoeflow中的变量是通过tf.Variable( )函数得到的，过程是输入一个张量，返回一个变量。  
 
 ```python
 # 创建好张量,使用tf.Variable()封装张量作为变量
@@ -129,8 +129,8 @@ sess.run(first_zero_var.initializer)
 # 对已经初始化的变量进行初始化操作方式
 ```  
 
-8. 全局变量初始化以及占位符操作  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;占位符 **仅仅声明数据位置**，用于传入数据到计算图。  
+8.全局变量初始化以及占位符操作  
+占位符 **仅仅声明数据位置**，用于传入数据到计算图。  
 
 ```python
 initialize_option = tf.global_variables_initializer()
@@ -143,5 +143,7 @@ init_y = tf.identity(init_x)
 x_vals = np.random.rand(2,2)
 sess.run(init_y, feed_dict={init_x: x_vals})
 ```
+
+
 
 ### Tensorflow中矩阵的操作
