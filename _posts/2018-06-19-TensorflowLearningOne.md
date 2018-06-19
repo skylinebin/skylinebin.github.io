@@ -20,8 +20,8 @@ twitter_text: 'Tensorflow基本概念与操作 '
 ### 准备工作
 
 **系统环境** ：Windows10 x64 / Ubuntu 16.04 x64  
-**Python环境** ：Python 3.5.4 / Python 3.5.2 
-**Tensorflow环境** ：Tensorflow1.8.0 / Tensorflow1.4.0
+**Python环境** ：Python 3.5.4 / Python 3.5.2   
+**Tensorflow环境** ：Tensorflow1.8.0 / Tensorflow1.4.0  
 
 安装Tensorflow环境使用pip直接安装就好，douban的pip镜像速度很快，后面需要用到Keras，也可以用pip直接安装。
 查看tensorflow的环境语句
@@ -39,6 +39,7 @@ print(tf.__version__)
 
 1. 固定张量  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;常有零张量、单位张量、指定常数填充张量和常数矩阵创建张量等几种。  
+
 ```python
 #创建固定维度的零张量
 zero_tsr =tf.zeros([row_dim,col_dim])
@@ -55,6 +56,7 @@ constant_tsr = tf.constant([1,2,3])
 
 2. 相似张量  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;新建与已有张量类似的张量。 
+
 ```python
 # 新建与已有张量类似的张量
 zero_similar = tf.zeros_like(constant_tsr)
@@ -63,6 +65,7 @@ zero_similar = tf.zeros_like(constant_tsr)
 
 3. 序列张量  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;新建再指定序列内形成张量。 
+
 ```python
 # 创建指定间隔的张量,包括结尾值
 linear_tsr = tf.linspace(start=0.0,stop=1.0,num=7)
@@ -75,6 +78,7 @@ integer_seq_tsr = tf.range(start=6,limit=20,delta=3)
 
 4. 随机张量  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;新建不同分布的随机书形成张量。 
+
 ```python
 # 生成均匀分布的随机数
 randunif_tsr = tf.random_uniform([row_dim,col_dim], minval=0, maxval=2)
@@ -90,12 +94,12 @@ runcnorm_tsr = tf.truncated_normal([row_dim,col_dim], mean=0.0, stddev=1.0)
 ```  
 
 5. 张量调整与剪裁  
+
 ```python
 # 随机调整张量参数的顺序
 shuffled_output_tsr = tf.random_shuffle(constant_tsr)
 
 oldconstant_tsr = tf.constant([[1,2,3],[4,5,6],[7,8,9]])
-
 
 # 对原有张量进行随机裁剪
 cropped_output_tsr = tf.random_crop(oldconstant_tsr,[3,1])
@@ -115,7 +119,8 @@ print(sess.run(cropped_output_tsr))
 ```  
 
 7. 封装张量作为变量  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tensoeflow中的变量是通过tf.Variable( )函数得到的，过程是输入一个张量，返回一个变量。
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tensoeflow中的变量是通过tf.Variable( )函数得到的，过程是输入一个张量，返回一个变量。  
+
 ```python
 # 创建好张量,使用tf.Variable()封装张量作为变量
 print('- - - - - - - - - - - - - - - - - - - -')
@@ -125,7 +130,8 @@ sess.run(first_zero_var.initializer)
 ```  
 
 8. 全局变量初始化以及占位符操作  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;占位符 **仅仅声明数据位置**，用于传入数据到计算图。
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;占位符 **仅仅声明数据位置**，用于传入数据到计算图。  
+
 ```python
 initialize_option = tf.global_variables_initializer()
 sess.run(initialize_option)
