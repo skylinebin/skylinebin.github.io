@@ -54,6 +54,7 @@ filled_tsr = tf.fill([row_dim,col_dim], 42)
 constant_tsr = tf.constant([1,2,3])
 ```
 
+<br />
 2.相似张量  
 新建与已有张量类似的张量。 
 
@@ -63,6 +64,7 @@ zero_similar = tf.zeros_like(constant_tsr)
 # ones_similar = tf.ones_like(constant_tsr)
 ``` 
 
+<br />
 3.序列张量  
 新建再指定序列内形成张量。 
 
@@ -76,6 +78,7 @@ integer_seq_tsr = tf.range(start=6,limit=20,delta=3)
 # when start=6,limit=20, delta =3, output is [ 6  9 12 15 18]
 ``` 
 
+<br />
 4.随机张量  
 新建不同分布的随机书形成张量。 
 
@@ -93,7 +96,8 @@ randnorm_tsr = tf.random_normal([row_dim,col_dim], mean=0.0, stddev=1.0)
 runcnorm_tsr = tf.truncated_normal([row_dim,col_dim], mean=0.0, stddev=1.0)
 ```  
 
-5. 张量调整与剪裁  
+<br />
+5.张量调整与剪裁  
 
 ```python
 # 随机调整张量参数的顺序
@@ -107,7 +111,7 @@ cropped_output_tsr = tf.random_crop(oldconstant_tsr,[3,1])
 # when size=[3,1], output is [[1] [4] [7]]
 ```  
 
-
+<br />
 6.张量使用与输出  
 创建计算图，在计算图中运行并输出张量结果。  
 
@@ -117,7 +121,7 @@ print(sess.run(oldconstant_tsr))
 print('- - - - - - - - - - - - - - - - - - - -')
 print(sess.run(cropped_output_tsr))
 ```  
-
+<br />
 7.封装张量作为变量  
 Tensoeflow中的变量是通过tf.Variable( )函数得到的，过程是输入一个张量，返回一个变量。  
 
@@ -129,6 +133,7 @@ sess.run(first_zero_var.initializer)
 # 对已经初始化的变量进行初始化操作方式
 ```  
 
+<br />
 8.全局变量初始化以及占位符操作  
 占位符 **仅仅声明数据位置**，用于传入数据到计算图。  
 
@@ -144,6 +149,6 @@ x_vals = np.random.rand(2,2)
 sess.run(init_y, feed_dict={init_x: x_vals})
 ```
 
-
-
+<br />
+<br />
 ### Tensorflow中矩阵的操作
