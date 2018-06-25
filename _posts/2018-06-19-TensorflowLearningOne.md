@@ -17,7 +17,7 @@ twitter_text: 'Tensorflow基本概念与操作 '
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;这篇文章是Tensorflow系列文章中的第一篇，比较基础，主要想细致过一遍用到的Tensorflow的内容。主要参考但不限于书籍Nick McClure的 *Tensorflow Machine Learning Cookbook* 中文版《Tensorflow机器学习实战指南》(错误很多)。文中涉及到的代码的**完整源码**都放在了我的Github里[MachineLearningNotes--Tensorflow](https://github.com/skylinebin/Machine-Learning-Notes/tree/master/Tensorflow/TensorflowWithCookbook)当中了。
 
-### 准备工作
+## 准备工作
 
 **系统环境** ：Windows10 x64 / Ubuntu 16.04 x64  
 **Python环境** ：Python 3.5.4 / Python 3.5.2   
@@ -33,7 +33,7 @@ print(tf.__version__)
 若能正确输出版本号，基本是可以进行后面操作了。
 
 
-### Tensorflow中张量的操作
+## Tensorflow中张量的操作
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tensorflow中主要数据结构是张量，常用张量来操作计算图。可以把 **变量** 或者 **占位符** 声明为张量。  
 
@@ -151,4 +151,79 @@ sess.run(init_y, feed_dict={init_x: x_vals})
 
 <br />
 <br />
-### Tensorflow中矩阵的操作
+
+## Tensorflow中矩阵的操作
+
+1.创建矩阵  
+
+```python
+indentity_matrix = tf.diag([1.0, 1.0, 1.0])
+matrix_A = tf.truncated_normal([2, 3])
+matrix_B = tf.fill([2,3], 5.0)
+matrix_C = tf.random_uniform([3,2])
+matrix_D = tf.convert_to_tensor(np.array([[1., 2., 3.],[-3., -7., -1.],[0., 5., -2.]]))
+```  
+
+<br />
+其中，*tf.diag* 为创建对角矩阵，*tf.truncated_normal* 为创建指定维数随机矩阵，*tf.fill* 为创建填充矩阵，*tf.random_uniform* 为创建0~1之间随机矩阵；*tf.convert_to_tensor* 可将numpy创建的矩阵转换成张量矩阵。  
+
+2.矩阵加减乘法运算  
+
+```python
+print('- - - - - - - - - - - - - - - - - - - -')
+print(sess.run(matrix_A+matrix_B))
+print('- - - - - - - - - - - - - - - - - - - -')
+print(sess.run(matrix_A-matrix_B))
+print('- - - - - - - - - - - - - - - - - - - -')
+
+# 矩阵乘法
+print(sess.run(tf.matmul(matrix_B,indentity_matrix)))
+# 矩阵乘法注意矩阵前后次序，以及对应的阶次
+print('- - - - - - - - - - - - - - - - - - - -')
+# 矩阵转置
+print(sess.run(tf.transpose(matrix_C)))
+# 重新初始化会得到不同的值，
+```  
+
+<br />
+3.矩阵行列式与逆矩阵  
+
+```python
+print('- - - - - - - - - - - - - - - - - - - -')
+# 矩阵行列式
+print(sess.run(tf.matrix_determinant(matrix_D)))
+
+print('- - - - - - - - - - - - - - - - - - - -')
+# 矩阵的逆矩阵
+print(sess.run(tf.matrix_inverse(matrix_D)))
+# 矩阵的逆矩阵是用平方根法，
+# 需要矩阵为对称正定矩阵或者可进行LU分解
+
+print('- - - - - - - - - - - - - - - - - - - -')
+# 矩阵分解法
+print(sess.run(tf.cholesky(indentity_matrix)))
+
+print('- - - - - - - - - - - - - - - - - - - -')
+# 求矩阵特征值和特征向量
+print(sess.run(tf.self_adjoint_eig(matrix_D)))
+```  
+
+上述代码中，Tensorflow中使用 *tf.matrix_inverse* 求逆矩阵是采用平方根法，矩阵要能够进行LU分解。  
+
+<br />
+4.矩阵分解与行列式  
+
+```python
+print('- - - - - - - - - - - - - - - - - - - -')
+# 矩阵分解法
+print(sess.run(tf.cholesky(indentity_matrix)))
+
+print('- - - - - - - - - - - - - - - - - - - -')
+# 求矩阵特征值和特征向量
+print(sess.run(tf.self_adjoint_eig(matrix_D)))
+```  
+
+<br />
+在以上函数中，*tf.self_adjoint_eig*输出的结果，第一行为 **特征值** ，后面为每个特征值对应的 **特征向量**，此为矩阵的特征分解。  
+
+Tensorflow中加入上述矩阵操作到计算图中进行张量计算，对于后面使用Tensorflow进行机器学习有很重要的作用。
