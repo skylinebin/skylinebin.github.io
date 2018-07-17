@@ -52,6 +52,9 @@
         case "5":
           $("#sidebar ul:first-child li:nth-child(5) a").trigger('click');
           break;
+        case "6":
+          $("#sidebar ul:first-child li:nth-child(6) a").trigger('click');
+          break;
         case "g":
           $("#sidebar ul:nth-child(2) li:first-child a").trigger('click');
           break;
@@ -61,6 +64,9 @@
           break;
          case "t":
           $("#sidebar ul:nth-child(2) li:nth-child(3) a").trigger('click');
+          break;
+         case "q":
+          $("#sidebar ul:nth-child(2) li:nth-child(4) a").trigger('click');
           break;
       }
     }
