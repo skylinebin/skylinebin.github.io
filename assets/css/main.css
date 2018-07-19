@@ -1147,7 +1147,8 @@ body {
 
 .after-post h3 {
     /* margin: auto; */
-    margin-left: 45%;
+    /* margin-left: 45%; */
+    text-align: center;
 }
 
 
