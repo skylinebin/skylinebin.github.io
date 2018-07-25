@@ -15,7 +15,8 @@ twitter_text: 'MongoDB使用及Node.js中应用的注意事项 '
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;最近使用 Node.js + MongoDB 为一个预约管理系统写了一些后台和数据库，遇到了挺多问题，借此记录一下解决的问题以及 MongoDB 常用的注意事项。所涉及的源码，等整理后再放在 Github 上。  
 
-<br />  
+
+
 
 ## MongoDB数据库的安装与创建  
 
@@ -134,6 +135,7 @@ test
 
 ```
 
+<br />
 
 ### 2.修改MongoDB数据库数据  
 
@@ -205,6 +207,7 @@ WriteResult({ "nRemoved" : 1 })
 { "_id" : ObjectId("5b58a2102ee301c0cfd016dd"), "name" : "scott", "year" : "2017", "num" : "1", "state" : 0, "remark" : "", "month" : "3" }
 
 ```
+
 
 ### 4.MongoDB数据库其他常用指令  
 
