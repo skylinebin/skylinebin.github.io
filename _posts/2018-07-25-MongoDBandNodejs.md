@@ -209,6 +209,7 @@ WriteResult({ "nRemoved" : 1 })
 ```
 
 
+
 ### 4.MongoDB数据库其他常用指令  
 
 查找的返回数据按指定规则排序，使用 find() 与 sort() 组成 的语句完成。例如按照 year 的升序的查找语句:  
@@ -266,8 +267,7 @@ db.test.find({}, {name: 0, by: 0}) // exclusion模式 指定不返回的键,返�
 
 以上可以查找 userinfo 表里 字段 userobj 存储的对象里 属性 openId = "oQVMW0Qu4K3-KB_x5C0IUpHATRUg" 的数据。
 
-<br />
-
+<br />  
 
 ## MongoDB数据库与Node.js结合使用  
 
