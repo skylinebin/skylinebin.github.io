@@ -1522,6 +1522,7 @@ post .music-read {
 }
 
 .share h3 {
+    text-align: left;
     margin: 0 0 1.875rem;
     font-size: 1.875rem;
 }
