@@ -1508,7 +1508,8 @@ post .music-read {
     padding-right: 0;
     text-align: center;
     border-top: 1px solid #f2f2f2;
-    padding-top: 1.25rem;
+    /* padding-top: 1.25rem; */
+    padding: 1.25rem 1.25rem;
 }
 
 .share:before,
@@ -1932,6 +1933,7 @@ code {
     padding-left: 0;
     padding-right: 0;
     padding: 0 1.25rem;
+    padding-top: 1.25rem;
 }
 
 .comments:before,
