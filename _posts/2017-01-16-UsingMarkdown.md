@@ -66,7 +66,8 @@ Markdown中使用[ ]和( )构成的符号来引入连接或者插入图片。
 ![This is a Github Logo](https://assets-cdn.github.com/images/modules/logos_page/GitHub-Logo.png)
 ```
 即可插入下图：
-![This is a Github Logo.](https://assets-cdn.github.com/images/modules/logos_page/GitHub-Logo.png)
+
+![This is a Github Logo.](http://osaussnqu.bkt.clouddn.com/image/git/GitHub-Logo.png)
 
 本项目中**插入图片规范**如下:
 - 1.在当前目录下建立"assets"资源目录文件夹，为需要使用图片的文档建立文件夹，使用相对路径引用方式链接到图片资源文件，例如，上图中的Github图片保存在“./assets/MDimages/Github-Logo.png”,则引入图片的语法为：
