@@ -1521,6 +1521,11 @@ post .music-read {
     clear: both
 }
 
+.share h3 {
+    margin: 0 0 1.875rem;
+    font-size: 1.875rem;
+}
+
 .share svg {
     margin: .938rem;
     width: 35px;
