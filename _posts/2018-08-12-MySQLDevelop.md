@@ -35,12 +35,16 @@ twitter_text: 'MySQL使用及基础指令总结 '
 #### 1.创建数据库  
 查询所有数据库：  
 ```mysql
+
  show databases;
+
 ```  
 创建数据库:  
+
 ```mysql
  create database testbin;
 ```  
+
 ![MySQL Databases](http://osaussnqu.bkt.clouddn.com/image/mysql/Databases.png)  
 
 - information_schma 数据库是主要存储了系统中的一些数据库对象信息，比如用户表信息，列信息，权限信息，字符集信息，分区信息等。  
