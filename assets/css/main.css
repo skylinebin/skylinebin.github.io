@@ -1499,7 +1499,7 @@ post .music-read {
 .share {
     *zoom: 1;
     width: auto;
-    max-width: 800px;
+    max-width: 50rem;
     float: none;
     display: block;
     margin-right: auto;
