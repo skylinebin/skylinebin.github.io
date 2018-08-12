@@ -34,14 +34,12 @@ twitter_text: 'MySQL使用及基础指令总结 '
 
 #### 1.创建数据库  
 查询所有数据库：  
-```mysql
-
+```
  show databases;
-
 ```  
 创建数据库:  
 
-```mysql
+```
  create database testbin;
 ```  
 
