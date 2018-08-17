@@ -26,10 +26,10 @@ twitter_text: 'Markdown使用指南 '
 ### 2.推荐使用的Markdown写作软件
 Markdown文件可以用任何编辑器编写，但一般的编辑器不能解析文件。本项目主要是优秀方法整理和技术总结应该也用不到特别复杂的语法，但是排版对文档逻辑的展现有辅助作用，所以还是推荐使用可以预览的Markdown编辑器。下面推荐两款比较好用的软件：
 - [Atom](https://atom.io/) 是著名的程序员社交网站**Github**推出的一款编辑器，操作简单，功能强大，当前文档就是在这款软件上编写的。重点是**支持Markdown文件的预览**。编写界面如下图所示：
-![Atom工程界面](http://osaussnqu.bkt.clouddn.com/image/markdown/Atompage.png)
+![Atom工程界面](https://store.skylinebin.com/image/markdown/Atompage.png)
 
 - [VSCode](https://code.visualstudio.com/) 是微软大佬推出的一款免费开源跨平台的代码编辑器，功能真的强大，这段话是在VSCode里编写的。同样**支持Markdown文件的预览**，编写界面如下图所示：
-![VSCode工程界面](http://osaussnqu.bkt.clouddn.com/image/markdown/VSCodepage.png)
+![VSCode工程界面](https://store.skylinebin.com/image/markdown/VSCodepage.png)
 
 以上两款软件都支持文件目录，可以很方便创建整理文件。  
 *注：个人更喜欢Atom，看起来更简洁，操作也更简单。但VSCode会更稳定。*
@@ -67,7 +67,7 @@ Markdown中使用[ ]和( )构成的符号来引入连接或者插入图片。
 ```
 即可插入下图：
 
-![This is a Github Logo.](http://osaussnqu.bkt.clouddn.com/image/git/GitHub-Logo.png)
+![This is a Github Logo.](https://store.skylinebin.com/image/git/GitHub-Logo.png)
 
 本项目中**插入图片规范**如下:
 - 1.在当前目录下建立"assets"资源目录文件夹，为需要使用图片的文档建立文件夹，使用相对路径引用方式链接到图片资源文件，例如，上图中的Github图片保存在“./assets/MDimages/Github-Logo.png”,则引入图片的语法为：
@@ -111,7 +111,7 @@ private static int partition(int[] arr, int low, int high){
 }
 ```
 代码引入具体实现如下图所示：
-![Markdown中代码引入](http://osaussnqu.bkt.clouddn.com/image/markdown/importCodes.png)
+![Markdown中代码引入](https://store.skylinebin.com/image/markdown/importCodes.png)
 
 #### 3.6 Markdown中分隔线及转义符号
 Markdown中使用三个 \* 号来画出一条分隔线，效果如下所示：

@@ -2,7 +2,7 @@
 layout: post
 title:  "Tensorflow系列--(二)常用激励函数及其比较"
 date:   2018-06-25 19:40:31
-image: 'http://osaussnqu.bkt.clouddn.com/TensorflowLearning/tensorflow.png'
+image: 'https://store.skylinebin.com/TensorflowLearning/tensorflow.png'
 description: 'Basic skills in MachineLearning'
 tags:
 - Ubuntu
@@ -143,7 +143,7 @@ plt.show()
 <br />  
 运行结果如下图所示： 
 
-![激励函数对比一](http://osaussnqu.bkt.clouddn.com/TensorflowLearning/sigmoidFunction.png)  
+![激励函数对比一](https://store.skylinebin.com/TensorflowLearning/sigmoidFunction.png)  
 
 ReLU、ReLU6、softplus和ELU对应的曲线表示，这四种激励函数在输入小于0时，输出值基本不变化，在0附近较为平缓。当输入值从0开始增加时，基本是线性增长，relu6函数最大值只能取到6。  
 
@@ -170,7 +170,7 @@ plt.show()
 <br />  
 运行结果如下图所示： 
 
-![激励函数对比二](http://osaussnqu.bkt.clouddn.com/TensorflowLearning/sigmoidFunction2.png)  
+![激励函数对比二](https://store.skylinebin.com/TensorflowLearning/sigmoidFunction2.png)  
 
 softsign、sigmoid和tanh这些激励函数对应的输出基本都是平滑的、具有S型的函数。sigmoid和tanh激励函数有水平渐近线。
 

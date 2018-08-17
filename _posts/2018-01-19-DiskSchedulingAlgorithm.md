@@ -138,7 +138,7 @@ public static void sstfsort(int[] dataA, int current){
 #### 3.电梯扫描算法（SCAN）  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;电梯扫描算法其基本思想与电梯工作原理类似：最开始时，磁头向访问请求的方向A扫描，在磁头移动过程中，如果经过的磁道有访问请求，则为其服务。接着判断A方向是否仍有请求，有则向A移动处理，否则调转方向向B移动。电梯扫描算法流程如下图所示：  
 
-![SCAN Algorithm](http://osaussnqu.bkt.clouddn.com/image/system/scanAlgo.png)  
+![SCAN Algorithm](https://store.skylinebin.com/image/system/scanAlgo.png)  
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;现使用相同的初始值和磁道访问请求数据：  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Current Location：42  
@@ -150,7 +150,7 @@ public static void sstfsort(int[] dataA, int current){
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;使用SCAN算法对磁盘磁道访问请求进行处理：  
 
-![SCAN Algorithm Program](http://osaussnqu.bkt.clouddn.com/image/system/scan.png)
+![SCAN Algorithm Program](https://store.skylinebin.com/image/system/scan.png)
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;传入的参数同样是访问请求序列和当前磁头位置，运行以上程序，可以得到以下结果：  
 ```java  
@@ -187,7 +187,7 @@ public static void sstfsort(int[] dataA, int current){
 #### 4.循环扫描算法（CSCAN）  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;为了减少SCAN算法中的新发请求的延迟，CSCAN算法规定磁头单向移动。比如，磁头访问完最里面一个要求服务的磁道请求之后，从最外层的序号最大的开始往里走，始终保持一个方向扫描。  
 
-![CSCAN Algorithm](http://osaussnqu.bkt.clouddn.com/image/system/cscanAlgo.png)  
+![CSCAN Algorithm](https://store.skylinebin.com/image/system/cscanAlgo.png)  
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;循环电梯扫描算法的流程如上图所示。假设扫描方向是从B到A，则扫描顺序如上图中箭头方向。现使用相同的初始值和磁道访问请求数据：  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Current Location：42  
@@ -199,7 +199,7 @@ public static void sstfsort(int[] dataA, int current){
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;使用SCAN算法对磁盘磁道访问请求进行处理：  
 
-![CSCAN Algorithm Program](http://osaussnqu.bkt.clouddn.com/image/system/cscan.png)  
+![CSCAN Algorithm Program](https://store.skylinebin.com/image/system/cscan.png)  
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;传入的参数同样是访问请求序列和当前磁头位置，运行以上程序，可以得到以下结果：  
 ```java  
@@ -241,9 +241,9 @@ for(int i=0;i<totalnum;i++){
 ### 二、常见笔试题举例  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[牛客网题目](https://www.nowcoder.com/questionTerminal/ac90999ba5d240109b89cd3e2aa9388a)：设磁盘的I/O请求队列中的柱面号为：65,68,49,28,100,170,160,48,194。磁头初始位置为110，磁臂方向由小到大，请给出分别采用最短寻道时间优先的磁盘调度算法和电梯磁盘调度算法的柱面移动次数，并给出操作系统采用何种磁盘调度算法更好，为什么？  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;答：若使用最短寻道时间优先（SSTF）算法，得到柱面移动次数为248次，过程如下图所示：  
-  ![使用最短寻道算法](http://osaussnqu.bkt.clouddn.com/image/system/usingSstf.png)  
+  ![使用最短寻道算法](https://store.skylinebin.com/image/system/usingSstf.png)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;若采用电梯磁盘调度（SCAN）算法，得到柱面移动次数为250次，过程如下图所示：  
-  ![使用电梯扫描算法](http://osaussnqu.bkt.clouddn.com/image/system/usingScan.png)  
+  ![使用电梯扫描算法](https://store.skylinebin.com/image/system/usingScan.png)  
 
  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;操作系统选取电梯磁盘调度算法更好，因为在操作系统中要访问的服务磁盘柱面号是动态产生的，即各个应用程序可能不断地提出访问不同的磁道号的请求。最短寻道时间优先不能保证平均寻道时间最短。而电梯扫描算法既能获得较好的寻道性能，又能防止“饥饿”现象。所以操作系统中更适合采用电梯扫描算法。  
 

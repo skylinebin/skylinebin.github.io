@@ -29,7 +29,7 @@ twitter_text: 'How to install tensorflow-gpu in Ubuntu16.04? '
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;先下载N卡驱动（http://www.nvidia.cn/Download/index.aspx?lang=cn）
 选择如下图所示:
-![NVIDIADriver](http://osaussnqu.bkt.clouddn.com/NVIDIADriver.png)
+![NVIDIADriver](https://store.skylinebin.com/NVIDIADriver.png)
 （下载得到NVIDIA-Linux-x86_64-384.98.run 文件）
 &nbsp;&nbsp;&nbsp;&nbsp;记住文件存放所在目录(老问题，目录路径不要有中文！！)
 
@@ -77,7 +77,7 @@ nvidia-smi #N卡驱动列表
 &nbsp;&nbsp;&nbsp;&nbsp;(安装失败教训：不要下载最新的CUDA-9.0，因为tensorflow-gpu的配置文件中需要的库文件还是CUDA-8.0提供的，比如：libcublas.so.8.0、libcurand.so.8.0等等文件，都是CUDA-8.0里面的）
 
 &nbsp;&nbsp;&nbsp;&nbsp;(官网的历史版本界面下载安装文件(https://developer.nvidia.com/cuda-80-ga2-download-archive)
-![CUDAToolkit](http://osaussnqu.bkt.clouddn.com/CUDAToolkit.png)
+![CUDAToolkit](https://store.skylinebin.com/CUDAToolkit.png)
 (下载得到cuda_8.0.61_375.26_linux.run 文件)
 与之前显卡驱动一样，进入文件目录
 ```

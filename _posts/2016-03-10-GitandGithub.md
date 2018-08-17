@@ -25,14 +25,14 @@ categories:
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Git 的安装就不说了，可以去 **[Git官网](https://git-scm.com/)**下载安装，截止整理修改的时间，版本是2.18.0，我记得后面 Github 需要2.16.0 之后的 Git 支持，以后可以找找相关资料补充进来。此外，看看 Git 官网的使用 Git 的企业，真的可以用功不可没来形容 Git 工具对科技公司发展中开发速度和管理效率提供的帮助了。  
 
-![Companies Using Git](http://osaussnqu.bkt.clouddn.com/image/git/GitCompanies.png)  
+![Companies Using Git](https://store.skylinebin.com/image/git/GitCompanies.png)  
 
 这里不提其他版本管理工具，下面是 Git 最基本的原理部分了。  
 
 
 下面这张图是 [图解Git](http://marklodato.github.io/visual-git-guide/index-zh-cn.html) 里面介绍 Git用法的一张图：  
 
-![Git基本原理](http://osaussnqu.bkt.clouddn.com/image/git/basic-git.svg)  
+![Git基本原理](https://store.skylinebin.com/image/git/basic-git.svg)  
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;版本控制，顾名思义，就是有一份文档或者一个项目有很多个版本，如何管理这里版本以及如何处理版本与版本之间的联系是个很重要的问题。Git里面使用的原理，我理解为 一种类似时间线的管理方式：四维空间里面时间是每时每刻都在动的，所以每个时刻也是唯一的，于是有了 History , 版本与版本之间是有区别的，不能每修改一个字符就切换一个版本吧，所以需要在时间线上打节点，每一个新版本都是基于上一个版本变化，所以使用暂存区域 Stage 来为整个项目中上一个版本打节点，只需要在 Working Directory 里面对比 Stage 里存储的上一个版本产生的变化。每次有了变化想要提交一个新版本，就要先把工作空间里的变化添加到 Stage 里，并且可以做好标记变化的东西是为了什么。如果想要同步到这条时间线上，就需要把 Stage 里的变化 提交到 History 里，并且成为 History 里面的一个版本。下一个版本就要基于这个版本来修改，这个是最简单的 Git 使用类比了。当然有了不同版本和标记，就可以有版本回退，有了一条时间线 就有了分支，还有在协同开发里有了线上仓库和本地仓库，多个不同的本地仓库分支相互同步，就可能产生冲突，也有了 merge 。这些都是应用基础。  
 
@@ -86,7 +86,7 @@ git push
 可以将 new-branch 上的内容同步到 主分支 master 上。  
 一个项目可以新建很多分支，用于记录完成不同的功能。如下图所示，每个分支都对应一小部分功能：  
 
-![git分支演示](http://osaussnqu.bkt.clouddn.com/image/git/GitBranch.png)  
+![git分支演示](https://store.skylinebin.com/image/git/GitBranch.png)  
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;上面基本就是经常使用的 Git 命令，上面图片是使用 [码云](https://gitee.com/) 完成的，当然经常使用的自然少不了 [Github](https://github.com/) ，自从 Github 被微软收购后，又不少人转用了 [GitLab](https://gitlab.com/)。  
 除此之外，安装官方Git后一般会默认安装 Git Bash， Git Bash 是类似 Terminal 的终端( 也像 Windows 里的 PowerShell ) 一般都使用它完成 git 项目的同步。 [小乌龟](https://tortoisegit.org/) 也很好用，Windows 版本会在 Git 项目文件夹上给出修改和未修改的标记，这个对核对文件很有帮助。  
@@ -98,7 +98,7 @@ git push
 
 这里还是推荐一下这个Chrome浏览器插件 [Octotree](https://github.com/buunguyen/octotree) ，可以在 Github 里不打开多级目录的情况下，看到项目文件结构,对于在大型项目里查阅单个文件夹或文件十分有帮助。  
 
-![Octotree演示](http://osaussnqu.bkt.clouddn.com/image/git/Octotree.png)  
+![Octotree演示](https://store.skylinebin.com/image/git/Octotree.png)  
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;此外，Github Pages 也为静态网页的实现提供了 方便快捷的服务，先在项目创建项目是就可以选择打开 Github Pages , 使开源项目的展示变得更直接，可以使用 CNAME 绑定域名，实现域名跳转，这个也是值得尝试的。  
 

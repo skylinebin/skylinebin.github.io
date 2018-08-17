@@ -43,7 +43,7 @@ twitter_text: 'MySQL使用及基础指令总结 '
  create database testbin;
 ```  
 
-![MySQL Databases](http://osaussnqu.bkt.clouddn.com/image/mysql/Databases.png)  
+![MySQL Databases](https://store.skylinebin.com/image/mysql/Databases.png)  
 
 - information_schma 数据库是主要存储了系统中的一些数据库对象信息，比如用户表信息，列信息，权限信息，字符集信息，分区信息等。  
 - mysql 数据库存储了系统的用户权限信息.  
@@ -137,7 +137,7 @@ twitter_text: 'MySQL使用及基础指令总结 '
 ```  
 得到结果：  
 
-![MySQL inset](http://osaussnqu.bkt.clouddn.com/image/mysql/DataInsertone.png)  
+![MySQL inset](https://store.skylinebin.com/image/mysql/DataInsertone.png)  
 其余未插入值得字段数据为空NULL  
 查询一张表中所有数据：  
 ```
@@ -148,7 +148,7 @@ insert语句可以一次性插入多条记录, **可节省网络开销，提高�
 ```
  insert into ems (ename,hiredate,sal,deptno) values ('john','2016-03-05','4000',3),('json','2015-06-09','5500',7),('Des','2016-02-15','5000',8);
 ```  
-![MySQL insert Many records](http://osaussnqu.bkt.clouddn.com/image/mysql/DataInsertMany.png)  
+![MySQL insert Many records](https://store.skylinebin.com/image/mysql/DataInsertMany.png)  
 
 #### 2.更新记录 
 更新已知 ename 的某一条数据中sal字段的值： 
@@ -165,7 +165,7 @@ insert语句可以一次性插入多条记录, **可节省网络开销，提高�
 ```
  delete from ems where ename='dony';
 ```  
-![MySQL条件删除](http://osaussnqu.bkt.clouddn.com/image/mysql/DataDeleteWhere.png)  
+![MySQL条件删除](https://store.skylinebin.com/image/mysql/DataDeleteWhere.png)  
 同样，delete语句也可以一次删除多条记录在多个表中,同时操纵删除多个表中符合条件的数据:  
 ```
  delete a,b from ems a,dept b where a.deptno=b.deptno and a.deptno=3;
@@ -176,7 +176,7 @@ select语法查询数据：
 ```
  select * from tablename [where condition]
 ```  
-![MySQL Data Select](http://osaussnqu.bkt.clouddn.com/image/mysql/DataSelect.png)  
+![MySQL Data Select](https://store.skylinebin.com/image/mysql/DataSelect.png)  
 "*" 代替了所有表字段 (select ename,hiredate,sal,deptno from ems)  
 
 #### 4.1 查询不重复的记录  
@@ -184,20 +184,20 @@ select语法查询数据：
 ```
  select distinct sal from ems;
 ```  
-![MySQL Data Select Distinct](http://osaussnqu.bkt.clouddn.com/image/mysql/DataSelectDistinct.png) 
+![MySQL Data Select Distinct](https://store.skylinebin.com/image/mysql/DataSelectDistinct.png) 
 
 #### 4.2 条件查询  
 使用关键字“where”实现条件查询:  
 ```
  select * from ems where sal=6000;
 ```  
-![MySQL Data Select Where](http://osaussnqu.bkt.clouddn.com/image/mysql/DataSelectWhere.png)  
+![MySQL Data Select Where](https://store.skylinebin.com/image/mysql/DataSelectWhere.png)  
 
 也可以使用多字段条件查询:  
 ```
  select * from ems where sal=6000 and deptno = 1;
 ```  
-![MySQL Data Select Where Multi](http://osaussnqu.bkt.clouddn.com/image/mysql/DataSelectWhereMulti.png)  
+![MySQL Data Select Where Multi](https://store.skylinebin.com/image/mysql/DataSelectWhereMulti.png)  
 
 #### 4.3 排序和限制  
 对数据库进行排序操作时，使用关键字 **“order by”** 来实现，其中 **desc** 是降序排列，**asc** 是升序排列，不说明情况下默认升序排列  
@@ -205,13 +205,13 @@ select语法查询数据：
 ```
  select * from ems order by sal;
 ```  
-![MySQL Data Order](http://osaussnqu.bkt.clouddn.com/image/mysql/DataSelectOrder.png)  
+![MySQL Data Order](https://store.skylinebin.com/image/mysql/DataSelectOrder.png)  
 先将员工按照员工编号进行排序，编号相同按照工资从高到低排序:  
 ```
  select * from ems order by deptno;
  select * from ems order by deptno, sal desc;
 ```  
-![MySQL Data Order By Multi](http://osaussnqu.bkt.clouddn.com/image/mysql/DataSelectOrderBy.png)  
+![MySQL Data Order By Multi](https://store.skylinebin.com/image/mysql/DataSelectOrderBy.png)  
 对排序后的记录，如果只想显示一部分，则可以使用关键字 **“LIMIT”**  
 语法如下：  
 ```
@@ -222,12 +222,12 @@ select语法查询数据：
 ```
  select * from ems order by sal desc limit 3;
 ```  
-![MySQL Data Order By Limit](http://osaussnqu.bkt.clouddn.com/image/mysql/DataSelectOrderByLimit.png)  
+![MySQL Data Order By Limit](https://store.skylinebin.com/image/mysql/DataSelectOrderByLimit.png)  
 如果从第二条记录开始的3条记录 就使用以下语句:  
 ```
  select * from ems order by sal desc limit 1,3;
 ```  
-![MySQL Data Order By Limit Range](http://osaussnqu.bkt.clouddn.com/image/mysql/DataSelectOrderByLimitMulti.png)  
+![MySQL Data Order By Limit Range](https://store.skylinebin.com/image/mysql/DataSelectOrderByLimitMulti.png)  
 
 > Tips: limit 经常和 order by 一起配合使用来进行记录的分页显示。  
 
@@ -252,28 +252,28 @@ select语法查询数据：
 ```
  select count(1) from ems;
 ```  
-![MySQL Data Count](http://osaussnqu.bkt.clouddn.com/image/mysql/DataSelectCount.png)  
+![MySQL Data Count](https://store.skylinebin.com/image/mysql/DataSelectCount.png)  
 在此基础上要统计各部门的人数：  
 ```
  select deptno,count(1) from ems group by deptno;
 ```  
-![MySQL Data Count](http://osaussnqu.bkt.clouddn.com/image/mysql/DataSelectCountGroup.png)  
+![MySQL Data Count](https://store.skylinebin.com/image/mysql/DataSelectCountGroup.png)  
 如果更细节一些，既要统计各部门员工人数，又要统计总人数 (使用 **with rollup** 进行 分类聚合 后再 汇总)：  
 ```
  select deptno,count(1) from ems group by deptno with rollup;
 ```  
-![MySQL Data Count](http://osaussnqu.bkt.clouddn.com/image/mysql/DataSelectCountGroupWith.png)  
+![MySQL Data Count](https://store.skylinebin.com/image/mysql/DataSelectCountGroupWith.png)  
 统计人数大于1人的部门：  
 ```
  select deptno,count(1) from ems group by deptno having count(1)>1;
 ```  
-![MySQL Data Count](http://osaussnqu.bkt.clouddn.com/image/mysql/DataSelectCountGroupHaving.png)  
+![MySQL Data Count](https://store.skylinebin.com/image/mysql/DataSelectCountGroupHaving.png)  
 
 统计公司所有员工的薪水总额，最高和最低薪水：  
 ```
  select sum(sal),max(sal),min(sal) from ems;
 ```  
-![MySQL Data Sum Max Min](http://osaussnqu.bkt.clouddn.com/image/mysql/DataSelectSumMax.png)  
+![MySQL Data Sum Max Min](https://store.skylinebin.com/image/mysql/DataSelectSumMax.png)  
 
 #### 4.5 表连接  
 当需要同时显示多个表中的字段时，就可以用表连接来实现这样的功能，表连接分为 **内连接** 和 **外连接**：  
@@ -287,7 +287,7 @@ select语法查询数据：
  select * from dept;
  select ename,deptname from ems,dept where ems.deptno = dept.deptno;
 ```  
-![MySQL Data Select From Multi Where Multi](http://osaussnqu.bkt.clouddn.com/image/mysql/DataSelectFromMultiWhereMulti.png)  
+![MySQL Data Select From Multi Where Multi](https://store.skylinebin.com/image/mysql/DataSelectFromMultiWhereMulti.png)  
 
 外连接又分为 **左连接** 和 **右连接** ：  
 - 左连接：包含所有的左边表中的记录甚至是右边表中没有和它匹配的记录。  
@@ -297,13 +297,13 @@ select语法查询数据：
 ```
  select ename,deptname from ems left join dept on ems.deptno = dept.deptno;
 ```  
-![MySQL Data Select From Left Join](http://osaussnqu.bkt.clouddn.com/image/mysql/DataSelectLeftJoin.png)  
+![MySQL Data Select From Left Join](https://store.skylinebin.com/image/mysql/DataSelectLeftJoin.png)  
 上图有用户没有对应的部门名称，但使用左连接能够全部查出来  
 同样，上面例子可以转换成 **右连接**：  
 ```
  select ename,deptname from dept right join ems on ems.deptno = dept.deptno;
 ```  
-![MySQL Data Select From Right Join](http://osaussnqu.bkt.clouddn.com/image/mysql/DataSelectRightJoin.png)  
+![MySQL Data Select From Right Join](https://store.skylinebin.com/image/mysql/DataSelectRightJoin.png)  
 
 #### 4.6 子查询  
 某些情况下，当进行查询时，需要的条件是从另一个select 语句的结果，此时就需要用到子查询。用于子查询的关键字主要包括 in、not in、=、！=、exists、 not exists 等。  
@@ -311,17 +311,17 @@ select语法查询数据：
 ```
  select * from ems where deptno in (select deptno from dept);
 ```  
-![MySQL Data Select Where In](http://osaussnqu.bkt.clouddn.com/image/mysql/DataSelectWhereIn.png)  
+![MySQL Data Select Where In](https://store.skylinebin.com/image/mysql/DataSelectWhereIn.png)  
 如果子查询记录数唯一，还可以用 = 代替 in：  
 ```
  select * from ems where deptno = (select deptno from dept limit 1);
 ```  
-![MySQL Data Select Where Same as](http://osaussnqu.bkt.clouddn.com/image/mysql/DataSelectWhereSameas.png)  
+![MySQL Data Select Where Same as](https://store.skylinebin.com/image/mysql/DataSelectWhereSameas.png)  
 某些情况下，<u>**子查询可以转化为表连接**</u>：  
 ```
  select ems.* from ems,dept where ems.deptno = dept.deptno;
 ```  
-![MySQL Data Select Where In change to Connect](http://osaussnqu.bkt.clouddn.com/image/mysql/DataSelectWhereInandConnect.png)  
+![MySQL Data Select Where In change to Connect](https://store.skylinebin.com/image/mysql/DataSelectWhereInandConnect.png)  
 
 #### 4.7 记录联合  
 将两个表的数据按一定的查询条件查询出来后，将结果合并到一起显示出来，可以使用关键字 union 和 union all 来实现功能，具体的语法有:  
@@ -336,14 +336,14 @@ select语法查询数据：
     -> select deptno from dept;
 ```  
 使用 union all 得到:  
-![MySQL Data Select Union All](http://osaussnqu.bkt.clouddn.com/image/mysql/DataSelectUnionAll.png)  
+![MySQL Data Select Union All](https://store.skylinebin.com/image/mysql/DataSelectUnionAll.png)  
 使用 union 可以 **去掉重复记录**:  
 ```
  mysql> select deptno from ems
     -> union
     -> select deptno from dept;
 ```  
-![MySQL Data Select Union](http://osaussnqu.bkt.clouddn.com/image/mysql/DataSelectUnion.png)  
+![MySQL Data Select Union](https://store.skylinebin.com/image/mysql/DataSelectUnion.png)  
 
 ***  
 
@@ -365,27 +365,27 @@ DCL语句主要是DBA用来管理系统中的对象权限时使用的语句，�
 ```
  mysql> ? contents
 ```  
-![MySQL Help Contents](http://osaussnqu.bkt.clouddn.com/image/mysql/DataMySQLContent.png)  
+![MySQL Help Contents](https://store.skylinebin.com/image/mysql/DataMySQLContent.png)  
 可以使用 " **? 类别名称** " 来针对感兴趣的内容详细查看：  
 ```
  mysql> ? data types
 ```  
-![MySQL Help Data Types](http://osaussnqu.bkt.clouddn.com/image/mysql/DataMySQLDataType.png)  
+![MySQL Help Data Types](https://store.skylinebin.com/image/mysql/DataMySQLDataType.png)  
 例如 int 类型：  
 ```
  mysql> ? int
 ```  
-![MySQL Help Data Type int](http://osaussnqu.bkt.clouddn.com/image/mysql/DataMySQLDataTypeInt.png)  
+![MySQL Help Data Type int](https://store.skylinebin.com/image/mysql/DataMySQLDataTypeInt.png)  
 可以使用 " **show** " 快速查阅指令或者语法语句:  
 ```
  mysql> ? show
 ```  
-![MySQL Help Show Data](http://osaussnqu.bkt.clouddn.com/image/mysql/DataMySQLShow.png)  
+![MySQL Help Show Data](https://store.skylinebin.com/image/mysql/DataMySQLShow.png)  
 也可查看语法操作，会给出示例:  
 ```
  mysql> ? create table
 ```  
-![MySQL Help Show Data Grammar](http://osaussnqu.bkt.clouddn.com/image/mysql/DataMySQLGrammar.png)  
+![MySQL Help Show Data Grammar](https://store.skylinebin.com/image/mysql/DataMySQLGrammar.png)  
 
 常用相关网络资源：  
 - http://dev.mysql.com/downloads MySQL官方网站，可下载各版本的MySQL  
@@ -406,8 +406,8 @@ DCL语句主要是DBA用来管理系统中的对象权限时使用的语句，�
  mysql> use information_schema;
  mysql> show tables;
 ```  
-![MySQL Databases](http://osaussnqu.bkt.clouddn.com/image/mysql/Databases.png)  
-![MySQL Databases information_schema](http://osaussnqu.bkt.clouddn.com/image/mysql/DatabasesInformationSchema.png)  
+![MySQL Databases](https://store.skylinebin.com/image/mysql/Databases.png)  
+![MySQL Databases information_schema](https://store.skylinebin.com/image/mysql/DatabasesInformationSchema.png)  
 这些使用show查出来的表并不是实际存在的物理表，而全部是视图。  
 ```
  mysql> use information_schema;
@@ -415,17 +415,17 @@ DCL语句主要是DBA用来管理系统中的对象权限时使用的语句，�
  mysql> select * from TABLES;
 ```  
 这里查询 information_schema 数据库中的TABLES表，<u>表中存放的是数据库中所有表的信息</u> (大概有很多)  
-![MySQL information_schema Tables](http://osaussnqu.bkt.clouddn.com/image/mysql/DatabasesInformationSchemaTables.png)  
+![MySQL information_schema Tables](https://store.skylinebin.com/image/mysql/DatabasesInformationSchemaTables.png)  
 
 information_schema 数据库中的 **SCHEMATA表**，存放的是所有数据库的信息，"show databases;"指令的结果取自SCHEMATA表。  
 ```
  mysql> select * from SCHEMATA;
 ```  
-![MySQL information_schema Tables SCHEMATA](http://osaussnqu.bkt.clouddn.com/image/mysql/DatabasesInformationSchemaTableSCHEMATA.png)  
+![MySQL information_schema Tables SCHEMATA](https://store.skylinebin.com/image/mysql/DatabasesInformationSchemaTableSCHEMATA.png)  
 还有COLUMNS表提供表的列信息，**STATISTICS表** 提供关于表 **索引** 的信息等等。  
 
 MySQL数据库在 日常网站中用的很多，在存储用户信息时，很多都是要加密的，这里只放一张某一网站用户信息的数据流：  
-![Website User Datalines](http://osaussnqu.bkt.clouddn.com/image/mysql/DatabasesDataLine.png)
+![Website User Datalines](https://store.skylinebin.com/image/mysql/DatabasesDataLine.png)
 
 ***  
 

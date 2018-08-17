@@ -17,7 +17,7 @@ twitter_text: 'Chating somthing about this new life'
 <embed src="//music.163.com/style/swf/widget.swf?sid=444312&type=2&auto=1&width=320&height=66" width="380" height="96"  allowNetworking="all">
 </div>
 ## 关于开学这段时间的一些想法
-![The Sunshine outside our class](http://osaussnqu.bkt.clouddn.com/Sunshineflow.jpg)
+![The Sunshine outside our class](https://store.skylinebin.com/Sunshineflow.jpg)
 &nbsp;&nbsp;&nbsp;&nbsp;之前一直想要写一篇大学本科四年的总结，却一直拖着，迟迟没有完工，错过了写总结的最佳时间，果然还是有些尴尬。时间久了，对曾经经历的或多或少会有一些不同的看法。一方面是因为相同的经历再次出现了，另一种是心境变了，从旁观者变为参与者，思考的时间少了，也不会在遵循过去的想法来评判事情了。
 
     在一个小圈子待久了，会变得目光短浅，会在小事上固执呆板，会为自己找不自在。
@@ -32,7 +32,7 @@ twitter_text: 'Chating somthing about this new life'
 
 
 ## 关于九型人格的分析
-![My feature](http://osaussnqu.bkt.clouddn.com/NineKinds.jpg)
+![My feature](https://store.skylinebin.com/NineKinds.jpg)
 
 &nbsp;&nbsp;&nbsp;&nbsp;投入一些，总是能让自己感悟或者总结一些东西。在自己还属于叛逆期的年纪，通常是不大相信一些人格划分的理论的，也许大概当时的人格还未真正形成，更可能是不愿意那么轻易就把自己分类出去，或许当时还认为自己还很特别。现在，应该说更理性了，也愿意相信每个人的人格是可以划分的了，于是遇到了“婚恋职场人格”，虽说只是一节公共选修课，但它却是提供了一次了解自己的机会了。
 

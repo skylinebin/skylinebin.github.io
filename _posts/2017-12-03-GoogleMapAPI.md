@@ -17,7 +17,7 @@ twitter_text: 'Some tips about GoogleMap API'
 # GoogleMap API 学习
 
 前提：在GoogleAPI开发者中心（https://console.developers.google.com/project）有创建过项目，在库中添加启用Google Maps JavaScript API，在凭据中获取密钥，并设置密钥的访问规则，完成以上工作后，才会有使用GoogleMapAPI的key，才能在页面中使用GoogleMap显示功能。
-![MyGoogleMapAPIKey](http://osaussnqu.bkt.clouddn.com/image/blog/GoogleMapGoogleMapKey.png)
+![MyGoogleMapAPIKey](https://store.skylinebin.com/image/blog/GoogleMapGoogleMapKey.png)
 
 
 使用获得的官方key的方式只需要引入外部js一样，引入script标签。
@@ -53,7 +53,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
 
 ```
 以上代码运行结果如下图所示：
-![LittleGoogleMapDemo](http://osaussnqu.bkt.clouddn.com/image/blog/GoogleMapNYTU.png)
+![LittleGoogleMapDemo](https://store.skylinebin.com/image/blog/GoogleMapNYTU.png)
 
 上图选取的地点是Nanyang Technological University（南洋理工大学），放大的倍数是13，显示的模式是街道模式，有了官方的key之后，调用起来很方便。
 
@@ -140,7 +140,7 @@ var mapProp = {
 * 有自然特征的地图（google.maps.MapTypeId.TERRAIN）
 
 四种显示类型对比如下图所示：
-![Four kinds of MapType](http://osaussnqu.bkt.clouddn.com/image/blog/GoogleMapNanYang.png)
+![Four kinds of MapType](https://store.skylinebin.com/image/blog/GoogleMapNanYang.png)
 
 在需要显示地图页面中创建一个id为googleMap的DOM，用于存放显示地图
 ```html
@@ -185,4 +185,4 @@ google.maps.event.addDomListener(window, 'load', initialize);
 今年八月的时候，我测试这个API的时候还不用科学上网，但是四个月过后的今天，获取API认证的时候，居然访问不了了，真的很心痛啊！封闭导致自嗨，自嗨导致自大，自大导致落后！惊人的相似！
 
 GoogleMap API的资源加载如下图所示：
-![LoadingGoogleMapResource](http://osaussnqu.bkt.clouddn.com/image/blog/GoogleMaptestNetwork.png)
+![LoadingGoogleMapResource](https://store.skylinebin.com/image/blog/GoogleMaptestNetwork.png)

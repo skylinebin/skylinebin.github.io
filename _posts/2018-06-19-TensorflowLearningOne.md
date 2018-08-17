@@ -2,7 +2,7 @@
 layout: post
 title:  "Tensorflow系列--(一)基本概念与操作"
 date:   2018-06-19 16:51:31
-image: 'http://osaussnqu.bkt.clouddn.com/TensorflowLearning/tensorflow.png'
+image: 'https://store.skylinebin.com/TensorflowLearning/tensorflow.png'
 description: 'Basic skills in MachineLearning'
 tags:
 - Ubuntu
