@@ -24,21 +24,21 @@
     </ul>
 
     <div class="pagination">
-        <a href="/pagelist/" class="previous">Index</a>
+        <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
+        <a href="/pagelist/" class="previous">Home</a>
         {% if paginator.previous_page %}
             {% if paginator.previous_page == 1 %}
                 <a href="/pagelist/" class="previous">Previous</a>
             {% else %}
-            <a href="/pagelist/page{{ paginator.previous_page }}" class="previous">Previous</a>
+                <a href="/pagelist/page{{ paginator.previous_page }}" class="previous">Previous</a>
             {% endif %}
         {% else %}
-        <span class="previous">Previous</span>
+            <span class="previous">Previous</span>
         {% endif %}
-        <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
         {% if paginator.next_page %}
-        <a href="/pagelist/page{{ paginator.next_page }}" class="next">Next</a>
+            <a href="/pagelist/page{{ paginator.next_page }}" class="next">Next</a>
         {% else %}
-        <span class="next ">Next</span>
+            <span class="next ">Next</span>
         {% endif %}
     </div>
 
