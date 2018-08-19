@@ -1,6 +1,7 @@
 <div class="after-post">
-
-    <h3>All My Posts</h3>
+<h3>
+    <a href="/pagelist/">All My Posts</a>
+</h3>
 
     <!-- {% for post in site.posts %}
 
@@ -20,17 +21,30 @@
             {% if post.title != null %} 
              {% if group == null or group == post.group %}
         <li>
-            <a title="Post's my title" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}
+            <a title="{{ post.title }}" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}
                 <span class="entry-date">
                     <time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%B %d, %Y" }}</time>
             </a>
         </li>
                 {% endif %} 
             {% endif %} 
+
         {% endfor %} 
         {% assign pages_list = nil %}
      {% assign group = nil %}
     </ul>
 {% endfor %}
+
+
+
+<!-- 按标签分类列表 -->
+<!-- <h4>分类列表</h4>
+<hr> 
+{% for category in site.tags %}
+<li class="category_list_item">
+    <a href="/showCategory.html?categoryName={{ category | first }}">{{ category | first }}</a> ({{ category | last | size }})
+</li>
+{% endfor %} -->
+
 
 </div>

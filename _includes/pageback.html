@@ -1,0 +1,47 @@
+<!-- 分页链接 -->
+<div class="after-post">
+
+<h3>
+<a href="/posts/">All My Posts</a>
+</h3>
+
+
+    <ul class="post-list">
+
+        {% for post in paginator.posts %}
+            {% if post.title != null %}
+                {% if group == null or group == post.group %}
+                <li>
+                    <a title="{{ post.title }}" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}
+                        <span class="entry-date">
+                            <time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%B %d, %Y" }}</time>
+                    </a>
+                </li>
+                {% endif %}
+            {% endif %}
+        {% endfor %}
+        {% assign group = nil %}
+    </ul>
+
+    <div class="pagination">
+        <a href="/pagelist/" class="previous">Index</a>
+        {% if paginator.previous_page %}
+            {% if paginator.previous_page == 1 %}
+                <a href="/pagelist/" class="previous">Previous</a>
+            {% else %}
+            <a href="/pagelist/page{{ paginator.previous_page }}" class="previous">Previous</a>
+            {% endif %}
+        {% else %}
+        <span class="previous">Previous</span>
+        {% endif %}
+        <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
+        {% if paginator.next_page %}
+        <a href="/pagelist/page{{ paginator.next_page }}" class="next">Next</a>
+        {% else %}
+        <span class="next ">Next</span>
+        {% endif %}
+    </div>
+
+
+</div>
+

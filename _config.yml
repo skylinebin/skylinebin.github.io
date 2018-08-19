@@ -19,6 +19,11 @@ qq_id: "346821296"
 markdown: kramdown
 highlighter: rouge
 permalink: /:title/
+plugins: [jekyll-paginate]
+
+# start paginate
+paginate: 10
+paginate_path: "pagelist/page:num"
 
 
 # html minify
@@ -33,7 +38,7 @@ links:
   - title: home
     url: /
   - title: my posts
-    url: /posts
+    url: /pagelist/
   - title: series
     url: /series
   - title: tags
