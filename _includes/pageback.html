@@ -25,6 +25,8 @@
 
     <div class="pagination">
         <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
+        <br>
+        <br>
         <a href="/pagelist/" class="previous">Home</a>
         {% if paginator.previous_page %}
             {% if paginator.previous_page == 1 %}
@@ -40,6 +42,7 @@
         {% else %}
             <span class="next ">Next</span>
         {% endif %}
+            <hr>
     </div>
 
 
