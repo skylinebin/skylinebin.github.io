@@ -25,7 +25,8 @@ var isEven = function (x) {
 }
 
 var numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
-```
+```  
+
 
 #### 通用JavaScript  
 在原生 JS 中，可以使用函数如下：  
@@ -207,7 +208,8 @@ ES6 的新特性以及 map()，filter() 和 reduce() 在函数式编程中的应
 
 
 ### 参考文献  
- Learning JavaScript Data Structures and Algorithms (Second Edition)   
+
+ [Learning JavaScript Data Structures and Algorithms (Second Edition)   ](https://www.amazon.cn/dp/B075KZGM8Z/ref=sr_1_1?s=books&ie=UTF8&qid=1534774090&sr=1-1&keywords=%E5%AD%A6%E4%B9%A0+JavaScript+%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95)
 
 
 
