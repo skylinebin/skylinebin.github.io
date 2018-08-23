@@ -6,6 +6,15 @@
 <title>404NotFound</title>
 
 <style>
+body {
+ margin: 0px 0px;
+ padding: 0px 0px;
+}
+
+.contents {
+	margin: 0px 0px;
+}
+
 div.showmen{
 	margin: 100px auto;
 	width: 800px;
@@ -16,6 +25,8 @@ div.showtext{
 	margin: 0px auto;
 	/*font-size: 24px;*/
 	text-align: center;
+	height: 100px;
+	line-height: 100px;
 	/*background-color:#e9686b;*/
 	background-color:#5d4d7a;
 }
@@ -26,7 +37,7 @@ img:nth-child(2){
 	animation: b 1000s;
 	transform-origin:top center;
 }
-#errorfound {
+.errorfound {
 /*	position: absolute;
 	top: 80px;
 	left: 100px;
@@ -35,6 +46,15 @@ img:nth-child(2){
 	font-size: 24px;
 	text-align: center;
 	color: #fff;
+}
+.backtomyindex {
+ font-size: 24px; 
+ text-align: center;
+ color: #fff;
+}
+
+.tomyhome {
+	color: beige;
 }
 
 @keyframes a{
@@ -53,19 +73,19 @@ img:nth-child(2){
 
 </head>
 <body>
-<div class="showtext">
-	<span id="errorfound">404Error!!&nbsp;&nbsp;&nbsp;Nothing was Found!</span>
-</div>
-<div class="showmen">
-	<img src="images/fsw.png">
-	<img src="images/boy.png">
-<!-- 	<img src="images/girl.png">
-	<img src="images/shamegirl.png"> -->
-</div>
+	<div class="contents">
+		<div class="showtext">
+			<span class="errorfound">404Error!!&nbsp;&nbsp;&nbsp;Nothing was Found!</span>
+			<span class="backtomyindex">&nbsp;&nbsp;&nbsp;Back to my <a class="tomyhome" href="https://skylinebin.com">home</a>~</span>
+		</div>
+		<div class="showmen">
+			<img src="https://store.skylinebin.com/404/fsw.png">
+			<img src="https://store.skylinebin.com/404/boy.png">
+		</div>
 
-<div style="text-align:center;clear:both">
-<script src="/gg_bd_ad_720x90.js" type="text/javascript"></script>
-<script src="/follow.js" type="text/javascript"></script>
-</div>
+		<div style="text-align:center;clear:both">
+		</div>
+	</div>
+	<script src="https://store.skylinebin.com/forwebsite/js/myconsole.js"></script>
 </body>
 </html>
