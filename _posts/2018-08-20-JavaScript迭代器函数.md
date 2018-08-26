@@ -2,8 +2,8 @@
 layout: post
 title:  "迭代器函数与函数式编程"
 date:   2018-08-20 19:40:31
-image: 'https://store.skylinebin.com/TensorflowLearning/tensorflow.png'
-description: 'Basic knowledge of deep reinforcement learning'
+image: 'https://store.skylinebin.com/JavaScript.png'
+description: 'Basic knowledge of JavaScript'
 tags:
 - JavaScript
 - FrontEnd
