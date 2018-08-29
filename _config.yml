@@ -19,7 +19,7 @@ qq_id: "346821296"
 markdown: kramdown
 highlighter: rouge
 permalink: /:title/
-plugins: [jekyll-paginate]
+plugins: [jekyll-paginate, jekyll-pwa-plugin]
 
 # start paginate
 paginate: 10
@@ -58,3 +58,18 @@ projects:
     url: https://github.com/skylinebin/AlgorithmPractice
 # exclude my node related stuff
 exclude: ['package.json', 'src', 'node_modules']
+
+# add pwa configuration  
+pwa:
+  sw_src_filepath: service-worker.js # Optional
+  sw_dest_filename: service-worker.js # Optional
+  dest_js_directory: assets/js # Required
+  precache_recent_posts_num: 5 # Optional
+  precache_glob_directory: / # Optional
+  precache_glob_patterns: # Optional
+    - "{js,css,fonts}/**/*.{js,css,eot,svg,ttf,woff}"
+    - index.html
+  precache_glob_ignores: # Optional
+    - sw-register.js
+    - "fonts/**/*"
+
