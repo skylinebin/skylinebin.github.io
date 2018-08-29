@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>skylinebin - Full Stack Learner</title>
+    <description>A blog about skylinebin ...</description>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Wed, 29 Aug 2018 16:40:58 +0800</pubDate>
+    <lastBuildDate>Wed, 29 Aug 2018 16:40:58 +0800</lastBuildDate>
+    <generator>Jekyll v3.8.3</generator>
+    
+      <item>
+        <title>这个夏天的节点</title>
+        <description>&lt;p&gt;      时间总是很快，每天九点前去实验室，十点后回宿舍，十二点左右躺下，一点半睡着，习惯一旦养成就不容易改变了。一下子这个夏天又没有了。&lt;br /&gt;       在六月的时候，想过一个今年夏天大概的计划，就现在来看，只完成了不到 2/3 。我有时候想，是不是真的对自己要求太高了，还是因为没有足够的动力支撑自己来完成这些计划。不过就算如此，还是有一些东西是可以被记录下来，打个节点，然后继续前行吧。&lt;/p&gt; &lt;h3 id=&quot;技术这条路&quot;&gt;技术这条路&lt;/h3&gt; &lt;p&gt;      大概从六月份开始，实验室的学长学姐陆续开始准备简历，为工作做准备。那个时候我就想过，一年后自己会怎么样，能不能让自己多一些选择，自己以后的职业发展又有哪些可能呢。单从这方面来看，其实我是一直都比较慌的，因为一直觉得自己比其他同学少很多退路，所以只能让前面多几条路。不是找借口或者找理由，在技术发展上，其实是可以有比较多的选择的，无论是后端还是前端，真的只是看自己的想法。我知道，大概自己潜意识还是会选择少数人走的那一种，一条路走到黑吧~&lt;br /&gt;       自己一个人做一件事情果然会比一个团队慢很多，先来说说自己一个人做的事情，因为小团队的方向也是自己在把握，再一次体会到管理人员的心酸了，特别是管理技术团队，还是没有产品经理。&lt;br /&gt; 这个夏天自己学会的东西：&lt;/p&gt; &lt;ul&gt; &lt;li&gt;知道了企业前端开发的简易流程；&lt;/li&gt; &lt;li&gt;系统地学习了一遍 &lt;strong&gt;Vue.js&lt;/strong&gt;；&lt;/li&gt; &lt;li&gt;会使用 npm 和 &lt;strong&gt;webpack&lt;/strong&gt; 开发了前端项目，并且慢慢习惯了这种模式；&lt;/li&gt; &lt;li&gt;学习了一部分 &lt;strong&gt;ES6&lt;/strong&gt; 的特性并用到了实际工程中；&lt;/li&gt; &lt;li&gt;对 &lt;strong&gt;云服务器&lt;/strong&gt; 和对象存储的运用更加熟练；&lt;/li&gt; &lt;li&gt;基本掌握了微信小程序的开发流程；&lt;/li&gt; &lt;li&gt;基本掌握了初级的 &lt;strong&gt;Node.js&lt;/strong&gt; 后台接口的开发；&lt;/li&gt; &lt;li&gt;MongoDB 数据库从入门到熟练了，可以写复杂的查询语句了；&lt;/li&gt; &lt;li&gt;对项目产品的生命周期有了进一步的认识，也能够做基础的项目部署和上线的工作；&lt;/li&gt; &lt;li&gt;很多次认识到基础的重要性；&lt;/li&gt; &lt;li&gt;开始学习 &lt;strong&gt;算法&lt;/strong&gt;，慢慢注重 &lt;strong&gt;性能&lt;/strong&gt;。&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;      除去在这个博客花费的精力之外，其他的好像也不能并入技术这条路里面。以上的几条我应该都会写对应的拓展或者在后面详细说明。再一次体会到，有些东西是你早晚都要了解的，但你可以选择什么时候去了解，多了一种选择会让自己多一份自由和满足。上面学会的东西有一部分是应用到实际项目中的。整理完小团队做的东西，余下的我会继续补充。&lt;/p&gt; &lt;p&gt;这个夏天带领小团队做的东西：&lt;/p&gt; &lt;ul&gt; &lt;li&gt;&lt;strong&gt;动态适配的思路，跟随数据的思想&lt;/strong&gt;。需要实现什么功能就必须明白数据的输入是什么，为适配各种可能的数据输入，只能做动态的适配。可以修改数据，但必须满足所有可能的有效数据。这一点，似乎和 测试算法的算例不谋而合，这是我对团队成员的要求，也是对自己的要求。&lt;/li&gt; &lt;li&gt;&lt;strong&gt;微信小程序项目&lt;/strong&gt;，这个是我一直想了解和实现的。最终在小程序的页面开发里面我只是用一下午的时间做了一个页面开头的事情，但小程序的开发显然不仅仅只有页面，对应的后台，依赖网络的有效域名请求，开发与测试的管理，可以说参与的也不少了。实现的只是一个简单管理功能的微信小程序，也算五脏俱全了。小程序对应的后台是我自己独立完成的，使用的是 &lt;strong&gt;Node.js + MongoDB&lt;/strong&gt;，是用 &lt;strong&gt;Nginx&lt;/strong&gt; 和 &lt;strong&gt;pm2&lt;/strong&gt; 部署在腾讯云服务器上，域名是用的我的一个二级域名做映射，匹配了 https 和 http。拆解小程序的开发来看，它真的可以算是前端的一种形式，简直像是一个拆开的 Vue.js ，形式也像 React.js 。所以，学完才发现前端本质大概都是一个东西啊。&lt;/li&gt; &lt;li&gt;&lt;strong&gt;一个完整的 Vue 项目&lt;/strong&gt;，准确来说是一个基于 Github 模版更改到具体功能的 Vue.js 项目，包含的技术是 &lt;strong&gt;vue + webpack + vue-router + veux + element-ui + axios + mock&lt;/strong&gt; 。虽然实现的功能是管理系统，至少知道如何解决遇到的问题。后台对应的是 &lt;strong&gt;java + MongoDB&lt;/strong&gt;，这个项目的前端和后端的技术路线是我确定的，和小程序共用的一套数据库。其实本来只需要一套后台的，基于让自己练手和团队内的成员技术更新的目的，大部分代码不是我亲自写的，我负责的是解决关键问题和技术方向的把握，尽量做到项目的可控，因为是项目的负责人。这个项目的部署是我一直很上心的，因为我之前一直想弄清楚前后端分离开后，真正需要上线的时候是如何做到匹配的，在六月的时候我就把 &lt;strong&gt;webpack + tomcat&lt;/strong&gt; 作为一个难题，现在想想，当时自己是没有把握技术真相啊，枉费自己考过一遍网络工程师。对跨域的本质和网络传输原理还是要重视，总结起来就是三点：代理，映射，重定向。另外就是开发环境和生产环境的区分。单页应用的好处真的很明显，编译过的 js 文件不会暴露很多东西，现在来看 jsp 开发过程中前端完全暴露地跳转确实有点儿恐怖。&lt;/li&gt; &lt;li&gt;&lt;strong&gt;一套展示型的系统&lt;/strong&gt;，这个项目是最终产品是实验室的网站。之前做的项目一直是管理系统，我一直好奇那些展示型的网站每次数据更新是如何实现的，所以在技术选择上，我制定的是 展示型的门户页面 + 管理系统。管理系统是用于数据管理和分析的，附带有后台与数据库。门户页面的数据来源于后台数据接口。所以每次更新只需要对管理系统数据进行操作。因为这三个项目基本是属于并行开发，当时的 Vue 技术还不算成熟，这个项目前端使用的是 &lt;strong&gt;jQuery + bootstrap&lt;/strong&gt;，后端用的...</description>
+        <pubDate>Sat, 25 Aug 2018 22:50:32 +0800</pubDate>
+        <link>http://localhost:4000/SummaryThisSummer/</link>
+        <guid isPermaLink="true">http://localhost:4000/SummaryThisSummer/</guid>
+        
+        <category>Life</category>
+        
+        <category>Summary</category>
+        
+        <category>Work</category>
+        
+        <category>Point</category>
+        
+        
+        <category>SkylineBin</category>
+        
+      </item>
+    
+      <item>
+        <title>迭代器函数与函数式编程</title>
+        <description>&lt;h2 id=&quot;javascript-迭代器函数-与-函数式编程&quot;&gt;JavaScript 迭代器函数 与 函数式编程&lt;/h2&gt; &lt;h3 id=&quot;javascript-迭代器函数&quot;&gt;JavaScript 迭代器函数&lt;/h3&gt; &lt;p&gt;当我们需要迭代数组中的元素时，一般可以用循环语句来处理，比如 for 循环语句。除此之外，JavaScript 内置了许多数组可用的迭代方法。&lt;br /&gt; 本文使用测试例子包括了数组和函数。假定数组是1~15的整数数组，函数是判定数组元素是否可被2整除，若整除函数返回为 true，否则返回 false。&lt;/p&gt; &lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;isEven&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;?&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;numbers&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;7&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;9&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;...</description>
+        <pubDate>Tue, 21 Aug 2018 03:40:31 +0800</pubDate>
+        <link>http://localhost:4000/JavaScript%E8%BF%AD%E4%BB%A3%E5%99%A8%E5%87%BD%E6%95%B0/</link>
+        <guid isPermaLink="true">http://localhost:4000/JavaScript%E8%BF%AD%E4%BB%A3%E5%99%A8%E5%87%BD%E6%95%B0/</guid>
+        
+        <category>JavaScript</category>
+        
+        <category>FrontEnd</category>
+        
+        <category>CODE</category>
+        
+        
+        <category>SkylineBin</category>
+        
+      </item>
+    
+      <item>
+        <title>MySQL相关基础</title>
+        <description>&lt;h2 id=&quot;背景&quot;&gt;背景&lt;/h2&gt; &lt;p&gt;      从最开始接触到 MySQL 到现在至少有三年了，一只把它当作工具用，虽然上过相关课程，但也并没有对其运行原理和优化事项理解的很清楚，只是在有数据存储需求时考虑到使用 MySQL 会比用 Oracle 方便。距离上一次系统地学习 MySQL 也差不多有半年了，这篇文章主要是上次系统地学习 MySQL (使用 网易唐汉明出的《深入浅出 MySQL 数据库开发、优化与管理维护》)里面的 SQL基础部分记的笔记。当时学习的时候是自己建数据库，所有指令都自己对照修改执行了一遍，现在来总结一下，也当作是复习吧。这篇文章是基础，后面应该会总结 MySQL 使用过程中遇到的问题以及对应的解决方案，和 MySQL 的高级应用。&lt;/p&gt; &lt;blockquote&gt; &lt;p&gt;本文所有 sql 语句 都是在 Windows10 的 cmd 以管理员模式 执行以下指令得到的结果&lt;br /&gt; mysql -u root -p&lt;/p&gt; &lt;/blockquote&gt; &lt;h2 id=&quot;sql语句分类&quot;&gt;SQL语句分类&lt;/h2&gt; &lt;p&gt;      一般 SQL 语句可分为三种：DDL语句、DML语句 和 DCL语句，这三种语句的区别如下：&lt;/p&gt; &lt;ul&gt; &lt;li&gt;&lt;strong&gt;DDL（Data Definition Languages）&lt;/strong&gt;：&lt;em&gt;数据定义语言&lt;/em&gt;，用来定义不同的数据段、数据库、表、列、索引等数据库对象。常用关键字主要有：create、drop、alter等。&lt;/li&gt; &lt;li&gt;&lt;strong&gt;DML(Data Manipulation Language)&lt;/strong&gt;：&lt;em&gt;数据操纵语句&lt;/em&gt;，用于添加、删除、更新和查询数据库记录，并检查数据完整性。常用关键字主要包括：insert、delete、update和select等。&lt;/li&gt; &lt;li&gt;&lt;strong&gt;DCL(Data Control Language)&lt;/strong&gt;：&lt;em&gt;数据控制语句&lt;/em&gt;，用于控制不同数据段直接的许可和访问级别的语句(访问权限和安全级别)。主要关键字有：grant、revoke等。&lt;/li&gt; &lt;/ul&gt; &lt;hr /&gt; &lt;p&gt;&lt;br /&gt;&lt;/p&gt; &lt;h3 id=&quot;一ddl语句&quot;&gt;一、DDL语句&lt;/h3&gt; &lt;h4 id=&quot;1创建数据库&quot;&gt;1.创建数据库&lt;/h4&gt; &lt;p&gt;查询所有数据库：&lt;/p&gt; &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; show databases; &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt; &lt;p&gt;创建数据库:&lt;/p&gt; &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; create database testbin; &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt; &lt;p&gt;&lt;img src=&quot;https://store.skylinebin.com/image/mysql/Databases.png&quot; alt=&quot;MySQL Databases&quot; /&gt;&lt;/p&gt; &lt;ul&gt; &lt;li&gt;information_schma 数据库是主要存储了系统中的一些数据库对象信息，比如用户表信息，列信息，权限信息，字符集信息，分区信息等。&lt;/li&gt; &lt;li&gt;mysql 数据库存储了系统的用户权限信息.&lt;/li&gt; &lt;li&gt;test 和 cluster 数据库分别是测试数据库 和系统集群信息的数据de库.可惜这里的数据库没有。&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;选择数据库：&lt;/p&gt; &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre...</description>
+        <pubDate>Mon, 13 Aug 2018 06:02:31 +0800</pubDate>
+        <link>http://localhost:4000/MySQLDevelop/</link>
+        <guid isPermaLink="true">http://localhost:4000/MySQLDevelop/</guid>
+        
+        <category>MySQL</category>
+        
+        <category>Database</category>
+        
+        <category>System</category>
+        
+        <category>BackEnd</category>
+        
+        
+        <category>SkylineBin</category>
+        
+      </item>
+    
+      <item>
+        <title>MongoDB与Node.js相关应用</title>
+        <description>&lt;p&gt;      最近使用 Node.js + MongoDB 为一个预约管理系统写了一些后台和数据库，遇到了挺多问题，借此记录一下解决的问题以及 MongoDB 常用的注意事项。所涉及的源码，等整理后再放在 Github 上。&lt;/p&gt; &lt;h2 id=&quot;mongodb数据库的安装与创建&quot;&gt;MongoDB数据库的安装与创建&lt;/h2&gt; &lt;p&gt;      项目部署在 Ubuntu 系统中，使用 node.js 里的 pm2 发布和 nginx 映射。所以简要提一下安装 MongoDB 和配置的过程。在 Ubuntu 系统中安装配置MongoDB:&lt;/p&gt; &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt-get install mongodb-server mongodb -y sudo mongod --version sudo mongo --version &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt; &lt;p&gt;安装好 MongoDB 数据库的服务端，并查看版本，指定数据存储和日志存储 log 的路径：&lt;/p&gt; &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo mkdir -p /data/mongodb sudo mkdir -p /data/logs/mongodb sudo mongod --fork --dbpath /data/mongodb --logpath /data/logs/mongodb/webapp.log // 启动 mongodb 数据库服务 netstat -ltp | grep 27017 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt; &lt;p&gt;通过 netstat 检查 mongodb 是否启动成功，27017端口是否在监听。启动成功后，可以创建数据库并创建账户了，使用以下指令：&lt;/p&gt; &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo mongo // 打开 MongoDB 命令行连接 &amp;gt; use project; &amp;gt; db.createUser({ user: 'app', pwd: 'admin', roles: ['dbAdmin', 'readWrite']}); &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;...</description>
+        <pubDate>Thu, 26 Jul 2018 07:30:31 +0800</pubDate>
+        <link>http://localhost:4000/MongoDBandNodejs/</link>
+        <guid isPermaLink="true">http://localhost:4000/MongoDBandNodejs/</guid>
+        
+        <category>MongoDB</category>
+        
+        <category>Database</category>
+        
+        <category>Nodejs</category>
+        
+        <category>BackEnd</category>
+        
+        
+        <category>SkylineBin</category>
+        
+      </item>
+    
+      <item>
+        <title>Tensorflow系列--(二)常用激励函数及其比较</title>
+        <description>&lt;p&gt;      这篇文章是Tensorflow系列文章中的第二篇，也是比较基础，主要想细致记录和总结一下Tensorflow中常用的激励函数。主要参考但不限于书籍Nick McClure的 &lt;em&gt;Tensorflow Machine Learning Cookbook&lt;/em&gt; 中文版《Tensorflow机器学习实战指南》。文中涉及到的代码的&lt;strong&gt;完整源码&lt;/strong&gt;都放在了Github里&lt;a href=&quot;https://github.com/skylinebin/Machine-Learning-Notes/tree/master/Tensorflow/TensorflowWithCookbook&quot;&gt;MachineLearningNotes–Tensorflow&lt;/a&gt;当中了。&lt;/p&gt; &lt;h2 id=&quot;tensorflow中常用激励函数&quot;&gt;Tensorflow中常用激励函数&lt;/h2&gt; &lt;h3 id=&quot;1整流线型单元relu&quot;&gt;1.整流线型单元(RELU)&lt;/h3&gt; &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'- - - - - - - -relu - - - - - - - - - -'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;# 1.ReLU 整流线型单元 relu激励函数&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sess&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;run&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;tf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;nn&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;relu&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;3.&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;3.&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;10.&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])))&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;# output is [ 0. 3. 10.] same as max(0,x)&lt;/span&gt; &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt; &lt;p&gt;&lt;em&gt;tf.nn.relu(x)&lt;/em&gt; 是机器学习中最常用的非线性函数，其对应数学公式为: &lt;img src=&quot;http://latex.codecogs.com/png.latex?max(0,x)&quot; alt=&quot;&quot; /&gt;&lt;/p&gt; &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'- - - - - - - relu6 - -...</description>
+        <pubDate>Tue, 26 Jun 2018 03:40:31 +0800</pubDate>
+        <link>http://localhost:4000/TensorflowLearningTwo/</link>
+        <guid isPermaLink="true">http://localhost:4000/TensorflowLearningTwo/</guid>
+        
+        <category>Ubuntu</category>
+        
+        <category>Tensorflow</category>
+        
+        <category>DeepLearning</category>
+        
+        <category>MachineLearning</category>
+        
+        
+        <category>SkylineBin</category>
+        
+      </item>
+    
+      <item>
+        <title>Tensorflow系列--(一)基本概念与操作</title>
+        <description>&lt;p&gt;      这篇文章是Tensorflow系列文章中的第一篇，比较基础，主要想细致过一遍用到的Tensorflow的内容。主要参考但不限于书籍Nick McClure的 &lt;em&gt;Tensorflow Machine Learning Cookbook&lt;/em&gt; 中文版《Tensorflow机器学习实战指南》(错误很多)。文中涉及到的代码的&lt;strong&gt;完整源码&lt;/strong&gt;都放在了我的Github里&lt;a href=&quot;https://github.com/skylinebin/Machine-Learning-Notes/tree/master/Tensorflow/TensorflowWithCookbook&quot;&gt;MachineLearningNotes–Tensorflow&lt;/a&gt;当中了。&lt;/p&gt; &lt;h2 id=&quot;准备工作&quot;&gt;准备工作&lt;/h2&gt; &lt;p&gt;&lt;strong&gt;系统环境&lt;/strong&gt; ：Windows10 x64 / Ubuntu 16.04 x64&lt;br /&gt; &lt;strong&gt;Python环境&lt;/strong&gt; ：Python 3.5.4 / Python 3.5.2 &lt;br /&gt; &lt;strong&gt;Tensorflow环境&lt;/strong&gt; ：Tensorflow1.8.0 / Tensorflow1.4.0&lt;/p&gt; &lt;p&gt;安装Tensorflow环境使用pip直接安装就好，douban的pip镜像速度很快，后面需要用到Keras，也可以用pip直接安装。 查看tensorflow的环境语句&lt;/p&gt; &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;tensorflow&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tf&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;tf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;__version__&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt; &lt;p&gt;若能正确输出版本号，基本是可以进行后面操作了。&lt;/p&gt; &lt;h2 id=&quot;tensorflow中张量的操作&quot;&gt;Tensorflow中张量的操作&lt;/h2&gt; &lt;p&gt;      Tensorflow中主要数据结构是张量，常用张量来操作计算图。可以把 &lt;strong&gt;变量&lt;/strong&gt; 或者 &lt;strong&gt;占位符&lt;/strong&gt; 声明为张量。&lt;/p&gt; &lt;p&gt;1.固定张量&lt;br /&gt; 常有零张量、单位张量、指定常数填充张量和常数矩阵创建张量等几种。&lt;/p&gt; &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;#创建固定维度的零张量&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;zero_tsr&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;tf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;zeros&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;row_dim&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;col_dim&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;#创建指定维度的单位张量&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ones_tsr&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;tf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ones&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;row_dim&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;col_dim&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;#创建指定维度的常数填充张量&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;filled_tsr&lt;/span&gt; &lt;span...</description>
+        <pubDate>Wed, 20 Jun 2018 00:51:31 +0800</pubDate>
+        <link>http://localhost:4000/TensorflowLearningOne/</link>
+        <guid isPermaLink="true">http://localhost:4000/TensorflowLearningOne/</guid>
+        
+        <category>Ubuntu</category>
+        
+        <category>Tensorflow</category>
+        
+        <category>DeepLearning</category>
+        
+        <category>MachineLearning</category>
+        
+        
+        <category>SkylineBin</category>
+        
+      </item>
+    
+      <item>
+        <title>关于端午聚会</title>
+        <description>&lt;p&gt;       还是继续开始尝试记录一些事情，和学到的技术一样，经历的生活也同样怕长时间之后忘记很多值得被记住的细节。其实已经有了很多能在我们年老时，泡着茶对后辈讲的故事了，这一次显然又是一个可以讲出来的故事。&lt;/p&gt;
+
+&lt;h3 id=&quot;那些可以被记住的细节&quot;&gt;那些可以被记住的细节&lt;/h3&gt;
+
+&lt;p&gt;       司机从容地加速，在绿灯快要结束时冲过了路口，驶入三环线的高架。尽管师傅头发一半已经变白，是合格的武汉老司机的形象，在高架靠右侧的慢车道频繁加速超过左侧的车辆，还是让我心中有些担忧，还没到上午九点，阳光已经有些热了，右侧是南湖，风吹着有些迷糊的脑袋，还是有些走神了。师傅是个老武汉，话不多，静静听着后排的同学闲聊，也不插话，没有用语音导航，还真有些不习惯。想起了前一晚和大学三年的室友视频，听到室友刚刚提车，回家路上语音导航开回去的，过年准备办婚礼，婚礼不是因为惊喜。我们说他人生赢家，他说自己压力很大。他是班上没有到场的五人之一。一工作之后就很快了，读研也是一样，时间过的都很快，虽然只有一年。&lt;/p&gt;
+
+&lt;p&gt;       能聚齐28个人已经很不容易了，或许这是最后一次能聚起这么多人的班级聚会了。近三十个人已经可以组成一个小规模的群体，小群体的意识其实已经很难凝聚了，这种机会来之不易。狼人杀，唱歌，火锅，烧烤，还是每次聚会的那几样，中间穿插着聊聊近况。准备食材，做饭，整理房间，也还是不变的那几个人。各自充当着群体里的那些相对固定的角色，在感觉上有很多是一直没有变的，还是能听到熟悉的 “需要我帮你做些什么么？”，就觉得很安心。但是也有很多是变了的，大家都不会主动去喝酒了，也不再争着去吃那些并不好吃的食物了，剩了满冰箱里的啤酒，超过总数一半的西瓜，泡面也只拆了几包。更多的同学是坐着看着其他人，或者找本科相熟的好友聊上几句，&lt;strong&gt;似乎这一次才是真正的散伙饭&lt;/strong&gt;，慢慢地出现可见的距离。已经工作的同学似乎不愿意提起平时上班的细节，感觉这次端午对于他们而言，更像是一次短暂的逃离。其实我能想象到一部分上班的苦恼，但是估计实际只会更不想让人提起。从北京，上海，深圳，杭州等地赶来的同学兴致都很高，该变的都变了，没有变的还是没有变。&lt;/p&gt;
+
+&lt;p&gt;       还在读研的同学好像都面临着同样的问题，论文和毕业。都在吐槽论文难发，住宿环境有多差，实验室的老板有可怕，虽然不是同一导师，同一学校。已经工作的同学有部分已经感觉到了学历带来的压力，但前期而言，本科和硕士还是差别不大。大家普遍都感觉更靠近中年了，精力已经下滑，熬夜带来的影响也越来越大，明明是昨天发生的事情，感觉和已经一周以前一样。上班的同学，作息变得更规律了。有和我一样变胖的，也有因为焦虑变瘦的。已经工作的，岗位各不相同，问起将来想要从事的工作，基本都是互联网，差点忘了我们的专业是那个听起来高大上的，通信卓越工程师。&lt;/p&gt;
+
+&lt;p&gt;       有些想说的话还是埋在心底，没有说出口。一直有种预感，不说就没有机会了，但是又看到了前路漫漫，大概已经不会再有交集，说了也只是徒增感伤。原班长收集了外省前来武汉的火车票，留作纪念，最后超出的预算，几个组织者是知道的，班长也没让大家一起出。后面同样作为班长和小小的管理者，知道组织活动的不易，这一点真的委屈班长了。订的二十寸的纪念蛋糕不算完美，我点燃的蜡烛，班长按着学号一个一个切下属于每个人名字的那一块时，还是挺难受的，有好几位同学接过蛋糕，后来并没有吃。&lt;/p&gt;
+
+&lt;p&gt;       躺在唱歌房间里的沙发上，裹着被子，迷迷糊糊地睡了两个半小时，房间里空调开的26度却有些冷，盖上被子又有些燥热，中间梦到了要写的接口和自己计划完成的任务，醒来时却非常清醒。煮了泡面蒸了馒头，吃的同学不多。大家都不愿意说话，从开始到分开的时候，一个人也没敢提出下次相聚。离别只说了普通的再见。&lt;/p&gt;
+
+&lt;p&gt;       其他班同学知道我们有这次班聚，表达的都是羡慕，经历之后却觉得很平常。整个聚会没有炫耀没有攀比，大部分是过去，有一些现在，却很少有未来。虽然是一次过程很平常的聚会，感觉它可能又是大部分同学这辈子最特别的一次班级聚会。&lt;/p&gt;
+
+&lt;p&gt;       我们啊，都在慢慢开始&lt;strong&gt;真正的生活&lt;/strong&gt;。&lt;/p&gt;
+
+</description>
+        <pubDate>Tue, 19 Jun 2018 09:31:25 +0800</pubDate>
+        <link>http://localhost:4000/ThatClassParty/</link>
+        <guid isPermaLink="true">http://localhost:4000/ThatClassParty/</guid>
+        
+        <category>Summary</category>
+        
+        <category>Life</category>
+        
+        <category>Classmates</category>
+        
+        
+        <category>SkylineBin</category>
+        
+      </item>
+    
+      <item>
+        <title>关于情感的认知</title>
+        <description>&lt;p&gt;       一个月前就想记录一下对这个话题的理解和一些新的想法了，直到现在才开始认真记录。如果不强制创造一个写东西的机会，只怕是还要等几个月了。不记录下来，慢慢地就会忘记，后面如果想起来还以为是新的，这种思维的绕圈，想想就觉得痛苦。&lt;/p&gt;
+
+&lt;h2 id=&quot;不懂与不会&quot;&gt;不懂与不会&lt;/h2&gt;
+&lt;p&gt;       我一直认为大多数人是不懂什么是 爱 的，像我一样。实话说，从小到大，我从没有在自己身边真正切切地感受到 爱，对于单身狗而言，现在关注的这个 爱，自然不是关爱。显然是那个 &lt;strong&gt;爱情&lt;/strong&gt;。我至今也忘不了，在我还是青年的时候，遇到的那次关于爱情无声的辩论。其实想想也不算辩论，虽然各有论点，但没有交互，就不算辩。那还是在14人的大宿舍，正值《非诚勿扰》刚刚开播，14个17岁的少年在午睡前的短暂闲聊里提到了这个至今没有理顺的关于“爱”的话题，打开话题的由头已经被我忘了，只记得一位已经忘了名字的舍友当时似乎无比心酸，“现在哪里还有爱情，没有钱什么都不是，有钱才是王道”。当时的我还是那个只知道死学的傻小子，我默默地回了一句，“爱情是有的，只是你没有遇到”，我反驳的声音极小，只有和我床铺对着的那位还记得名字的舍友诚意满满地笑了，“对，只是还没遇到”。&lt;br /&gt;
+       那时，我们是不懂“爱”的，无论是把爱情和金钱绑定的舍友，还是期待遇到爱情的那个自己。和大多数花+雨季的少男少女一样，那时是不懂爱的。只是一直想法单纯，知道否定，同样知道神圣与美好，对未来还充满希望。&lt;br /&gt;
+       后面遇到了很多相对来说更优秀的人，慢慢确定自己喜欢什么，慢慢知道了什么是喜欢，什么又是爱。知道了什么是爱，却又遇到了一直被忽视的问题，自己原来不会爱，不会展示和表达自己的爱。&lt;br /&gt;
+       这里的不会，大概和很多原因有关了。原生家庭的影响只是让我知道了生活的辛酸和不宜，极少出现的爱在混沌的生活里总是不会引入注意，没能了解什么是爱，更不要提学会如何去爱了；《自卑与超越》这本书我没有看完，前几年的成长阶段无时无刻不展现着自己的自卑，缺乏自信让自己不敢去表达，这也是永远学不会的一个原因；和气温吞的性格是适合做朋友的，如果再加上有一些过人的能力，做普通朋友总是不太难，就算非常喜欢，还是会划一条线，把自己隔在线的另一侧，越退越远；犹豫加上不主动，总是错失很多表达的机会，畏首畏尾，早已经不能用单纯来形容。&lt;br /&gt;
+       后来，就算知道了不会的原因，还是没有学会如何去爱。总是有期待，总是猜测对方的想法，总是懊悔错失的机会，却还是相信“如果开始，就走到最后”，又在担忧自己的选择会不会让对方难堪。还没去爱之前，就已疲惫不堪。舍不得放不下，又习惯了一个人思考，一个人生活，像是学英语，一直都没学会。&lt;/p&gt;
+
+&lt;h2 id=&quot;喜欢的两种解释&quot;&gt;喜欢的两种解释&lt;/h2&gt;
+&lt;p&gt;       喜欢 和 爱 是有关联的，我不相信“一见钟情”，“一见钟情”只能算是 喜欢。所有的爱，都是由喜欢过渡来的，即使时间只有几秒。所以，喜欢是前提。&lt;br /&gt;
+       喜欢一个人，我赞同可分为这两种，“真的喜欢这个人” 与 “喜欢和这个人现在的这种关系”。前者是需要对被喜欢的人有很深的了解，知道“他”的很多优缺点，但还是选择喜欢，并且会自发地维护自己喜欢的那个人。后者大概是大多数“喜欢”的类型，和某个人现在的关系还算不错，可能“他”很优秀，能够帮到自己，或者自己在“他”面前有展示好的一面的机会，或者可以满足虚荣心，自己也知道，可能换一个人有相同的能力或地位或者和自己的交互经历，自己也会喜欢。&lt;br /&gt;
+       真的喜欢这个人，是有机会转换成爱情的，会美满的哪一种，只是可能会缺少机会。而 喜欢和这个人现在的这种关系，就比较脆弱，因为现实的联系很容易就会断，联系断了，关系也会慢慢变化，喜欢也会慢慢消失。第一种喜欢很大程度上会越来越喜欢，程度只增不减，除非知道自己永远也没机会再喜欢下去了。&lt;/p&gt;
+
+&lt;h2 id=&quot;现实可给的希望&quot;&gt;现实可给的希望&lt;/h2&gt;
+&lt;p&gt;       这原本是三月的想法，八月才最终理出来，有时候不是没有选择，而是选择太多，有太多可能。如果加上了自己的条件，经过筛选，符合促成爱情的选择已寥寥无几，还是要把握好机会。对着床铺的那位兄弟和他女友最近终于要将五年异地的爱情拉的更近一些了，似乎也快修成正果了，这是一个好的苗头。&lt;br /&gt;
+       爱情是有的，总是会遇到的。&lt;/p&gt;
+</description>
+        <pubDate>Sun, 25 Mar 2018 16:51:31 +0800</pubDate>
+        <link>http://localhost:4000/aboutLove/</link>
+        <guid isPermaLink="true">http://localhost:4000/aboutLove/</guid>
+        
+        <category>Life</category>
+        
+        <category>Love</category>
+        
+        <category>Thinking</category>
+        
+        <category>Summary</category>
+        
+        
+        <category>SkylineBin</category>
+        
+      </item>
+    
+      <item>
+        <title>操作系统--磁盘调度算法</title>
+        <description>&lt;p&gt;      这篇文章是参考好几篇博客而整理的关于磁盘I/O调度算法的内容，都比较基础，应该也挺重要。文中涉及到的代码的&lt;strong&gt;完整源码&lt;/strong&gt;都放在了我的Github&lt;a href=&quot;https://github.com/skylinebin/AlgorithmPractice/tree/master/Disk%20Scheduling%20Algorithm&quot;&gt;关于算法部分&lt;/a&gt;当中了。&lt;/p&gt; &lt;h2 id=&quot;磁盘调度算法&quot;&gt;磁盘调度算法&lt;/h2&gt; &lt;p&gt;      在操作系统中，各个进程可能会不断提出不同的对磁盘进行读/写操作的请求，有时候这些进程的发送请求的速度比磁盘响应的还要快，所以需要为每个磁盘设备建立一个等待队列，这就是磁盘调度。磁盘调度的目的是减少磁盘访问延迟，磁盘访问延迟可以定义为：&lt;/p&gt; &lt;blockquote&gt; &lt;p&gt;磁盘访问延迟 = 队列时间 + 控制器时间 + 寻道时间 + 旋转时间 + 传输时间&lt;/p&gt; &lt;/blockquote&gt; &lt;p&gt;      磁盘调度的目的是减小延迟，前两项可以忽略，寻道时间是磁盘访问延迟的主要考虑部分。因此，使用&lt;strong&gt;磁盘调度算法&lt;/strong&gt;来尽可能减少磁盘寻道时间。&lt;/p&gt; &lt;h3 id=&quot;一磁盘调度算法&quot;&gt;一、磁盘调度算法&lt;/h3&gt; &lt;p&gt;      常用的磁盘调度算法通常有以下四种：FCFS(先来先服务算法)、SSTF(最短寻道时间优先算法)、SCAN(电梯扫描算法)、CSCAN(循环电梯扫描算法)。&lt;/p&gt; &lt;h4 id=&quot;1先来先服务算法fcfs-first-come-first-serve&quot;&gt;1.先来先服务算法（FCFS, First Come First Serve）&lt;/h4&gt; &lt;p&gt;      先来先服务算法是一种最简单的磁盘调度算法，它&lt;strong&gt;根据进程请求访问磁盘的先后次序进行调度&lt;/strong&gt;。&lt;br /&gt;       例如：当前磁道磁头位于地址为42的磁道，现有6条访问磁道请求。(模拟地址为0~99的磁盘磁道)&lt;br /&gt;       Current Location：42&lt;br /&gt;       Access Request:&lt;/p&gt; &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;0 | 1 | 2 | 3 | 4 | 5 ---|----|---|----|----|---- 29 | 84 | 1 | 89 | 51 | 94 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt; &lt;p&gt;      使用FCFS算法对磁盘磁道访问请求进行处理：&lt;/p&gt; &lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;//@author SkylineBin&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;fcfssort&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;dataA&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;current&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;){&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// dataA是按请求顺序排列的磁道访问请求，current是当前磁道磁头位置&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span...</description>
+        <pubDate>Sat, 20 Jan 2018 03:51:31 +0800</pubDate>
+        <link>http://localhost:4000/DiskSchedulingAlgorithm/</link>
+        <guid isPermaLink="true">http://localhost:4000/DiskSchedulingAlgorithm/</guid>
+        
+        <category>System</category>
+        
+        <category>Algorithm</category>
+        
+        <category>DiskScheduling</category>
+        
+        <category>Work</category>
+        
+        
+        <category>SkylineBin</category>
+        
+      </item>
+    
+      <item>
+        <title>Markdown使用指南</title>
+        <description>&lt;h1 id=&quot;markdown文档编写规范&quot;&gt;MarkDown文档编写规范&lt;/h1&gt; &lt;blockquote&gt; &lt;p&gt;by SkylineBin&lt;/p&gt; &lt;/blockquote&gt; &lt;h3 id=&quot;1选用markdown原因及应用背景&quot;&gt;1.选用Markdown原因及应用背景&lt;/h3&gt; &lt;ul&gt; &lt;li&gt;Markdown是一种电子邮件风格的标记语言，&lt;strong&gt;语法简单&lt;/strong&gt;，语法兼容HTML，能够形成很好布局排版页面，排版好后有极好的可读性。&lt;/li&gt; &lt;li&gt;Markdown文件能被所有文本编辑器打开，兼容性很强，也可轻松转换成其他格式的电子书。&lt;/li&gt; &lt;li&gt;本项目所在的gitee(码云)，能够自动解析&lt;em&gt;.md&lt;/em&gt;的文件，可以网页阅读排版好的文档，方便后期查阅整理。&lt;/li&gt; &lt;/ul&gt; &lt;h3 id=&quot;2推荐使用的markdown写作软件&quot;&gt;2.推荐使用的Markdown写作软件&lt;/h3&gt; &lt;p&gt;Markdown文件可以用任何编辑器编写，但一般的编辑器不能解析文件。本项目主要是优秀方法整理和技术总结应该也用不到特别复杂的语法，但是排版对文档逻辑的展现有辅助作用，所以还是推荐使用可以预览的Markdown编辑器。下面推荐两款比较好用的软件：&lt;/p&gt; &lt;ul&gt; &lt;li&gt; &lt;p&gt;&lt;a href=&quot;https://atom.io/&quot;&gt;Atom&lt;/a&gt; 是著名的程序员社交网站&lt;strong&gt;Github&lt;/strong&gt;推出的一款编辑器，操作简单，功能强大，当前文档就是在这款软件上编写的。重点是&lt;strong&gt;支持Markdown文件的预览&lt;/strong&gt;。编写界面如下图所示： &lt;img src=&quot;https://store.skylinebin.com/image/markdown/Atompage.png&quot; alt=&quot;Atom工程界面&quot; /&gt;&lt;/p&gt; &lt;/li&gt; &lt;li&gt; &lt;p&gt;&lt;a href=&quot;https://code.visualstudio.com/&quot;&gt;VSCode&lt;/a&gt; 是微软大佬推出的一款免费开源跨平台的代码编辑器，功能真的强大，这段话是在VSCode里编写的。同样&lt;strong&gt;支持Markdown文件的预览&lt;/strong&gt;，编写界面如下图所示： &lt;img src=&quot;https://store.skylinebin.com/image/markdown/VSCodepage.png&quot; alt=&quot;VSCode工程界面&quot; /&gt;&lt;/p&gt; &lt;/li&gt; &lt;/ul&gt; &lt;p&gt;以上两款软件都支持文件目录，可以很方便创建整理文件。&lt;br /&gt; &lt;em&gt;注：个人更喜欢Atom，看起来更简洁，操作也更简单。但VSCode会更稳定。&lt;/em&gt;&lt;/p&gt; &lt;h3 id=&quot;3markdown基本语法及举例&quot;&gt;3.Markdown基本语法及举例&lt;/h3&gt; &lt;p&gt;前面有提到，Markdown的语法很简单，用起来也会很顺手。先推荐几篇快速上手的文章，这些文章会更完整，大概十分钟左右可以上手编辑文档。之后会针对常用的Markdown语法给出参考。&lt;/p&gt; &lt;ul&gt; &lt;li&gt;1.简书默认支持Markdown语法，&lt;a href=&quot;http://www.jianshu.com/p/q81RER&quot;&gt;献给写作者的 Markdown 新手指南&lt;/a&gt; 这篇文章是针对写作者写的，具有普适性。&lt;/li&gt; &lt;li&gt;2.&lt;a href=&quot;http://wowubuntu.com/markdown/#list&quot;&gt;Markdown 语法说明&lt;/a&gt; 给出的语法比较全，可以作为参考。&lt;/li&gt; &lt;/ul&gt; &lt;h3 id=&quot;markdown常用语法&quot;&gt;Markdown常用语法&lt;/h3&gt; &lt;h4 id=&quot;31-markdown标题&quot;&gt;3.1 Markdown标题&lt;/h4&gt; &lt;p&gt;Markdown文档中使用每行开头的 &lt;em&gt;#&lt;/em&gt; 号来判定是否为标题，一共六级，对应 &lt;em&gt;#&lt;/em&gt; 号的个数:&lt;/p&gt; &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# 一级标题 ## 二级标题 ### 三级标题 #### 四级标题 ##### 五级标题 ###### 六级标题 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt; &lt;p&gt;需要注意的是，&lt;em&gt;#&lt;/em&gt; 号与 后面标题名称之间应该有空格。&lt;/p&gt; &lt;h4 id=&quot;32-markdown换行与段落&quot;&gt;3.2 Markdown换行与段落&lt;/h4&gt; &lt;p&gt;Markdown里可以使用回车换行，但 &lt;strong&gt;前提&lt;/strong&gt; 是上一行的末尾要多余两个空格。这样Markdown才可解析出正确的指令。&lt;br /&gt; Markdown中支持HTML里的&amp;lt; br / &amp;gt; 换行符，但一般不使用这个。&lt;/p&gt; &lt;h4 id=&quot;33-markdown图片插入与链接引用&quot;&gt;3.3 Markdown图片插入与链接引用&lt;/h4&gt; &lt;p&gt;Markdown中使用[ ]和( )构成的符号来引入连接或者插入图片。&lt;br...</description>
+        <pubDate>Wed, 17 Jan 2018 04:51:31 +0800</pubDate>
+        <link>http://localhost:4000/UsingMarkdown/</link>
+        <guid isPermaLink="true">http://localhost:4000/UsingMarkdown/</guid>
+        
+        <category>Markdown</category>
+        
+        <category>Project</category>
+        
+        <category>Work</category>
+        
+        
+        <category>SkylineBin</category>
+        
+      </item>
+    
+  </channel>
+</rss>

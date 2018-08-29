@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+
+<title>404NotFound</title>
+
+<style>
+body {
+ margin: 0px 0px;
+ padding: 0px 0px;
+}
+
+.contents {
+	margin: 0px 0px;
+}
+
+div.showmen{
+	margin: 100px auto;
+	width: 800px;
+	animation: a 1000s;
+	position: relative;
+}
+div.showtext{
+	margin: 0px auto;
+	/*font-size: 24px;*/
+	text-align: center;
+	height: 100px;
+	line-height: 100px;
+	/*background-color:#e9686b;*/
+	background-color:#5d4d7a;
+}
+img:nth-child(2){
+	position: absolute;
+	top: 80px;
+	left: 400px;
+	animation: b 1000s;
+	transform-origin:top center;
+}
+.errorfound {
+/*	position: absolute;
+	top: 80px;
+	left: 100px;
+	animation: c 1000s;
+	transform-origin:top center;*/
+	font-size: 24px;
+	text-align: center;
+	color: #fff;
+}
+.backtomyindex {
+ font-size: 24px; 
+ text-align: center;
+ color: #fff;
+}
+
+.tomyhome {
+	color: beige;
+}
+
+@keyframes a{
+	form{transform: rotate(0deg)}
+	to{transform: rotate(36000deg)}
+}
+@keyframes b{
+	form{transform: rotate(0deg)}
+	to{transform: rotate(-36000deg)}
+}
+@keyframes c{
+	form{transform: rotate(0deg)}
+	to{transform: rotate(36000deg)}
+}
+</style>
+
+</head>
+<body>
+	<div class="contents">
+		<div class="showtext">
+			<span class="errorfound">404Error!!&nbsp;&nbsp;&nbsp;Nothing was Found!</span>
+			<span class="backtomyindex">&nbsp;&nbsp;&nbsp;Back to my <a class="tomyhome" href="https://skylinebin.com">home</a>~</span>
+		</div>
+		<div class="showmen">
+			<img src="https://store.skylinebin.com/404/fsw.png">
+			<img src="https://store.skylinebin.com/404/boy.png">
+		</div>
+
+		<div style="text-align:center;clear:both">
+		</div>
+	</div>
+	<script src="https://store.skylinebin.com/forwebsite/js/myconsole.js"></script>
+</body>
+</html>
