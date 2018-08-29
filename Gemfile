@@ -1,6 +1,8 @@
- gem sources "https://rubygems.org"
+source "https://rubygems.org"
+
 
  group :jekyll_plugins do
+   gem 'jekyll'
    gem "jekyll-paginate"
    gem "jekyll-pwa-plugin"
  end
