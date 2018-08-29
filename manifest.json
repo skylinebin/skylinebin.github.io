@@ -4,6 +4,7 @@
     "start_url": "/index.html?utm_source=homescreen",
     "display": "standalone",
     "background_color": "#fff",
+    "orientation": "any",
     "description": "Using pwa to finish this blog.",
     "icons": [{
         "src": "images/touch/homescreen48.png",
