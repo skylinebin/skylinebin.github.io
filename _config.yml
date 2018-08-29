@@ -61,8 +61,6 @@ exclude: ['package.json', 'src', 'node_modules']
 
 # add pwa configuration  
 pwa:
-  sw_src_filepath: service-worker.js # Optional
-  sw_dest_filename: service-worker.js # Optional
   dest_js_directory: assets/js # Required
   precache_recent_posts_num: 5 # Optional
   precache_glob_directory: / # Optional
@@ -72,4 +70,3 @@ pwa:
   precache_glob_ignores: # Optional
     - sw-register.js
     - "fonts/**/*"
-
