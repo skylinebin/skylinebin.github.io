@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Web安全DDos原理--(一)直接攻击"
+title:  "Web安全DDoS原理--(一)直接攻击"
 image: ''
 date:   2018-09-07 18:50:32
 tags:
