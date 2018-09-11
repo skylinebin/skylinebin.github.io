@@ -2,7 +2,7 @@
 layout: post
 title:  "Web安全DDos原理--(二)反射攻击"
 image: ''
-date:   2018-09-09 21:50:32
+date:   2018-09-11 21:53:32
 tags:
 - CyberSecurity
 - DDoS
@@ -73,4 +73,6 @@ bug 主要是因为爬虫没有检测所传参数，阻塞带宽。
 - [RealTimeCyberAttack](https://geekflare.com/real-time-cyber-attacks/#2-Digital-Attack-Map/)  
 - [RealTimeWebMonitor](https://www.akamai.com/us/en/solutions/intelligent-platform/visualizing-akamai/real-time-web-monitor.jsp)  
 
+DDoS 攻击的演示部分后面挑时间补上呀，先这样吧！  
 
+Web 安全部分后面还会加上数据库安全相关的东西，安全一定要重视啊！！！数据是无价的！
