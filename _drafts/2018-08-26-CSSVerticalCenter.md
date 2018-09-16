@@ -48,6 +48,12 @@ CSS 定义的样式:
 }
 ```
 
+实现原理：**Flex 布局** ，阮一峰有几篇博客特意介绍 [Flex布局](http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html) 的使用，后面有机会可以总结提炼一下。这里实现垂直居中主要是利用 flex 布局里的 **justify-content** 属性 和 **align-items** 属性。justify-content 是定义项目在主轴(横向)上的对齐方式，取 center 是项目主轴居中；align-items 是定义项目在交叉轴(纵向)上的对齐方式，取 center 表示交叉轴的重点对齐。以此实现垂直居中的效果。具体效果如下：  
+
+![use flex to be in center](https://store.skylinebin.com/image/css/flextocenter.png)  
+
+
+### position:absolute 实现垂直居中 
 
 
 
