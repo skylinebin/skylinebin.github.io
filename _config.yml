@@ -28,6 +28,11 @@ plugins:
 paginate: 10
 paginate_path: "pagelist/page:num"
 
+# LeanCloud
+lean_cloud: 
+  app_id: WJmvuueUfSFpusIzgyIGa0hW-gzGzoHsz
+  app_key: jptI9djY9vTBuWGDR69VHakF
+
 
 # html minify
 compress_html:
