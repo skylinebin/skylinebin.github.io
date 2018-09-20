@@ -384,7 +384,10 @@ a .showmymenu,
     padding: .125rem .188rem
 }
 
-//
+.countreader {
+    text-align: center;
+}
+
 .icon-menu {
     cursor: pointer;
     padding: .313rem;
