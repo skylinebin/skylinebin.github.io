@@ -15,7 +15,7 @@ twitter_text: '磁盘调度算法总结 '
 ---
 
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;这篇文章是参考好几篇博客而整理的关于磁盘I/O调度算法的内容，都比较基础，应该也挺重要。文中涉及到的代码的**完整源码**都放在了我的Github[关于算法部分](https://github.com/skylinebin/AlgorithmPractice/tree/master/Disk%20Scheduling%20Algorithm)当中了。
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;这篇文章是参考好几篇博客而整理的关于磁盘I/O调度算法的内容，都比较基础，应该也挺重要。文中涉及到的代码的**完整源码**都放在了我的Github[关于算法部分](https://github.com/skylinebin/AlgorithmPractice/tree/master/Algorithms/Disk%20Scheduling%20Algorithm)当中了。
 
 ## 磁盘调度算法  
 
