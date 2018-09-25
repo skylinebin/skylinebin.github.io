@@ -118,4 +118,35 @@ Markdown中使用三个 \* 号来画出一条分隔线，效果如下所示：
 ***
 Markdown中的符号转义使用 反斜杠 \\ 来帮助插入普通的符号。
 
+
+#### 3.7 Markdown中插入公式  
+原生的 Markdown 中其实没有公式的这一项的，但是很多替代的解决方案。  
+例如，可以使用图片的方式来引入公式：  
+```
+<img src="http://latex.codecogs.com/png.latex?f_%7B1min%7D%20%3D%20min%5Cleft%20%5C%7B%20%5Csum_%7Bi%3D1%7D%5E%7BN%7D%5Cleft%20%28%20T_%7Bc%7D-T_%7Bsi%7D%20%5Cright%20%29%5E%7B2%7D%20%5Cright%20%5C%7D" style="border:none;">
+```  
+以此得到下图的公式：  
+
+<img src="http://latex.codecogs.com/png.latex?f_%7B1min%7D%20%3D%20min%5Cleft%20%5C%7B%20%5Csum_%7Bi%3D1%7D%5E%7BN%7D%5Cleft%20%28%20T_%7Bc%7D-T_%7Bsi%7D%20%5Cright%20%29%5E%7B2%7D%20%5Cright%20%5C%7D" style="border:none;">
+
+或者是用引入图片的方式：  
+```
+![formula one](http://latex.codecogs.com/png.latex?f_%7B1min%7D%20%3D%20min%5Cleft%20%5C%7B%20%5Csum_%7Bi%3D1%7D%5E%7BN%7D%5Cleft%20%28%20T_%7Bc%7D-T_%7Bsi%7D%20%5Cright%20%29%5E%7B2%7D%20%5Cright%20%5C%7D)
+```  
+这两个其实都是使用 [在线公式编辑器 codecogs](http://latex.codecogs.com/) 实现的。  
+类似的平台还有 [forkosh](http://www.forkosh.com) 和 []()
+
+第二种可以使用 引入写公式的 js 文件：  
+
+```
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js"></script>
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+```
+
+可以按照对应的js 规则写公式即可。  
+
+个人使用第一种以图片的形式引入更多，这种方式可以引入比较好看的 Latex 格式的公式图片。
+
+
 以上为本项目文档的Markdown编辑规范，原文档是为实验室工作基础知识整理的文档规范，但是实验室同学们觉得这个太麻烦了，我就放在这里了，毕竟也是自己花费了一些心思整理的！
