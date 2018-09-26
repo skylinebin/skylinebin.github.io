@@ -386,6 +386,9 @@ a .showmymenu,
 
 .countreader {
     text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-style: normal;
 }
 
 .icon-menu {
