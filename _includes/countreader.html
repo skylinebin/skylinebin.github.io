@@ -1,50 +1,38 @@
-<!--访问LeanCloud的js包装脚本-->
+{% if site.leancloud.enable %}
+
+<script src="https://code.jquery.com/jquery-3.2.0.min.js"></script>
 <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
-<!--初始化LeanCloud的AV对象-->
+<script>AV.initialize("{{site.leancloud.app_id}}", "{{site.leancloud.app_key}}");</script>
 <script>
-AV.initialize("WJmvuueUfSFpusIzgyIGa0hW-gzGzoHsz", "jptI9djY9vTBuWGDR69VHakF");
-</script>
-<!--实现计数的js包装脚本-->
-<script type="text/javascript">
-    function showTime(Counter) {
+    function showHitCount(Counter) {
         var query = new AV.Query(Counter);
         var entries = [];
         var $visitors = $(".leancloud_visitors");
-
         $visitors.each(function () {
             entries.push($(this).attr("id").trim());
         });
-
         query.containedIn('url', entries);
         query.find()
             .done(function (results) {
+                console.log("results", results);
                 var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
-                var OLD_COUNT_CONTAINER_REF = '.old-visitors-count';
-
-                // if (results.length === 0) {
-                //     $visitors.find(COUNT_CONTAINER_REF).text(0);
-                //     return;
-                // }
-
+                if (results.length === 0) {
+                    $visitors.find(COUNT_CONTAINER_REF).text(0);
+                    return;
+                }
                 for (var i = 0; i < results.length; i++) {
                     var item = results[i];
                     var url = item.get('url');
-                    var time = item.get('time');
+                    var hits = item.get('hits');
                     var element = document.getElementById(url);
-
-                    $(element).find(COUNT_CONTAINER_REF).text(time);
+                    $(element).find(COUNT_CONTAINER_REF).text(hits);
                 }
                 for (var i = 0; i < entries.length; i++) {
                     var url = entries[i];
                     var element = document.getElementById(url);
                     var countSpan = $(element).find(COUNT_CONTAINER_REF);
                     if (countSpan.text() == '') {
-                        var oldCountSpan = $(element).find(OLD_COUNT_CONTAINER_REF).text();
-                        if (oldCountSpan != '') {
-                            countSpan.text(0 + parseInt(oldCountSpan));
-                        } else {
-                            countSpan.text(0);
-                        }
+                        countSpan.text(0);
                     }
                 }
             })
@@ -52,28 +40,25 @@ AV.initialize("WJmvuueUfSFpusIzgyIGa0hW-gzGzoHsz", "jptI9djY9vTBuWGDR69VHakF");
                 console.log("Error: " + error.code + " " + error.message);
             });
     }
-
     function addCount(Counter) {
         var $visitors = $(".leancloud_visitors");
         var url = $visitors.attr('id').trim();
         var title = $visitors.attr('data-flag-title').trim();
         var query = new AV.Query(Counter);
-
         query.equalTo("url", url);
         query.find({
             success: function (results) {
                 if (results.length > 0) {
                     var counter = results[0];
                     counter.fetchWhenSave(true);
-                    counter.increment("time");
+                    counter.increment("hits");
                     counter.save(null, {
                         success: function (counter) {
                             var $element = $(document.getElementById(url));
-                            $element.find('.leancloud-visitors-count').text(counter.get('time'));
+                            $element.find('.leancloud-visitors-count').text(counter.get('hits'));
                         },
                         error: function (counter, error) {
-                            console.log('Failed to save Visitor num, with error message: ' +
-                                error.message);
+                            console.log('Failed to save Visitor num, with error message: ' + error.message);
                         }
                     });
                 } else {
@@ -86,19 +71,11 @@ AV.initialize("WJmvuueUfSFpusIzgyIGa0hW-gzGzoHsz", "jptI9djY9vTBuWGDR69VHakF");
                     /* End Set ACL */
                     newcounter.set("title", title);
                     newcounter.set("url", url);
-                    var OLD_COUNT_CONTAINER_REF = '.old-visitors-count';
-                    var $element = $(document.getElementById(url));
-                    var oldCountSpan = $element.find(OLD_COUNT_CONTAINER_REF).text();
-                    if (oldCountSpan != '') {
-                        newcounter.set("time", parseInt(oldCountSpan) + 1);
-                    } else {
-                        newcounter.set("time", 1);
-                    }
+                    newcounter.set("hits", 1);
                     newcounter.save(null, {
                         success: function (newcounter) {
                             var $element = $(document.getElementById(url));
-                            $element.find('.leancloud-visitors-count').text(newcounter.get(
-                                'time'));
+                            $element.find('.leancloud-visitors-count').text(newcounter.get('hits'));
                         },
                         error: function (newcounter, error) {
                             console.log('Failed to create');
@@ -113,12 +90,13 @@ AV.initialize("WJmvuueUfSFpusIzgyIGa0hW-gzGzoHsz", "jptI9djY9vTBuWGDR69VHakF");
     }
     $(function () {
         var Counter = AV.Object.extend("Counter");
-        //如果只有1个.leancloud_visitors，则说明是博客页，需要显示查看数并将查看数+1
-        //超过1个，则说明是文章列表，只需要显示查看数
         if ($('.leancloud_visitors').length == 1) {
+            // in post.html, so add 1 to hit counts
             addCount(Counter);
-        } else {
-            showTime(Counter);
+        } else if ($('.post-link').length > 1) {
+            // in index.html, there are many 'leancloud_visitors' and 'post-link', so just show hit counts.
+            showHitCount(Counter);
         }
     });
 </script>
+{% endif %}
