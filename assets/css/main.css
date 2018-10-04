@@ -1054,7 +1054,7 @@ body {
 
 @media only screen and (min-width:90.625rem) {
     .header-post {
-        background: transparent
+        /* background: transparent */
     }
     .header-post #open {
         position: fixed;
