@@ -156,8 +156,7 @@ Tips:
 
 ## Conclusion 结论 Abstract 摘要 Title 题目  
 
-1. Conclusion 结论  
-
+### 1. Conclusion 结论  
 结论部分 应该是对 Result & Discussion 部分的总结，可以使用：  
 Start with: This paper investigate (Topic) using (Method)...  
 要注意以下几点：  
@@ -166,10 +165,11 @@ Start with: This paper investigate (Topic) using (Method)...
 - 3. 不要 Copy & Paste  
 - 4. 需强调 Contribution, 与 Introduction 对应  
 
-2. Abstract 摘要  
-
+### 2. Abstract 摘要  
 题目和摘要是 **搜索引擎返回的内容**，应拒绝文不对题(学术文章需要严谨)  
-> 摘要 = 摘取 + 要点  
+
+    > 摘要 = 摘取 + 要点  
+
 摘要一般包括以下几点：  
 - 1. 摘取 引言 Introduction 部分 (3 sentences => 为了引出研究话题，强调研究的重要性)  
 - 2. 摘取 研究方法 Method 部分 (1 or 2 sentence)  
@@ -179,8 +179,7 @@ Start with: This paper investigate (Topic) using (Method)...
 上面四点中，2,3 主要是为了说明这篇论文**做了什么**，1,4 主要是将这篇论文的**贡献和重要性**  
 
 
-3. Title 题目  
-
+### 3. Title 题目  
 一篇论文的题目应该包括以下三部分：  
 - 1. 研究内容 Topic  
 - 2. 研究方法 Method  
@@ -192,11 +191,23 @@ Start with: This paper investigate (Topic) using (Method)...
 还是待我发完论文再从草稿转至 Post 吧，未完待续......
 
 
+## 感谢  
+
+感谢制作视频的 Up 主提供这个了解优秀博士的机会，虽然自己将来并不会走上学术的道路，不会读博。硕士一场，也算初窥做研究这门学问，能够了解学习优秀博士的思维方式甚感荣幸。  
+从这几期视频内容透露的信息，结合 Google 和 LinkedIn，我找到的视频中提到的几位学长学姐，下面是他们的 Google 学术的个人主页 以及 LinkedIn 的个人页面:  
+- Up主Thomas : [GoogleScholar Tianwei(Thomas) Wang](https://scholar.google.com/citations?user=k2vKv9AAAAAJ&hl=en)、[Tianwei(Thomas) Wang](http://www.linkedin.com/in/thomas-tianwei-wang/)  
+
+- Dr.Tao : [GoogleScholar Xinran(william) Tao](https://scholar.google.com/citations?user=iL-tTJ8AAAAJ&hl=en)、[xinran tao](https://www.linkedin.com/in/xinran-tao-2a94868a/)  
+
+- Dr.Zhu : [GoogleScholar Jingyi Zhu](https://scholar.google.com/citations?user=dutepS4AAAAJ&hl=en)、[Jingyi Zhu](https://www.linkedin.com/in/jingyi-zhu/)  
+
+放上几位学长学姐的信息，是为了表达自己真心的感谢，毕竟并没有多少人会提示我们逻辑意识的重要性，再次感谢，希望早日也能向上述的学长学姐一样，达到妙笔生花的地步。(几位学长学姐，如果感觉这些信息放在这里不合适，可以留言联系我删除呀~)  
 
 
 ## 参考  
 
-[写一篇高水平的工程类英文论文](https://space.bilibili.com/230105574/#/channel/detail?cid=45741)  
+1. [写一篇高水平的工程类英文论文](https://space.bilibili.com/230105574/#/channel/detail?cid=45741)  
+2. [Is peer review just a crapshoot?](https://www.elsevier.com/connect/is-peer-review-just-a-crapshoot)
 
 
 
