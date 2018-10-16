@@ -18,7 +18,8 @@ twitter_text: 'Summary some skills of writing English papers '
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;其实，一开始看这个写 SCI 系列的视频，我是被这一系列视频的展开逻辑和呈现形式所吸引的。毕竟 SCI 论文也不好发，打着这个名头要有对应的价值。整个系列视频逻辑清晰，形式更像是先写板书后期再配音上去的，并且该加速的时候视频本身已经给加速了。很多东西写出来之后来理解真的会很清晰很多，很多干货满满的技术贴也是一样。图文并茂，逻辑清晰，重点突出，易于理解的文章总是会受欢迎的，看来呈现自己观点和理解的文字还是要练习，还有很多很多优秀的人值得学习。本篇文章记录的顺序基本和系列视频一致，从陈述事实到基于这个事实展开的一篇论文的写作，尽量做到保留原系列视频的逻辑清晰的高度。  
 
 
-### Facts 事实  
+## Facts 事实  
+
 1. 论文结构(Paper Structure)  
 - 题目 Title  
 - 摘要 Abstract  
@@ -27,6 +28,7 @@ twitter_text: 'Summary some skills of writing English papers '
 - 结果/讨论 Result/Discussion  
 - 结论 Conclusion  
 - 参考文献 Reference  
+
 
 2. 行文顺序  
 
@@ -40,6 +42,7 @@ twitter_text: 'Summary some skills of writing English papers '
 | 6 | - | - | - | - | - | Title | - |  
 | 6 | - | - | - | - | - | Abstract | - |  
 | 7 | - | - | - | - | - | - | End |  
+
 
 
 3. 投稿后的流程  
@@ -67,12 +70,14 @@ cond2(拒绝)-> e
 
 ```
 
+
 4. 文章的主观印象体现  
 - Figures & Tables 有冲击力的图 以及信息充实的表  
 - Reference 符合标准的参考文献;高质量以及要有最新的参考文献  
 
 
-### Introduction 引言  
+
+## Introduction 引言  
 
 引言部分主要回答两个问题：  
 - ① **What is the Research Topic?**  (需要将一个故事)  
@@ -94,7 +99,7 @@ Tips:
 - 4. 整个引言部分要有 10% 的篇幅  
 
 
-### Methodology 研究方法  
+## Methodology 研究方法  
 
 这部分可能好写，也可能不好写。好写体现在，总有东西可以说，可以当作记录整个研究过程的'流水账'。不好写体现在，需要紧紧围绕着**研究内容**来写，要有自己的贡献。  
 主要包括以下几个内容：  
@@ -118,7 +123,7 @@ Tips:
 其中第一点和第二点不注意，会导致论文直接被 拒收。  
 
 
-### Result & Discussion 结果与讨论  
+## Result & Discussion 结果与讨论  
 
 这部分是论文的**核心**，也是体现一个人学术水平的部分。  
 一样的研究结果，不同的人在表达与讨论上是差异巨大的。(影响因素：科研经历，包括阅读、写作以及科学训练)  
@@ -130,7 +135,7 @@ Tips:
 感觉这一部分很容易被人忽视，还是要多积累，多练啊。妙笔生花，点石成金的技能，无论从事什么职业，都会有助于自己的发展的。  
 
 
-### Figure & Table 图与表  
+## Figure & Table 图与表  
 
 很重要：1.第一时间浏览；2.影响第一印象  
 所以，容易出错的部分，一定要仔细检查，在Reviewer指出问题前解决掉  
@@ -148,19 +153,48 @@ Tips:
 图和表都很重要，还有使用 Visio 画的图也很重要，记得导出成图片再插入到论文中。  
 
 
-### Conclusion 结论  
+
+## Conclusion 结论 Abstract 摘要 Title 题目  
+
+1. Conclusion 结论  
 
 结论部分 应该是对 Result & Discussion 部分的总结，可以使用：  
-Start with: This paper investigate 
+Start with: This paper investigate (Topic) using (Method)...  
+要注意以下几点：  
+- 1. 不要重复 Result  
+- 2. 应该将 Result & Discussion 汇总 (Discover 发现， Extension 拓展， Future Plan 未来)  
+- 3. 不要 Copy & Paste  
+- 4. 需强调 Contribution, 与 Introduction 对应  
+
+2. Abstract 摘要  
+
+题目和摘要是 **搜索引擎返回的内容**，应拒绝文不对题(学术文章需要严谨)  
+> 摘要 = 摘取 + 要点  
+摘要一般包括以下几点：  
+- 1. 摘取 引言 Introduction 部分 (3 sentences => 为了引出研究话题，强调研究的重要性)  
+- 2. 摘取 研究方法 Method 部分 (1 or 2 sentence)  
+- 3. 摘取 结果与讨论 R&D 部分 (**Most** Important Result)  
+- 4. 摘取 结论 Conclusion 部分 (**Rewrite** 强调论文的贡献)  
+
+上面四点中，2,3 主要是为了说明这篇论文**做了什么**，1,4 主要是将这篇论文的**贡献和重要性**  
+
+
+3. Title 题目  
+
+一篇论文的题目应该包括以下三部分：  
+- 1. 研究内容 Topic  
+- 2. 研究方法 Method  
+- 3. 结果及隐含的意义 Improvement/Reduce  
+
+题目应该包含所有的**关键词**  
+
+
+还是待我发完论文再从草稿转至 Post 吧，未完待续......
 
 
 
 
-
-
-
-
-### 参考  
+## 参考  
 
 [写一篇高水平的工程类英文论文](https://space.bilibili.com/230105574/#/channel/detail?cid=45741)  
 
