@@ -1,0 +1,47 @@
+.container {
+    width: 100%;
+
+}
+
+.container header {
+    margin: 0.5rem 2rem;
+    text-align: center
+}
+
+.container header h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #000;
+}
+
+.main-contents .contentpart {
+    margin: 0.5rem 4rem;
+    border: #3c3c3c 1px solid;
+    border-radius: 2px;
+}
+
+.main-contents .contentpart .content-title {
+    margin-left: 1rem;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.main-contents .contentpart .contents {
+    margin-bottom: 1rem;
+}
+
+.main-contents .contentpart .contents .every-part {
+    height: 1.5rem;
+    margin: 0.5rem 0 0.5rem 2rem;
+    font-size: 1.5rem;
+}
+
+.main-contents .contentpart .contents .every-part .part-span {
+    width: 3rem;
+    text-align: center;
+}
+
+.main-contents .contentpart .contents .every-part .part-span+.part-span {
+    margin-left: 1.2rem;
+    font-size: 1.6rem;
+}
