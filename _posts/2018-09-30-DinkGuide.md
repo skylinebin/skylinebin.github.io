@@ -1,13 +1,13 @@
 ---
 layout: post
 title:  "丁克生存指南"
-date:   2018-09-30 21:40:31
-image: 'https://store.skylinebin.com/CSS.jpg'
+date:   2018-11-04 21:40:31
+image: 'https://store.skylinebin.com/Dink.jpg'
 description: 'Dink: The Survival Guide'
 tags:
 - Life
 - Future
-- CODE
+- Planning
 categories:
 - SkylineBin
 twitter_text: '丁克生存指南 '
