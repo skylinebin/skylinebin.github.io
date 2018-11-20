@@ -145,11 +145,11 @@ function getVisibilityState() {
 
 
 ### Reference Sites  
-- https://www.yduba.com/qianduan-1491588986.html  
-- https://w3c.github.io/page-visibility/  
-- https://developer.mozilla.org/en-US/docs/Web/API/Page_Visibility_API  
-- https://www.html5rocks.com/en/tutorials/pagevisibility/intro/  
-- http://javascript.ruanyifeng.com/htmlapi/pagevisibility.html  
-- https://www.w3.org/TR/page-visibility/  
-- https://davidwalsh.name/page-visibility  
+- [https://www.yduba.com/qianduan-1491588986.html](https://www.yduba.com/qianduan-1491588986.html)  
+- [https://w3c.github.io/page-visibility/](https://w3c.github.io/page-visibility/)  
+- [https://developer.mozilla.org/en-US/docs/Web/API/Page_Visibility_API](https://developer.mozilla.org/en-US/docs/Web/API/Page_Visibility_API)  
+- [https://www.html5rocks.com/en/tutorials/pagevisibility/intro/](https://www.html5rocks.com/en/tutorials/pagevisibility/intro/)  
+- [http://javascript.ruanyifeng.com/htmlapi/pagevisibility.html](http://javascript.ruanyifeng.com/htmlapi/pagevisibility.html)  
+- [https://www.w3.org/TR/page-visibility/](https://www.w3.org/TR/page-visibility/)  
+- [https://davidwalsh.name/page-visibility](https://davidwalsh.name/page-visibility)  
 
