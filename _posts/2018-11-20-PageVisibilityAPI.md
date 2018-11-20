@@ -52,6 +52,7 @@ document.visibilityState 属性取 **"hidden"** 值出现的情况有以下几�
 该属性值是一个遗留的问题 *(Document.hidden **is historical**. **Use Document.visibilityState instead.**)*。  
 只有在 **document.visibilityState** 为 **"visible"** 时，**document.hidden** 属性为 **"false"**，其他情况都是 **"true"**。  
 >  Support for hidden attribute is maintained for historical reasons. Developers should use visibilityState where possible.  
+
 所以啊，如果可能，尽量使用 document.visibilityState 这个属性。  
 
 #### visibilitychange 事件  
