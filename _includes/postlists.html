@@ -19,7 +19,7 @@
         {% assign pages_list = tag[1] %} 
         {% for post in pages_list %}
             {% if post.title != null %} 
-             {% if group == null or group == post.group %}
+            {% if group == null or group == post.group %}
         <li>
             <a title="{{ post.title }}" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}
                 <span class="entry-date">
@@ -31,7 +31,7 @@
 
         {% endfor %} 
         {% assign pages_list = nil %}
-     {% assign group = nil %}
+        {% assign group = nil %}
     </ul>
 {% endfor %}
 
