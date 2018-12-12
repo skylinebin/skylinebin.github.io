@@ -1341,7 +1341,7 @@ post .music-read {
     .post-content ol,
     .post-content .tags,
     .post-content iframe {
-        font-size: 1.25rem
+        font-size: 1.5rem
     }
 }
 
@@ -1929,7 +1929,7 @@ code {
 
 @media only screen and (min-width:37.5rem) {
     .author .desc {
-        font-size: 1.25rem
+        font-size: 1.5rem
     }
 }
 
