@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "JavaScript控制标签title切换 及 Page Visibility API"
+title:  "Page Visibility API 以及应用"
 date:   2018-11-20 14:40:31
 image: 'https://store.skylinebin.com/JavaScript.jpg'
 description: 'Basic knowledge of Page Visibility API'
