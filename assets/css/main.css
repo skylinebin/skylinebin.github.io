@@ -119,7 +119,7 @@ kbd,
 pre,
 samp {
     font-family: monospace, monospace;
-    font-size: 1em
+    font-size: 1.25em
 }
 
 button,
@@ -222,14 +222,16 @@ a {
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 300;
-    src: local('Open Sans Light'), local('OpenSans-Light'), url("https://fonts.gstatic.com/s/opensans/v10/DXI1ORHCpsQm3Vp6mXoaTRampu5_7CjHW5spxoeN3Vs.woff2") format('woff2')
+    src: local('Open Sans Light'), local('OpenSans-Light'), url("../fonts/open-sans-v15-latin-regular.woff2") format('woff2')
 }
 
 @font-face {
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 800;
-    src: local('Open Sans Extrabold'), local('OpenSans-Extrabold'), url("https://fonts.gstatic.com/s/opensans/v10/EInbV5DfGHOiMmvb1Xr-hiYtBUPDK3WL7KRKS_3q7OE.woff2") format('woff2')
+    src: local('Open Sans Extrabold'),
+    local('OpenSans-Extrabold'),
+    url("../fonts/open-sans-v15-latin-regular.woff2") format('woff2')
 }
 
 h1,
@@ -907,14 +909,14 @@ body.search-overlay:after {
 }
 
 .aboutme li h3 {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     margin-bottom: 7px;
     position: relative;
 }
 
 .aboutme li h3:before {
     content: "|>";
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     color: #000;
     position: absolute;
     left: -10px;
@@ -1698,11 +1700,11 @@ pre span {
     overflow: auto;
     word-wrap: normal;
     border-radius: 0;
-    // padding: 20px;
+    /* padding: 20px; */
     background-color: #2f2f33;
     color: #c1c2c3;
     margin: 0px auto;
-    // margin-bottom: 30px;
+    /* margin-bottom: 30px; */
     max-width: 580px;
 }
 
@@ -1710,13 +1712,13 @@ code {
 	max-width: 580px;
 }
 
-//评论系统宽度限制居中限制
+/* 评论系统宽度限制居中限制 */
 #uyan_frame {
 	margin: 0px auto;
 	max-width: 580px;
 }
 
-// 来得力评论系统居中显示
+/* 来得力评论系统居中显示 */
 #lv-container {
     max-width: 580px;
     margin: 0px auto;
