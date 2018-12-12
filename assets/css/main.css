@@ -888,8 +888,8 @@ body.search-overlay:after {
 }
 
 .aboutme .showreason {
-	font-size: 1.3rem;
-  font-family: 'Open Sans', sans-serif;
+	font-size: 1.5rem;
+    font-family: 'Open Sans', sans-serif;
 	line-height: 2rem;
 	margin: 0px auto;
 	width: auto;
@@ -1032,12 +1032,12 @@ body {
     .header-site .site-title {
         letter-spacing: 16px;
         margin-bottom: 0;
-        font-size: 1.25rem
+        font-size: 1.5rem
     }
 }
 
 .header-site .site-description {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     display: block;
     margin: 1.875rem 0;
 }

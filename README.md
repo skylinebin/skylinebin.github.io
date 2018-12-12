@@ -23,9 +23,12 @@ email: bin@skylinebin.com
 twitter_username: SkylineBin
 github_username:  SkylineBin
 gplus_username:  SkylineBin
-disqus_username: SkylineBin
 
 ```
+
+## How to add comment plugin  
+use [Valine](https://valine.js.org) based [LeanCloud](https://leancloud.cn/).
+
 
 ## How to create a post ? 
 
