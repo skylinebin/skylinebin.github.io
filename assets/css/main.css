@@ -397,7 +397,7 @@ a .showmymenu,
     cursor: pointer;
     padding: .313rem;
     border-radius: .188rem;
-    background: #54456e;
+    /* background: #54456e; */
     width: 2.188rem;
     height: 2.188rem;
 }
