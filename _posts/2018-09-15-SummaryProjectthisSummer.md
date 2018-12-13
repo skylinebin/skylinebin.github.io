@@ -9,9 +9,10 @@ tags:
 - FrontEnd
 - Summary
 - Node.js
+- Laboratory
 categories:
 - SkylineBin
-twitter_text: '项目问题记录 '
+twitter_text: '横向项目问题记录 '
 ---  
 
 ### 背景介绍  

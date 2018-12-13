@@ -35,4 +35,3 @@ twitter_text: 'What new things I had learned '
 - /platform-tools 文件夹用来存放下载不同Android版本的platform-tools要与SDK Tools 对应  
 - /build-tools 文件夹是编译生成APK需要的工具  
 
-#### 想说的大概只有这些！
