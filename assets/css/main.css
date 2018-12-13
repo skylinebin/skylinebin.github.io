@@ -1209,7 +1209,7 @@ body {
         text-align: inherit;
         width: 69.1%;
         margin-left: 0%;
-        // margin-left: 35%;
+        /* margin-left: 35%; */
         margin-right: 3%
     }
     .post-item .content a:before,
@@ -1258,9 +1258,11 @@ body {
     }
 }
 
+/* 大屏幕左侧目录 margin去除 */
+
 @media only screen and (min-width:90.625rem) {
     .post {
-        margin-left: 347px
+        /* margin-left: 347px */
     }
 }
 
