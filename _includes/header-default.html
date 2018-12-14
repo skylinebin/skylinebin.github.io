@@ -3,7 +3,7 @@
 
         <div class="person">
             <!-- <img alt="My photo" src="http://www.dumpt.com/img/viewer.php?file=wvpb0f0pqcfe1hq110ru.jpg"> -->
-            <img alt="My photo" src="./assets/img/headimg/pikaqiu.png">
+            <img alt="SkylineBin's avatar" src="./assets/img/headimg/pikaqiu.png">
         </div>
 
         <h1>
@@ -14,25 +14,25 @@
     <div class="col-lg-6">
         <ul class="recent">
             <p>Recent posts:</p>
-             {% for post in site.posts limit:3%}
+                {% for post in site.posts limit:3%}
                 <li>
-                    <a title="Will take a my recent post" href="{{ post.url | prepend: site.baseurl }}">
+                    <a title="Will take a my recent post: {{ post.title }}" href="{{ post.url | prepend: site.baseurl }}">
                         <h2 class="post-title" itemprop="name">{{ post.title }}</h2>
                     </a>
                 </li>
-              {% endfor %}
+                {% endfor %}
         </ul>
     </div>
     <div class="col-lg-6">
         <ul class="recent">
             <p>Recent projects:</p>
-             {% for project in site.projects limit:3%}
+                {% for project in site.projects limit:3%}
                 <li>
-                    <a title="Show my recent project" href="{{ project.url}}">
+                    <a title="Show my recent project: {{ project.name }}" href="{{ project.url}}">
                         <h2 class="post-title" itemprop="name">{{ project.name }}</h2>
                     </a>
                 </li>
-              {% endfor %}
+                {% endfor %}
         </ul>
     </div>
 </div>
