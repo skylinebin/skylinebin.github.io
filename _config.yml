@@ -2,8 +2,8 @@
 title: skylinebin - Full Stack Learner
 description: "A blog about skylinebin ..."
 baseurl: "" # for test: remove string '/space-jekyll-templa' to ''
-# url: "http://skylinebin.github.io/blog/" # for test: remove string 'http://victorvoid.github.io' to '' but in production: 'https://yourusername.githu.io'
-url: "https://skylinebin.com/" # for test: remove string 'http://victorvoid.github.io' to '' but in production: 'https://yourusername.githu.io'
+url: "http://skylinebin.github.io/blog/" # for test: remove string 'http://victorvoid.github.io' to '' but in production: 'https://yourusername.githu.io'
+# url: "https://skylinebin.com/"
 # User settings
 username: SkylineBin
 user_title: skylinebin - FrontEnd
