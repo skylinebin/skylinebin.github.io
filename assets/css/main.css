@@ -1409,7 +1409,7 @@ post .music-read {
 }
 
 .post-content h2:before {
-    // content: '##';
+    /* // content: '##'; */
     font-size: 1.563rem
 }
 
@@ -1990,6 +1990,25 @@ footer p {
 
 
 /* add styles for friends' links */
+
+.friends-title {
+    font-weight: bold;
+    max-width: 60rem;
+    text-align: center;
+}
+
+.friends {
+    /* margin-left: 15%;
+    margin-right: 15%; */
+    max-width: 60rem;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.f-item .ih-item {
+    text-align: center;
+}
+
 .ih-item {
     position: relative;
     -webkit-transition: all 0.35s ease-in-out;
@@ -2019,15 +2038,15 @@ footer p {
 
 .ih-item.circle {
     position: relative;
-    width: 220px;
-    height: 220px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
 }
 
 .ih-item.circle .img {
     position: relative;
-    width: 220px;
-    height: 220px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
 }
 
@@ -2088,11 +2107,11 @@ footer p {
     color: #fff;
     text-transform: uppercase;
     position: relative;
-    letter-spacing: 2px;
-    font-size: 22px;
-    margin: 0 30px;
-    padding: 55px 0 0 0;
-    height: 110px;
+    letter-spacing: 1px;
+    font-size: 18px;
+    margin: 0 20px;
+    padding: 35px 0 0 0;
+    height: 80px;
     text-shadow: 0 0 1px white, 0 1px 2px rgba(0, 0, 0, 0.3);
 }
 
