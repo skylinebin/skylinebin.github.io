@@ -57,6 +57,8 @@ links:
     url: /about
   - title: little tools
     url: /mytools
+  - title: friends' links
+    url: /friends
 
 # projects in header index
 projects:

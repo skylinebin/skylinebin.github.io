@@ -1143,20 +1143,20 @@ window.Zepto = Zepto, void 0 === window.$ && (window.$ = Zepto),
                 case "6":
                     t("#sidebar ul:first-child li:nth-child(6) a").trigger("click");
                     break;
+                case "7":
+                    t("#sidebar ul:first-child li:nth-child(7) a").trigger("click");
+                    break;
                 case "g":
                     t("#sidebar ul:nth-child(2) li:first-child a").trigger("click");
-                    break;
-                case "f":
-                t("#sidebar ul:nth-child(2) li:nth-child(2) a").trigger("click");
                     break;
                 case "s":
                     t("#fade").trigger("click"), t("#search").trigger("click");
                     break;
                 case "t":
-                    t("#sidebar ul:nth-child(2) li:nth-child(4) a").trigger("click");
+                    t("#sidebar ul:nth-child(2) li:nth-child(3) a").trigger("click");
                     break;
                 case "i":
-                    t("#sidebar ul:nth-child(2) li:nth-child(5) a").trigger("click")
+                    t("#sidebar ul:nth-child(2) li:nth-child(4) a").trigger("click")
             }
             if (t(".search-form").hasClass("active")) switch (e.key) {
                 case "Esc":
