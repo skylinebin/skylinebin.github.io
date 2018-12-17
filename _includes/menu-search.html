@@ -1,12 +1,14 @@
 <div class="search-wrapper">
 
-<!-- style="display: none;" -->
-    <div class="search-form">
-        <input arial-label="Search for a post" type="text" class="search-field" placeholder="Search...">
-        <svg class="icon-remove-sign"><use xlink:href="#icon-close"></use></svg>
+  <!-- style="display: none;" -->
+  <div class="search-form">
+    <input arial-label="Search for a post" type="text" class="search-field" placeholder="Search...">
+    <svg class="icon-remove-sign">
+      <use xlink:href="#icon-close"></use>
+    </svg>
 
-        <ul class="search-results search-list"></ul>
-    </div>
+    <ul class="search-results search-list"></ul>
+  </div>
 
 </div>
 
@@ -17,8 +19,12 @@
 
 <div id="fade" class="overlay"></div>
 <a id="slide" class="slideButton">
-    <svg id="open" class="icon-menu" style="width:2.188rem;height:2.188rem;"><use xlink:href="#icon-menu"></use></svg>
-    <svg id="close" class="icon-close" style="width:2.188rem;height:2.188rem;"><use xlink:href="#icon-close"></use></svg>
+  <svg id="open" class="icon-menu" style="width:2.188rem;height:2.188rem;">
+    <use xlink:href="#icon-menu"></use>
+  </svg>
+  <svg id="close" class="icon-close" style="width:2.188rem;height:2.188rem;">
+    <use xlink:href="#icon-close"></use>
+  </svg>
 </a>
 <!-- <div class="showmymenu">
 <a id="slide" class="showmymenu">
@@ -28,7 +34,7 @@
 </div> -->
 <aside id="sidebar">
   <div id="topmenu">
-    {% assign filename = page.url | replace_first: '/', '' | replace: '/', '-'  | replace: '.html', '.md' %}
+    {% assign filename = page.url | replace_first: '/', '' | replace: '/', '-' | replace: '.html', '.md' %}
     <ul>
       <li><span>B</span></li>
       <li><span> {{page.url}}</span></li>
@@ -48,15 +54,17 @@
       {% assign counter=1 %}
       {% for link in site.links %}
       {% if link.external %}
-        <li>
-          <a href="{{ link.url }}">{{ link.title }}</a>
-        </li>
+      <li>
+        <a href="{{ link.url }}">{{ link.title }}</a>
+      </li>
       {% else %}
-        <li>
-          <span class="counter-menu">{{counter}}</span>
-          <svg viewBox="0 0 50 50" class="icon-arrow-menu"><use xlink:href="#icon-right-arrow"></use></svg>
-          <a href="{{ site.url }}{{ link.url }}"> {{ link.title }}</a>
-        </li>
+      <li>
+        <span class="counter-menu">{{counter}}</span>
+        <svg viewBox="0 0 50 50" class="icon-arrow-menu">
+          <use xlink:href="#icon-right-arrow"></use>
+        </svg>
+        <a href="{{ site.url }}{{ link.url }}"> {{ link.title }}</a>
+      </li>
       {% endif %}
 
       {% assign counter=counter | plus:1 %}
@@ -64,14 +72,28 @@
     </ul>
 
     <ul>
-      <li><span class="counter-menu">g</span><svg viewBox="0 0 50 50" class="icon-arrow-menu"><use xlink:href="#icon-right-arrow"></use></svg><a title="Show my projects on GitHub"  target="_blank" href="http://github.com/{{site.github_username}}" class="search">github</a></li>
-      <li><span class="counter-menu">s</span><svg viewBox="0 0 50 50" class="icon-arrow-menu"><use xlink:href="#icon-right-arrow"></use></svg><a  title="Search for a post" class="search">search</a></li>
-      <li><span class="counter-menu">t</span><svg viewBox="0 0 50 50" class="icon-arrow-menu"><use xlink:href="#icon-right-arrow"></use></svg><a title="Follow me in Twitter" target="_blank" href="http://twitter.com/{{site.twitter_username}}">twitter</a></li>
-      <li><span class="counter-menu">i</span><svg viewBox="0 0 50 50" class="icon-arrow-menu"><use xlink:href="#icon-right-arrow"></use></svg><a title="Show my websites" target="_blank" href="https://www.skylinebin.com">index</a></li>
+      <li><span class="counter-menu">g</span><svg viewBox="0 0 50 50" class="icon-arrow-menu">
+          <use xlink:href="#icon-right-arrow"></use>
+        </svg><a title="Show my projects on GitHub" target="_blank" href="http://github.com/{{site.github_username}}"
+          class="search">github</a></li>
+      <li><span class="counter-menu">s</span><svg viewBox="0 0 50 50" class="icon-arrow-menu">
+          <use xlink:href="#icon-right-arrow"></use>
+        </svg><a title="Search for a post" class="search">search</a></li>
+      <li><span class="counter-menu">t</span><svg viewBox="0 0 50 50" class="icon-arrow-menu">
+          <use xlink:href="#icon-right-arrow"></use>
+        </svg><a title="Follow me in Twitter" target="_blank" href="http://twitter.com/{{site.twitter_username}}">twitter</a></li>
+      <li><span class="counter-menu">i</span><svg viewBox="0 0 50 50" class="icon-arrow-menu">
+          <use xlink:href="#icon-right-arrow"></use>
+        </svg><a title="Show my websites" target="_blank" href="https://www.skylinebin.com">index</a></li>
+<li><span class="counter-menu">f</span><svg viewBox="0 0 50 50" class="icon-arrow-menu">
+    <use xlink:href="#icon-right-arrow"></use>
+  </svg><a title="Friends' links" target="_blank" href="{{ site.url }}{{ site.friendlinks.url }}">friends</a></li>
     </ul>
   </nav>
 </aside>
 
 <a id="search" class="dosearch">
-    <svg class="icon-menu icon-search"><use xlink:href="#icon-search"></use></svg>
+  <svg class="icon-menu icon-search">
+    <use xlink:href="#icon-search"></use>
+  </svg>
 </a>
