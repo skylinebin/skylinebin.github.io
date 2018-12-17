@@ -36,6 +36,7 @@ twitter_text: 'How to install tensorflow-gpu in Ubuntu16.04? '
 &nbsp;&nbsp;&nbsp;&nbsp;Ctrl+Alt+T进入终端 ，卸载禁用自带的 nvidia*驱动并加入黑名单
 ```
 sudo apt-get purge nvidia*  #卸载自带驱动
+#另一种卸载方案: sudo /usr/bin/nvidia-uninstall 
 
 #禁用自带驱动创建黑名单
 
@@ -62,16 +63,21 @@ sudo service lightdm stop #关闭x-window
 ls #文件列表
 sudo sh ./NVIDIA-Linux-x86_64-384.98.run #安装显卡驱动
 
-sudo service lightdm stop  #打开x-window支持
+sudo service lightdm start  #打开x-window支持
 
 reboot #重启进入窗口界面
 
-```
+```  
+可以通过添加 "--compat32-libdir" 和 "--no-x-check" 解决安装过程中遇到的问题  
 重启进入界面，查看驱动安装情况
 ```
 nvidia-smi #N卡驱动列表
 ```
-(之前因为没有独立显卡驱动，可能桌面分辨率很低，显示不全都有可能，安装驱动成功后明显分辨率自动更改为合适大小)
+( 之前因为没有独立显卡驱动，可能桌面分辨率很低，显示不全都有可能，安装驱动成功后明显分辨率自动更改为合适大小 )  
+
+如果安装完成后，出现 登录进入 Ubuntu 无限循环，一直停在登录界面 的问题。可能的原因就有很多，可以检索关键词 “Ubuntu 登录无限循环” 来尝试。  
+可以参考的一个解决方案为：[Ubuntu 16.04安装NVIDIA驱动后循环登录问题](https://www.jianshu.com/p/34236a9c4a2f)  
+
 
 ### 2.安装CUDA-8.0
 &nbsp;&nbsp;&nbsp;&nbsp;(安装失败教训：不要下载最新的CUDA-9.0，因为tensorflow-gpu的配置文件中需要的库文件还是CUDA-8.0提供的，比如：libcublas.so.8.0、libcurand.so.8.0等等文件，都是CUDA-8.0里面的）
