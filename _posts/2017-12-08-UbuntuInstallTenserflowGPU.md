@@ -80,7 +80,8 @@ nvidia-smi #N卡驱动列表
 
 
 ### 2.安装CUDA-8.0
-&nbsp;&nbsp;&nbsp;&nbsp;(安装失败教训：不要下载最新的CUDA-9.0，因为tensorflow-gpu的配置文件中需要的库文件还是CUDA-8.0提供的，比如：libcublas.so.8.0、libcurand.so.8.0等等文件，都是CUDA-8.0里面的）
+&nbsp;&nbsp;&nbsp;&nbsp;(安装失败教训：不要下载最新的CUDA-9.0，因为 tensorflow-gpu 的配置文件中需要的库文件还是CUDA-8.0提供的，比如：libcublas.so.8.0、libcurand.so.8.0等等文件，都是CUDA-8.0里面的）  
+**此处需要检测 tensorflow-gpu 的版本**， tensorflow-gpu 1.6 已经支持 CUDA-9.0
 
 &nbsp;&nbsp;&nbsp;&nbsp;(官网的历史版本界面下载安装文件(https://developer.nvidia.com/cuda-80-ga2-download-archive)
 ![CUDAToolkit](https://store.skylinebin.com/CUDAToolkit.png)
