@@ -194,4 +194,19 @@ sudo apt install pycharm
 
 
 ### 5.总结
-&nbsp;&nbsp;&nbsp;&nbsp;这次配置环境是在一台裸机上，本来没有系统，进入WinPE分了100G来给Ubuntu用，做启动盘(rufus软件好评),然后就是装系统和装显卡驱动，默认下载的CUDA是9.0，可能Ubuntu的Tensorflow-gpu源还没有更新CUDA库文件，致使安装失败，发现问题并且解决。还是挺费时间，但是也学到了一些基本的底层驱动的操作，应该勉强可以吧。
+&nbsp;&nbsp;&nbsp;&nbsp;这次配置环境是在一台裸机上，本来没有系统，进入WinPE分了100G来给Ubuntu用，做启动盘(rufus软件好评),然后就是装系统和装显卡驱动，默认下载的CUDA是9.0，可能Ubuntu的Tensorflow-gpu源还没有更新CUDA库文件，致使安装失败，发现问题并且解决。还是挺费时间，但是也学到了一些基本的底层驱动的操作，应该勉强可以吧。  
+
+### 6.后续问题更新  
+在后续的使用过程中，出现过诸多问题，有一部分已经添加到正文中了，另外出现的比较常见的问题记录如下：  
+
+1. 运行 Tensorflow 相关的程序后出现 "ImportError: libcublas.so.8.0: cannot open shared object file: No such file or directory" 类似的报错。  
+问题出现原因：CUDA 没有配置正确。  
+解决方案：检查安装 CUDA 的版本与安装 tensorflow-gpu 所支持的版本是否一致；检查安装 CUDA 后 环境变量 和 动态链接库 是否都添加了配置，并且均 source 激活了新的配置；若还是报错，可以考虑 手动将 报错的库文件 copy 至 "/usr/local/lib" 目录中，类似以下操作：
+```
+sudo cp /usr/local/cuda-8.0/lib64/libcudart.so.8.0 /usr/local/lib/libcudart.so.8.0 
+sudo cp /usr/local/cuda-8.0/lib64/libcublas.so.8.0 /usr/local/lib/libcublas.so.8.0 
+sudo cp /usr/local/cuda-8.0/lib64/libcurand.so.8.0 /usr/local/lib/libcurand.so.8.0
+sudo cp /usr/local/cuda-8.0/lib64/libcusolver.so.8.0 /usr/local/lib/libcusolver.so.8.0
+sudo cp /usr/local/cuda-8.0/lib64/libcufft.so.8.0 /usr/local/lib/libcufft.so.8.0
+```
+需要 copy 的文件可以按照运行 tensorflow 程序对应的报错进行调整。
