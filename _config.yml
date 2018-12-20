@@ -48,6 +48,11 @@ friendlinks:
   title: friends' links
   url: /friends
 
+# Support me link
+supportme:
+  title: support me
+  url: /support
+
 # Links to include in menu navigation
 links:
   - title: home
