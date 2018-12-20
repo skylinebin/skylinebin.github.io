@@ -53,6 +53,14 @@ supportme:
   title: support me
   url: /support
 
+# Maybe helpful
+helpfulposts:
+  - name: 一个程序员的软件推荐指南
+    url: https://skylinebin.com/WhenIGetANewComputer/
+  - name: Windows下的快捷指令操作
+    url: https://skylinebin.com/SomeshortcutCommands/
+
+
 # Links to include in menu navigation
 links:
   - title: home
