@@ -2207,6 +2207,15 @@ footer p {
 /* end for friends' links */
 
 /* start for donate pic */
+
+.donate {
+/*  margin-left: 15%;
+    margin-right: 15%; */
+    max-width: 60rem;
+    text-align: center;
+    margin: 0 auto;
+}
+
 .ih-item.square {
     position: relative;
     /*    width: 316px;
