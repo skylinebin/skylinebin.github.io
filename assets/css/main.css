@@ -2208,11 +2208,29 @@ footer p {
 
 /* start for donate pic */
 
+.aboutme.helpfulposts {
+    margin-top: 20px;
+}
+
+.donate-link {
+    font-family: 'Open Sans',
+    sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: #5d4d7a;
+    text-decoration: none;
+    border: 1px solid #fff;
+}
+
 .donate {
 /*  margin-left: 15%;
     margin-right: 15%; */
     max-width: 60rem;
     text-align: center;
+    margin: 0 auto;
+}
+
+.donate.f-item.ih-item {
     margin: 0 auto;
 }
 
@@ -2312,7 +2330,7 @@ footer p {
     position: relative;
     /*color: #bbb;*/
     color: #d3d2d1;
-    padding: 30px 15px 20px;
+    padding: 30px 2px 20px;
     text-align: center;
 }
 
