@@ -2208,9 +2208,11 @@ footer p {
 
 /* start for donate pic */
 
-.aboutme.helpfulposts {
+ul.recent.helpfulposts {
     margin-top: 20px;
 }
+
+
 
 .donate-link {
     font-family: 'Open Sans',
@@ -2219,7 +2221,7 @@ footer p {
     font-style: normal;
     color: #5d4d7a;
     text-decoration: none;
-    border: 1px solid #fff;
+    border: none !important;
 }
 
 .donate {
