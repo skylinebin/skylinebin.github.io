@@ -2381,3 +2381,7 @@ footer p {
 }
 
 /* end for donate pic */
+
+.clearboth {
+    clear: both;
+}
