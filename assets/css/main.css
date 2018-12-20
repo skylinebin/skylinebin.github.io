@@ -2220,8 +2220,8 @@ footer p {
     position: relative;
     /*    width: 316px;
     height: 216px;*/
-    width: 326px;
-    height: 366px;
+    width: 316px;
+    height: 440px;
     border: 8px solid #fff;
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
 }
@@ -2254,7 +2254,7 @@ footer p {
 }
 
 .ih-item.square.effect9.wcolored .info .info-back {
-    background: #6dc425;
+    background: #42A42A;
 }
 
 .ih-item.square.effect9.wcolored .info h3 {
