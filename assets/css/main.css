@@ -2400,8 +2400,32 @@ ul.recent.helpfulposts {
     transform: rotate3d(1, 0, 0, 180deg);
 }
 
+@media only screen and (max-width:50rem) {
+.df-item {
+    text-align: center !important;
+    margin: 0 10%;
+}
+}
+.f-item .ih-item {
+    margin-bottom: 10px;
+}
+
+
+
+.Eth-note {
+    margin-top: 80px;
+}
+
+.Eth-note p {
+    text-align: center;
+    font-size: 12px;
+    margin: auto auto;
+}
+
+
 /* end for donate pic */
 
 .clearboth {
     clear: both;
 }
+
