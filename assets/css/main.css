@@ -2403,7 +2403,7 @@ ul.recent.helpfulposts {
 @media only screen and (max-width:50rem) {
 .df-item {
     text-align: center !important;
-    margin: 0 10%;
+    /* margin: 0 10%; */
 }
 }
 .f-item .ih-item {
@@ -2414,12 +2414,14 @@ ul.recent.helpfulposts {
 
 .Eth-note {
     margin-top: 80px;
+    width: 316px;
+    height: 240px;
 }
 
 .Eth-note p {
     text-align: center;
     font-size: 12px;
-    margin: auto auto;
+    /* margin: auto auto; */
 }
 
 
