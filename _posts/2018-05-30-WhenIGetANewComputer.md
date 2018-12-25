@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "新系统中个人精选软件整理(一个程序员的软件推荐指南)"
+title:  "新系统中精选软件整理(一个程序员的软件推荐指南)"
 date:   2018-05-30 19:45:31
 image: 'https://store.skylinebin.com/Full-stacks.png'
 description: 'Build a new system environment'

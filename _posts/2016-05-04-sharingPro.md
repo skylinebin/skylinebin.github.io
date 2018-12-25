@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "首页修复及js使用"
+title:  "首页修复及JavaScript细节使用"
 date:   2017-05-04 22:23:31
 image: '/assets/img/mengg.jsp'
 description: 'about JavaScript'
