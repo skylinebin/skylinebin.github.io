@@ -210,4 +210,12 @@ sudo cp /usr/local/cuda-8.0/lib64/libcurand.so.8.0 /usr/local/lib/libcurand.so.8
 sudo cp /usr/local/cuda-8.0/lib64/libcusolver.so.8.0 /usr/local/lib/libcusolver.so.8.0
 sudo cp /usr/local/cuda-8.0/lib64/libcufft.so.8.0 /usr/local/lib/libcufft.so.8.0
 ```
-需要 copy 的文件可以按照运行 tensorflow 程序对应的报错进行调整。
+需要 copy 的文件可以按照运行 tensorflow 程序对应的报错进行调整。  
+
+2. 运行 Tensorflow 相关的程序后出现 "failed to create cublas handle: CUBLAS_STATUS_NOT_INITIALIZED" 类似的报错。  
+问题出现原因：Nvidia 显卡驱动更新后，老版本的驱动存在残留的文件影响。  
+解决方案：清理 nvidia 的缓存：  
+```
+sudo rm -rf ~/.nv/
+```  
+清理缓存后重新运行，即可解决这个报错。  
