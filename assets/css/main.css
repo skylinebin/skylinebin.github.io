@@ -1535,6 +1535,11 @@ post .music-read {
     content: '';
     display: table
 }
+
+.right-support:after {
+    clear: both
+}
+
 .right-support a {
     text-decoration: none;
     font-weight: bold;
