@@ -2227,7 +2227,8 @@ ul.recent.helpfulposts {
 .donate {
 /*  margin-left: 15%;
     margin-right: 15%; */
-    max-width: 60rem;
+    /* max-width: 60rem; */
+    max-width: 50rem;
     text-align: center;
     margin: 0 auto;
 }
@@ -2240,8 +2241,10 @@ ul.recent.helpfulposts {
     position: relative;
     /*    width: 316px;
     height: 216px;*/
-    width: 316px;
-    height: 440px;
+    /* width: 316px;
+    height: 440px; */
+    width: 280px;
+    height: 400px;
     border: 8px solid #fff;
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
 }
@@ -2414,7 +2417,8 @@ ul.recent.helpfulposts {
 
 .Eth-note {
     margin-top: 80px;
-    width: 316px;
+    /* width: 316px; */
+    width: 280px;
     height: 240px;
 }
 
