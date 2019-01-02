@@ -131,6 +131,8 @@ twitter_text: '总结系统必备的软件以及个人推荐的干货'
 
 - **[Bandicam](https://www.bandicam.cn/)** 录屏软件，也是常用的，这一款简单实用  
 
+- **[LICEcap](https://www.cockos.com/licecap/)** GIF 图片制作软件，可以用来录屏展示动图的，操作简单。制作的 GIF 图片可以使用 [ILOVEIMG](https://www.iloveimg.com/zh-cn/compress-image) 进行压缩  
+
 
 ### 不常使用但很实用的软件  
 
