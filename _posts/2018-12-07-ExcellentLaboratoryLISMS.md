@@ -125,6 +125,8 @@ RSM Laboratory Demo: [Demo](http://localhost:8899/lab.html)
 http://localhost:8899/lab.html
 (粗略版的Demo，目前部署在本机的端口上，等后期完善后，再放在云服务器上)  
 
+后面我又录制了一遍 Web 页面做成的 GIF [78M的GIF,确认WIFI后再点](https://sdns.skylinebin.com/gif/lab/VR_RSMLab.gif)，压缩后效果不好就没有压缩。  
+
 以下是Demo版的全景虚拟实验室的几个角落：
 
 ![RSMLabABB](https://sdns.skylinebin.com/Academic/RSM/RSMLabone.png)
