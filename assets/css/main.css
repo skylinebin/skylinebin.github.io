@@ -1527,7 +1527,7 @@ post .music-read {
     text-align: left;
     max-width: 50rem;
     border-top: 1px solid #f2f2f2;
-    padding: 1.25rem 0;
+    padding: 1.25rem 1.25rem;
 }
 
 .right-support:before,
@@ -1549,8 +1549,15 @@ post .music-read {
 .right-support h3 {
     text-align: left;
     margin: 0 0 1.875rem;
-    margin-left: 1.25rem;
+    /* margin-left: 1.25rem; */
     font-size: 1.875rem;
+}
+
+@media only screen and (max-width:37.5rem) {
+    .right-support {
+        font-size: 1.125rem;
+        line-height: 1.5;
+    }
 }
 
 .share {
@@ -1658,6 +1665,10 @@ table td {
 @media only screen and (max-width:37.5rem) {
     .post-list {
         padding: 0 1.25rem
+    }
+
+    .showreason {
+        padding: 0 1.25rem;
     }
 }
 
