@@ -1551,6 +1551,7 @@ post .music-read {
     margin: 0 0 1.875rem;
     /* margin-left: 1.25rem; */
     font-size: 1.875rem;
+    font-weight: bold;
 }
 
 @media only screen and (max-width:37.5rem) {
