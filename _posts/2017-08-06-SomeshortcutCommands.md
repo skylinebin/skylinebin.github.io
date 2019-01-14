@@ -80,6 +80,15 @@ twitter_text: 'Some shortcut commands in Windows system'
 
 ![查看bios系统信息](https://store.skylinebin.com/image/png/wmicbios.png)  
 
+#### netstat指令查看所有端口信息  
+开始 → 运行 → CMD(或者Win+R→CMD) → 输入<strong>netstat -aon</strong>,可以查看各个端口的信息  
+
+#### netstat指令查看指定端口信息  
+开始 → 运行 → CMD(或者Win+R→CMD) → 输入<strong>netstat -aon|findstr "80"</strong>,可以查看指定端口的信息  
+
+#### tasklist指令查看指定端口占用程序信息  
+开始 → 运行 → CMD(或者Win+R→CMD) → 输入<strong>tasklist|findstr "80"</strong>,可以查看指定端口的占用程序信息  
+
 
 ### 还有一个比较有用的  
 
