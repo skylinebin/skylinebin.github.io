@@ -188,6 +188,25 @@ Start with: This paper investigate (Topic) using (Method)...
 题目应该包含所有的**关键词**  
 
 
+
+## Respond to Reviewer's Comments 回复审稿人意见  
+
+### 回复审稿人意见的要点  
+1.调整心态：休息一天  
+- 有 > 50%的成功机会 (Is peer review just a crapshot?)  
+- 审稿人是你的朋友，而不是你的敌人  
+
+2.逐一回答**每一条**审稿意见  
+
+3.**清晰直接** 地标明文章中所有的修改  
+- highlighted in yellow
+
+4.礼貌、客气  
+- peer review 没有报酬，懂得感激编委和评审的时间 (The co-authors and I would like to thank you for the time and effort spent in reviewing the manuscript)  
+- 同意：表示赞同 (The authors would like to thank the reviewer) 要真诚  
+- 不同意：委婉表达，尽量不要怼回去  
+
+
 还是待我发完论文再从草稿转至 Post 吧，未完待续......
 
 
@@ -201,7 +220,7 @@ Start with: This paper investigate (Topic) using (Method)...
 
 - Dr.Zhu : [GoogleScholar Jingyi Zhu](https://scholar.google.com/citations?user=dutepS4AAAAJ&hl=en)、[Jingyi Zhu](https://www.linkedin.com/in/jingyi-zhu/)  
 
-放上几位学长学姐的信息，是为了表达自己真心的感谢，毕竟并没有多少人会提示我们逻辑意识的重要性，再次感谢，希望早日也能向上述的学长学姐一样，达到妙笔生花的地步。(几位学长学姐，如果感觉这些信息放在这里不合适，可以留言联系我删除呀~)  
+放上几位学长学姐的信息，是为了表达自己真心的感谢，毕竟并没有多少人会提示我们逻辑意识的重要性，再次感谢，希望早日也能向上述的学长学姐一样，达到妙笔生花的地步。(几位学长学姐如果机缘巧合看到了这篇总结，感觉这些信息放在这里不合适，可以留言联系我删除呀~)  
 
 
 ## 参考  
