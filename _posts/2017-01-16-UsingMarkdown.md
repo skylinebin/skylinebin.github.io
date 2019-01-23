@@ -14,12 +14,12 @@ twitter_text: 'Markdown使用指南 '
 ---
 
 
-# MarkDown文档编写规范
+# <span id="topview">MarkDown</span>文档编写规范
 
 > by SkylineBin
 
 ### 1.选用Markdown原因及应用背景
-- Markdown是一种电子邮件风格的标记语言，**语法简单**，语法兼容HTML，能够形成很好布局排版页面，排版好后有极好的可读性。
+- Markdown 是一种电子邮件风格的标记语言，**语法简单**，语法兼容HTML，能够形成很好布局排版页面，排版好后有极好的可读性。
 - Markdown文件能被所有文本编辑器打开，兼容性很强，也可轻松转换成其他格式的电子书。
 - 本项目所在的gitee(码云)，能够自动解析*.md*的文件，可以网页阅读排版好的文档，方便后期查阅整理。
 
@@ -76,12 +76,15 @@ Markdown中使用[ ]和( )构成的符号来引入连接或者插入图片。
 ```
 - 2.使用云存储对象来存储图片，生成外链作为链接引入进文档。
 
-#### 3.4 Markdown粗体和斜体
+#### 3.4 Markdown粗体和斜体  
+
 对于需要强调的部分，常使用 **粗体** 和 *斜体* 来以示区别。粗体部分使用两个 \* 号包围来引入，斜体部分使用一个 \* 号包围来引入。
 ```
 这是 **粗体** ，这是 *斜体*.
 ```  
-#### 3.5 Markdown中代码引用
+
+#### 3.5 Markdown中代码引用  
+
 **代码引用** 可能是之后本项目使用较多的一部分。Markdown中使用键盘上英文输入法下，数字1左边的小点 \` 来作为代码引入的开始。使用三个 \`来开始引用代码，三个 \` 结束代码引用。前三个 \`的后面可以标注代码的语言，也可以不用标注。
 ```java
 //标注了代码类型的好处是可以给出关键字高亮
@@ -110,10 +113,12 @@ private static int partition(int[] arr, int low, int high){
     return low;
 }
 ```
-代码引入具体实现如下图所示：
+代码引入具体实现如下图所示：  
+
 ![Markdown中代码引入](https://store.skylinebin.com/image/markdown/importCodes.png)
 
-#### 3.6 Markdown中分隔线及转义符号
+#### 3.6 Markdown中分隔线及转义符号  
+
 Markdown中使用三个 \* 号来画出一条分隔线，效果如下所示：
 ***
 Markdown中的符号转义使用 反斜杠 \\ 来帮助插入普通的符号。
@@ -122,17 +127,21 @@ Markdown中的符号转义使用 反斜杠 \\ 来帮助插入普通的符号。
 #### 3.7 Markdown中插入公式  
 原生的 Markdown 中其实没有公式的这一项的，但是很多替代的解决方案。  
 例如，可以使用图片的方式来引入公式：  
+
 ```
 <img src="http://latex.codecogs.com/png.latex?f_%7B1min%7D%20%3D%20min%5Cleft%20%5C%7B%20%5Csum_%7Bi%3D1%7D%5E%7BN%7D%5Cleft%20%28%20T_%7Bc%7D-T_%7Bsi%7D%20%5Cright%20%29%5E%7B2%7D%20%5Cright%20%5C%7D" style="border:none;">
 ```  
 以此得到下图的公式：  
 
-<img src="http://latex.codecogs.com/png.latex?f_%7B1min%7D%20%3D%20min%5Cleft%20%5C%7B%20%5Csum_%7Bi%3D1%7D%5E%7BN%7D%5Cleft%20%28%20T_%7Bc%7D-T_%7Bsi%7D%20%5Cright%20%29%5E%7B2%7D%20%5Cright%20%5C%7D" style="border:none;">
+<img src="http://latex.codecogs.com/png.latex?f_%7B1min%7D%20%3D%20min%5Cleft%20%5C%7B%20%5Csum_%7Bi%3D1%7D%5E%7BN%7D%5Cleft%20%28%20T_%7Bc%7D-T_%7Bsi%7D%20%5Cright%20%29%5E%7B2%7D%20%5Cright%20%5C%7D" style="border:none;">  
+
 
 或者是用引入图片的方式：  
+
 ```
 ![formula one](http://latex.codecogs.com/png.latex?f_%7B1min%7D%20%3D%20min%5Cleft%20%5C%7B%20%5Csum_%7Bi%3D1%7D%5E%7BN%7D%5Cleft%20%28%20T_%7Bc%7D-T_%7Bsi%7D%20%5Cright%20%29%5E%7B2%7D%20%5Cright%20%5C%7D)
 ```  
+
 这两个其实都是使用 [在线公式编辑器 codecogs](http://latex.codecogs.com/) 实现的。  
 类似的平台还有 [forkosh](http://www.forkosh.com) 和 []()
 
@@ -146,7 +155,17 @@ Markdown中的符号转义使用 反斜杠 \\ 来帮助插入普通的符号。
 
 可以按照对应的js 规则写公式即可。  
 
-个人使用第一种以图片的形式引入更多，这种方式可以引入比较好看的 Latex 格式的公式图片。
+个人使用第一种以图片的形式引入更多，这种方式可以引入比较好看的 Latex 格式的公式图片。  
 
+#### 3.8 Markdown中页面内部跳转  
+对于长篇文章，页面内部跳转可以方便读者阅读，效果较好。  
+检索了 Markdown 里页面内部跳转的实现形式，基本都是使用 a 标签的锚点这种方式：  
+```html
+<span id="anchor">需要跳转到的锚点</span>
+
+<!-- 引用锚点时 -->
+[跳转到锚点处](#anchor)
+```
+例如，可以点击 [回到顶部](#topview)
 
 以上为本项目文档的Markdown编辑规范，原文档是为实验室工作基础知识整理的文档规范，但是实验室同学们觉得这个太麻烦了，我就放在这里了，毕竟也是自己花费了一些心思整理的！
