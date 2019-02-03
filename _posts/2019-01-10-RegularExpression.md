@@ -373,6 +373,18 @@ if (pattern.test(testText)){
 
 ```
 
+### JavaScript 正则表达式模式的局限性  
+ECMAScript 中的正则表达式功能虽然很完备，但仍然缺少一些 Perl 所支持的高级正则表达式特性。JavaScript 正则表达式不支持的特性有：  
+- 匹配字符串开始和结尾的 \A 和 \Z 锚  
+- 向后查找 (lookbehind)  
+- 并集和交集  
+- 原子组 (atomic grouping)  
+- Unicode 支持 (但支持单个字符)  
+- 命名的捕获组 (但支持编号)  
+- s 和 x 匹配模式 (单行 和 无间隔)  
+- 条件匹配  
+- 正则表达式注释  
+
 
 ## 应用实例  
 
