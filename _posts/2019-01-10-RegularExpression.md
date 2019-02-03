@@ -340,13 +340,38 @@ var zipcode = new RegExp("\\d{5}","g");
 
 - **属性 lastIndex**，可读写的证书，若匹配模式带有修饰符"g"，则存储字符串中下一次检索的开始位置。  
 
-#### RegExp的方法  
+#### RegExp的实例方法  
 
 **RegExp最主要的执行模式匹配的方法是exec()** ，其参数是一个字符串，即对一个指定的字符串执行一个正则表达式。  
-在字符串中执行匹配检索，若没有检索到，返回 null ，若找到匹配项，返回一个数组，这里与 match() 方法返回的类似，在非全局模式下，返回的是子串的检索结果，index包含发生匹配的字符位置，属性input引用的是正在检索的字符串。不过与 match() 方法不同，无论是否全局，exec() 方法返回的数组是一样的。  
+在字符串中执行匹配检索，若没有检索到，返回 null ，若找到匹配项，返回一个数组，这里与 match() 方法返回的类似。  
+在非全局模式下，返回的是子串的检索结果，**index包含发生匹配的字符位置**，属性input引用的是正在检索的字符串。不过与 match() 方法不同，无论是否全局，exec() 方法返回的数组是一样的。  
+
+```javascript
+var testText = "mom and dad and baby";
+var pattern = /mom( and dad( and baby)?)?/gi;
+var matches = pattern.exec(testText);
+console.log(matches.index); // 0
+console.log(matches.input); // "mom and dad and baby"
+console.log(matches[0]) // "mom and dad and baby"
+console.log(matches[1]) // " and dad and baby"
+console.log(matches[2]) // " and baby"
+console.log(matches.lastIndex); // 20
+```
+对于 exec() 方法而言，若设置了全局标志(g)，调用该方法每次只会返回一个匹配项。  
+不设置全局标志情况下，对同一字符串多次调用 exec() 方法将始终返回第一匹配项的信息；若设置全局标志情况下，每次调用 exec() 则都会在字符串中继续查找新匹配项。  
+
 
 RegExp 另一个方法是 **test()**，用来对某个字符串检测，如果包含匹配结果，返回 true。  
-即当exec() 返回结果不是 null 时，test() 返回均为true
+即当exec() 返回结果不是 null 时，test() 返回均为true。  
+
+```javascript
+var testText = "000-00-0000";
+var pattern = /\d{3}-\d{2}-\d{4}/;
+if (pattern.test(testText)){
+    console.log("The pattern was matched.");
+}
+
+```
 
 
 ## 应用实例  
