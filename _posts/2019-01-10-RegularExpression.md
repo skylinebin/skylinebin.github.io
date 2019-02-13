@@ -397,7 +397,29 @@ Github 上有一个国内手机号码的正则表达式项目 [ChinaMobilePhoneN
 
 "^(?:\+?86)?1(?:3\d{3}\|5[^4\D]\d{2}\|8\d{3}\|7[^29\D](?(?<=4)(?:0\d\|1[0-2]\|9\d)\|\d{2})\|9[189]\d{2}\|6[567]\d{2}\|4(?:[14]0\d{3}\|[68]\d{4}\|[579]\d{2}))\d{6}$"   
 
-但是上述表达式却在几个在线测试平台都报错了，在 "(?(?<=4)"处对第一个 "?"报错，删除了可以匹配。
+但是上述表达式却在几个在线测试平台都报错了，在 "(?(?<=4)"处对第一个 "?"报错，删除了可以匹配。  
+
+
+#### 字符串全局替换  
+
+日常使用中，经常会遇到需要替换指定字符串的操作，这里就会用到正则表达式。  
+主要使用的是字符串的 replace() 方法，通常可以传入两个参数，第一个是 RegExp 对象或者字符串，第二个是要替换的字符串。如果要全局替换，第一个参数就要是RegExp 对象，例如：  
+
+```javascript
+var text = "cat, bat, sat, fat";
+var result = text.replace(/at/g, "ond");
+console.log(result); // "cond, bond, sond, fond"
+```  
+
+第二个参数也可以引用 第一个参数中的捕获组参数，例如：  
+
+```javascript
+var text = "cat, bat, sat, fat";
+var result = text.replace(/(.at)/g, "word ($1)");
+console.log(result); // "word (cat), word (bat), word (sat), word (fat)"
+```
+
+所以日常使用字符串处理时，可以考虑利用好正则表达式。  
 
 
 
@@ -410,5 +432,5 @@ Github 上有一个国内手机号码的正则表达式项目 [ChinaMobilePhoneN
 - [廖雪峰的JavaScript教程](https://www.liaoxuefeng.com/wiki/001434446689867b27157e896e74d51a89c25cc8b43bdb3000/001434499503920bb7b42ff6627420da2ceae4babf6c4f2000)  
 - [正则表达式的陷阱](https://zhuanlan.zhihu.com/p/38278481)  
 - [《JavaScript权威指南(第6版)》第10章](https://www.amazon.cn/dp/B007VISQ1Y/ref=sr_1_1?ie=UTF8&qid=1546997671&sr=8-1&keywords=JavaScript%E6%9D%83%E5%A8%81%E6%8C%87%E5%8D%97%28%E7%AC%AC6%E7%89%88%29)  
-- [《JavaScript高级程序设计(第3版)》第5.4节](https://www.amazon.cn/dp/B007OQQVMY/ref=sr_1_1?ie=UTF8&qid=1546997809&sr=8-1&keywords=JavaScript%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%28%E7%AC%AC3%E7%89%88%29)  
+- [《JavaScript高级程序设计(第3版)》第5.4, 5.6节](https://www.amazon.cn/dp/B007OQQVMY/ref=sr_1_1?ie=UTF8&qid=1546997809&sr=8-1&keywords=JavaScript%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%28%E7%AC%AC3%E7%89%88%29)  
 
