@@ -82,7 +82,8 @@ element.someObject = myObject;
 // 以下 手工断开连接
 myObject.element = null;
 element.someObject =null;
-```
+```  
+
 将变量设置成 null 即可切断变量与它之前引用的值之间的连接。下次垃圾收集器运行时，会删除这些值并回收它们占用的内存。  
 为解决上述问题，IE9及以上版本把 BOM 和 DOM 对象都转换成了真正的 JavaScript 对象，避免了两种垃圾回收算法并存引起的问题。
 
@@ -148,7 +149,7 @@ def copyObject(*allocationPtr, object):
   *allocationPtr += size(object)
   memcpy(copy, object, size(object))
   return copy
-```
+```  
 
 #### 不能被忽视的写屏障 Write barriers  
 如果新生区有某个对象，只有一个指向它的指针，恰好该指针在老生区的对象中，在垃圾回收之前我们如何得知新生区的该对象是活跃的呢？  
