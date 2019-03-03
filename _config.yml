@@ -65,15 +65,15 @@ helpfulposts:
 links:
   - title: home
     url: /
-  - title: my posts
+  - title: posts
     url: /pagelist/
   - title: series
     url: /series
   - title: tags
     url: /tags
-  - title: about me
+  - title: about
     url: /about
-  - title: little tools
+  - title: tools
     url: /mytools
 
 # projects in header index
