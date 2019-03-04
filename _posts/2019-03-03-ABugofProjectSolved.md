@@ -5,9 +5,10 @@ date:   2019-03-03 23:24:31
 image: 'https://store.skylinebin.com/JavaScript.png'
 description: 'Record a weird bug that in a project'
 tags:
-- RegExp
+- Project
 - Code
-- FrontEnd
+- Java
+- Bugs
 categories:
 - SkylineBin
 twitter_text: 'error: source is null for getProperty(null, "0") '
