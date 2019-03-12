@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Tensorflow系列--(三)实现常用损失函数及其比较"
-date:   2018-06-25 19:40:31
+date:   2018-07-23 22:45:31
 image: 'https://store.skylinebin.com/TensorflowLearning/tensorflow.png'
 description: 'Basic skills in MachineLearning'
 tags:
@@ -16,12 +16,11 @@ twitter_text: 'Tensorflow中实现常用损失函数及其比较 '
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;这篇文章是Tensorflow系列文章中的第三篇，还是比较基础，主要想细致记录和总结一下Tensorflow中常用的损失函数。主要参考但不限于书籍Nick McClure的 *Tensorflow Machine Learning Cookbook* 中文版《Tensorflow机器学习实战指南》。文中涉及到的代码的**完整源码**都放在了Github里[MachineLearningNotes--Tensorflow](https://github.com/skylinebin/Machine-Learning-Notes/tree/master/Tensorflow/TensorflowWithCookbook)当中了。  
 
-## 
-
-
 
 ## Tensorflow中常用损失函数  
+
 前面这几种(1~3)主要讲解回归算法的损失函数，预测连续因变量。在**回归算法**中常用的损失函数表述前提，都是针对创建的张量，预测序列 x_vals 和 目标序列 target 的：  
+
 ```python
 x_vals = tf.linspace(-1., 1., 500)
 target = tf.constant(0.)
@@ -36,7 +35,9 @@ print('- - - - - - - -l2_y_vals - - - - - - - - - -')
 print(l2_y_out)
 ```
 L2正则损失函数，是预测值和目标值差值的平方和。实现的功能类似以下公式 ：  
+
 ![](https://latex.codecogs.com/png.latex?\left&space;(&space;t_{1}&space;-&space;x_{1}&space;\right&space;)^{2}&plus;&space;...&space;&plus;\left&space;(&space;t_{n}&space;-&space;x_{n}&space;\right&space;)^{2})  
+
 L2正则损失函数是非常有用的损失函数，因为它在目标值附近有更好的曲度，机器学习利用这一点进行收敛，离目标越近收敛越慢。  
 同时，Tensorflow 中有内建 l2正则损失函数: *tf.nn.l2_loss()* 效果类似上述 1/2 * l2_y_vals。  
 还有一个 tf.losses.mean_squared_error(target, x_vals) 的方法与 L2 正则损失函数较为类似，它是求平方根误差。  
