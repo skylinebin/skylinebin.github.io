@@ -80,12 +80,13 @@ l1_y_out = sess.run(l1_y_vals)
 ```
 L1正则损失函数是预测值和目标值差值的绝对值之和，实现的功能类似以下公式 ：  
 
-![](https://latex.codecogs.com/png.latex?\left&space;|&space;t_{1}&space;-&space;x_{1}&space;\right&space;|&plus;&space;...&space;&plus;\left&space;|&space;t_{n}&space;-&space;x_{n}&space;\right&space;|)  
+![](https://latex.codecogs.com/png.latex?\left&space;\|&space;t_{1}&space;-&space;x_{1}&space;\right&space;\|&plus;&space;...&space;&plus;\left&space;\|&space;t_{n}&space;-&space;x_{n}&space;\right&space;\|)  
 
 L1正则损失函数在绝对值附近不平滑，直接使用算法不能很好地收敛。  
 同样，也有一个 tf.losses.absolute_difference 方法 与 L1正则损失函数 功能类似。
 
 ### 3.Pseudo-Huber 损失函数  
+
 ```python
 delta1 = tf.constant(0.25)  
 phuber1_y_vals = tf.multiply(tf.square(delta1), tf.sqrt(1. + tf.square((target - x_vals)/delta1)) - 1.)
