@@ -78,7 +78,9 @@ l1_y_out = sess.run(l1_y_vals)
 # same as |t1-x1| + .... +|tn-xn|
 ```
 L1正则损失函数是预测值和目标值差值的绝对值之和，实现的功能类似以下公式 ：  
+
 ![](https://latex.codecogs.com/png.latex?\left&space;|&space;t_{1}&space;-&space;x_{1}&space;\right&space;|&plus;&space;...&space;&plus;\left&space;|&space;t_{n}&space;-&space;x_{n}&space;\right&space;|)  
+
 L1正则损失函数在绝对值附近不平滑，直接使用算法不能很好地收敛。  
 同样，也有一个 tf.losses.absolute_difference 方法 与 L1正则损失函数 功能类似。
 
@@ -93,11 +95,8 @@ phuber2_y_vals = tf.multiply(tf.square(delta2), tf.sqrt(1. + tf.square((target -
 phuber2_y_out = sess.run(phuber2_y_vals)
 ```
 Pseudo-Huber 损失函数是 Huber损失函数的连续平滑估计，试图使用 L1 和 L2 正则削减极值处的陡峭，使损失函数在目标值附近连续。Pseudo-Huber 损失函数的表达式依赖参数 delta。实现的功能类似以下公式 ：  
-// \delta ^{2}\*\left \{ \sqrt{1 + (\frac{t-x}{\delta })^{2}} - 1 \right \}  
 
-```math
-\delta ^{2}*\left \{ \sqrt{1 + (\frac{t-x}{\delta })^{2}} - 1 \right \}
-```  
+![](https://latex.codecogs.com/png.latex?%5Cdelta%20%5E%7B2%7D*%5Cleft%20%5C%7B%20%5Csqrt%7B1%20&plus;%20%28%5Cfrac%7Bt-x%7D%7B%5Cdelta%20%7D%29%5E%7B2%7D%7D%20-%201%20%5Cright%20%5C%7D)  
 
 
 
@@ -118,9 +117,9 @@ hinge_y_out = sess.run(hinge_y_vals)
 ```
 Hinge损失函数主要用来评估支持向量机算法。本例计算两个目标类之间的损失，使用目标值为1时，预测值距离1越近，损失函数值越小。  
 实现的功能类似以下公式 ：  
-```math
-max \left \{ 0, 1- t *x  \right \}
-```
+
+![](https://latex.codecogs.com/png.latex?max%20%5Cleft%20%5C%7B%200%2C%201-%20t%20*x%20%5Cright%20%5C%7D) 
+
 
 ### 5.Cross-entropy loss 两类交叉熵损失函数(逻辑损失函数)   
 ```python
@@ -144,6 +143,7 @@ Sigmoid交叉熵损失函数 与 上述逻辑损失函数的区别是，先将x_
 注意新版本的 Tensorflow 的 tf.nn.sigmoid_cross_entropy_with_logits 方法 需要传入 logits 和  labels，参考代码时需要注意。  
 之所以这里使用 targets, 是因为 logits 和 labels 必须具有相同的type和shape。  
 公式近似如下：  
+
 ![](https://latex.codecogs.com/png.latex?-\left&space;[&space;t&space;\*&space;ln\left&space;(&space;\frac{1}{1&plus;e^{-x}}&space;\right&space;)&space;\right&space;]&space;-&space;\left&space;[&space;\left&space;(&space;1&space;-&space;t&space;\right&space;)&space;\*&space;ln\left&space;(&space;1&space;-&space;\frac{1}{1&plus;e^{-x}}&space;\right&space;)&space;\right&space;])  
 
 
@@ -158,6 +158,7 @@ xentropy_weighted_y_out = sess.run(xentropy_weighted_y_vals)
 ```  
 加权交叉熵损失函数 是 Sigmoid交叉熵损失函数的加权，对正目标进行加权。上述使用过程中，权重是 0.5。  
 对应公式如下：  
+
 ![](https://latex.codecogs.com/png.latex?-\left&space;[weight&space;\*&space;t&space;\*&space;ln\left&space;(&space;\frac{1}{1&plus;e^{-x}}&space;\right&space;)&space;\right&space;]&space;-&space;\left&space;[&space;\left&space;(&space;1&space;-&space;t&space;\right&space;)&space;\*&space;ln\left&space;(&space;1&space;-&space;\frac{1}{1&plus;e^{-x}}&space;\right&space;)&space;\right&space;])  
 这里传入的 targets, x_vals, weight 的参数传入顺序，参考代码时需要注意。  
 
@@ -171,6 +172,7 @@ print(sess.run(softmax_xentropy))
 Softmax交叉熵损失函数可作用于非归一化的输出结果，只针对单个目标分类计算损失,通过 softmax 函数将输出结果转化成概率分布，然后计算真值概率分布的损失。  
 需要注意，使用时，tf.nn.softmax_cross_entropy_with_logits 已经更换成 tf.nn.softmax_cross_entropy_with_logits_v2。  
 类似以下公式：  
+
 ![](https://latex.codecogs.com/png.latex?-\sum_{j=0}^{num&space;-&space;1}\left&space;[&space;t_{j}&space;\*&space;ln\left&space;[&space;\frac{e^{xj}}{\sum_{j=0}^{num-1}\*&space;e^{xj}}&space;\right&space;]&space;\right&space;])  
 
 注意 这个方法只针对单个目标分类计算损失。  
@@ -199,7 +201,9 @@ plt.legend(loc='lower right', prop={'size': 11})
 plt.show()  
 ```
 对比结果如下： 
+
 ![l12andpHuberloss](https://sdns.skylinebin.com//fromPicGo/l12andpHuberloss.png)  
+
 从图中可以看出，Pseudo-Huber 损失函数 传入的delta 参数对于计算损失函数的影响主要体现在平滑程度上。 delta 值越大，计算的loss 越激进。L1正则损失函数在目标值附近确实不是平滑的。  
 相对来说，L2 更稳定，但缺少健壮，L1正好相反。Pseudo-Huber 损失函数相比起来更健壮和稳定。  
 
@@ -218,7 +222,9 @@ plt.show()
 ```  
 
 对比结果如下：  
-![HingeCrossentropyandWeighted](https://sdns.skylinebin.com//fromPicGo/HingeCrossentropyandWeighted.png)
+
+![HingeCrossentropyandWeighted](https://sdns.skylinebin.com//fromPicGo/HingeCrossentropyandWeighted.png)  
+
 从图中可以直观地看出，Hinge损失函数在 t 不变的情况下，1 - t\*x 基本可看作线性的，两类交叉熵损失函数下降速度很快。  
 
 以上大多数描述分类算法损失函数都是针对二分类问题，若 想要拓展成多分类，可对 每个预测值 除以 目标 的交叉熵求和进行扩展。
