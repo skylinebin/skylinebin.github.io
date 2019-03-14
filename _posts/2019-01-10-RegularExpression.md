@@ -400,6 +400,15 @@ ES6 中允许 RegExp 构造函数传入第二个参数来覆盖指定修饰符�
 new RegExp(/abc/ig, 'i')
 ```
 - 字符串的正则方法改进  
+在 ES6 中 match()、replace()、search()、split() 四种方法在语言内部全部调用 RegExp 实例方法，此后所有与正则相关的方法都定义在 RegExp 对象上:  
+
+```javascript
+// String.prototype.match 调用 RegExp.prototype[Symbol.match]
+// String.prototype.replace 调用 RegExp.prototype[Symbol.replace]
+// String.prototype.search 调用 RegExp.prototype[Symbol.search]
+// String.prototype.split 调用 RegExp.prototype[Symbol.split]
+```
+
 
 - 添加 **u 修饰符**   
 ES6 中添加的 u 修饰符 在点字符、量词、预定义模式 均可以识别 码点大于 0xFFFF 的 Unicode 字符。  
