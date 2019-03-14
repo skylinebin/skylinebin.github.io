@@ -330,6 +330,9 @@ RegExp() 构造函数可输入两个参数，第一个参数是字符串表示�
 ```javascript
 var zipcode = new RegExp("\\d{5}","g");
 // 注意这里使用的是 "\\" 而不是 "\"
+
+//或者使用一个完整的正则表达式  
+var zipcode = new RegExp(/\\d{5}/g)
 ```
 每个 RegExp 对象都包含 **5 个属性**：  
 - **属性 source** ，包含正则表达式的文本  
@@ -389,15 +392,64 @@ ECMAScript 中的正则表达式功能虽然很完备，但仍然缺少一些 Pe
 - 正则表达式注释  
 
 
+#### ES6 中正则表达式的改进  
+- RegExp 构造函数的改进  
+ES6 中允许 RegExp 构造函数传入第二个参数来覆盖指定修饰符，即使第一个参数中的正则表达式已有修饰符。  
+
+```javascript
+new RegExp(/abc/ig, 'i')
+```
+- 字符串的正则方法改进  
+
+- 添加 **u 修饰符**   
+ES6 中添加的 u 修饰符 在点字符、量词、预定义模式 均可以识别 码点大于 0xFFFF 的 Unicode 字符。  
+可以使用 u修饰符 来正确返回字符串长度的函数：  
+```javascript
+// 正确返回字符串长度的函数
+function codePointLength (text) {
+    var result = text.match(/[\s\S]/gu);
+    return result ? result.length : 0;
+}
+let str1 = 'hello';
+console.log(codePointLength(str1)); // 5
+let str2 = "你好";
+console.log(codePointLength(str2)); // 2
+```
+u 修饰符也可和 i 修饰符结合 识别不同表达方式的编码情况下的字符。  
+
+ - 添加 **y 修饰符**  
+y 修饰符是一种 粘连(sticky) 修饰符，是全局匹配模式，但是下一次匹配是在上一次匹配成功之后的下一个位置开始。  
+
+- 添加 sticky 属性 和 flags 属性  
+**属性 sticky**，只读布尔值，返回是否带有修饰符"y"  
+**属性 flags**，只读布尔值，返回正则表达式的修饰符  
+
+- ES6 中支持了后行断言(负向零宽断言)  
+
+- ES6 中的一个提案支持了具名组匹配  
+**具名组匹配** 其实就是上面最开始提到的 后向引用中的分组可以命名。  
+具名组匹配还增加了一个函数参数，由具名组构成的对象，在函数内部可以结合 ES6 中的解构赋值对这个对象进行操作。  
+
+
+
 ## 应用实例  
 
 #### 国内手机号码正则匹配  
 
 Github 上有一个国内手机号码的正则表达式项目 [ChinaMobilePhoneNumberRegex](https://github.com/VincentSit/ChinaMobilePhoneNumberRegex)，有1000+的 Star，主要功能就是用于匹配中国联通移动电信和网络号段的手机号，主要正则表达式如下：  
+```javascript
+var phonenum = /(?:\+?86)?1(?:3\d{3}|5[^4\D]\d{2}|8\d{3}|7[^29\D]((?<=4)(?:0\d|1[0-2]|9\d)|\d{2})|9[189]\d{2}|6[567]\d{2}|4(?:[14]0\d{3}|[68]\d{4}|[579]\d{2}))\d{6}/g; 
+```
 
-"^(?:\+?86)?1(?:3\d{3}\|5[^4\D]\d{2}\|8\d{3}\|7[^29\D](?(?<=4)(?:0\d\|1[0-2]\|9\d)\|\d{2})\|9[189]\d{2}\|6[567]\d{2}\|4(?:[14]0\d{3}\|[68]\d{4}\|[579]\d{2}))\d{6}$"   
+上述表达式原来版本却在几个在线测试平台都报错了，在 "(?(?<=4)"处对第一个 "?"报错，删除了可以匹配。  
 
-但是上述表达式却在几个在线测试平台都报错了，在 "(?(?<=4)"处对第一个 "?"报错，删除了可以匹配。  
+匹配手机号码的另一个简单形式的正则:  
+```javascript
+//以下为JavaScript版本的 
+var phoneNum = new RegExp(/(?:\+?86)?1(?:3\d{3}|5[^4\D]\d{2}|8\d{3}|7(?:[35678]\d{2}|4(?:0\d|1[0-2]|9\d))|9[189]\d{2}|66\d{2})\d{6}/g);
+```
+正则前面加上^ 后面加上$，表示要检测的字符串要百分百是一个手机号码。  
+
 
 
 #### 字符串全局替换  
@@ -433,4 +485,5 @@ console.log(result); // "word (cat), word (bat), word (sat), word (fat)"
 - [正则表达式的陷阱](https://zhuanlan.zhihu.com/p/38278481)  
 - [《JavaScript权威指南(第6版)》第10章](https://www.amazon.cn/dp/B007VISQ1Y/ref=sr_1_1?ie=UTF8&qid=1546997671&sr=8-1&keywords=JavaScript%E6%9D%83%E5%A8%81%E6%8C%87%E5%8D%97%28%E7%AC%AC6%E7%89%88%29)  
 - [《JavaScript高级程序设计(第3版)》第5.4, 5.6节](https://www.amazon.cn/dp/B007OQQVMY/ref=sr_1_1?ie=UTF8&qid=1546997809&sr=8-1&keywords=JavaScript%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%28%E7%AC%AC3%E7%89%88%29)  
+- [《ES6 标准入门》](https://github.com/ruanyf/es6tutorial)
 
