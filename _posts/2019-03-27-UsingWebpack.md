@@ -48,15 +48,19 @@ Webpack 的优点是：
 #### Webpack 初始化项目  
 在具有Node环境，使用 npm init 创建一个新的模块化项目后，即可安装使用 Webpack。  
 一般情况下，使用  
-```node
+
+```
 npm i -D webpack  
 // npm install --save-dev webpack
-```
+```  
+
 在 Webpack 4.0 之后，还需要安装 webpack-cli  
-```node
+
+```
 npm i -D webpack-cli  
 // npm install --save-dev webpack-cli
-```
+```  
+
 在根目录创建 webpack.config.js 配置文件后  
 ```javascript
 const path = require('path');
