@@ -80,10 +80,10 @@ links:
 projects:
   - name: Machine-Learning-Notes
     url: https://github.com/skylinebin/Machine-Learning-Notes
-  - name: PythonSpider
-    url: https://github.com/skylinebin/PythonSpider
   - name: AlgorithmPractice
     url: https://github.com/skylinebin/AlgorithmPractice
+  - name: LearningforJavaScript
+    url: https://github.com/skylinebin/LearningforJavaScript
 # exclude my node related stuff
 exclude: ['package.json', 'src', 'node_modules']
 
