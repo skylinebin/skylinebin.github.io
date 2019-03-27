@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "可了解的 Webpack 使用知识"
+title:  "可以了解的Webpack相关知识"
 date:   2019-03-27 22:30:31
 image: 'https://store.skylinebin.com/JavaScript.png'
 description: 'Webpack knowledge '
@@ -17,8 +17,8 @@ twitter_text: 'Webpack knowledge '
 ### Webpack 基本原理 
 
 #### Webpack 执行原理  
-Webpack 是一个 JavaScript 应用程序 的 **静态资源打包器** (module bundler)。  
-打包原理是：webpack 在打包应用程序时，它会递归地构建一个**依赖关系图** (dependency graph)  
+Webpack 是一个 JavaScript 应用程序 的 **静态资源打包器**(module bundler)。  
+打包原理是：webpack 在打包应用程序时，它会递归地构建一个**依赖关系图**(dependency graph)。  
 
 在 Webpack 中**一切文件皆模块**，通过 Loader 转换文件，通过 Plugin 注入钩子 ，最后输出由多个模块组合的文件。  
 
@@ -131,12 +131,12 @@ npm i -D sass-loader node-sass
 在配置文件中添加 sass 模块的 rule:  
 ```javascript
 module: {
-	rules: [
-		{
-			test: /\.(sc|c|sa)ss$/,
-			use: ['style-loader','css-loader','sass-loader']
-		}
-	]
+  rules: [
+  	{
+  	  test: /\.(sc|c|sa)ss$/,
+  	  use: ['style-loader','css-loader','sass-loader']
+  	}
+  ]
 }
 ```
 使用合并的正则来对所有种类的样式文件进行筛选过滤，在处理时先进行 sass-loader 再通过 css-loader 和 style-loader处理。  
@@ -147,26 +147,26 @@ module: {
 此时需要配置 rules 里面 loader 的 options 如下：  
 ```javascript
 module: {
-	rules: [
-		{
-			test: /\.(sc|c|sa)ss$/,
-			use: [
-				'style-loader',
-				{
-					loader: 'css-loader',
-					options: {
-						sourceMap: true,
-					}
-				},
-				{
-					loader: 'sass-loader',
-					options:{
-						sourceMap: true,
-					}
-				}
-			] // end use
-		}
-	] // end rules
+  rules: [
+    {
+      test: /\.(sc|c|sa)ss$/,
+      use: [
+      	'style-loader',
+      	{
+      	  loader: 'css-loader',
+      	  options: {
+      	  	sourceMap: true,
+      	  }
+      	},
+      	{
+      	  loader: 'sass-loader',
+      	  options:{
+      	    sourceMap: true,
+      	  }
+      	}
+      ] // end use
+    }
+  ] // end rules
 }
 ```
 一般只有在开发环境才会启用 sourseMap，这样在调试时可以检查元素的样式，定位到编写的源文件。  
@@ -182,38 +182,38 @@ npm i -D postcss-loader autoprefixer
 因为 postcss-loader 是预处理 css，所以应该放在 sass-loader 之后，css-loader 之前。配置包括 ident、sourceMap、plugins 等等，基本的配置如下所示：  
 ```javascript
 module: {
-	rules:[
-		{
-			test: /\.(sc|c|sa)ss$/,
-			use: [
-				'style-loader',
-				{
-					loader: 'css-loader',
-					options: {
-						sourceMap: true,
-					}
-				},
-				{
-					loader: 'postcss-loader',
-					options: {
-						ident: 'postcss',
-						sourceMap: true,
-						plugins: (loader) => [
-							require('autoprefixer')({
-								browsers: ['> 0.15% in CN']
-							})
-						]
-					}
-				},
-				{
-					loader: 'sass-loader',
-					options:{
-						sourceMap: true,
-					}
-				}
-			]
-		}
-	]
+  rules:[
+    {
+      test: /\.(sc|c|sa)ss$/,
+      use: [
+      'style-loader',
+      {
+      	loader: 'css-loader',
+      	options: {
+      		sourceMap: true,
+      	}
+      },
+      {
+      	loader: 'postcss-loader',
+      	options: {
+      		ident: 'postcss',
+      		sourceMap: true,
+      		plugins: (loader) => [
+      		  require('autoprefixer')({
+      		  	browsers: ['> 0.15% in CN']
+      		  })
+      		]
+      	}
+      },
+      {
+      	loader: 'sass-loader',
+      	options:{
+      		sourceMap: true,
+      	}
+      }
+      ]
+    }
+  ]
 },
 ```
 上述代码中 browsers 的限定是 要兼容超过 85% 的浏览器，这些配置可以在 npmjs 官网上 的 [postcss-loader](https://www.npmjs.com/package/postcss-loader) 中查阅和借鉴。  
@@ -233,36 +233,36 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 // 省略 声明 模式和其他配置部分
 module: {
-	rules: [
-		{
-			test: /\.(sc|c|sa)ss$/,
-			use: [
-				MiniCssExtractPlugin.loader,
-				{
-					loader: 'css-loader',
-					options: {
-						sourceMap: true,
-					}
-				}, {
-					loader: 'postcss-loader',
-					options: {
-						ident: 'postcss',
-						sourceMap: true,
-						plugins: (loader) => [
-							require('autoprefixer')({
-								browsers: ['> 0.15% in CN']
-							})
-						]
-					}
-				}, {
-					loader: 'sass-loader',
-					options: {
-						sourceMap: true,
-					}
-				}
-			]
-		}
-	]
+  rules: [
+  {
+  	test: /\.(sc|c|sa)ss$/,
+  	use: [
+  	  MiniCssExtractPlugin.loader,
+  	  {
+  	  	loader: 'css-loader',
+  	  	options: {
+  	  		sourceMap: true,
+  	  	}
+  	  }, {
+  	  	loader: 'postcss-loader',
+  	  	options: {
+  	  		ident: 'postcss',
+  	  		sourceMap: true,
+  	  		plugins: (loader) => [
+  	  			require('autoprefixer')({
+  	  				browsers: ['> 0.15% in CN']
+  	  			})
+  	  		]
+  	  	}
+  	  }, {
+  	  	loader: 'sass-loader',
+  	  	options: {
+  	  		sourceMap: true,
+  	  	}
+  	  }
+  	]
+  }
+  ]
 },
 plugins: [
 	new MiniCssExtractPlugin({
@@ -415,32 +415,32 @@ npm i -D image-webpack-loader
 在 Webpack 中加入相关的配置，放在 file-loader 的后面，即使用时先用 image-webpack-loader 再用 file-loader，此时配置如下：  
 ```javascript
 {
-	test: /\.(png|svg|jpg|gif|jpeg)$/,
-	use: [
-		'file-loader',
-		{
-			loader: 'image-webpack-loader',
-			options: {
-				mozjpeg: {
-					progressive: true,
-					quality: 65
-				}, // enabled: true 打开优化 png 文件的配置
-				optipng: {
-					enabled: false,
-				},
-				pngquant: {
-					quality: '65-90',
-					speed: 4
-				},
-				gifsicle: {
-					interlaced: false,
-				}, //  配置 quality 打开优化 webp 文件的配置
-				webp: {
-					quality: 75
-				}
-			}
-		}
-	]
+  test: /\.(png|svg|jpg|gif|jpeg)$/,
+  use: [
+    'file-loader',
+    {
+      loader: 'image-webpack-loader',
+      options: {
+        mozjpeg: {
+        	progressive: true,
+        	quality: 65
+        }, // enabled: true 打开优化 png 文件的配置
+        optipng: {
+        	enabled: false,
+        },
+        pngquant: {
+        	quality: '65-90',
+        	speed: 4
+        },
+        gifsicle: {
+        	interlaced: false,
+        }, //  配置 quality 打开优化 webp 文件的配置
+        webp: {
+        	quality: 75
+        }
+      }
+    }
+  ]
 }
 ```
 运行后，dist 目录中的图片文件相比原文件 有一定比例的压缩  
@@ -455,36 +455,37 @@ npm i -D url-loader
 在Webpack 图片的 rules 里面，把原来的 file-loader 换成 url-loader，即:  
 ```javascript
 {
-	test: /\.(png|svg|jpg|gif|jpeg)$/,
-	use: [{
-			loader: 'url-loader',
-			options: {
-				limit: 10000
-			}
-		},
-		{
-			loader: 'image-webpack-loader',
-			options: {
-				mozjpeg: {
-					progressive: true,
-					quality: 65
-				}, // optipng.enabled: false will disable optipng
-				optipng: {
-					enabled: false,
-				},
-				pngquant: {
-					quality: '65-90',
-					speed: 4
-				},
-				gifsicle: {
-					interlaced: false,
-				}, // the webp option will enable WEBP
-				webp: {
-					quality: 75
-				}
-			}
-		}
-	]
+  test: /\.(png|svg|jpg|gif|jpeg)$/,
+  use: [
+    {
+    	loader: 'url-loader',
+    	options: {
+    		limit: 10000
+    	}
+    },
+    {
+      loader: 'image-webpack-loader',
+      options: {
+        mozjpeg: {
+        	progressive: true,
+        	quality: 65
+        }, // optipng.enabled: false will disable optipng
+        optipng: {
+          enabled: false,
+        },
+        pngquant: {
+          quality: '65-90',
+          speed: 4
+        },
+        gifsicle: {
+          interlaced: false,
+        }, // the webp option will enable WEBP
+        webp: {
+          quality: 75
+        }
+      }
+    }
+  ]
 }
 ```
 上述配置中 `limit: 10000` 限定的文件大小是 10 kb，小于 10 kb 的图片会被转换成 base64 格式的文件嵌入到 css 中，不会被当成文件引入。大于规定限制的文件，还是会被引入。 
