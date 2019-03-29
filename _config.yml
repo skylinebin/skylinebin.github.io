@@ -22,6 +22,7 @@ highlighter: rouge
 permalink: /:title/
 plugins: 
 - jekyll-paginate
+- jekyll-seo-tag
 - jekyll-pwa-plugin
 
 
