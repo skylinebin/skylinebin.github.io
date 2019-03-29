@@ -1,14 +1,14 @@
 ---
 layout: post
-title:  "Git简介及Github相关使用"
+title:  "Git简介及日常使用"
 image: ''
-date:   2017-03-12 00:06:31
+date:   2016-03-10 00:06:31
 tags:
 - Github
 - Git
 - Projects
 - 
-description: ''
+description: 'Using git tools'
 categories:
 - SkylineBin
 ---
