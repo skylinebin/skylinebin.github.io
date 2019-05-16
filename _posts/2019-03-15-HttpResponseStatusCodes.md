@@ -257,7 +257,21 @@ WebDAV：WebDAV（Web分布式创作和版本控制）是一种HTTP扩展，允�
 
 最后再来一张全家福吧：  
 
-![HTTP所有状态码整理版本](https://sdns.skylinebin.com//fromPicGo/HTTPStatusFullbySkylineBin.png)
+![HTTP所有状态码整理版本](https://sdns.skylinebin.com//fromPicGo/HTTPStatusFullbySkylineBin.png)  
+
+
+### 视频讲解HTTP状态码  
+Youtube上 的 [60秒HTTP状态码](https://www.youtube.com/watch?v=GrNrcmD6HLA):  
+- 以 1 开头：表示连接仍在进行，并发送一些信息。  
+
+- 以 2 开头：表示成功连接。200 说明「一切正常」。201-206 则表示还有更多内容，如创建了新资源或无任何内容需要返回。  
+
+- 以 3 开头：表示重定向，如 301 是永久重定向，302 和 307 是临时重定向。  
+
+- 以 4 开头：表示客户端存在错误，如 404 表示请求的资源不存在，403 则表示不允许用户访问。  
+
+- 以 5 开头：表示服务器端存在错误，如数据库连接失败或服务器关闭。  
+
 
 
 ### 参考资料  
