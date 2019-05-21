@@ -395,6 +395,6 @@ B.prototype.__proto__ === A.prototype // true
 
 
 ### 参考资料  
-- [JavaScript 高级程序设计(第3版)]()  
-- [JavaScript 设计模式(张容铭)]()  
-- [ES6标准入门(第3版)阮一峰]()
+- [JavaScript 高级程序设计(第3版) 第六章](https://www.amazon.cn/dp/B007OQQVMY/ref=sr_1_1?ie=UTF8&qid=1546997809&sr=8-1&keywords=JavaScript%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%28%E7%AC%AC3%E7%89%88%29)  
+- [JavaScript 设计模式(张容铭)](https://www.amazon.cn/dp/B013HO6DNS/ref=sr_1_1?__mk_zh_CN=%E4%BA%9A%E9%A9%AC%E9%80%8A%E7%BD%91%E7%AB%99&keywords=JavaScript+%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%28%E5%BC%A0%E5%AE%B9%E9%93%AD%29&qid=1558446821&s=books&sr=1-1)  
+- [ES6标准入门(第3版)阮一峰](https://www.amazon.cn/dp/B07BSLNQN8/ref=sr_1_1?__mk_zh_CN=%E4%BA%9A%E9%A9%AC%E9%80%8A%E7%BD%91%E7%AB%99&keywords=ES6%E6%A0%87%E5%87%86%E5%85%A5%E9%97%A8%28%E7%AC%AC3%E7%89%88%29%E9%98%AE%E4%B8%80%E5%B3%B0&qid=1558446848&s=books&sr=1-1)
