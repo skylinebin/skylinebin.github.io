@@ -17,6 +17,7 @@ twitter_text: 'Inheritance mechanism in JavaScript'
 
 本文主要包括 JavaScript 原生继承机制以及 ES6 中 class 使用的 extends 继承。  
 
+
 ### JavaScript 类式继承  
 类式继承的核心在于，**通过子类的原型 prototype 对父类实例化来实现**。即 子类的原型是父类的实例。  
 
@@ -51,7 +52,8 @@ instanceOne.books.push('ES6');
 console.log(instanceTwo.books); // ['JavaScript','HTML5','CSS3','ES6']
 ```
 父类构造函数中的属性被所有子类实例所共有，存在陷阱。  
-并且子类实现的继承是靠子类原型prototype 对父类的实例化实现的，无法向父类传递参数，因此实例化时也无法对父类的属性进行初始化。
+并且子类实现的继承是靠子类原型prototype 对父类的实例化实现的，无法向父类传递参数，因此实例化时也无法对父类的属性进行初始化。  
+
 
 ### JavaScript 构造函数式继承  
 
@@ -223,6 +225,7 @@ SubClass.prototype.__proto__ === SuperClass.prototype;
 SuperClass.prototype.constructor === SuperClass;
 ```
 
+
 ### JavaScript 多继承  
 
 单属性继承常用的方法：  
@@ -254,7 +257,8 @@ Object.prototype.mix = function(){
 
 otherBook.mix(book1, book2);
 // otherBook 可以继承 book1 和 book2 的属性
-```
+```  
+
 
 ### ES6 中 Class 的继承  
 ES6 中的 Class 可以通过 `extends` 关键字实现继承，不用再单独修改原型链：  
@@ -282,7 +286,8 @@ ES6 中的 extends 继承实质是先创造父类的实例对象 this(需要调�
 ES6 中 可以使用 `Object.getPrototypeOf()` 方法可以用来从子类上获取父类：  
 ```javascript
 Object.getPrototypeOf(JavaScriptBook) === Book;
-```
+```  
+
 
 #### ES6 中 super 关键字的使用  
 ES6 中的 super 关键字可以当作函数使用，也可以当作对象使用。  
@@ -376,6 +381,7 @@ child.thisMethod(2); // instance 2
 ```
 super 在静态方法之中指向父类，因此 子类在静态方法中用到 `super.thisMethod(msg)` 相当于 `Parent.thisMethod(msg)`，因此输出也是 static。  
 因为 super 在不同用法时的指向不同，在使用时一定要显示指定时作为函数韩式作为对象使用。  
+
 
 #### class 的 prototype 属性 和  \_\_proto\_\_ 属性
 Class 作为 构造函数的语法糖，同时有 prototype 属性 和 \_\_proto\_\_ 属性，同时存在两条继承链。  
