@@ -14,7 +14,7 @@ twitter_text: 'this, call and apply in JavaScript'
 ---  
 
 ## JavaScript 中的 this,apply,call   
-本文主要是对 JavaScript 中常用的 this，apply 和 call 的使用方法和区别进行整理和解析，主要参考了[曾探的《JavaScript 设计模式》](http://www.ituring.com.cn/book/1632)中的讲解过程并添加了一些实际使用过程的细节，以方便使用有遗漏时查阅。
+本文主要是对 JavaScript 中常用的 this，apply 和 call 的使用方法和区别进行整理和解析，主要参考了[曾探的《JavaScript 设计模式》](http://www.ituring.com.cn/book/1632)中的讲解过程并添加了一些实际使用的细节，以方便使用有遗漏时查阅。
 
 ### JavaScript 中的 this 解析  
 
@@ -67,8 +67,8 @@ document.getElementById = (function(func){
 let getId = document.getElementById;
 let div = getId('app');
 console.log(div.id);
-```
-
+```  
+<br />
 
 ### JavaScript 中的 call 和 apply  
 
