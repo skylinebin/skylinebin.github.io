@@ -1,8 +1,10 @@
 {% if site.leancloud.enable %}
 
 <script src="https://code.jquery.com/jquery-3.2.0.min.js"></script>
-<script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
+<!-- <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/leancloud-storage@3.13.2/dist/av-min.js"></script>
 <script>AV.initialize("{{site.leancloud.app_id}}", "{{site.leancloud.app_key}}");</script>
+<!-- <script src='//unpkg.com/valine/dist/Valine.min.js'></script> -->
 <script>
     function showHitCount(Counter) {
         var query = new AV.Query(Counter);
