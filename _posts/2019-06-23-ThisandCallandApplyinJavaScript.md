@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "JavaScript 中的this、call 和 apply "
-date:   2019-05-21 21:42:31
+date:   2019-06-23 21:42:31
 image: 'https://store.skylinebin.com/JavaScript.png'
 description: 'this, call and apply in JavaScript'
 tags:
