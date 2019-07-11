@@ -68,6 +68,43 @@ let getId = document.getElementById;
 let div = getId('app');
 console.log(div.id);
 ```  
+
+#### ES6 中被影响的this  
+在 ES6 中引入了箭头函数，箭头函数中的 this **指向定义时所在的对象**，而不是运行时所在的对象。  
+箭头函数可以让 this指向固定化，此特性非常有利于封装回调函数。  
+this 指向的固定化并不是因为箭头函数内部有绑定this的机制，实际原因是**箭头函数根本没有自己的this**，导致内部的this就是外层代码块的 this。因为箭头函数没有 this(也没有自己的 arguments 对象),所以箭头函数不能作为构造函数。  
+```javascript
+let handler = {
+    id: '12345',
+    init: function(){
+        document.addEventListener('click',
+            event => this.doSomething(event.type),false
+        );
+    },
+    doSomething:function(type){
+        console.log('Handling '+type+' for '+this.id);
+    }
+}
+```  
+上述代码中的 this 一直指向定义时所在的对象 `handler`,所以才能回调执行 `this.doSomething` 不报错。  
+ES6 转换成 ES5 就可看出 this 在编译解析时的指向：  
+```javascript
+function foo(){
+    setTimeout(()=>{
+        console.log('id:',this.id);
+    },100);
+}
+
+// 使用 Babel 转换成 ES5 后
+function foo(){
+    var _this = this;
+    setTimeout(function(){
+        console.log('id:',_this.id);
+    },100)
+}
+
+```
+
 <br />
 
 ### JavaScript 中的 call 和 apply  
@@ -76,9 +113,16 @@ call 和 apply 方法可以很好地体现JavaScript 的函数式语言特性，
 
 #### call 和 apply的区别  
 
-**apply** 接受两个参数，第一个参数**指定了函数体内 this 对象的指向**，第二个参数一般为集合，apply 将这个集合的元素作为参数传递给被调用的函数。  
+**apply** 接受两个参数，第一个参数**指定了函数体内 this 对象的指向**，第二个参数一般为集合(数组)，apply 将这个集合的元素作为参数传递给被调用的函数。  
 
 **call** 传入的参数数量不固定，与 apply 相同的是，**第一个参数也是代表函数体内的 this 指向**，从第二个参数开始往后，每个参数被依次传入函数。  
+
+```javascript
+fn.call(obj,arg1,arg2,arg3);
+fn.apply(obj,[arg1,arg2,arg3]);
+```
+
+call 和 apply 的区别在于传入参数的形式，apply是所有的参数封装成数组传入需要调用的函数，call是所有参数还是以独立的形式作为多个参数传入待执行的函数。  
 
 call 是包装在 apply 上面的一个语法糖。  
 
@@ -86,6 +130,70 @@ call 是包装在 apply 上面的一个语法糖。
 
 有时使用 call 或者 apply 目的不在于使用 this 的指向，可能是借用其他对象的方法，可传入 null 用于代替某个具体的对象。 
 
+
+#### 使用原生的JavaScript 模拟 call 和 apply  
+
+因为 call 的作用是转换执行对象的环境，所以模拟 call 的整体思路是：  
+- 先将传入的指定执行环境的对象 context 取到  
+- 将需要执行的方法(调用call的对象)作为 context 的一个属性方法fn
+- 处理传入的参数，并执行 context的属性方法fn，传入处理好的参数  
+- 删除私自定义的 fn 属性
+- 返回执行的结果  
+
+示例代码如下：  
+```javascript
+// 模拟 call 方法
+Function.prototype.defineCall = function(context){
+  context = context || window;
+  context.fn = this;
+  let args = [];
+  for (let i = 1; i < arguments.length; i++) {
+    args.push(arguments[i]);
+  }
+  let result = context.fn(args.join(','));
+  delete context.fn;
+  return result;
+}
+
+let sayName = function(age){
+  console.log('current name: '+ this.name,"current age: "+age);
+}
+let obj = {
+  name:"obj's name"
+}
+sayName.defineCall(obj,22);
+// current name: obj's name current age: 22
+
+```
+使用同样的思路模拟 apply 方法，代码如下：  
+```javascript
+// 模拟 call 方法
+// 模拟 apply 方法
+Function.prototype.defineApply = function(context,arr){
+  context = context || window;
+  context.fn = this;
+  let result;
+  if(!arr){
+    result = context.fn();
+  }else {
+    let args = [];
+    for (let i = 0; i < arr.length; i++) {
+      args.push(arr[i]);  
+    }
+    result = context.fn(args.join(','));
+  }
+  delete context.fn;
+  return result;
+}
+
+let obj2 = {
+  name: ['Tom','Johy','Joe','David']
+}
+sayName.defineApply(obj2,[3,4,5,6,7]);
+// current name: Tom,Johy,Joe,David current age: 3,4,5,6,7
+
+```
+apply中如果不需要处理传入的数组，也可以直接传入数组。  
 
 
 #### call 和 apply 的用途  
@@ -220,4 +328,6 @@ Object.prototype.toString.call(arr) === "[object Array]"
 
 - [《JavaScript 设计模式与开发实践》(曾探)](http://www.ituring.com.cn/book/1632)  
 - [JavaScript 高级程序设计(第3版) 第七章](https://www.amazon.cn/dp/B007OQQVMY/ref=sr_1_1?ie=UTF8&qid=1546997809&sr=8-1&keywords=JavaScript%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%28%E7%AC%AC3%E7%89%88%29)  
-- [JavaScript instanceof 运算符深入剖析](https://www.ibm.com/developerworks/cn/web/1306_jiangjj_jsinstanceof/index.html)
+- [JavaScript instanceof 运算符深入剖析](https://www.ibm.com/developerworks/cn/web/1306_jiangjj_jsinstanceof/index.html)  
+- [this,call,apply,bind的区别与联系](https://segmentfault.com/a/1190000013900784)  
+
