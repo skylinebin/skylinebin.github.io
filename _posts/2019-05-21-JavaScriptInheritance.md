@@ -114,7 +114,7 @@ let instanceTwo = new SubClass('ES7', 2016);
 console.log(instanceTwo.books); // ['JavaScript','HTML5','CSS3']
 ```
 组合继承的 子类实例中更改继承自父类的引用类型属性不会影响到其他实例，并且实例化过程中可以将参数传递到父类的构造函数中。  
-
+<br />
 
 ### 原型式继承  
 原型式继承借助原型 prototype 可根据已有的对象创建一个新的对象，同时不必创建新的自定义对象类型。  
@@ -140,7 +140,7 @@ otherBook.fbooks.push('ES7');
 console.log(otherBook.fbooks); // ["CSS3","HTML5","ES6","ES7"]
 ```
 原型式继承中，父类对象中的值类型的属性被赋值，引用类型的属性被共用。  
-
+<br />
 
 ### 寄生式继承  
 寄生式继承创建一个仅用于封装继承过程的函数，该函数在内部以某种方式来增强对象。  
@@ -164,7 +164,7 @@ function createBook(obj) {
 }
 ```
 寄生式继承是对原型继承的第二次封装，并在第二次封装过程中对继承的对象进行拓展，新创建的对象不仅有父类中的属性和方法而且还新添加新的属性和方法。  
-
+<br />
 
 ### 寄生组合式继承  
 寄生组合式继承可看作寄生式继承和构造函数式继承的组合，但是处理的是类的原型。  
@@ -176,7 +176,7 @@ function inheritPrototype(subClass, superClass){
     subClass.prototype = p;
 }
 
-```
+```  
 此时，继承的仅仅是父类的原型。并且对父类原型对象复制得到的复制对象p中的 constructor 指向的不是 subClass 子类对象，因此寄生式继承中要对复制对象p做一次增强，修复其 constructor 指向不正确的问题。  
 
 子类的原型继承了父类的原型并且没有执行父类的构造函数。  
@@ -224,7 +224,7 @@ SubClass.prototype.constructor === SubClass;
 SubClass.prototype.__proto__ === SuperClass.prototype;
 SuperClass.prototype.constructor === SuperClass;
 ```
-
+<br />
 
 ### JavaScript 多继承  
 
@@ -258,7 +258,7 @@ Object.prototype.mix = function(){
 otherBook.mix(book1, book2);
 // otherBook 可以继承 book1 和 book2 的属性
 ```  
-
+<br />
 
 ### ES6 中 Class 的继承  
 ES6 中的 Class 可以通过 `extends` 关键字实现继承，不用再单独修改原型链：  
@@ -288,10 +288,13 @@ ES6 中 可以使用 `Object.getPrototypeOf()` 方法可以用来从子类上获
 Object.getPrototypeOf(JavaScriptBook) === Book;
 ```  
 
+<br />
 
 #### ES6 中 super 关键字的使用  
+
 ES6 中的 super 关键字可以当作函数使用，也可以当作对象使用。  
 1. super 作为函数调用时，代表的是父类的构造函数。  
+
 ```javascript
 class A {}
 
@@ -300,13 +303,15 @@ class B extends A {
         super();
     }
 }
-```
+```  
+
 ES6 中的子类构造函数必须执行一次 super 函数。 子类 B 的构造函数中的 super 代表调用父类的构造函数。  
-但是，**super返回的是子类B 的实例**，即 super 内部的 this 指的是 B，上述的 `super()` 相当于 `A.prototype.constructor.call(this)` 。  
-因此，`super.valueOf() instanceof B` 是 true。
+但是，**super返回的是子类B 的实例**，即 super 内部的 this 指的是 B，上述的 `super()` 相当于 `A.prototype.constructor.call(this)` 。因此，`super.valueOf() instanceof B` 是 true。  
 
 2. super 作为对象使用时在普通方法中使用时，是指向父类的原型对象，在静态方法中指向父类  
+
 super 作为对象在普通方法中使用：  
+
 ```javascript
 class A {
     p() {
@@ -321,7 +326,8 @@ class B extends A {
     }
 }
 let b = new B();
-```
+```  
+
 子类中的 super.p() 中的 `super` 指向父类的原型对象，相当于 `A.prototype`。  
 
 因为这种 super 指向父类的原型对象，所以定义在父类实例上的方法或者属性(包括父类 constructor 构造函数内的属性和方法)是无法通过 super 调用的。  
@@ -350,11 +356,14 @@ class B extends A {
 
 let b = new B();
 b.m() // 3
-```
-上述代码中，super.print() 是调用的 A.prototype.print()，但 A.prototype.print() 会绑定 子类 B 的 this。实际执行的是 `super.print.call(this)`。
+```  
+
+上述代码中，super.print() 是调用的 A.prototype.print()，但 A.prototype.print() 会绑定 子类 B 的 this。实际执行的是 `super.print.call(this)`。  
+
 在子类中如果通过 super 对某个属性赋值，这时的 super 就是 this，赋值的属性会变成子类实例的属性。  
 
 super 作为对象用在静态方法中时， super 将指向父类。  
+
 ```javascript
 class Parent{
     static thisMethod(msg){
@@ -378,13 +387,14 @@ class Child extends Parent {
 Child.thisMethod(1); // static 1
 let child = new Child();
 child.thisMethod(2); // instance 2
-```
+```  
+
 super 在静态方法之中指向父类，因此 子类在静态方法中用到 `super.thisMethod(msg)` 相当于 `Parent.thisMethod(msg)`，因此输出也是 static。  
 因为 super 在不同用法时的指向不同，在使用时一定要显示指定时作为函数韩式作为对象使用。  
 
+<br />
 
 #### class 的 prototype 属性 和  \_\_proto\_\_ 属性  
-
 Class 作为 构造函数的语法糖，同时有 prototype 属性 和 \_\_proto\_\_ 属性，同时存在两条继承链。  
 - 子类的 \_\_proto\_\_ 属性表示构造函数的继承，总是指向父类  
 - 子类 prototype 属性的 \_\_proto\_\_ 属性表示方法的继承，总是指向父类 的 prototype 属性。  
@@ -400,22 +410,26 @@ class B extends A {
 
 B.__proto__ === A // true
 B.prototype.__proto__ === A.prototype // true
-```
+```  
+
+<br />
 
 #### Object.create 实现继承  
-
 可以使用 Object.create 实现继承  
 
-Object.create() 方法创建一个新对象，使用现有的对象来提供新创建的对象的__proto__
+Object.create() 方法创建一个新对象，使用现有的对象来提供新创建的对象的__proto__  
+
 ```javascript
 Object.create(proto, [propertiesObject])   
-```
+```  
+
 - proto：新创建对象的原型对象  
 - propertiesObject：可选，要添加到新创建对象的可枚举属性  
 
 返回值是一个新对象，带着指定的原型对象和属性  
 
 Object.create() 可以实现类式继承   
+
 ```javascript
 let superClass = {
     name: 'lisi',
@@ -429,7 +443,8 @@ let subClass = Object.create(superClass, {
     url: {value: 'https://cn.bing.com'}
 })
 console.log(subClass.name); // sub data name
-```
+```  
+
 上述代码主要实现了继承，可以满足 `subClass.__proto__ === superClass`  
 
 
