@@ -383,24 +383,58 @@ super 在静态方法之中指向父类，因此 子类在静态方法中用到 
 因为 super 在不同用法时的指向不同，在使用时一定要显示指定时作为函数韩式作为对象使用。  
 
 
-#### class 的 prototype 属性 和  \_\_proto\_\_ 属性
+#### class 的 prototype 属性 和  \_\_proto\_\_ 属性  
+
 Class 作为 构造函数的语法糖，同时有 prototype 属性 和 \_\_proto\_\_ 属性，同时存在两条继承链。  
 - 子类的 \_\_proto\_\_ 属性表示构造函数的继承，总是指向父类  
-- 子类 prototype 属性的 \_\_proto\_\_ 属性表示方法的继承，总是指向父类 的 prototype 属性。
-```javascript
+- 子类 prototype 属性的 \_\_proto\_\_ 属性表示方法的继承，总是指向父类 的 prototype 属性。  
+
+```javascript  
 class A {
 
 }
+
 class B extends A {
 
 }
+
 B.__proto__ === A // true
 B.prototype.__proto__ === A.prototype // true
 ```
 
+#### Object.create 实现继承  
+
+可以使用 Object.create 实现继承  
+
+Object.create() 方法创建一个新对象，使用现有的对象来提供新创建的对象的__proto__
+```javascript
+Object.create(proto, [propertiesObject])   
+```
+- proto：新创建对象的原型对象  
+- propertiesObject：可选，要添加到新创建对象的可枚举属性  
+
+返回值是一个新对象，带着指定的原型对象和属性  
+
+Object.create() 可以实现类式继承   
+```javascript
+let superClass = {
+    name: 'lisi',
+    getName: function(){
+        return this.name;
+    }
+}
+
+let subClass = Object.create(superClass, {
+    name: {value: 'sub data name'},
+    url: {value: 'https://cn.bing.com'}
+})
+console.log(subClass.name); // sub data name
+```
+上述代码主要实现了继承，可以满足 `subClass.__proto__ === superClass`  
 
 
 ### 参考资料  
 - [JavaScript 高级程序设计(第3版) 第六章](https://www.amazon.cn/dp/B007OQQVMY/ref=sr_1_1?ie=UTF8&qid=1546997809&sr=8-1&keywords=JavaScript%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%28%E7%AC%AC3%E7%89%88%29)  
 - [JavaScript 设计模式(张容铭)](https://www.amazon.cn/dp/B013HO6DNS/ref=sr_1_1?__mk_zh_CN=%E4%BA%9A%E9%A9%AC%E9%80%8A%E7%BD%91%E7%AB%99&keywords=JavaScript+%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%28%E5%BC%A0%E5%AE%B9%E9%93%AD%29&qid=1558446821&s=books&sr=1-1)  
-- [ES6标准入门(第3版)阮一峰](https://www.amazon.cn/dp/B07BSLNQN8/ref=sr_1_1?__mk_zh_CN=%E4%BA%9A%E9%A9%AC%E9%80%8A%E7%BD%91%E7%AB%99&keywords=ES6%E6%A0%87%E5%87%86%E5%85%A5%E9%97%A8%28%E7%AC%AC3%E7%89%88%29%E9%98%AE%E4%B8%80%E5%B3%B0&qid=1558446848&s=books&sr=1-1)
+- [ES6标准入门(第3版)阮一峰](https://www.amazon.cn/dp/B07BSLNQN8/ref=sr_1_1?__mk_zh_CN=%E4%BA%9A%E9%A9%AC%E9%80%8A%E7%BD%91%E7%AB%99&keywords=ES6%E6%A0%87%E5%87%86%E5%85%A5%E9%97%A8%28%E7%AC%AC3%E7%89%88%29%E9%98%AE%E4%B8%80%E5%B3%B0&qid=1558446848&s=books&sr=1-1)  
+- [MDN-Object.create](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object/create)
