@@ -15,8 +15,8 @@ twitter_text: 'The Network Setting of Ubuntu in VMware '
 
 ## VMware虚拟机下Ubuntu网络配置问题
 
-### 配置网络的背景
-在VMware虚拟机中安装了好几个系统，有用于测试的Winxp,也有用于开发Linux的Ubuntu。在使用Ubuntu时时常会遇到网络配置错误的情况，不能联网有时候会很尴尬，之前几次都是临时搜教程配置的，但这中方式有时候很麻烦，时间长了就会忘记。效率也不高，所以这次写点东西用于记录配置的方法。  
+### 配置网络的背景  
+在VMware虚拟机中安装了好几个系统，有用于测试的Winxp,也有用于开发Linux的Ubuntu。在使用Ubuntu时时常会遇到网络配置错误的情况，不能联网有时候会很尴尬，之前几次都是临时搜教程配置的，但这种方式有时候很麻烦，时间长了就会忘记。效率也不高，所以这次写点东西来记录配置的方法。  
 <br />
 
 ### 本次配置的环境  
@@ -68,19 +68,19 @@ NAT模式下默认会自动选取NAT设置，默认网关ip为 x.x.x.2,而上图
 首先在Ubuntu的终端里查看当前网络配置，这里使用ifconfig（与Win10里不同吧～）。看看有没有eth0和本地环回，这里只是提供查看。  
 
 对于系统的配置，主要是在interfaces里，主要指令是：  
-
+```
 	sudo vi /etc/network/interfaces
-
+```
 这里主要是对eth0进行配置，
 
-1.	如果动态获取ip,则可写入内容为：
-
+1.	如果动态获取ip,则可写入内容为：  
+```
 	auto eth0
 
 	iface eth0 inet dhcp
-
-2.	如果是固定静态ip，则在interfaces里写入：
-
+```
+2.	如果是固定静态ip，则在interfaces里写入：  
+```
 	auto eth0
 
 	iface eth0 inet static
@@ -90,35 +90,36 @@ NAT模式下默认会自动选取NAT设置，默认网关ip为 x.x.x.2,而上图
 	netmask 255.255.255.0
 
 	gateway 192.168.157.2
+```  
 
 这里使用的静态ip，那里的address的138可以取3～254之间的任何数字，网关gateway就选用之前那里的NAT网关，具体设置如下图所示。
 
 ![interfaces配置](../assets/img/UbuntuNetwork/Image/interfaceSet.png)
 
 
-除了在interfaces里配置之外，还要在resolv.conf里配置域名服务器，终端中的指令为：
-
+除了在interfaces里配置之外，还要在resolv.conf里配置域名服务器，终端中的指令为：  
+```
 	sudo vim /etc/resolv.conf
-
-在resolv.conf里填入
-
+```
+在resolv.conf里填入  
+```
 	nameserver 192.168.157.2
-
-保存退出。然后重启网络配置,终端指令如下:
-
+```
+保存退出。然后重启网络配置,终端指令如下:  
+```
 	sudo /etc/init.d/networking restart
-
-如果不出意外的话,终端中的ifconfig可以看到有ip地址和网关的eth0，如果不能显示eth0的话，可以使用指令:
-
+```
+如果不出意外的话,终端中的ifconfig可以看到有ip地址和网关的eth0，如果不能显示eth0的话，可以使用指令:  
+```
 	sudo ifconfig eth0 down
 	sudo ifconfig eth0 up
-
+```
 重新启用eth0，应该可以看到其配置。
 
-如果网络配置不能使用 sudo /etc/init.d/networking restart 启动，可以尝试使用以下代码重启网络服务：
-
+如果网络配置不能使用 sudo /etc/init.d/networking restart 启动，可以尝试使用以下代码重启网络服务：  
+```
 	sudo service network-manager restart
-
+```
 
 测试NAT是否配置成功，可以ping主机ip，即192.168.157.1 ，效果如下图：  
 
@@ -128,10 +129,10 @@ NAT模式下默认会自动选取NAT设置，默认网关ip为 x.x.x.2,而上图
 
 ![ping主机](../assets/img/UbuntuNetwork/Image/pingbaidu.png)
 
-对于resolv.conf的配置，在下一重启后会被自动清除，为了写入系统配置，并保存下来，使用指令：
-
+对于resolv.conf的配置，在下一重启后会被自动清除，为了写入系统配置，并保存下来，使用指令：  
+```
 	sudo vi /etc/resolvconf/resolv.conf.d/base
-
+```
 
 在base里写入和resolv.conf里一样的内容，即nameserver 192.168.157.2，保存即可。  
 
@@ -141,4 +142,5 @@ NAT模式下默认会自动选取NAT设置，默认网关ip为 x.x.x.2,而上图
 ![联网测试](../assets/img/UbuntuNetwork/Image/setbaidu.png)  
 
 
-ps:这里的sudo vi ..... , vi是使用vim编辑，不会使用vim的,可以换成记事本 gedit 打开。  
+ps:这里的sudo vi ..... , vi是使用vim编辑，不会使用vim的,可以换成记事本 gedit 打开。    
+
