@@ -125,7 +125,7 @@ twitter_text: "Summary of technical points of front-end engineers"
 - 对 class 的理解
 - 块级作用域
 
-##### 前端框架及工程化相关
+#### 前端框架及工程化相关
 
 - 虚拟 DOM 相关原理（Diff 算法）
 - MVVM 框架理解
@@ -143,7 +143,7 @@ twitter_text: "Summary of technical points of front-end engineers"
 - 用过哪些 Webpack 插件？、
 - Babel 的实现原理
 
-##### 手写前端代码
+#### 手写前端代码
 
 - 模拟 apply 实现、模拟 call 实现 、模拟 bind 实现
 - 手写原生 ajax，模拟实现数组的 slice
@@ -155,7 +155,7 @@ twitter_text: "Summary of technical points of front-end engineers"
 - 手动实现 JavaScript 中 new 的过程
 - 模拟实现 instanceof 的功能
 
-##### 浏览器相关
+#### 浏览器相关
 
 - 浏览器存储策略
 - 浏览器缓存机制
@@ -165,7 +165,7 @@ twitter_text: "Summary of technical points of front-end engineers"
 - 如何实现浏览器兼容性
 - 浏览器多进程与 JavaScript 单线程
 
-##### 其他前端相关部分
+#### 其他前端相关部分
 
 - 前端性能优化
 - 前端安全相关
@@ -179,7 +179,7 @@ twitter_text: "Summary of technical points of front-end engineers"
 - 新的前端技术(Flutter，Service Worker)
 - 为什么学习前端？
 
-##### 前后端
+#### 前后端
 
 - Node.js 中的事件循环
 - Node.js 中的文件流处理
@@ -187,9 +187,9 @@ twitter_text: "Summary of technical points of front-end engineers"
 - 负载均衡如何实现？
 - 主从复制的原理
 
-#### 公共高阶部分
+### 公共高阶部分
 
-##### 设计模式前端部分
+#### 设计模式前端部分
 
 - 单例模式
 - 原型模式
@@ -197,13 +197,13 @@ twitter_text: "Summary of technical points of front-end engineers"
 - 装饰器模式
 - 订阅发布模式
 
-##### 设计模式后端部分
+#### 设计模式后端部分
 
 - 单例模式
 - 观察者模式
 - 工厂模式
 
-##### 项目开发与管理
+#### 项目开发与管理
 
 - 项目进度安排(技术管理)
 - 对项目的理解
