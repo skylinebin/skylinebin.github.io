@@ -83,8 +83,8 @@ projects:
     url: https://github.com/skylinebin/Machine-Learning-Notes
   - name: AlgorithmPractice
     url: https://github.com/skylinebin/AlgorithmPractice
-  - name: LearningforJavaScript
-    url: https://github.com/skylinebin/LearningforJavaScript
+  - name: NoteBackend
+    url: https://github.com/skylinebin/noteBackend
 # exclude my node related stuff
 exclude: ['package.json', 'src', 'node_modules']
 

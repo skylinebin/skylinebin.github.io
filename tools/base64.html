@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Base64 编解码</title>
+    <!--[if IE]>
+        <script src="../assets/js/base64-polyfill.js"></script>
+    <![endif]-->
+
+	<!-- <script src="https://store.skylinebin.com/cdn/jquery.min.js"></script> -->
+	<link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.min.css">
+	<style type="text/css">
+		.header {
+			text-align: center;
+		}
+
+		.headertitle {
+			margin-top: 10px;
+			margin-bottom: 15px;
+			text-align: center;
+			font-weight: bold;
+		}
+
+		.copyright {
+			text-align: center;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="container">
+		<div class="col-md-12 jumbotron well">
+            
+
+			<div class="copyright">
+				版权所有 &copy; <a href="https://skylinebin.com">SkylineBin</a> 2019.
+			</div>
+		</div>
+
+	</div>
+
+
+	<!-- 如果要使用Bootstrap的js插件，必须先调入jQuery -->
+	<script src="../assets/js/jquery.min.js"></script>
+	<!-- 包括所有bootstrap的js插件或者可以根据需要使用的js插件调用　-->
+	<script src="../assets/js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+        window.btoa(encodeURIComponent("哈哈哈")); // 编码示例
+
+        decodeURIComponent(window.atob('JUU1JTkzJTg4JUU1JTkzJTg4JUU1JTkzJTg4')); // 解码示例
+
+	</script>
+</body>
+
+</html>
