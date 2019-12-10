@@ -75,7 +75,7 @@ links:
   - title: about
     url: /about
   - title: tools
-    url: /mytools
+    url: /tools
 
 # projects in header index
 projects:
