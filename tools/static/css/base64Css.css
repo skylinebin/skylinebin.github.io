@@ -2,59 +2,88 @@
  * @Author: SkylineBin 
  * @Date: 2019-12-10 15:22:44 
  * @Last Modified by: SkylineBin
- * @Last Modified time: 2019-12-10 16:02:57
+ * @Last Modified time: 2019-12-10 17:18:59
  */
 
 
-.titleHeader{
+.titleHeader {
     text-align: center;
 }
 
-.subtitle{
-    margin-left: 5%;
+@keyframes subtitleBack {
+    from {
+        color: red;
+    }
+
+    to {
+        color: rgb(17, 21, 226);
+    }
 }
 
-.functionChangeBtn{
+
+.subtitle {
+    margin-left: 5%;
+    font-weight: bold;
+}
+
+.animaColor{
+    animation: subtitleBack 2s;
+}
+
+.functionChangeBtn {
     float: right;
     margin-right: 5%;
 }
 
-.btnFunction{
+.btnFunction {
     height: 40px;
     line-height: 40px;
 }
 
-.btnFunction:after{
+.btnFunction:after {
     display: block;
     content: " ";
     clear: both;
 }
 
-.functionExec{
+.functionExec {
     margin-left: 5%;
 }
 
-.areas{
-    margin: 2% 3%;
-}
-.areas .areaTip{
-    font-weight: bold;
-    margin: 0.5rem 0.5rem;
+.functionClear {
+    margin-left: 2%;
 }
 
-.areas .areaContent{
+.areas {
+    margin: 2% 3%;
+}
+
+.areas .areaTip {
+    font-weight: bold;
+    font-size: 16px;
+    margin: 0.8rem 0.5rem;
+}
+
+.areas .areaContent {
     margin-left: 2%;
     height: 100px;
     width: 100%;
     border-radius: 4px;
 }
 
-.areaSecond{
-    border-top: 1px solid #f2f2f2;
+.areaSecond {
+    /* border-top: 1px solid #f2f2f2; */
+    margin-top: 3%;
 }
 
 
-.copyright{
-    margin-top: 5%;
+
+.container {
+    min-height: calc(100vh - 50px);
+}
+
+.copyright {
+    height: 50px;
     text-align: center;
+    line-height: 50px;
 }

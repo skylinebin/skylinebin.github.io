@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Base64 编解码">
 	<title>Base64 编解码</title>
-    <!--[if IE]>
+	<!--[if IE]>
         <script src="../assets/js/base64-polyfill.js"></script>
     <![endif]-->
 
@@ -16,33 +18,32 @@
 <body>
 	<div class="container">
 		<div class="col-md-12">
-            <h1 class="titleHeader">Base64编解码</h1>
-
+			<h1 class="titleHeader">Base64编解码</h1>
 			<h3 class="subtitle">Base64编码</h3>
 			<div class="btnFunction">
-				<button class="btn btn-info functionChangeBtn" onclick="repalceState()">功能切换</button>
+				<button class="btn btn-info functionChangeBtn" title="点击切换编解码" onclick="repalceState()">功能切换</button>
 			</div>
 			<div class="areas areaFirst">
 				<div class="areaTip currentFirstTip">待编码内容: </div>
-				<textarea name="textareaFirst" class="areaContent areaFirstContent"  autofocus="true"></textarea>
+				<textarea name="textareaFirst" class="areaContent areaFirstContent" autofocus="true"></textarea>
 			</div>
 			<div class="btnFunction">
-					<button class="btn btn-success functionExec" onclick="execFunction()">转换</button>
+				<button class="btn btn-success functionExec" onclick="execFunction()">转换</button>
 			</div>
+			<hr>
 			<div class="areas areaSecond">
 				<div class="areaTip currentSecondTip">已编码内容: </div>
 				<textarea name="textareaSecond" class="areaContent areaSecondContent" placeholder="已转码内容..."></textarea>
 			</div>
 			<div class="btnFunction">
-					<button class="btn btn-primary functionExec" onclick="copyToDucument()">复制转码内容</button>
+				<button class="btn btn-primary functionExec" onclick="copyToDucument()">复制转码内容</button>
+				<button class="btn btn-warning functionClear" onclick="clearText()">清空区域内容</button>
 			</div>
 
-
-			<div class="copyright">
-				版权所有 &copy; <a href="https://skylinebin.com">SkylineBin</a> 2019.
-			</div>
 		</div>
-
+	</div>
+	<div class="copyright">
+		版权所有 &copy; <a href="https://skylinebin.com">SkylineBin</a> 2019.
 	</div>
 
 
@@ -51,50 +52,61 @@
 	<!-- 包括所有bootstrap的js插件或者可以根据需要使用的js插件调用　-->
 	<script src="../assets/js/bootstrap.min.js"></script>
 	<script type="text/javascript">
-		let GState=true;
-		function xCodeData(str,state){
-			if(state){
-				return window.btoa(encodeURIComponent(str)); //编码输入内容
-			}else{
-				return decodeURIComponent(window.atob(str)); //解码输入内容
+		let GState = true;
+
+		function xCodeData(str, state) {
+			if (state) {
+				return window.btoa(encodeURIComponent(str)); //base64编码输入内容
+			} else {
+				return decodeURIComponent(window.atob(str)); //base64解码输入内容
 			}
-			
+
 		}
 
-		function repalceState(){
-			GState=!GState;
-			let currentFirst=$(".areaFirstContent").val().trim();
-			let currentSecond=$(".areaSecondContent").val().trim();
-			if(GState){
+		// 执行功能切换
+		function repalceState() {
+			GState = !GState;
+			let currentFirst = $(".areaFirstContent").val().trim();
+			let currentSecond = $(".areaSecondContent").val().trim();
+			if (GState) {
 				$(".subtitle").html("Base64编码");
 				$(".currentFirstTip").html("待编码内容: ");
 				$(".currentSecondTip").html("已编码内容: ");
-			}else{
+			} else {
 				$(".subtitle").html("Base64解码");
 				$(".currentFirstTip").html("待解码内容: ");
 				$(".currentSecondTip").html("已解码内容: ");
 			}
 			$(".areaSecondContent").val(currentFirst);
 			$(".areaFirstContent").val(currentSecond);
+			// 添加动画
+			$(".subtitle, .areaTip").addClass("animaColor");
 		}
 
-		function execFunction(){
+		// 执行转换
+		function execFunction() {
 			let str = $(".areaFirstContent").val();
-			str=str.trim();
+			str = str.trim();
 			let result;
-			result=xCodeData(str,GState);
+			result = xCodeData(str, GState);
 			$(".areaSecondContent").val(result);
 		}
 
-		function copyToDucument(){
+		// 复制到系统剪切板
+		function copyToDucument() {
 			$(".areaSecondContent").select();
 			document.execCommand('copy');
 		}
 
-        // window.btoa(encodeURIComponent("哈哈哈")); // 编码示例
+		// 清空文本框内容
+		function clearText() {
+			$(".areaSecondContent").val("");
+			$(".areaFirstContent").val("");
+			$(".subtitle, .areaTip").removeClass("animaColor");
+		}
 
-        // decodeURIComponent(window.atob('JUU1JTkzJTg4JUU1JTkzJTg4JUU1JTkzJTg4')); // 解码示例
-
+		// window.btoa(encodeURIComponent("哈哈哈")); // 编码示例
+		// decodeURIComponent(window.atob('JUU1JTkzJTg4JUU1JTkzJTg4JUU1JTkzJTg4')); // 解码示例
 	</script>
 </body>
 
