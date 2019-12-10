@@ -1,0 +1,60 @@
+/*
+ * @Author: SkylineBin 
+ * @Date: 2019-12-10 15:22:44 
+ * @Last Modified by: SkylineBin
+ * @Last Modified time: 2019-12-10 16:02:57
+ */
+
+
+.titleHeader{
+    text-align: center;
+}
+
+.subtitle{
+    margin-left: 5%;
+}
+
+.functionChangeBtn{
+    float: right;
+    margin-right: 5%;
+}
+
+.btnFunction{
+    height: 40px;
+    line-height: 40px;
+}
+
+.btnFunction:after{
+    display: block;
+    content: " ";
+    clear: both;
+}
+
+.functionExec{
+    margin-left: 5%;
+}
+
+.areas{
+    margin: 2% 3%;
+}
+.areas .areaTip{
+    font-weight: bold;
+    margin: 0.5rem 0.5rem;
+}
+
+.areas .areaContent{
+    margin-left: 2%;
+    height: 100px;
+    width: 100%;
+    border-radius: 4px;
+}
+
+.areaSecond{
+    border-top: 1px solid #f2f2f2;
+}
+
+
+.copyright{
+    margin-top: 5%;
+    text-align: center;
+}
