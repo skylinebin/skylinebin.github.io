@@ -49,8 +49,8 @@ twitter_text: 'Summary some skills of writing English papers '
 
 3. 投稿后的流程  
 
-```flow  
-
+```  
+// markdown flow  
 st=>start: 作者投稿  
 e=>end  
 cond1=>condition: 管理员是否收稿  
