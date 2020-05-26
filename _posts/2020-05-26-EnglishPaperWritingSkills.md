@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "英语会议期刊论文写作技巧"
-date:   2018-09-24 23:02:31
+title:  "英语会议期刊论文写作注意事项"
+date:   2020-05-26 10:49:31
 description: 'Summary some skills of writing English papers'
 tags:
 - Summary
@@ -12,6 +12,8 @@ categories:
 - SkylineBin
 twitter_text: 'Summary some skills of writing English papers '
 ---  
+
+> 以下内容写于 2018.09.24 by SkylineBin  
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;最近开始着手毕业需要的论文了，虽然思绪还是有一些不清晰，但整体的模型应该算是基本确定下来了，也不能一直看论文，正好实验室读博的学长推荐了一个关于英文论文写作的良心 up 主，看了一部分他提到的英文论文写作技巧(规范)，又结合专业英语时导师讲的一部分内容，整理一下整体的流程和思路，也为后面写作打一点基础。  
 
@@ -74,7 +76,6 @@ cond2(拒绝)-> e
 4. 文章的主观印象体现  
 - Figures & Tables 有冲击力的图 以及信息充实的表  
 - Reference 符合标准的参考文献;高质量以及要有最新的参考文献  
-
 
 
 ## Introduction 引言  
@@ -220,13 +221,33 @@ Start with: This paper investigate (Topic) using (Method)...
 
 - Dr.Zhu : [GoogleScholar Jingyi Zhu](https://scholar.google.com/citations?user=dutepS4AAAAJ&hl=en)、[Jingyi Zhu](https://www.linkedin.com/in/jingyi-zhu/)  
 
-放上几位学长学姐的信息，是为了表达自己真心的感谢，毕竟并没有多少人会提示我们逻辑意识的重要性，再次感谢，希望早日也能向上述的学长学姐一样，达到妙笔生花的地步。(几位学长学姐如果机缘巧合看到了这篇总结，感觉这些信息放在这里不合适，可以留言联系我删除呀~)  
+放上几位“学长学姐”的信息，是为了表达自己真心的感谢，毕竟并没有多少人会提示我们逻辑意识的重要性，再次感谢，希望早日也能向上述的学长学姐一样，达到妙笔生花的地步。(几位学长学姐如果机缘巧合看到了这篇总结，感觉这些信息放在这里不合适，可以留言联系我删除呀~)  
 
 
 ## 参考  
 
 1. [写一篇高水平的工程类英文论文](https://space.bilibili.com/230105574/#/channel/detail?cid=45741)  
-2. [Is peer review just a crapshoot?](https://www.elsevier.com/connect/is-peer-review-just-a-crapshoot)
+2. [Is peer review just a crapshoot?](https://www.elsevier.com/connect/is-peer-review-just-a-crapshoot)  
 
+
+
+> 以下内容补充于 2020.0506 by SkylineBin
+
+
+## 写在后面  
+
+这篇总结写在研二刚开学，当时自己还没有写任何一篇英语学术论文，差不多三个月后自己投出去了第一篇ASME国际会议，中间修改了几次，陆陆续续经过了好几个月才接收，现在来看那篇文章存在挺多问题，但每个阶段都有自己要做和能做的事情不是么。在写这篇总结的时候就知道自己基本不会走学术这条道路，第一点原因是因为自己穷，第二点可能是不太感兴趣，最后一点应该是能力不够。但是读研一场，该做的事情还是要认真做，于是有了这篇学习笔记。  
+
+当时写完笔记的自己觉得自己还没有正经写过的英文期刊，发出来是没有资格的，于是这篇笔记一直在草稿箱里面吃灰。现在刚过去硕士毕业答辩不久，有了团队的任务又写了一篇不算很好的英文期刊准备投出去，中间间歇时间又拿出这篇笔记看了几次，调整了几次心态，觉得其实并没有那么多限制，发出来看着也方便，并且还可以分享自己做学术的一些工具帮助看到的人，有何不可呢？  
+
+### 实用的学术工具  
+主要是一些常用的工具网站，如下：  
+- Google Scholar (http://scholar.google.com/) 此网站让人沉迷，哎，一言难尽！不能访问可使用 Google学术镜像  
+- [Grammarly](https://www.grammarly.com/)  语法检查的工具，装上Chrome插件可以一用，微软的语法检查工具还是需要慢慢改进  
+- [Sci-Hub](https://sci-hub.st/) 可以下载一些奇怪的文献，各大数据库不稳定的时候这个也很好用  
+- [Academic Accelerator](https://academic-accelerator.com/) 期刊数据库，最开始是用来查参考文献需要的期刊ISO4缩写的，这个网站可以解决，此外可以看影响因子以及期刊评分等  
+- [Microsoft Academic](https://academic.microsoft.com/home) 找文献数据库  
+
+大概就是这些了，还要继续改毕业论文的终稿，真难啊！
 
 
