@@ -19,6 +19,7 @@ twitter_text: 'Summary some skills of writing English papers '
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;其实，一开始看这个写 SCI 系列的视频，我是被这一系列视频的展开逻辑和呈现形式所吸引的。毕竟 SCI 论文也不好发，打着这个名头要有对应的价值。整个系列视频逻辑清晰，形式更像是先写板书后期再配音上去的，并且该加速的时候视频本身已经给加速了。很多东西写出来之后来理解真的会很清晰很多，很多干货满满的技术贴也是一样。图文并茂，逻辑清晰，重点突出，易于理解的文章总是会受欢迎的，看来呈现自己观点和理解的文字还是要练习，还有很多很多优秀的人值得学习。本篇文章记录的顺序基本和系列视频一致，从陈述事实到基于这个事实展开的一篇论文的写作，尽量做到保留原系列视频的逻辑清晰的高度。  
 
+<br/>
 
 ## Facts 事实  
 
@@ -77,6 +78,7 @@ cond2(拒绝)-> e
 - Figures & Tables 有冲击力的图 以及信息充实的表  
 - Reference 符合标准的参考文献;高质量以及要有最新的参考文献  
 
+<br/>
 
 ## Introduction 引言  
 
@@ -99,6 +101,7 @@ Tips:
 - 3. 最好要有'好看'的图表 (主要要加引用)  
 - 4. 整个引言部分要有 10% 的篇幅  
 
+<br/>
 
 ## Methodology 研究方法  
 
@@ -123,6 +126,7 @@ Tips:
 
 其中第一点和第二点不注意，会导致论文直接被 拒收。  
 
+<br/>
 
 ## Result & Discussion 结果与讨论  
 
@@ -135,25 +139,26 @@ Tips:
 
 感觉这一部分很容易被人忽视，还是要多积累，多练啊。妙笔生花，点石成金的技能，无论从事什么职业，都会有助于自己的发展的。  
 
+<br/>
 
 ## Figure & Table 图与表  
 
 很重要：1.第一时间浏览；2.影响第一印象  
 所以，容易出错的部分，一定要仔细检查，在Reviewer指出问题前解决掉  
 需要注意的地方主要有以下九点：  
-- 1. 认真阅读 Author's Guide  注意模版中 图与表的格式以及要求  
-- 2. 所有的图标都 **必须在文中提到** ，特别注意要检查 Introduction 中的部分概念图  
-- 3. Refer to Number，文中的图与表的编号一定要保持一致并符合要求  
-- 4. Consistency 一致性 图表中的表达方式要与论文中一致 (论文中符号用什么，表格中符号用什么)  
-- 5. 标题 Caption 图 与 表 的标题都要 **清晰**、**准确**、**完整** (不要担心过长，力求解释清楚)  
-- 6. 用**颜色**和**图例**区分多数据 图例和颜色都要有 (不要试图隐藏不好的结果，可以分享出来一起讨论)  
-- 7. 使用副标题 (如果多个图对比时) Fig.7 xxxxx....(a).xxxxxx and (b).xxxxxxxxx  
-- 8. 杜绝一图多投 每幅图在投不同杂志时要做简要修改 (不要给未来的自己找麻烦)  
-- 9. 保留原始数据(图对应的数据) 审稿人提问题时，可能会用到  
+1. 认真阅读 Author's Guide  注意模版中 图与表的格式以及要求  
+2. 所有的图标都 **必须在文中提到** ，特别注意要检查 Introduction 中的部分概念图  
+3. Refer to Number，文中的图与表的编号一定要保持一致并符合要求  
+4. Consistency 一致性 图表中的表达方式要与论文中一致 (论文中符号用什么，表格中符号用什么)  
+5. 标题 Caption 图 与 表 的标题都要 **清晰**、**准确**、**完整** (不要担心过长，力求解释清楚)  
+6. 用**颜色**和**图例**区分多数据 图例和颜色都要有 (不要试图隐藏不好的结果，可以分享出来一起讨论)  
+7. 使用副标题 (如果多个图对比时) Fig.7 xxxxx....(a).xxxxxx and (b).xxxxxxxxx  
+8. 杜绝一图多投 每幅图在投不同杂志时要做简要修改 (不要给未来的自己找麻烦)  
+9. 保留原始数据(图对应的数据) 审稿人提问题时，可能会用到  
 
 图和表都很重要，还有使用 Visio 画的图也很重要，记得导出成图片再插入到论文中。  
 
-
+<br/>
 
 ## Conclusion 结论 Abstract 摘要 Title 题目  
 
@@ -161,10 +166,10 @@ Tips:
 结论部分 应该是对 Result & Discussion 部分的总结，可以使用：  
 Start with: This paper investigate (Topic) using (Method)...  
 要注意以下几点：  
-- 1. 不要重复 Result  
-- 2. 应该将 Result & Discussion 汇总 (Discover 发现， Extension 拓展， Future Plan 未来)  
-- 3. 不要 Copy & Paste  
-- 4. 需强调 Contribution, 与 Introduction 对应  
+1. 不要重复 Result  
+2. 应该将 Result & Discussion 汇总 (Discover 发现， Extension 拓展， Future Plan 未来)  
+3. 不要 Copy & Paste  
+4. 需强调 Contribution, 与 Introduction 对应  
 
 ### 2. Abstract 摘要  
 题目和摘要是 **搜索引擎返回的内容**，应拒绝文不对题(学术文章需要严谨)  
@@ -172,23 +177,23 @@ Start with: This paper investigate (Topic) using (Method)...
     > 摘要 = 摘取 + 要点  
 
 摘要一般包括以下几点：  
-- 1. 摘取 引言 Introduction 部分 (3 sentences => 为了引出研究话题，强调研究的重要性)  
-- 2. 摘取 研究方法 Method 部分 (1 or 2 sentence)  
-- 3. 摘取 结果与讨论 R&D 部分 (**Most** Important Result)  
-- 4. 摘取 结论 Conclusion 部分 (**Rewrite** 强调论文的贡献)  
+1. 摘取 引言 Introduction 部分 (3 sentences => 为了引出研究话题，强调研究的重要性)  
+2. 摘取 研究方法 Method 部分 (1 or 2 sentence)  
+3. 摘取 结果与讨论 R&D 部分 (**Most** Important Result)  
+4. 摘取 结论 Conclusion 部分 (**Rewrite** 强调论文的贡献)  
 
 上面四点中，2,3 主要是为了说明这篇论文**做了什么**，1,4 主要是将这篇论文的**贡献和重要性**  
 
 
 ### 3. Title 题目  
 一篇论文的题目应该包括以下三部分：  
-- 1. 研究内容 Topic  
-- 2. 研究方法 Method  
-- 3. 结果及隐含的意义 Improvement/Reduce  
+1. 研究内容 Topic  
+2. 研究方法 Method  
+3. 结果及隐含的意义 Improvement/Reduce  
 
 题目应该包含所有的**关键词**  
 
-
+<br/>
 
 ## Respond to Reviewer's Comments 回复审稿人意见  
 
