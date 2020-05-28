@@ -247,6 +247,7 @@ Start with: This paper investigate (Topic) using (Method)...
 - [Sci-Hub](https://sci-hub.st/) 可以下载一些奇怪的文献，各大数据库不稳定的时候这个也很好用  
 - [Academic Accelerator](https://academic-accelerator.com/) 期刊数据库，最开始是用来查参考文献需要的期刊ISO4缩写的，这个网站可以解决，此外可以看影响因子以及期刊评分等  
 - [Microsoft Academic](https://academic.microsoft.com/home) 找文献数据库  
+- [Endnote Style](https://endnote.com/downloads/styles/) Endnote 参考文献样式  
 
 大概就是这些了，还要继续改毕业论文的终稿，真难啊！
 
