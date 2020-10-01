@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "过去几个月节点"
+title:  "工作以来几个月的节点"
 date:   2020-10-01 22:48:31
 image: 'https://store.skylinebin.com/moon.webp'
 description: '日常想法归档'
