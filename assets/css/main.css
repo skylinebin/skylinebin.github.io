@@ -2039,6 +2039,16 @@ footer p {
     margin: 0
 }
 
+.footer {
+    /* position: relative; */
+    line-height: 40px;
+    /* margin-top: -40px; */
+    background: #5d4d7a;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+
+}
 
 /* add styles for friends' links */
 
