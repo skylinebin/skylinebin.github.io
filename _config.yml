@@ -25,6 +25,7 @@ plugins:
 - jekyll-seo-tag
 - jekyll-pwa-plugin
 
+future: true
 
 # start paginate
 paginate: 10
