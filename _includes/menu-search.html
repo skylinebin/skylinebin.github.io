@@ -12,11 +12,6 @@
 
 </div>
 
-<!-- Menu Open -> Fade effect -->
-<!-- <div class="showmymenu">
-<svg id="opens" class="icon icon-mymenu"><use xlink:href="#icon-mymenu"></use></svg>
-</div> -->
-
 <div id="fade" class="overlay"></div>
 <a id="slide" class="slideButton">
   <svg id="open" class="icon-menu" style="width:2.188rem;height:2.188rem;">
@@ -26,12 +21,7 @@
     <use xlink:href="#icon-close"></use>
   </svg>
 </a>
-<!-- <div class="showmymenu">
-<a id="slide" class="showmymenu">
-    <svg id="open" class="icon-mymenu" style="width:2.188rem;height:2.188rem;"><use xlink:href="#icon-mymenu"></use></svg>
-    <svg id="close" class="icon-mymenu" style="width:2.188rem;height:2.188rem;"><use xlink:href="#icon-close"></use></svg>
-</a>
-</div> -->
+
 <aside id="sidebar">
   <div id="topmenu">
     {% assign filename = page.url | replace_first: '/', '' | replace: '/', '-' | replace: '.html', '.md' %}

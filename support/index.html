@@ -115,5 +115,27 @@ description: "Support SkylineBin..."
 </div>
 <div class="clearboth"></div>
 
-{% include showvcomments.html %}
-{% include commentsbyValine.html %}
+<!-- {% include showvcomments.html %}
+{% include commentsbyValine.html %} -->
+{% if site.leancloud.enable %}
+<section class="comments">
+
+    <h3>评论</h3>
+    <!-- Valine安装代码 -->
+    <div id="vcomments"></div>
+    <!-- Valine安装已完成 -->
+</section>
+<script src='https://unpkg.com/valine/dist/Valine.min.js'></script>
+
+<script type="text/javascript">
+new Valine({
+    el: '#vcomments',
+    appId: 'WJmvuueUfSFpusIzgyIGa0hW-gzGzoHsz',
+    appKey: 'jptI9djY9vTBuWGDR69VHakF',
+    avatar: 'retro',
+    placeholder: '随便说两句吧~',
+    // visitor: true
+    })
+</script>
+
+{% endif %}
