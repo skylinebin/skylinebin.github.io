@@ -222,7 +222,7 @@ a {
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 300;
-    src: local('Open Sans Light'), local('OpenSans-Light'), url("../fonts/open-sans-v15-latin-regular.woff2") format('woff2')
+    src: local('Open Sans Light'), local('OpenSans-Light'), url("https://store.skylinebin.com/cdn/website/fonts/open-sans-v15-latin-regular.woff2") format('woff2')
 }
 
 @font-face {
@@ -231,7 +231,7 @@ a {
     font-weight: 800;
     src: local('Open Sans Extrabold'),
     local('OpenSans-Extrabold'),
-    url("../fonts/open-sans-v15-latin-regular.woff2") format('woff2')
+    url("https://store.skylinebin.com/cdn/website/fonts/open-sans-v15-latin-regular.woff2") format('woff2')
 }
 
 h1,
