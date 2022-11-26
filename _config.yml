@@ -1,5 +1,5 @@
 # Site settings
-title: skylinebin - Full Stack Learner
+title: SkylineBin的技术成长之路
 description: "A blog about skylinebin ..."
 baseurl: "" # for test: remove string '/space-jekyll-templa' to ''
 url: "https://skylinebin.com/" # for test: remove string 'http://victorvoid.github.io' to '' but in production: 'https://yourusername.githu.io'
