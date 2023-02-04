@@ -739,8 +739,8 @@ input[type="search"]::-webkit-search-cancel-button {
 
 .search-form .icon-remove-sign {
     position: absolute;
-    top: 0;
-    right: 0;
+    top: -5px;
+    right: -5px;
     z-index: 1;
     display: block;
     fill: #fff;
@@ -751,7 +751,7 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 
 .search-form::-webkit-input-placeholder {
-    font-size: 1.625rem
+    font-size: 1.725rem
 }
 
 .search-form .search-field::-webkit-search-decoration,
@@ -807,14 +807,14 @@ body.search-overlay:after {
     padding-left: 10%;
 }
 
-.search-wrapper *zoom 1:after,
-.search-wrapper *zoom 1:before {
+.search-wrapper:after,
+.search-wrapper:before {
     display: table;
     line-height: 0;
-    content: ""
+    content: "";
 }
 
-.search-wrapper *zoom 1:after {
+.search-wrapper:after {
     clear: both
 }
 
@@ -890,7 +890,7 @@ body.search-overlay:after {
 }
 
 .aboutme .showreason {
-	font-size: 1.5rem;
+	font-size: 1.7rem;
     font-family: 'Open Sans', sans-serif;
 	line-height: 2rem;
 	margin: 0px auto;
@@ -909,14 +909,14 @@ body.search-overlay:after {
 }
 
 .aboutme li h3 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     margin-bottom: 7px;
     position: relative;
 }
 
 .aboutme li h3:before {
     content: "|>";
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     color: #000;
     position: absolute;
     left: -10px;
@@ -972,6 +972,7 @@ body {
     max-width: 450px;
     float: none;
     display: block;
+    font-size: 1.7rem;
     margin-right: auto;
     margin-left: auto;
     padding-left: 0;
@@ -1039,7 +1040,7 @@ body {
 }
 
 .header-site .site-description {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     display: block;
     margin: 1.875rem 0;
 }
@@ -1089,6 +1090,7 @@ body {
 .pagination {
     width: 100%;
     text-align: center;
+    font-size: 1.7rem;
 }
 
 
@@ -1412,7 +1414,7 @@ post .music-read {
 
 .post-content h2:before {
     /* // content: '##'; */
-    font-size: 1.563rem
+    font-size: 1.863rem
 }
 
 @media only screen and (min-width:37.5rem) {
@@ -1422,13 +1424,13 @@ post .music-read {
 }
 
 .post-content h3 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     line-height: 1.4;
 }
 
 @media only screen and (min-width:37.5rem) {
     .post-content h3 {
-        font-size: 1.563rem
+        font-size: 1.863rem
     }
 }
 
@@ -1450,7 +1452,7 @@ post .music-read {
 .post-content blockquote {
     *zoom: 1;
     width: auto;
-    max-width: 45.625rem;
+    max-width: 58rem;
     float: none;
     display: block;
     margin-right: auto;
@@ -1520,7 +1522,7 @@ post .music-read {
 }
 
 .right-support {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     font-family: 'Open Sans', sans-serif;
     line-height: 2rem;
     margin: 0px auto;
@@ -1590,6 +1592,7 @@ post .music-read {
 
 .share h3 {
     text-align: left;
+    font-weight: bold;
     margin: 0 0 1.875rem;
     margin-left: 1.25rem;
     font-size: 1.875rem;
@@ -1679,6 +1682,7 @@ table td {
     display: block;
     border-bottom: 1px solid #dadada;
     padding: .625rem 0;
+    font-size: 1.7rem;
     text-decoration: none;
     transition: all .5s;
 }
@@ -2022,6 +2026,7 @@ code {
 
 .comments h3 {
     margin: 0 0 1.875rem;
+    font-weight: bold;
     font-size: 1.875rem
 }
 
@@ -2035,6 +2040,7 @@ footer {
 footer p {
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
+    font-size: 16px;
     font-style: normal;
     color: #fff;
     text-align: center;
