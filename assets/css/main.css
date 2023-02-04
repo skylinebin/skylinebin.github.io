@@ -897,7 +897,7 @@ body.search-overlay:after {
 	width: auto;
 	height:auto;
 	text-align: left;
-	max-width: 50rem;
+	max-width: 60rem;
 }
 
 .aboutme .post-title:before {
@@ -1326,7 +1326,7 @@ post .music-read {
 .post-content ol,
 .post-content .tags,
 .post-content iframe {
-    max-width: 50rem;
+    max-width: 60rem;
     padding: 0 1.25rem;
     margin: 0 auto 1.875rem;
     font-family: 'Open Sans', sans-serif;
@@ -1347,14 +1347,14 @@ post .music-read {
     .post-content ol,
     .post-content .tags,
     .post-content iframe {
-        font-size: 1.5rem
+        font-size: 1.8rem
     }
 }
 
 .post-content p,
 .post-content li {
     color: #333;
-    font-size: 1.4rem;
+    font-size: 1.7rem;
 }
 
 .post-content p code,
@@ -1527,7 +1527,7 @@ post .music-read {
     width: auto;
     height: auto;
     text-align: left;
-    max-width: 50rem;
+    max-width: 60rem;
     border-top: 1px solid #f2f2f2;
     padding: 1.25rem 1.25rem;
 }
@@ -1566,7 +1566,7 @@ post .music-read {
 .share {
     *zoom: 1;
     width: auto;
-    max-width: 50rem;
+    max-width: 60rem;
     float: none;
     display: block;
     margin-right: auto;
@@ -1633,7 +1633,7 @@ table td {
     margin-top: 3.75rem;
     *zoom: 1;
     width: auto;
-    max-width: 50rem;
+    max-width: 60rem;
     float: none;
     display: block;
     margin-right: auto;
@@ -1718,7 +1718,7 @@ pre {
 pre code {
     *zoom: 1;
     width: auto;
-    max-width: 50rem;
+    max-width: 60rem;
     float: none;
     display: block;
     margin-right: auto;
@@ -1761,7 +1761,7 @@ pre span {
     margin: 0px auto;
     /* margin-bottom: 30px; */
     /* max-width: 580px; */
-    max-width: 50rem;
+    max-width: 60rem;
 }
 
 code {
@@ -1915,7 +1915,7 @@ code {
 
 .author .details {
     margin: auto;
-    max-width: 50rem;
+    max-width: 60rem;
     padding: 0 1.25rem;
 }
 
@@ -1999,7 +1999,7 @@ code {
 .comments {
     *zoom: 1;
     width: auto;
-    max-width: 50rem;
+    max-width: 60rem;
     float: none;
     display: block;
     margin-right: auto;
@@ -2291,7 +2291,7 @@ ul.recent.helpfulposts {
 /*  margin-left: 15%;
     margin-right: 15%; */
     /* max-width: 60rem; */
-    max-width: 50rem;
+    max-width: 60rem;
     text-align: center;
     margin: 0 auto;
 }
@@ -2467,7 +2467,7 @@ ul.recent.helpfulposts {
     transform: rotate3d(1, 0, 0, 180deg);
 }
 
-@media only screen and (max-width:50rem) {
+@media only screen and (max-width:60rem) {
 .df-item {
     text-align: center !important;
     /* margin: 0 10%; */

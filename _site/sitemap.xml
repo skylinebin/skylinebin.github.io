@@ -2,11 +2,119 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	
 	  <url>
+		<loc>http://localhost:4000/Summaryof2021/</loc>
+	  </url>
+	
+	  <url>
+		<loc>http://localhost:4000/Summaryof2020/</loc>
+	  </url>
+	
+	  <url>
+		<loc>http://localhost:4000/SummaryofLastQuarter/</loc>
+	  </url>
+	
+	  <url>
+		<loc>http://localhost:4000/EnglishPaperWritingSkills/</loc>
+	  </url>
+	
+	  <url>
+		<loc>http://localhost:4000/Summaryof2019/</loc>
+	  </url>
+	
+	  <url>
+		<loc>http://localhost:4000/ShareMyExperienceAboutFED/</loc>
+	  </url>
+	
+	  <url>
+		<loc>http://localhost:4000/JavaScriptCurryingandUncurrying/</loc>
+	  </url>
+	
+	  <url>
+		<loc>http://localhost:4000/ArrayinJavaScript/</loc>
+	  </url>
+	
+	  <url>
+		<loc>http://localhost:4000/ThisandCallandApplyinJavaScript/</loc>
+	  </url>
+	
+	  <url>
+		<loc>http://localhost:4000/JavaScriptInheritance/</loc>
+	  </url>
+	
+	  <url>
+		<loc>http://localhost:4000/AnxiousApril/</loc>
+	  </url>
+	
+	  <url>
+		<loc>http://localhost:4000/BrowserCache/</loc>
+	  </url>
+	
+	  <url>
+		<loc>http://localhost:4000/UsingWebpack/</loc>
+	  </url>
+	
+	  <url>
+		<loc>http://localhost:4000/HttpResponseStatusCodes/</loc>
+	  </url>
+	
+	  <url>
+		<loc>http://localhost:4000/ABugofProjectSolved/</loc>
+	  </url>
+	
+	  <url>
+		<loc>http://localhost:4000/JavaScriptGarbageCollecation/</loc>
+	  </url>
+	
+	  <url>
+		<loc>http://localhost:4000/HuaweiDeveloperDay/</loc>
+	  </url>
+	
+	  <url>
+		<loc>http://localhost:4000/RegularExpression/</loc>
+	  </url>
+	
+	  <url>
+		<loc>http://localhost:4000/Summaryof2018/</loc>
+	  </url>
+	
+	  <url>
+		<loc>http://localhost:4000/CSSforTriangle/</loc>
+	  </url>
+	
+	  <url>
+		<loc>http://localhost:4000/ExcellentLaboratoryLISMS/</loc>
+	  </url>
+	
+	  <url>
+		<loc>http://localhost:4000/PageVisibilityAPI/</loc>
+	  </url>
+	
+	  <url>
+		<loc>http://localhost:4000/DinkGuide/</loc>
+	  </url>
+	
+	  <url>
+		<loc>http://localhost:4000/CSSVerticalCenter/</loc>
+	  </url>
+	
+	  <url>
+		<loc>http://localhost:4000/SummaryProjectthisSummer/</loc>
+	  </url>
+	
+	  <url>
+		<loc>http://localhost:4000/DDosAttackTwo/</loc>
+	  </url>
+	
+	  <url>
+		<loc>http://localhost:4000/DDosAttackOne/</loc>
+	  </url>
+	
+	  <url>
 		<loc>http://localhost:4000/SummaryThisSummer/</loc>
 	  </url>
 	
 	  <url>
-		<loc>http://localhost:4000/JavaScript%E8%BF%AD%E4%BB%A3%E5%99%A8%E5%87%BD%E6%95%B0/</loc>
+		<loc>http://localhost:4000/JavaScriptIteratorFunction/</loc>
 	  </url>
 	
 	  <url>
@@ -15,6 +123,10 @@
 	
 	  <url>
 		<loc>http://localhost:4000/MongoDBandNodejs/</loc>
+	  </url>
+	
+	  <url>
+		<loc>http://localhost:4000/TensorflowLearningThree/</loc>
 	  </url>
 	
 	  <url>
@@ -30,6 +142,10 @@
 	  </url>
 	
 	  <url>
+		<loc>http://localhost:4000/WhenIGetANewComputer/</loc>
+	  </url>
+	
+	  <url>
 		<loc>http://localhost:4000/aboutLove/</loc>
 	  </url>
 	
@@ -38,11 +154,7 @@
 	  </url>
 	
 	  <url>
-		<loc>http://localhost:4000/UsingMarkdown/</loc>
-	  </url>
-	
-	  <url>
-		<loc>http://localhost:4000/2017%E6%80%BB%E7%BB%93/</loc>
+		<loc>http://localhost:4000/Summaryof2017/</loc>
 	  </url>
 	
 	  <url>
@@ -71,6 +183,10 @@
 	
 	  <url>
 		<loc>http://localhost:4000/SummaryThinking/</loc>
+	  </url>
+	
+	  <url>
+		<loc>http://localhost:4000/UsingMarkdown/</loc>
 	  </url>
 	
 	  <url>

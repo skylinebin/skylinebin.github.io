@@ -1,10 +1,10 @@
 {
-  "name": "victorigortemplate",
+  "name": "victorigor-plus",
   "version": "1.0.0",
-  "description": "My jekyll blog template.",
+  "description": "One jekyll blog template.",
   "main": "gulpfile.js",
   "scripts": {
-    "test": "test"
+    "dev": "bundle exec jekyll serve --livereload"
   },
   "keywords": [
     "frontend",

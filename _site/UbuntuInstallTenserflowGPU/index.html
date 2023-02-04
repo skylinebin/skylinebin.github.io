@@ -12,7 +12,7 @@
     <!-- Google Authorship Markup -->
     <link rel="author" href="https://plus.google.com/115372092992473887120?rel=author">
 
-    <link rel="shortcut icon" href="../images/SkylineBin.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="https://store.skylinebin.com/picgo/SkylineBin.png" type="image/x-icon" />
 
     <!-- add pwa manifest -->
     <link rel="manifest" href="../manifest.json">
@@ -34,7 +34,7 @@
     <meta property="og:image" content="http://localhost:4000/assets/img/blog-image.png">
     
     <meta property="og:description" content="About DeepLearning Environment">
-    <meta property="og:site_name" content="skylinebin - Full Stack Learner">
+    <meta property="og:site_name" content="SkylineBin的技术成长之路">
 
     <!-- Social Google+/Schema.org  -->
     <meta itemprop="name" content="在Ubuntu16.04中安装tensorflow-gpu环境"/>
@@ -42,7 +42,7 @@
     <meta itemprop="image" content="http://localhost:4000/assets/img/blog-image.png"/>
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="/assets/img/icons/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="https://store.skylinebin.com/cdn/website/icons/favicon.ico" type="image/x-icon" />
 
     <!-- Apple Touch Icons -->
     <link rel="apple-touch-icon" href="/assets/img/icons/apple-touch-icon.png" />
@@ -66,12 +66,33 @@
     <!-- Android Lolipop Theme Color -->
     <meta name="theme-color" content="#5d4d7a">
 
-    <link rel="stylesheet" href="/assets/css/main.css">
+    <!-- <link rel="stylesheet" href="/assets/css/main.css"> -->
+    <link rel="stylesheet" href="https://store.skylinebin.com/cdn/website/css/main.css">
     <link rel="canonical" href="http://localhost:4000/UbuntuInstallTenserflowGPU/">
-    <link rel="alternate" type="application/rss+xml" title="skylinebin - Full Stack Learner" href="http://localhost:4000/feed.xml" />
+    <link rel="alternate" type="application/rss+xml" title="SkylineBin的技术成长之路" href="http://localhost:4000/feed.xml" />
 
-    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <!-- <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"> -->
+    <link href="https://store.skylinebin.com/cdn/3.3.7/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://store.skylinebin.com/cdn/css/heart.css">
+    <script src="https://cdn.staticfile.org/jquery/3.2.0/jquery.min.js"></script>
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>在Ubuntu16.04中安装tensorflow-gpu环境 | SkylineBin的技术成长之路</title>
+<meta name="generator" content="Jekyll v4.3.2" />
+<meta property="og:title" content="在Ubuntu16.04中安装tensorflow-gpu环境" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="About DeepLearning Environment" />
+<meta property="og:description" content="About DeepLearning Environment" />
+<link rel="canonical" href="http://localhost:4000/UbuntuInstallTenserflowGPU/" />
+<meta property="og:url" content="http://localhost:4000/UbuntuInstallTenserflowGPU/" />
+<meta property="og:site_name" content="SkylineBin的技术成长之路" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2017-12-09T07:25:31+08:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="在Ubuntu16.04中安装tensorflow-gpu环境" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2017-12-09T07:25:31+08:00","datePublished":"2017-12-09T07:25:31+08:00","description":"About DeepLearning Environment","headline":"在Ubuntu16.04中安装tensorflow-gpu环境","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/UbuntuInstallTenserflowGPU/"},"url":"http://localhost:4000/UbuntuInstallTenserflowGPU/"}</script>
+<!-- End Jekyll SEO tag -->
+
 </head>
 
     <body>
@@ -119,40 +140,36 @@
    	<p>SkylineBin</p>
     <div class="search-wrapper">
 
-<!-- style="display: none;" -->
-    <div class="search-form">
-        <input arial-label="Search for a post" type="text" class="search-field" placeholder="Search...">
-        <svg class="icon-remove-sign"><use xlink:href="#icon-close"></use></svg>
+  <!-- style="display: none;" -->
+  <div class="search-form">
+    <input arial-label="Search for a post" type="text" class="search-field" placeholder="Search...">
+    <svg class="icon-remove-sign">
+      <use xlink:href="#icon-close"></use>
+    </svg>
 
-        <ul class="search-results search-list"></ul>
-    </div>
+    <ul class="search-results search-list"></ul>
+  </div>
 
 </div>
 
-<!-- Menu Open -> Fade effect -->
-<!-- <div class="showmymenu">
-<svg id="opens" class="icon icon-mymenu"><use xlink:href="#icon-mymenu"></use></svg>
-</div> -->
-
 <div id="fade" class="overlay"></div>
 <a id="slide" class="slideButton">
-    <svg id="open" class="icon-menu" style="width:2.188rem;height:2.188rem;"><use xlink:href="#icon-menu"></use></svg>
-    <svg id="close" class="icon-close" style="width:2.188rem;height:2.188rem;"><use xlink:href="#icon-close"></use></svg>
+  <svg id="open" class="icon-menu" style="width:2.188rem;height:2.188rem;">
+    <use xlink:href="#icon-menu"></use>
+  </svg>
+  <svg id="close" class="icon-close" style="width:2.188rem;height:2.188rem;">
+    <use xlink:href="#icon-close"></use>
+  </svg>
 </a>
-<!-- <div class="showmymenu">
-<a id="slide" class="showmymenu">
-    <svg id="open" class="icon-mymenu" style="width:2.188rem;height:2.188rem;"><use xlink:href="#icon-mymenu"></use></svg>
-     <svg id="close" class="icon-mymenu" style="width:2.188rem;height:2.188rem;"><use xlink:href="#icon-close"></use></svg>
-</a>
-</div> -->
+
 <aside id="sidebar">
   <div id="topmenu">
     
     <ul>
-      <li><span>1</span></li>
+      <li><span>B</span></li>
       <li><span> /UbuntuInstallTenserflowGPU/</span></li>
-      <li><span>⌘ blogspace λ </span></li>
-      <li><span>* Menu</span></li>
+      <li><span>⌘ space </span></li>
+      <li><span> Menu</span></li>
     </ul>
 
     <ul>
@@ -167,61 +184,73 @@
       
       
       
-        <li>
-          <span class="counter-menu">1</span>
-          <svg viewBox="0 0 50 50" class="icon-arrow-menu"><use xlink:href="#icon-right-arrow"></use></svg>
-          <a href="http://localhost:4000/"> home</a>
-        </li>
+      <li>
+        <span class="counter-menu">1</span>
+        <svg viewBox="0 0 50 50" class="icon-arrow-menu">
+          <use xlink:href="#icon-right-arrow"></use>
+        </svg>
+        <a href="http://localhost:4000/"> home</a>
+      </li>
       
 
       
       
       
-        <li>
-          <span class="counter-menu">2</span>
-          <svg viewBox="0 0 50 50" class="icon-arrow-menu"><use xlink:href="#icon-right-arrow"></use></svg>
-          <a href="http://localhost:4000/pagelist/"> my posts</a>
-        </li>
+      <li>
+        <span class="counter-menu">2</span>
+        <svg viewBox="0 0 50 50" class="icon-arrow-menu">
+          <use xlink:href="#icon-right-arrow"></use>
+        </svg>
+        <a href="http://localhost:4000/pagelist/"> posts</a>
+      </li>
       
 
       
       
       
-        <li>
-          <span class="counter-menu">3</span>
-          <svg viewBox="0 0 50 50" class="icon-arrow-menu"><use xlink:href="#icon-right-arrow"></use></svg>
-          <a href="http://localhost:4000/series"> series</a>
-        </li>
+      <li>
+        <span class="counter-menu">3</span>
+        <svg viewBox="0 0 50 50" class="icon-arrow-menu">
+          <use xlink:href="#icon-right-arrow"></use>
+        </svg>
+        <a href="http://localhost:4000/series"> series</a>
+      </li>
       
 
       
       
       
-        <li>
-          <span class="counter-menu">4</span>
-          <svg viewBox="0 0 50 50" class="icon-arrow-menu"><use xlink:href="#icon-right-arrow"></use></svg>
-          <a href="http://localhost:4000/tags"> tags</a>
-        </li>
+      <li>
+        <span class="counter-menu">4</span>
+        <svg viewBox="0 0 50 50" class="icon-arrow-menu">
+          <use xlink:href="#icon-right-arrow"></use>
+        </svg>
+        <a href="http://localhost:4000/tags"> tags</a>
+      </li>
       
 
       
       
       
-        <li>
-          <span class="counter-menu">5</span>
-          <svg viewBox="0 0 50 50" class="icon-arrow-menu"><use xlink:href="#icon-right-arrow"></use></svg>
-          <a href="http://localhost:4000/about"> about me</a>
-        </li>
+      <li>
+        <span class="counter-menu">5</span>
+        <svg viewBox="0 0 50 50" class="icon-arrow-menu">
+          <use xlink:href="#icon-right-arrow"></use>
+        </svg>
+        <a href="http://localhost:4000/about"> about</a>
+      </li>
       
 
       
       
       
-        <li>
-          <span class="counter-menu">6</span>
-          <svg viewBox="0 0 50 50" class="icon-arrow-menu"><use xlink:href="#icon-right-arrow"></use></svg>
-          <a href="http://localhost:4000/mytools"> little tools</a>
-        </li>
+      <li>
+        <span class="counter-menu">6</span>
+        <svg viewBox="0 0 50 50" class="icon-arrow-menu">
+          <use xlink:href="#icon-right-arrow"></use>
+        </svg>
+        <a href="http://localhost:4000/tools"> tools</a>
+      </li>
       
 
       
@@ -229,23 +258,306 @@
     </ul>
 
     <ul>
-      <li><span class="counter-menu">g</span><svg viewBox="0 0 50 50" class="icon-arrow-menu"><use xlink:href="#icon-right-arrow"></use></svg><a title="Show my projects on GitHub"  target="_blank" href="http://github.com/skylinebin" class="search">github</a></li>
-      <li><span class="counter-menu">s</span><svg viewBox="0 0 50 50" class="icon-arrow-menu"><use xlink:href="#icon-right-arrow"></use></svg><a  title="Search for a post" class="search">search</a></li>
-      <li><span class="counter-menu">t</span><svg viewBox="0 0 50 50" class="icon-arrow-menu"><use xlink:href="#icon-right-arrow"></use></svg><a title="Follow me in Twitter" target="_blank" href="http://twitter.com/liubin1995">twitter</a></li>
-      <li><span class="counter-menu">q</span><svg viewBox="0 0 50 50" class="icon-arrow-menu"><use xlink:href="#icon-right-arrow"></use></svg><a title="Show my websites" target="_blank" href="https://qcloud.skylinebin.com">qcloud</a></li>
+      <li><span class="counter-menu">g</span><svg viewBox="0 0 50 50" class="icon-arrow-menu">
+          <use xlink:href="#icon-right-arrow"></use>
+        </svg><a title="Show my projects on GitHub" target="_blank" href="http://github.com/skylinebin"
+          class="search">github</a></li>
+      <li><span class="counter-menu">s</span><svg viewBox="0 0 50 50" class="icon-arrow-menu">
+          <use xlink:href="#icon-right-arrow"></use>
+        </svg><a title="Search for a post" class="search">search</a></li>
+      <li><span class="counter-menu">t</span><svg viewBox="0 0 50 50" class="icon-arrow-menu">
+          <use xlink:href="#icon-right-arrow"></use>
+        </svg><a title="Follow me in Twitter" target="_blank" href="http://twitter.com/liubin1995">twitter</a></li>
+      <li><span class="counter-menu">i</span><svg viewBox="0 0 50 50" class="icon-arrow-menu">
+          <use xlink:href="#icon-right-arrow"></use>
+        </svg><a title="Show my websites" target="_blank" href="https://www.skylinebin.com">index</a></li>
+      <li><span class="counter-menu">f</span><svg viewBox="0 0 50 50" class="icon-arrow-menu">
+          <use xlink:href="#icon-right-arrow"></use>
+        </svg><a title="Friends' links" href="http://localhost:4000/friends">friends</a></li>
     </ul>
   </nav>
 </aside>
 
 <a id="search" class="dosearch">
-    <svg class="icon-menu icon-search"><use xlink:href="#icon-search"></use></svg>
+  <svg class="icon-menu icon-search">
+    <use xlink:href="#icon-search"></use>
+  </svg>
 </a>
-
 </header>
 
         <div class="tree-posts">
 
     <h3>All Posts</h3>
+
+    
+
+    <article role="article" class="post-item" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
+        <div class="content">
+            <a title="Open this post" href="/Summaryof2021/">
+                <h2 class="post-title" itemprop="name">一个节点-继续前行-(2021年终总结)</h2>
+            </a>
+        </div>
+    </article>
+
+    
+
+    <article role="article" class="post-item" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
+        <div class="content">
+            <a title="Open this post" href="/Summaryof2020/">
+                <h2 class="post-title" itemprop="name">一个节点-继续前行-(2020年终总结)</h2>
+            </a>
+        </div>
+    </article>
+
+    
+
+    <article role="article" class="post-item" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
+        <div class="content">
+            <a title="Open this post" href="/SummaryofLastQuarter/">
+                <h2 class="post-title" itemprop="name">工作几个月以来的节点</h2>
+            </a>
+        </div>
+    </article>
+
+    
+
+    <article role="article" class="post-item" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
+        <div class="content">
+            <a title="Open this post" href="/EnglishPaperWritingSkills/">
+                <h2 class="post-title" itemprop="name">英语会议期刊论文写作注意事项</h2>
+            </a>
+        </div>
+    </article>
+
+    
+
+    <article role="article" class="post-item" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
+        <div class="content">
+            <a title="Open this post" href="/Summaryof2019/">
+                <h2 class="post-title" itemprop="name">一个节点-继续前行-(2019年终总结)</h2>
+            </a>
+        </div>
+    </article>
+
+    
+
+    <article role="article" class="post-item" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
+        <div class="content">
+            <a title="Open this post" href="/ShareMyExperienceAboutFED/">
+                <h2 class="post-title" itemprop="name">2019秋招技术点分享总结</h2>
+            </a>
+        </div>
+    </article>
+
+    
+
+    <article role="article" class="post-item" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
+        <div class="content">
+            <a title="Open this post" href="/JavaScriptCurryingandUncurrying/">
+                <h2 class="post-title" itemprop="name">JavaScript-函数柯里化与反柯里化-</h2>
+            </a>
+        </div>
+    </article>
+
+    
+
+    <article role="article" class="post-item" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
+        <div class="content">
+            <a title="Open this post" href="/ArrayinJavaScript/">
+                <h2 class="post-title" itemprop="name">JavaScript-中的数组操作</h2>
+            </a>
+        </div>
+    </article>
+
+    
+
+    <article role="article" class="post-item" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
+        <div class="content">
+            <a title="Open this post" href="/ThisandCallandApplyinJavaScript/">
+                <h2 class="post-title" itemprop="name">JavaScript-中的this、call-和-apply-</h2>
+            </a>
+        </div>
+    </article>
+
+    
+
+    <article role="article" class="post-item" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
+        <div class="content">
+            <a title="Open this post" href="/JavaScriptInheritance/">
+                <h2 class="post-title" itemprop="name">JavaScript-中的继承机制</h2>
+            </a>
+        </div>
+    </article>
+
+    
+
+    <article role="article" class="post-item" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
+        <div class="content">
+            <a title="Open this post" href="/AnxiousApril/">
+                <h2 class="post-title" itemprop="name">焦虑的四月</h2>
+            </a>
+        </div>
+    </article>
+
+    
+
+    <article role="article" class="post-item" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
+        <div class="content">
+            <a title="Open this post" href="/BrowserCache/">
+                <h2 class="post-title" itemprop="name">浏览器中的缓存策略</h2>
+            </a>
+        </div>
+    </article>
+
+    
+
+    <article role="article" class="post-item" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
+        <div class="content">
+            <a title="Open this post" href="/UsingWebpack/">
+                <h2 class="post-title" itemprop="name">可以了解的Webpack相关知识</h2>
+            </a>
+        </div>
+    </article>
+
+    
+
+    <article role="article" class="post-item" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
+        <div class="content">
+            <a title="Open this post" href="/HttpResponseStatusCodes/">
+                <h2 class="post-title" itemprop="name">HTTP响应状态码可查阅版总结</h2>
+            </a>
+        </div>
+    </article>
+
+    
+
+    <article role="article" class="post-item" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
+        <div class="content">
+            <a title="Open this post" href="/ABugofProjectSolved/">
+                <h2 class="post-title" itemprop="name">记录一次解决log报错的怪异bug</h2>
+            </a>
+        </div>
+    </article>
+
+    
+
+    <article role="article" class="post-item" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
+        <div class="content">
+            <a title="Open this post" href="/JavaScriptGarbageCollecation/">
+                <h2 class="post-title" itemprop="name">JavaScript垃圾回收机制</h2>
+            </a>
+        </div>
+    </article>
+
+    
+
+    <article role="article" class="post-item" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
+        <div class="content">
+            <a title="Open this post" href="/HuaweiDeveloperDay/">
+                <h2 class="post-title" itemprop="name">华为开发者线下沙龙总结</h2>
+            </a>
+        </div>
+    </article>
+
+    
+
+    <article role="article" class="post-item" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
+        <div class="content">
+            <a title="Open this post" href="/RegularExpression/">
+                <h2 class="post-title" itemprop="name">正则表达式及JavaScript中应用总结</h2>
+            </a>
+        </div>
+    </article>
+
+    
+
+    <article role="article" class="post-item" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
+        <div class="content">
+            <a title="Open this post" href="/Summaryof2018/">
+                <h2 class="post-title" itemprop="name">一个节点-继续前行-(2018年终总结)</h2>
+            </a>
+        </div>
+    </article>
+
+    
+
+    <article role="article" class="post-item" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
+        <div class="content">
+            <a title="Open this post" href="/CSSforTriangle/">
+                <h2 class="post-title" itemprop="name">用CSS画很多种三角形</h2>
+            </a>
+        </div>
+    </article>
+
+    
+
+    <article role="article" class="post-item" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
+        <div class="content">
+            <a title="Open this post" href="/ExcellentLaboratoryLISMS/">
+                <h2 class="post-title" itemprop="name">LISMS虚拟实验室网站借鉴</h2>
+            </a>
+        </div>
+    </article>
+
+    
+
+    <article role="article" class="post-item" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
+        <div class="content">
+            <a title="Open this post" href="/PageVisibilityAPI/">
+                <h2 class="post-title" itemprop="name">Page-Visibility-API-以及应用</h2>
+            </a>
+        </div>
+    </article>
+
+    
+
+    <article role="article" class="post-item" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
+        <div class="content">
+            <a title="Open this post" href="/DinkGuide/">
+                <h2 class="post-title" itemprop="name">丁克生存指南</h2>
+            </a>
+        </div>
+    </article>
+
+    
+
+    <article role="article" class="post-item" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
+        <div class="content">
+            <a title="Open this post" href="/CSSVerticalCenter/">
+                <h2 class="post-title" itemprop="name">CSS垂直居中的几种实现形式</h2>
+            </a>
+        </div>
+    </article>
+
+    
+
+    <article role="article" class="post-item" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
+        <div class="content">
+            <a title="Open this post" href="/SummaryProjectthisSummer/">
+                <h2 class="post-title" itemprop="name">暑期项目问题记录与总结</h2>
+            </a>
+        </div>
+    </article>
+
+    
+
+    <article role="article" class="post-item" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
+        <div class="content">
+            <a title="Open this post" href="/DDosAttackTwo/">
+                <h2 class="post-title" itemprop="name">Web安全DDos原理--(二)反射攻击</h2>
+            </a>
+        </div>
+    </article>
+
+    
+
+    <article role="article" class="post-item" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
+        <div class="content">
+            <a title="Open this post" href="/DDosAttackOne/">
+                <h2 class="post-title" itemprop="name">Web安全DDoS原理--(一)直接攻击</h2>
+            </a>
+        </div>
+    </article>
 
     
 
@@ -261,7 +573,7 @@
 
     <article role="article" class="post-item" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
         <div class="content">
-            <a title="Open this post" href="/JavaScript%E8%BF%AD%E4%BB%A3%E5%99%A8%E5%87%BD%E6%95%B0/">
+            <a title="Open this post" href="/JavaScriptIteratorFunction/">
                 <h2 class="post-title" itemprop="name">迭代器函数与函数式编程</h2>
             </a>
         </div>
@@ -283,6 +595,16 @@
         <div class="content">
             <a title="Open this post" href="/MongoDBandNodejs/">
                 <h2 class="post-title" itemprop="name">MongoDB与Node.js相关应用</h2>
+            </a>
+        </div>
+    </article>
+
+    
+
+    <article role="article" class="post-item" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
+        <div class="content">
+            <a title="Open this post" href="/TensorflowLearningThree/">
+                <h2 class="post-title" itemprop="name">Tensorflow系列--(三)实现常用损失函数及其比较</h2>
             </a>
         </div>
     </article>
@@ -321,6 +643,16 @@
 
     <article role="article" class="post-item" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
         <div class="content">
+            <a title="Open this post" href="/WhenIGetANewComputer/">
+                <h2 class="post-title" itemprop="name">新系统中精选软件整理(一个程序员的软件推荐指南)</h2>
+            </a>
+        </div>
+    </article>
+
+    
+
+    <article role="article" class="post-item" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
+        <div class="content">
             <a title="Open this post" href="/aboutLove/">
                 <h2 class="post-title" itemprop="name">关于情感的认知</h2>
             </a>
@@ -341,18 +673,8 @@
 
     <article role="article" class="post-item" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
         <div class="content">
-            <a title="Open this post" href="/UsingMarkdown/">
-                <h2 class="post-title" itemprop="name">Markdown使用指南</h2>
-            </a>
-        </div>
-    </article>
-
-    
-
-    <article role="article" class="post-item" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
-        <div class="content">
-            <a title="Open this post" href="/2017%E6%80%BB%E7%BB%93/">
-                <h2 class="post-title" itemprop="name">一个节点-继续前行</h2>
+            <a title="Open this post" href="/Summaryof2017/">
+                <h2 class="post-title" itemprop="name">一个节点-继续前行-(2017年终总结)</h2>
             </a>
         </div>
     </article>
@@ -431,8 +753,18 @@
 
     <article role="article" class="post-item" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
         <div class="content">
+            <a title="Open this post" href="/UsingMarkdown/">
+                <h2 class="post-title" itemprop="name">Markdown使用指南</h2>
+            </a>
+        </div>
+    </article>
+
+    
+
+    <article role="article" class="post-item" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
+        <div class="content">
             <a title="Open this post" href="/sharingPro/">
-                <h2 class="post-title" itemprop="name">首页修复及js使用</h2>
+                <h2 class="post-title" itemprop="name">首页修复及JavaScript细节使用</h2>
             </a>
         </div>
     </article>
@@ -442,7 +774,7 @@
     <article role="article" class="post-item" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
         <div class="content">
             <a title="Open this post" href="/GitandGithub/">
-                <h2 class="post-title" itemprop="name">Git简介及Github相关使用</h2>
+                <h2 class="post-title" itemprop="name">Git简介及日常使用</h2>
             </a>
         </div>
     </article>
@@ -459,6 +791,18 @@
                     <time itemprop="datePublished" datetime="2017-12-09 07:25:31 +0800">09 Dec 2017</time>
                 </div>
             
+
+            
+<div class="countreader">
+    <span id="/UbuntuInstallTenserflowGPU/" class="leancloud_visitors" data-flag-title="在Ubuntu16.04中安装tensorflow-gpu环境">
+        <!-- <span class="post-meta-divider">|</span> -->
+        <span class="post-meta-item-text"> Hits: </span>
+        <span class="leancloud-visitors-count"></span>
+        <!-- count from 2018.09.26 -->
+    </span>
+</div>
+
+
 
             <article role="article" id="scroll" class="post-content" itemprop="articleBody">
                 <h1 id="linux-tensorflow-gpu-环境搭建">Linux Tensorflow GPU 环境搭建</h1>
@@ -483,7 +827,8 @@
     记住文件存放所在目录(老问题，目录路径不要有中文！！)</p>
 
 <p>    Ctrl+Alt+T进入终端 ，卸载禁用自带的 nvidia*驱动并加入黑名单</p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt-get purge nvidia*  #卸载自带驱动
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt-get purge nvidia*  #卸载自带驱动
+#另一种卸载方案: sudo /usr/bin/nvidia-uninstall 
 
 #禁用自带驱动创建黑名单
 
@@ -503,33 +848,38 @@ sudo update-initramfs -u
 
 <p>先关闭图形化界面支持(x-window)</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo service lightdm stop #关闭x-window
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo service lightdm stop #关闭x-window
 
 #进入 NVIDIA-Linux-x86_64-384.98.run 文件目录
 ls #文件列表
 sudo sh ./NVIDIA-Linux-x86_64-384.98.run #安装显卡驱动
 
-sudo service lightdm stop  #打开x-window支持
+sudo service lightdm start  #打开x-window支持
 
 reboot #重启进入窗口界面
 
 </code></pre></div></div>
-<p>重启进入界面，查看驱动安装情况</p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>nvidia-smi #N卡驱动列表
+<p>可以通过添加 “–compat32-libdir” 和 “–no-x-check” 解决安装过程中遇到的问题<br />
+重启进入界面，查看驱动安装情况</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>nvidia-smi #N卡驱动列表
 </code></pre></div></div>
-<p>(之前因为没有独立显卡驱动，可能桌面分辨率很低，显示不全都有可能，安装驱动成功后明显分辨率自动更改为合适大小)</p>
+<p>( 之前因为没有独立显卡驱动，可能桌面分辨率很低，显示不全都有可能，安装驱动成功后明显分辨率自动更改为合适大小 )</p>
+
+<p>如果安装完成后，出现 登录进入 Ubuntu 无限循环，一直停在登录界面 的问题。可能的原因就有很多，可以检索关键词 “Ubuntu 登录无限循环” 来尝试。<br />
+可以参考的一个解决方案为：<a href="https://www.jianshu.com/p/34236a9c4a2f">Ubuntu 16.04安装NVIDIA驱动后循环登录问题</a></p>
 
 <h3 id="2安装cuda-80">2.安装CUDA-8.0</h3>
-<p>    (安装失败教训：不要下载最新的CUDA-9.0，因为tensorflow-gpu的配置文件中需要的库文件还是CUDA-8.0提供的，比如：libcublas.so.8.0、libcurand.so.8.0等等文件，都是CUDA-8.0里面的）</p>
+<p>    (安装失败教训：不要下载最新的CUDA-9.0，因为 tensorflow-gpu 的配置文件中需要的库文件还是CUDA-8.0提供的，比如：libcublas.so.8.0、libcurand.so.8.0等等文件，都是CUDA-8.0里面的）<br />
+<strong>此处需要检测 tensorflow-gpu 的版本</strong>， tensorflow-gpu 1.6 已经支持 CUDA-9.0</p>
 
 <p>    (官网的历史版本界面下载安装文件(https://developer.nvidia.com/cuda-80-ga2-download-archive)
 <img src="https://store.skylinebin.com/CUDAToolkit.png" alt="CUDAToolkit" />
 (下载得到cuda_8.0.61_375.26_linux.run 文件)
 与之前显卡驱动一样，进入文件目录</p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo sh ./cuda_8.0.61_375.26_linux.run
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo sh ./cuda_8.0.61_375.26_linux.run
 </code></pre></div></div>
 <p>等待进入条款，0%，按回车键强行阅读条款，直到出现是否接受条款</p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>accept
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>accept
 
 NVIDIA Driver    no
 CUDA Toolkit8.0  yes
@@ -544,7 +894,7 @@ Samples: Installed in /home/skylinebin
 </code></pre></div></div>
 <p>安装之后需要设置环境变量和动态链接库
 在终端输入</p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo vim ~/.bashrc
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo vim ~/.bashrc
 
 #在末尾插入
 
@@ -574,7 +924,7 @@ source /etc/profile
 
 <h4 id="将默认python27改成自带的python352">将默认Python2.7改成自带的Python3.5.2</h4>
 <p>ctrl+Alt+T 打开终端</p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python --version         #查当前默认Python版本
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python --version         #查当前默认Python版本
 
 whereis python3         #查自带的Python3.5存放位置
 
@@ -584,14 +934,14 @@ sudo ln -s /usr/bin/python3.5 /usr/bin/python   #建立新的链接默认Python�
 
 </code></pre></div></div>
 <h4 id="安装python3的pip">安装Python3的pip</h4>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt-get install python3-pip
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt-get install python3-pip
 </code></pre></div></div>
 <h4 id="安装tensorflow-gpu">安装Tensorflow-gpu</h4>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo python3 -m pip install tensorflow-gpu #若不确定默认Python的版本可使用
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo python3 -m pip install tensorflow-gpu #若不确定默认Python的版本可使用
 </code></pre></div></div>
 <p>测试Tensorflow-gpu 是否安装好
 终端输入python 逐条输入以下code</p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import tensorflow as tf
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import tensorflow as tf
 hello = tf.constant('Hello, TensorFlow!')
 sess = tf.Session()
 print(sess.run(hello))
@@ -600,16 +950,16 @@ print(sess.run(hello))
 <p>第三句的时候应该会运行Tensorflow，如果不报错基本就可以了</p>
 
 <h4 id="安装keras">安装keras</h4>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo python3 -m pip install keras
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo python3 -m pip install keras
 </code></pre></div></div>
 
 <p>运行相关的程序时如果提示缺少”_tkinter”模块</p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt-get install python3-tk
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt-get install python3-tk
 </code></pre></div></div>
 
 <h3 id="4安装pycharm">4.安装Pycharm</h3>
 <p>    Pycharm是比较受欢迎的Python编辑器，一般有添加源安装和下载手动编译安装，为了简单就直接添加源安装吧。</p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo add-apt-repository ppa:mystic-mirage/pycharm   #添加源
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo add-apt-repository ppa:mystic-mirage/pycharm   #添加源
 
 sudo apt update   #更新软件库
 
@@ -624,11 +974,42 @@ sudo apt install pycharm
 <h3 id="5总结">5.总结</h3>
 <p>    这次配置环境是在一台裸机上，本来没有系统，进入WinPE分了100G来给Ubuntu用，做启动盘(rufus软件好评),然后就是装系统和装显卡驱动，默认下载的CUDA是9.0，可能Ubuntu的Tensorflow-gpu源还没有更新CUDA库文件，致使安装失败，发现问题并且解决。还是挺费时间，但是也学到了一些基本的底层驱动的操作，应该勉强可以吧。</p>
 
+<h3 id="6后续问题更新">6.后续问题更新</h3>
+<p>在后续的使用过程中，出现过诸多问题，有一部分已经添加到正文中了，另外出现的比较常见的问题记录如下：</p>
+
+<ol>
+  <li>运行 Tensorflow 相关的程序后出现 “ImportError: libcublas.so.8.0: cannot open shared object file: No such file or directory” 类似的报错。<br />
+问题出现原因：CUDA 没有配置正确。<br />
+解决方案：检查安装 CUDA 的版本与安装 tensorflow-gpu 所支持的版本是否一致；检查安装 CUDA 后 环境变量 和 动态链接库 是否都添加了配置，并且均 source 激活了新的配置；若还是报错，可以考虑 手动将 报错的库文件 copy 至 “/usr/local/lib” 目录中，类似以下操作：
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo cp /usr/local/cuda-8.0/lib64/libcudart.so.8.0 /usr/local/lib/libcudart.so.8.0 
+sudo cp /usr/local/cuda-8.0/lib64/libcublas.so.8.0 /usr/local/lib/libcublas.so.8.0 
+sudo cp /usr/local/cuda-8.0/lib64/libcurand.so.8.0 /usr/local/lib/libcurand.so.8.0
+sudo cp /usr/local/cuda-8.0/lib64/libcusolver.so.8.0 /usr/local/lib/libcusolver.so.8.0
+sudo cp /usr/local/cuda-8.0/lib64/libcufft.so.8.0 /usr/local/lib/libcufft.so.8.0
+</code></pre></div>    </div>
+    <p>需要 copy 的文件可以按照运行 tensorflow 程序对应的报错进行调整。</p>
+  </li>
+  <li>运行 Tensorflow 相关的程序后出现 “failed to create cublas handle: CUBLAS_STATUS_NOT_INITIALIZED” 类似的报错。<br />
+问题出现原因：Nvidia 显卡驱动更新后，老版本的驱动存在残留的文件影响。<br />
+解决方案：清理 nvidia 的缓存：
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo rm -rf ~/.nv/
+</code></pre></div>    </div>
+    <p>清理缓存后重新运行，即可解决这个报错。</p>
+  </li>
+</ol>
+
             </article>
 
+            <div class="right-support">
+    <h3>版权声明</h3>
+    <!-- <hr /> -->
+    这篇文章版权归 <a href="https://skylinebin.com/">SkylineBin </a> 所有， 本文采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC-BY-NC-SA
+        4.0</a> 许可。如果对你有帮助，可以 <a href="https://skylinebin.com/support/">在这个页面支持 SkylineBin</a>，大概就是这样~
+    
+</div>
             <section class="share">
 
-    <h3>Sharing</h3>
+    <h3>分享</h3>
 
     <a aria-label="Share on Twitter" href="https://twitter.com/intent/tweet?text=&quot;How to install tensorflow-gpu in Ubuntu16.04? &quot;%20http://localhost:4000/UbuntuInstallTenserflowGPU/%20via%20&#64;liubin1995&hashtags=Ubuntu,Tensorflow,Python,MachineLearning,"
     onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;" title="Share on Twitter">
@@ -652,86 +1033,42 @@ sudo apt install pycharm
     onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;" title="Share on Google+">
         <svg class="icon icon-google-plus"><use xlink:href="#icon-google-plus"></use></svg>
     </a>
-    <a aria-label="Share on QQZone" class="jiathis_button_qzone" rel="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://localhost:4000/UbuntuInstallTenserflowGPU/"
-    onclick="window.open(this.href, 'QQ-Zone-share', 'width=490,height=530');return false;" title="Share on QQZone">
-        <svg class="icon icon-QZone"><use xlink:href="#icon-QZone"></use></svg>
-    </a>
-
-<!-- JiaThis Button BEGIN -->
-<!-- <script type="text/javascript" src="http://v2.jiathis.com/code/jia.js?uid=" charset="utf-8"></script> -->
-<!-- JiaThis Button END -->
 
 </section>
 
-            <!-- <section class="comments">
+            
+<section class="comments">
 
-    <h3>Comments</h3>
-    <div id="disqus_thread"></div>
-
+    <h3>评论</h3>
+    <!-- Valine安装代码 -->
+    <div id="vcomments"></div>
+    <!-- Valine安装已完成 -->
 </section>
+
+
+            <!-- <script src="https://cdn1.lncld.net/static/js/3.0.4/av-min.js"></script> -->
+<script src='https://unpkg.com/valine/dist/Valine.min.js'></script>
 
 <script type="text/javascript">
-
-    var disqus_loaded = false;
-
-    function load_disqus(){
-        disqus_loaded = true;
-        var disqus_shortname = 'skylinebin';
-        var disqus_title = '';
-        var disqus_url = '/UbuntuInstallTenserflowGPU/';
-        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-        var ldr = document.getElementById('disqus_loader');
-    };
-
-    window.onscroll = function(e) {
-        if ((window.innerHeight + window.scrollY) >= (document.body.offsetHeight - 800)) {
-            //hit bottom of page
-            if (disqus_loaded==false)
-                load_disqus()
-        }
-    };
+new Valine({
+    el: '#vcomments',
+    appId: 'WJmvuueUfSFpusIzgyIGa0hW-gzGzoHsz',
+    appKey: 'jptI9djY9vTBuWGDR69VHakF',
+    avatar: 'retro',
+    placeholder: '随便说两句吧~',
+    // visitor: true
+    })
 </script>
- -->
-            <section class="comments">
-
-    <h3>Comments</h3>
-    <div id="disqus_thread"></div>
-<!-- 来必力City版安装代码 -->
-<div id="liverecomment">
-    <div id="lv-container" data-id="city" data-uid="MTAyMC8zMDEwNi82NjYx">
-        <script type="text/javascript">
-            (function (d, s) {
-                var j, e = d.getElementsByTagName(s)[0];
-
-                if (typeof LivereTower === 'function') {
-                    return;
-                }
-
-                j = d.createElement(s);
-                j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
-                j.async = true;
-
-                e.parentNode.insertBefore(j, e);
-            })(document, 'script');
-        </script>
-        <noscript> 为正常使用来必力评论功能请激活JavaScript</noscript>
-    </div>
-</div>
-<!-- City版安装代码已完成 -->
-</section>
-
             <footer>
 
-	<p>Thanks for your reading~ <span id="heart">❤</span> by SkylineBin</p>
+	<p>Thanks for your reading~ <span id="heart">❤</span> CopyRight © 2023 SkylineBin.</p>
 
 </footer>
 
-            <script src="/assets/js/main.js"></script>
-<script src="/assets/js/toc.js"></script>
+            <script src="https://store.skylinebin.com/cdn/website/main.js"></script>
+<script src="https://store.skylinebin.com/cdn/website/toc.js"></script>
 <script src="https://store.skylinebin.com/forwebsite/js/myconsole.js"></script>
-<script type="text/javascript" src="https://tajs.qq.com/stats?sId=65981481" charset="UTF-8"></script>
+<!-- <script type="text/javascript" src="https://tajs.qq.com/stats?sId=65981481" charset="UTF-8"></script> -->
 <!-- baidu tongji -->
 <script>
     var _hmt = _hmt || [];
@@ -760,6 +1097,140 @@ sudo apt install pycharm
     gtag('config', 'UA-124250334-1');
 </script>
 
+
+
+<script src="https://cdn.staticfile.org/jquery/3.2.0/jquery.min.js"></script>
+<script src="https://cdn.staticfile.org/av-core/0.6.1/av-core-mini.js"></script>
+<!-- <script src="https://cdn.jsdelivr.net/npm/leancloud-storage@3.13.2/dist/av-min.js"></script> -->
+<script>AV.initialize("WJmvuueUfSFpusIzgyIGa0hW-gzGzoHsz", "jptI9djY9vTBuWGDR69VHakF");</script>
+<!-- <script src='//unpkg.com/valine/dist/Valine.min.js'></script> -->
+<script>
+    function showHitCount(Counter) {
+        var query = new AV.Query(Counter);
+        var entries = [];
+        var $visitors = $(".leancloud_visitors");
+        $visitors.each(function () {
+            entries.push($(this).attr("id").trim());
+        });
+        query.containedIn('url', entries);
+        query.find()
+            .done(function (results) {
+                console.log("results", results);
+                var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+                if (results.length === 0) {
+                    $visitors.find(COUNT_CONTAINER_REF).text(0);
+                    return;
+                }
+                for (var i = 0; i < results.length; i++) {
+                    var item = results[i];
+                    var url = item.get('url');
+                    var hits = item.get('hits');
+                    var element = document.getElementById(url);
+                    $(element).find(COUNT_CONTAINER_REF).text(hits);
+                }
+                for (var i = 0; i < entries.length; i++) {
+                    var url = entries[i];
+                    var element = document.getElementById(url);
+                    var countSpan = $(element).find(COUNT_CONTAINER_REF);
+                    if (countSpan.text() == '') {
+                        countSpan.text(0);
+                    }
+                }
+            })
+            .fail(function (object, error) {
+                console.log("Error: " + error.code + " " + error.message);
+            });
+    }
+    function addCount(Counter) {
+        var $visitors = $(".leancloud_visitors");
+        var url = $visitors.attr('id').trim();
+        var title = $visitors.attr('data-flag-title').trim();
+        var query = new AV.Query(Counter);
+        query.equalTo("url", url);
+        query.find({
+            success: function (results) {
+                if (results.length > 0) {
+                    var counter = results[0];
+                    counter.fetchWhenSave(true);
+                    counter.increment("hits");
+                    counter.save(null, {
+                        success: function (counter) {
+                            var $element = $(document.getElementById(url));
+                            $element.find('.leancloud-visitors-count').text(counter.get('hits'));
+                        },
+                        error: function (counter, error) {
+                            console.log('Failed to save Visitor num, with error message: ' + error.message);
+                        }
+                    });
+                } else {
+                    var newcounter = new Counter();
+                    /* Set ACL */
+                    var acl = new AV.ACL();
+                    acl.setPublicReadAccess(true);
+                    acl.setPublicWriteAccess(true);
+                    newcounter.setACL(acl);
+                    /* End Set ACL */
+                    newcounter.set("title", title);
+                    newcounter.set("url", url);
+                    newcounter.set("hits", 1);
+                    newcounter.save(null, {
+                        success: function (newcounter) {
+                            var $element = $(document.getElementById(url));
+                            $element.find('.leancloud-visitors-count').text(newcounter.get('hits'));
+                        },
+                        error: function (newcounter, error) {
+                            console.log('Failed to create');
+                        }
+                    });
+                }
+            },
+            error: function (error) {
+                console.log('Error:' + error.code + " " + error.message);
+            }
+        });
+    }
+    $(function () {
+        var Counter = AV.Object.extend("Counter");
+        if ($('.leancloud_visitors').length == 1) {
+            // in post.html, so add 1 to hit counts
+            addCount(Counter);
+        } else if ($('.post-link').length > 1) {
+            // in index.html, there are many 'leancloud_visitors' and 'post-link', so just show hit counts.
+            showHitCount(Counter);
+        }
+    });
+</script>
+
+
+            <div id="image-cover-modal" class="image-cover-modal">
+    <img id="image-cover-image" class="image-cover-modal-content">
+    <div id="image-cover-caption"></div>
+  </div>
+  <script>
+  // Get the DOM
+  var modal = document.getElementById('image-cover-modal');
+  var modalImg = document.getElementById("image-cover-image");
+  var captionText = document.getElementById("image-cover-caption");
+  var span = document.getElementsByClassName("image-cover-close")[0];
+  
+  // When the user clicks on <span> (x), close the modal
+  modal.onclick = function() {
+      this.classList.remove("model-shown");
+  }
+  
+  var i;
+  for (i = 0; i < document.images.length; i++) {
+  
+      // Get the image and insert it inside the modal - use its "alt" text as a caption
+      var img = document.images[i];
+  
+      img.onclick = function(){
+          modal.classList.add("model-shown");
+          modalImg.src = this.src;
+          captionText.innerHTML = this.alt;
+      }
+  }
+  </script>
         </section>
 
         <!-- <script src="https://store.skylinebin.com/forwebsite/js/myconsole.js"></script> -->
@@ -773,17 +1244,6 @@ sudo apt install pycharm
                     firstScript.parentNode.insertBefore(script, firstScript);
                 };
             </script>
-                        <script>
-                window.onload = function () {
-                    var script = document.createElement('script');
-                    var firstScript = document.getElementsByTagName('script')[0];
-                    script.type = 'text/javascript';
-                    script.async = true;
-                    script.src = '/sw-register.js?v=' + Date.now();
-                    firstScript.parentNode.insertBefore(script, firstScript);
-                };
-            </script>
             </body>
-
 
 </html>

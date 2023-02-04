@@ -1,7 +1,7 @@
-                        importScripts("/assets/js/workbox-v3.3.1/workbox-sw.js");
-            workbox.setConfig({modulePathPrefix: "/assets/js/workbox-v3.3.1"});
+                        importScripts("/assets/js/workbox-v3.6.3/workbox-sw.js");
+            workbox.setConfig({modulePathPrefix: "/assets/js/workbox-v3.6.3"});
 
-            self.__precacheManifest = [{"url":"/index.html","revision":"e1de102e64373500a1a148b66dcbc0e2"},{"url":"/SummaryThisSummer/","revision":"8d6c65b1772a27fe66e1463142f6c60c"},{"url":"/JavaScript%E8%BF%AD%E4%BB%A3%E5%99%A8%E5%87%BD%E6%95%B0/","revision":"7284814fb4e77fdacb7d9824806ee0c5"},{"url":"/MySQLDevelop/","revision":"07938e18873cf52ba8693da833fa9fe6"},{"url":"/MongoDBandNodejs/","revision":"ca108be87ded84ee563b71eb37bde9f0"},{"url":"/TensorflowLearningTwo/","revision":"19a7d24197e1b73127fed1feff09eab2"}];
+            self.__precacheManifest = [{"url":"/index.html","revision":"37510f586cea2df37674f44016ceebfd"},{"url":"/Summaryof2021/","revision":"23474821a830117eeee70dc457ce4992"},{"url":"/Summaryof2020/","revision":"ba3a9c5cc0caa60f00cbf654344976b7"},{"url":"/SummaryofLastQuarter/","revision":"772e5054972208ba44cd6550052f22a9"},{"url":"/EnglishPaperWritingSkills/","revision":"243ec645a587754c5c20e0c122c125c4"},{"url":"/Summaryof2019/","revision":"fea095e29a502a1b51c44447a7641337"}];
             // service-worker.js 
 
 // set names for both precache & runtime cache

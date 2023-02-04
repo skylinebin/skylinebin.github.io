@@ -5,5 +5,5 @@ source "https://rubygems.org"
    gem 'jekyll'
    gem "jekyll-paginate"
    gem 'jekyll-seo-tag'
-   gem "jekyll-pwa-plugin"
+   gem "jekyll-pwa-plugin", "= 2.2.3"
  end

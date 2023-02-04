@@ -53,4 +53,4 @@ twitter_text: 'How to create a post'
 ## License
 The MIT License (MIT)
 
-Copyright (c) 2017~2022 SkylineBin
+Copyright (c) 2017~2023 SkylineBin

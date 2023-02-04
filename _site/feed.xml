@@ -1,162 +1,125 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>skylinebin - Full Stack Learner</title>
+    <title>SkylineBin的技术成长之路</title>
     <description>A blog about skylinebin ...</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 29 Aug 2018 16:40:58 +0800</pubDate>
-    <lastBuildDate>Wed, 29 Aug 2018 16:40:58 +0800</lastBuildDate>
-    <generator>Jekyll v3.8.3</generator>
+    <pubDate>Sat, 04 Feb 2023 16:42:22 +0800</pubDate>
+    <lastBuildDate>Sat, 04 Feb 2023 16:42:22 +0800</lastBuildDate>
+    <generator>Jekyll v4.3.2</generator>
     
       <item>
-        <title>这个夏天的节点</title>
-        <description>&lt;p&gt;      时间总是很快，每天九点前去实验室，十点后回宿舍，十二点左右躺下，一点半睡着，习惯一旦养成就不容易改变了。一下子这个夏天又没有了。&lt;br /&gt;       在六月的时候，想过一个今年夏天大概的计划，就现在来看，只完成了不到 2/3 。我有时候想，是不是真的对自己要求太高了，还是因为没有足够的动力支撑自己来完成这些计划。不过就算如此，还是有一些东西是可以被记录下来，打个节点，然后继续前行吧。&lt;/p&gt; &lt;h3 id=&quot;技术这条路&quot;&gt;技术这条路&lt;/h3&gt; &lt;p&gt;      大概从六月份开始，实验室的学长学姐陆续开始准备简历，为工作做准备。那个时候我就想过，一年后自己会怎么样，能不能让自己多一些选择，自己以后的职业发展又有哪些可能呢。单从这方面来看，其实我是一直都比较慌的，因为一直觉得自己比其他同学少很多退路，所以只能让前面多几条路。不是找借口或者找理由，在技术发展上，其实是可以有比较多的选择的，无论是后端还是前端，真的只是看自己的想法。我知道，大概自己潜意识还是会选择少数人走的那一种，一条路走到黑吧~&lt;br /&gt;       自己一个人做一件事情果然会比一个团队慢很多，先来说说自己一个人做的事情，因为小团队的方向也是自己在把握，再一次体会到管理人员的心酸了，特别是管理技术团队，还是没有产品经理。&lt;br /&gt; 这个夏天自己学会的东西：&lt;/p&gt; &lt;ul&gt; &lt;li&gt;知道了企业前端开发的简易流程；&lt;/li&gt; &lt;li&gt;系统地学习了一遍 &lt;strong&gt;Vue.js&lt;/strong&gt;；&lt;/li&gt; &lt;li&gt;会使用 npm 和 &lt;strong&gt;webpack&lt;/strong&gt; 开发了前端项目，并且慢慢习惯了这种模式；&lt;/li&gt; &lt;li&gt;学习了一部分 &lt;strong&gt;ES6&lt;/strong&gt; 的特性并用到了实际工程中；&lt;/li&gt; &lt;li&gt;对 &lt;strong&gt;云服务器&lt;/strong&gt; 和对象存储的运用更加熟练；&lt;/li&gt; &lt;li&gt;基本掌握了微信小程序的开发流程；&lt;/li&gt; &lt;li&gt;基本掌握了初级的 &lt;strong&gt;Node.js&lt;/strong&gt; 后台接口的开发；&lt;/li&gt; &lt;li&gt;MongoDB 数据库从入门到熟练了，可以写复杂的查询语句了；&lt;/li&gt; &lt;li&gt;对项目产品的生命周期有了进一步的认识，也能够做基础的项目部署和上线的工作；&lt;/li&gt; &lt;li&gt;很多次认识到基础的重要性；&lt;/li&gt; &lt;li&gt;开始学习 &lt;strong&gt;算法&lt;/strong&gt;，慢慢注重 &lt;strong&gt;性能&lt;/strong&gt;。&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;      除去在这个博客花费的精力之外，其他的好像也不能并入技术这条路里面。以上的几条我应该都会写对应的拓展或者在后面详细说明。再一次体会到，有些东西是你早晚都要了解的，但你可以选择什么时候去了解，多了一种选择会让自己多一份自由和满足。上面学会的东西有一部分是应用到实际项目中的。整理完小团队做的东西，余下的我会继续补充。&lt;/p&gt; &lt;p&gt;这个夏天带领小团队做的东西：&lt;/p&gt; &lt;ul&gt; &lt;li&gt;&lt;strong&gt;动态适配的思路，跟随数据的思想&lt;/strong&gt;。需要实现什么功能就必须明白数据的输入是什么，为适配各种可能的数据输入，只能做动态的适配。可以修改数据，但必须满足所有可能的有效数据。这一点，似乎和 测试算法的算例不谋而合，这是我对团队成员的要求，也是对自己的要求。&lt;/li&gt; &lt;li&gt;&lt;strong&gt;微信小程序项目&lt;/strong&gt;，这个是我一直想了解和实现的。最终在小程序的页面开发里面我只是用一下午的时间做了一个页面开头的事情，但小程序的开发显然不仅仅只有页面，对应的后台，依赖网络的有效域名请求，开发与测试的管理，可以说参与的也不少了。实现的只是一个简单管理功能的微信小程序，也算五脏俱全了。小程序对应的后台是我自己独立完成的，使用的是 &lt;strong&gt;Node.js + MongoDB&lt;/strong&gt;，是用 &lt;strong&gt;Nginx&lt;/strong&gt; 和 &lt;strong&gt;pm2&lt;/strong&gt; 部署在腾讯云服务器上，域名是用的我的一个二级域名做映射，匹配了 https 和 http。拆解小程序的开发来看，它真的可以算是前端的一种形式，简直像是一个拆开的 Vue.js ，形式也像 React.js 。所以，学完才发现前端本质大概都是一个东西啊。&lt;/li&gt; &lt;li&gt;&lt;strong&gt;一个完整的 Vue 项目&lt;/strong&gt;，准确来说是一个基于 Github 模版更改到具体功能的 Vue.js 项目，包含的技术是 &lt;strong&gt;vue + webpack + vue-router + veux + element-ui + axios + mock&lt;/strong&gt; 。虽然实现的功能是管理系统，至少知道如何解决遇到的问题。后台对应的是 &lt;strong&gt;java + MongoDB&lt;/strong&gt;，这个项目的前端和后端的技术路线是我确定的，和小程序共用的一套数据库。其实本来只需要一套后台的，基于让自己练手和团队内的成员技术更新的目的，大部分代码不是我亲自写的，我负责的是解决关键问题和技术方向的把握，尽量做到项目的可控，因为是项目的负责人。这个项目的部署是我一直很上心的，因为我之前一直想弄清楚前后端分离开后，真正需要上线的时候是如何做到匹配的，在六月的时候我就把 &lt;strong&gt;webpack + tomcat&lt;/strong&gt; 作为一个难题，现在想想，当时自己是没有把握技术真相啊，枉费自己考过一遍网络工程师。对跨域的本质和网络传输原理还是要重视，总结起来就是三点：代理，映射，重定向。另外就是开发环境和生产环境的区分。单页应用的好处真的很明显，编译过的 js 文件不会暴露很多东西，现在来看 jsp 开发过程中前端完全暴露地跳转确实有点儿恐怖。&lt;/li&gt; &lt;li&gt;&lt;strong&gt;一套展示型的系统&lt;/strong&gt;，这个项目是最终产品是实验室的网站。之前做的项目一直是管理系统，我一直好奇那些展示型的网站每次数据更新是如何实现的，所以在技术选择上，我制定的是 展示型的门户页面 + 管理系统。管理系统是用于数据管理和分析的，附带有后台与数据库。门户页面的数据来源于后台数据接口。所以每次更新只需要对管理系统数据进行操作。因为这三个项目基本是属于并行开发，当时的 Vue 技术还不算成熟，这个项目前端使用的是 &lt;strong&gt;jQuery + bootstrap&lt;/strong&gt;，后端用的...</description>
-        <pubDate>Sat, 25 Aug 2018 22:50:32 +0800</pubDate>
-        <link>http://localhost:4000/SummaryThisSummer/</link>
-        <guid isPermaLink="true">http://localhost:4000/SummaryThisSummer/</guid>
-        
-        <category>Life</category>
+        <title>一个节点 继续前行 (2021年终总结)</title>
+        <description>&lt;h3 id=&quot;写在前面&quot;&gt;写在前面&lt;/h3&gt;
+
+&lt;p&gt;2021年的12月，在做春节相关的项目，节奏紧凑且身心俱疲，没有能按时完成这已经延续五年的总结，心中对失去的这个“仪式感”充满介怀。2022年1月中旬，心中有些过意不去，写过一些小片段，又因为种种原因，没能完成。直到2022年五一假期，在被封了快五十天后，之前的介怀又慢慢出现了，不写总觉得亏欠些什么，况且也快到五四了。挺久没写自己相关的总结了，文字或许会有些笨拙，和之前的很多篇一样，主要是写给自己看，是属于自己对自己的交代。&lt;/p&gt;
+
+&lt;h3 id=&quot;工作相关&quot;&gt;工作相关&lt;/h3&gt;
+
+&lt;p&gt;过去的一年，自己对工作的体验和感受和2020年截然不同。工作上参与业务的重心从B端转移到了C端，过去一年都主要从事一些用户侧相关的开发。与之前不同，C端的需求节奏更快，也相对更有意思。从3月做的第一个互动活动开始，到年底的春节活动，算下来中间基本每月都能匀到一个倒排的需求，每个周期持续两到三周，只有提测上线之后的那段时间能稍微缓一缓。&lt;/p&gt;
+
+&lt;p&gt;这种节奏的工作，总会伴随着一些变化，自己也从中学到了很多。其中最明显的变化是，自己参与的沟通更多了，能确定和把握的工作细节也更多了。逐渐开始熟悉这一类业务的开发模式，有了更多的沟通会，能够根据经验给到产品和运营更多评估的结果。&lt;/p&gt;
+
+&lt;p&gt;工作承担的职责也逐渐有了变化，开发三月第一个需求时还是参与人员，仅需要完成负责的模块，到九月时逐渐能负责整个需求带两个新同学做完同等量级的项目，年底时基本独立负责了春节项目。所做需求的参与人数覆盖了20万，200万，2000万，也有了PV过亿，这些都是自己之前不能想象的。当然，规模和效果很大程度上归功于平台，也少不了带自己熟悉业务开发的同学，但自己投入的精力，做过的事情，参与的过程都是清晰的。这也给自己带来了比较重要的一点变化：自己做过的事情一定程度上能让自己相信自己可以做到哪些，也能支撑自己做更多的事情。&lt;/p&gt;
+
+&lt;p&gt;除了正面的部分，也有一些工作的问题暴露出来，工作的经验还是有些欠缺，有了第一个Notice的事故通报。情绪也在高压的工作环境中险些失控控制，这些都是2021年发生过的，既真实又深刻。&lt;/p&gt;
+
+&lt;h3 id=&quot;对互联网公司的一些感受&quot;&gt;对互联网公司的一些感受&lt;/h3&gt;
+
+&lt;p&gt;过去的一年，结合自己的亲身经历和从同学那里了解到的，对大多数互联网公司的特征整体多了一些理解。&lt;/p&gt;
+
+&lt;p&gt;工作节奏上，我了解到国内在互联网公司的工作的同学，每天的工作时长基本还是10~12小时左右，而自己工作日基本都是晚上九点半到十点半到家，回家之后的总要缓上半小时才肯洗漱躺着，睡着基本都是到了十二点半左右。每天的工作时间并不是总能由自己控制，有时工作日下午的时间总是被各种需要对齐细节的会议占满，只能晚上写代码和文档，也有时会出现线上问题需要紧急排查修复，可能忙完会错过了吃饭/下班时间。在去年七月取消大小周之后，才真正体验了到有每个完整双休的快乐，虽说有时候周末也需要线上Oncall，在去年十二月项目紧迫时，有过连着两周周末加一天班的经历，身体真的会吃不消，之后需要很久才会缓过来，好在这种经历不是特别多。去年互联网公司出过几次新闻，每次有新闻的那几天，同事们总是心照不宣地早些下班，但没过多久又会回到之前的节奏。有时候自己也在想，这种工作节奏还会持续多久，自己又能坚持多久，是不是每个行业都会有独特的节奏和必须要承受的压力。&lt;/p&gt;
+
+&lt;p&gt;此外，互联网公司的管理风格上都比较粗糙和凌乱，产品规划上变动也相对频繁，每一任管理者都有自己的侧重点，而管理者也会变动，这就导致了一些方向会被废弃掉，很不幸过去一年自己也遇到过一个需求在已经做完快上线的时候被相关方的领导卡住，认为存在问题不允许上线的情况，实属有些心痛。&lt;/p&gt;
+
+&lt;p&gt;整体工作岗位也存在一些不确定性，过去一年和我对接过的产品与运营同学我知道的已经有三位离职了，对接的开发也有两三人转岗到了其他部门。人员频繁流动，就不得不调整心理预期，也就需要一遍遍地同步背景，每一次和新的同学对接，总会想起那句“在互联网公司里，是每台电脑会配一个人，并不是每人发了一台电脑”，因为可能电脑还在，人已经走了。&lt;/p&gt;
+
+&lt;p&gt;当然，也有好的一面，比如合作的同事(同学)大多都比较专业，对自己的职责所在都很负责，理解能力和同理心都很强，交流起来没有压力等等。这些感受在过去一年变得十分真切，在之后的几年也需要调整心态去接受以及适应。&lt;/p&gt;
+
+&lt;h3 id=&quot;生活相关&quot;&gt;生活相关&lt;/h3&gt;
+
+&lt;p&gt;有了自己独立生活之后，逐渐觉得不能对其他任何人有过高的要求，基于情境和现状来做出反应可能更简单。基于这一点，基本能和挺多过去在意的事情和解，能够充满热情和善意地关心，这是好好生活的进步。&lt;/p&gt;
+
+&lt;p&gt;随着舒曼回来，近万公里的异地也终于告一段落了。十月之后的生活，像是透过云层照进了阳光，给原本单调的生活添加了很多色彩。有熟悉的人陪伴，很多事情就容易很多，可以一起逛逛公园，买菜做饭洗碗，一起玩健身环、双人成行、GTA5，看《甄嬛传》（获得了“甄学博士”称号）。甚至也有过一段时间，早上一起上班，周五晚上一起下班的经历，有了陪伴，工作的痛苦也没那么容易接受了。因为了解，可以经常一起聊一些有意思的话题，坦诚地分享自己的观点，了解不同的思维逻辑，这些都是之前不曾有过的，真诚谢谢阿曼。&lt;/p&gt;
+
+&lt;h3 id=&quot;输入与输出&quot;&gt;输入与输出&lt;/h3&gt;
+
+&lt;p&gt;2021年只读了十本书，一半是科幻，还有几本是填之前挖下的坑，关于总结和想法的输出更是不成体系，实属有些少了。阅读的时间其实还是有的，可能需要多一些自律和静下来的心思。另外，工作上相关的输入大多也仅为了工作所用，没能有太多与兴趣相关的输入，除了工作相关的文档，也没有能拿得出来讲解的输出，其实和这篇总结一样，自己也一直在心里默默担忧着这些。特别是开始面试其他人之后，真心能感觉到系统地转换输入到自己理解的输出，是很重要的一项技能。在不影响正常的工作节奏之外，希望之后的一段时间，能够多一些对自己所感兴趣内容和领域的输入与输出，能填补一些心中的焦虑，让自己更踏实。&lt;/p&gt;
+
+&lt;h3 id=&quot;未来的一些希望&quot;&gt;未来的一些希望&lt;/h3&gt;
+
+&lt;p&gt;过去一年，自己在工作和生活上相对之前都有一些不小的改变，自己也基本能适应这种改变。希望之后的这不到一年的时间里，自己能够冷静也不缺乏热情地面对工作与生活。&lt;/p&gt;
+
+&lt;p&gt;写下这些文字的时候恰逢2022年青年节(已经被封在家里的第五十二天)，在2019年的时候，看到过一位博主展示了她的家庭教育带来自己的精神支柱，让人记忆深刻，之后的每一年的青年节，我都会想起这段文字。就放在这里，与自己共勉。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://store.skylinebin.com/website%2Fsummary%2FfamilyEducation.jpg&quot; alt=&quot;青年节&quot; /&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;“妈妈辈的我们，今天也依然在反思总结，认为自己的青春岁月少了一些拼劲，少了坚定的目标，迷茫太多，脚踏实地太少，庆幸的是你现在很努力，知道自己的所思所欲所为，你是一位青年，需要更多的理性思考，坚定自己的目标并为之努力，肯定能成！人更多的时候是自己逼自己，内心强大，才能解决一些问题！生活的标准要健康快乐拼搏，你一定要长成自己想要的样子，这是最好的成功！加油，…，不论咋样，都爱你，加油！”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;无论如何，至少现在的自己还是青年，如果之后自己有坚持不下去的时候，想想这二十多年的努力，希望自己能多一些前进的动力。&lt;/p&gt;
+
+&lt;p&gt;五四青年节快乐！&lt;/p&gt;
+
+&lt;p&gt;By SkylineBin (2022.05.04)&lt;/p&gt;
+</description>
+        <pubDate>Thu, 05 May 2022 02:00:31 +0800</pubDate>
+        <link>http://localhost:4000/Summaryof2021/</link>
+        <guid isPermaLink="true">http://localhost:4000/Summaryof2021/</guid>
         
         <category>Summary</category>
+        
+        <category>Life</category>
         
         <category>Work</category>
         
-        <category>Point</category>
-        
         
         <category>SkylineBin</category>
         
       </item>
     
       <item>
-        <title>迭代器函数与函数式编程</title>
-        <description>&lt;h2 id=&quot;javascript-迭代器函数-与-函数式编程&quot;&gt;JavaScript 迭代器函数 与 函数式编程&lt;/h2&gt; &lt;h3 id=&quot;javascript-迭代器函数&quot;&gt;JavaScript 迭代器函数&lt;/h3&gt; &lt;p&gt;当我们需要迭代数组中的元素时，一般可以用循环语句来处理，比如 for 循环语句。除此之外，JavaScript 内置了许多数组可用的迭代方法。&lt;br /&gt; 本文使用测试例子包括了数组和函数。假定数组是1~15的整数数组，函数是判定数组元素是否可被2整除，若整除函数返回为 true，否则返回 false。&lt;/p&gt; &lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;isEven&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;?&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;numbers&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;7&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;9&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;...</description>
-        <pubDate>Tue, 21 Aug 2018 03:40:31 +0800</pubDate>
-        <link>http://localhost:4000/JavaScript%E8%BF%AD%E4%BB%A3%E5%99%A8%E5%87%BD%E6%95%B0/</link>
-        <guid isPermaLink="true">http://localhost:4000/JavaScript%E8%BF%AD%E4%BB%A3%E5%99%A8%E5%87%BD%E6%95%B0/</guid>
-        
-        <category>JavaScript</category>
-        
-        <category>FrontEnd</category>
-        
-        <category>CODE</category>
-        
-        
-        <category>SkylineBin</category>
-        
-      </item>
-    
-      <item>
-        <title>MySQL相关基础</title>
-        <description>&lt;h2 id=&quot;背景&quot;&gt;背景&lt;/h2&gt; &lt;p&gt;      从最开始接触到 MySQL 到现在至少有三年了，一只把它当作工具用，虽然上过相关课程，但也并没有对其运行原理和优化事项理解的很清楚，只是在有数据存储需求时考虑到使用 MySQL 会比用 Oracle 方便。距离上一次系统地学习 MySQL 也差不多有半年了，这篇文章主要是上次系统地学习 MySQL (使用 网易唐汉明出的《深入浅出 MySQL 数据库开发、优化与管理维护》)里面的 SQL基础部分记的笔记。当时学习的时候是自己建数据库，所有指令都自己对照修改执行了一遍，现在来总结一下，也当作是复习吧。这篇文章是基础，后面应该会总结 MySQL 使用过程中遇到的问题以及对应的解决方案，和 MySQL 的高级应用。&lt;/p&gt; &lt;blockquote&gt; &lt;p&gt;本文所有 sql 语句 都是在 Windows10 的 cmd 以管理员模式 执行以下指令得到的结果&lt;br /&gt; mysql -u root -p&lt;/p&gt; &lt;/blockquote&gt; &lt;h2 id=&quot;sql语句分类&quot;&gt;SQL语句分类&lt;/h2&gt; &lt;p&gt;      一般 SQL 语句可分为三种：DDL语句、DML语句 和 DCL语句，这三种语句的区别如下：&lt;/p&gt; &lt;ul&gt; &lt;li&gt;&lt;strong&gt;DDL（Data Definition Languages）&lt;/strong&gt;：&lt;em&gt;数据定义语言&lt;/em&gt;，用来定义不同的数据段、数据库、表、列、索引等数据库对象。常用关键字主要有：create、drop、alter等。&lt;/li&gt; &lt;li&gt;&lt;strong&gt;DML(Data Manipulation Language)&lt;/strong&gt;：&lt;em&gt;数据操纵语句&lt;/em&gt;，用于添加、删除、更新和查询数据库记录，并检查数据完整性。常用关键字主要包括：insert、delete、update和select等。&lt;/li&gt; &lt;li&gt;&lt;strong&gt;DCL(Data Control Language)&lt;/strong&gt;：&lt;em&gt;数据控制语句&lt;/em&gt;，用于控制不同数据段直接的许可和访问级别的语句(访问权限和安全级别)。主要关键字有：grant、revoke等。&lt;/li&gt; &lt;/ul&gt; &lt;hr /&gt; &lt;p&gt;&lt;br /&gt;&lt;/p&gt; &lt;h3 id=&quot;一ddl语句&quot;&gt;一、DDL语句&lt;/h3&gt; &lt;h4 id=&quot;1创建数据库&quot;&gt;1.创建数据库&lt;/h4&gt; &lt;p&gt;查询所有数据库：&lt;/p&gt; &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; show databases; &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt; &lt;p&gt;创建数据库:&lt;/p&gt; &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; create database testbin; &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt; &lt;p&gt;&lt;img src=&quot;https://store.skylinebin.com/image/mysql/Databases.png&quot; alt=&quot;MySQL Databases&quot; /&gt;&lt;/p&gt; &lt;ul&gt; &lt;li&gt;information_schma 数据库是主要存储了系统中的一些数据库对象信息，比如用户表信息，列信息，权限信息，字符集信息，分区信息等。&lt;/li&gt; &lt;li&gt;mysql 数据库存储了系统的用户权限信息.&lt;/li&gt; &lt;li&gt;test 和 cluster 数据库分别是测试数据库 和系统集群信息的数据de库.可惜这里的数据库没有。&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;选择数据库：&lt;/p&gt; &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre...</description>
-        <pubDate>Mon, 13 Aug 2018 06:02:31 +0800</pubDate>
-        <link>http://localhost:4000/MySQLDevelop/</link>
-        <guid isPermaLink="true">http://localhost:4000/MySQLDevelop/</guid>
-        
-        <category>MySQL</category>
-        
-        <category>Database</category>
-        
-        <category>System</category>
-        
-        <category>BackEnd</category>
-        
-        
-        <category>SkylineBin</category>
-        
-      </item>
-    
-      <item>
-        <title>MongoDB与Node.js相关应用</title>
-        <description>&lt;p&gt;      最近使用 Node.js + MongoDB 为一个预约管理系统写了一些后台和数据库，遇到了挺多问题，借此记录一下解决的问题以及 MongoDB 常用的注意事项。所涉及的源码，等整理后再放在 Github 上。&lt;/p&gt; &lt;h2 id=&quot;mongodb数据库的安装与创建&quot;&gt;MongoDB数据库的安装与创建&lt;/h2&gt; &lt;p&gt;      项目部署在 Ubuntu 系统中，使用 node.js 里的 pm2 发布和 nginx 映射。所以简要提一下安装 MongoDB 和配置的过程。在 Ubuntu 系统中安装配置MongoDB:&lt;/p&gt; &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt-get install mongodb-server mongodb -y sudo mongod --version sudo mongo --version &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt; &lt;p&gt;安装好 MongoDB 数据库的服务端，并查看版本，指定数据存储和日志存储 log 的路径：&lt;/p&gt; &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo mkdir -p /data/mongodb sudo mkdir -p /data/logs/mongodb sudo mongod --fork --dbpath /data/mongodb --logpath /data/logs/mongodb/webapp.log // 启动 mongodb 数据库服务 netstat -ltp | grep 27017 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt; &lt;p&gt;通过 netstat 检查 mongodb 是否启动成功，27017端口是否在监听。启动成功后，可以创建数据库并创建账户了，使用以下指令：&lt;/p&gt; &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo mongo // 打开 MongoDB 命令行连接 &amp;gt; use project; &amp;gt; db.createUser({ user: 'app', pwd: 'admin', roles: ['dbAdmin', 'readWrite']}); &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;...</description>
-        <pubDate>Thu, 26 Jul 2018 07:30:31 +0800</pubDate>
-        <link>http://localhost:4000/MongoDBandNodejs/</link>
-        <guid isPermaLink="true">http://localhost:4000/MongoDBandNodejs/</guid>
-        
-        <category>MongoDB</category>
-        
-        <category>Database</category>
-        
-        <category>Nodejs</category>
-        
-        <category>BackEnd</category>
-        
-        
-        <category>SkylineBin</category>
-        
-      </item>
-    
-      <item>
-        <title>Tensorflow系列--(二)常用激励函数及其比较</title>
-        <description>&lt;p&gt;      这篇文章是Tensorflow系列文章中的第二篇，也是比较基础，主要想细致记录和总结一下Tensorflow中常用的激励函数。主要参考但不限于书籍Nick McClure的 &lt;em&gt;Tensorflow Machine Learning Cookbook&lt;/em&gt; 中文版《Tensorflow机器学习实战指南》。文中涉及到的代码的&lt;strong&gt;完整源码&lt;/strong&gt;都放在了Github里&lt;a href=&quot;https://github.com/skylinebin/Machine-Learning-Notes/tree/master/Tensorflow/TensorflowWithCookbook&quot;&gt;MachineLearningNotes–Tensorflow&lt;/a&gt;当中了。&lt;/p&gt; &lt;h2 id=&quot;tensorflow中常用激励函数&quot;&gt;Tensorflow中常用激励函数&lt;/h2&gt; &lt;h3 id=&quot;1整流线型单元relu&quot;&gt;1.整流线型单元(RELU)&lt;/h3&gt; &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'- - - - - - - -relu - - - - - - - - - -'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;# 1.ReLU 整流线型单元 relu激励函数&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sess&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;run&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;tf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;nn&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;relu&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;3.&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;3.&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;10.&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])))&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;# output is [ 0. 3. 10.] same as max(0,x)&lt;/span&gt; &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt; &lt;p&gt;&lt;em&gt;tf.nn.relu(x)&lt;/em&gt; 是机器学习中最常用的非线性函数，其对应数学公式为: &lt;img src=&quot;http://latex.codecogs.com/png.latex?max(0,x)&quot; alt=&quot;&quot; /&gt;&lt;/p&gt; &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'- - - - - - - relu6 - -...</description>
-        <pubDate>Tue, 26 Jun 2018 03:40:31 +0800</pubDate>
-        <link>http://localhost:4000/TensorflowLearningTwo/</link>
-        <guid isPermaLink="true">http://localhost:4000/TensorflowLearningTwo/</guid>
-        
-        <category>Ubuntu</category>
-        
-        <category>Tensorflow</category>
-        
-        <category>DeepLearning</category>
-        
-        <category>MachineLearning</category>
-        
-        
-        <category>SkylineBin</category>
-        
-      </item>
-    
-      <item>
-        <title>Tensorflow系列--(一)基本概念与操作</title>
-        <description>&lt;p&gt;      这篇文章是Tensorflow系列文章中的第一篇，比较基础，主要想细致过一遍用到的Tensorflow的内容。主要参考但不限于书籍Nick McClure的 &lt;em&gt;Tensorflow Machine Learning Cookbook&lt;/em&gt; 中文版《Tensorflow机器学习实战指南》(错误很多)。文中涉及到的代码的&lt;strong&gt;完整源码&lt;/strong&gt;都放在了我的Github里&lt;a href=&quot;https://github.com/skylinebin/Machine-Learning-Notes/tree/master/Tensorflow/TensorflowWithCookbook&quot;&gt;MachineLearningNotes–Tensorflow&lt;/a&gt;当中了。&lt;/p&gt; &lt;h2 id=&quot;准备工作&quot;&gt;准备工作&lt;/h2&gt; &lt;p&gt;&lt;strong&gt;系统环境&lt;/strong&gt; ：Windows10 x64 / Ubuntu 16.04 x64&lt;br /&gt; &lt;strong&gt;Python环境&lt;/strong&gt; ：Python 3.5.4 / Python 3.5.2 &lt;br /&gt; &lt;strong&gt;Tensorflow环境&lt;/strong&gt; ：Tensorflow1.8.0 / Tensorflow1.4.0&lt;/p&gt; &lt;p&gt;安装Tensorflow环境使用pip直接安装就好，douban的pip镜像速度很快，后面需要用到Keras，也可以用pip直接安装。 查看tensorflow的环境语句&lt;/p&gt; &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;tensorflow&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tf&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;tf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;__version__&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt; &lt;p&gt;若能正确输出版本号，基本是可以进行后面操作了。&lt;/p&gt; &lt;h2 id=&quot;tensorflow中张量的操作&quot;&gt;Tensorflow中张量的操作&lt;/h2&gt; &lt;p&gt;      Tensorflow中主要数据结构是张量，常用张量来操作计算图。可以把 &lt;strong&gt;变量&lt;/strong&gt; 或者 &lt;strong&gt;占位符&lt;/strong&gt; 声明为张量。&lt;/p&gt; &lt;p&gt;1.固定张量&lt;br /&gt; 常有零张量、单位张量、指定常数填充张量和常数矩阵创建张量等几种。&lt;/p&gt; &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;#创建固定维度的零张量&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;zero_tsr&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;tf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;zeros&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;row_dim&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;col_dim&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;#创建指定维度的单位张量&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ones_tsr&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;tf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ones&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;row_dim&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;col_dim&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;#创建指定维度的常数填充张量&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;filled_tsr&lt;/span&gt; &lt;span...</description>
-        <pubDate>Wed, 20 Jun 2018 00:51:31 +0800</pubDate>
-        <link>http://localhost:4000/TensorflowLearningOne/</link>
-        <guid isPermaLink="true">http://localhost:4000/TensorflowLearningOne/</guid>
-        
-        <category>Ubuntu</category>
-        
-        <category>Tensorflow</category>
-        
-        <category>DeepLearning</category>
-        
-        <category>MachineLearning</category>
-        
-        
-        <category>SkylineBin</category>
-        
-      </item>
-    
-      <item>
-        <title>关于端午聚会</title>
-        <description>&lt;p&gt;       还是继续开始尝试记录一些事情，和学到的技术一样，经历的生活也同样怕长时间之后忘记很多值得被记住的细节。其实已经有了很多能在我们年老时，泡着茶对后辈讲的故事了，这一次显然又是一个可以讲出来的故事。&lt;/p&gt;
+        <title>一个节点 继续前行 (2020年终总结)</title>
+        <description>&lt;h3 id=&quot;写在前面&quot;&gt;写在前面&lt;/h3&gt;
 
-&lt;h3 id=&quot;那些可以被记住的细节&quot;&gt;那些可以被记住的细节&lt;/h3&gt;
+&lt;p&gt;去年的总结没有写好，有些过度方法论了，有预感今年的也不会太让自己满意，毕竟很久没有写属于自己的文字了。虽然这一年的变化比往年都多很多，却没有做太多自己相关的分享和积累。自己也知道，年龄的增长不是阻止自己分享感受的主要原因，性格和兴致才是。很多时候不是没有时间和灵感，而是没有兴致，工作之后更是这样。&lt;/p&gt;
 
-&lt;p&gt;       司机从容地加速，在绿灯快要结束时冲过了路口，驶入三环线的高架。尽管师傅头发一半已经变白，是合格的武汉老司机的形象，在高架靠右侧的慢车道频繁加速超过左侧的车辆，还是让我心中有些担忧，还没到上午九点，阳光已经有些热了，右侧是南湖，风吹着有些迷糊的脑袋，还是有些走神了。师傅是个老武汉，话不多，静静听着后排的同学闲聊，也不插话，没有用语音导航，还真有些不习惯。想起了前一晚和大学三年的室友视频，听到室友刚刚提车，回家路上语音导航开回去的，过年准备办婚礼，婚礼不是因为惊喜。我们说他人生赢家，他说自己压力很大。他是班上没有到场的五人之一。一工作之后就很快了，读研也是一样，时间过的都很快，虽然只有一年。&lt;/p&gt;
+&lt;h3 id=&quot;见证历史并没有什么用&quot;&gt;见证历史并没有什么用&lt;/h3&gt;
 
-&lt;p&gt;       能聚齐28个人已经很不容易了，或许这是最后一次能聚起这么多人的班级聚会了。近三十个人已经可以组成一个小规模的群体，小群体的意识其实已经很难凝聚了，这种机会来之不易。狼人杀，唱歌，火锅，烧烤，还是每次聚会的那几样，中间穿插着聊聊近况。准备食材，做饭，整理房间，也还是不变的那几个人。各自充当着群体里的那些相对固定的角色，在感觉上有很多是一直没有变的，还是能听到熟悉的 “需要我帮你做些什么么？”，就觉得很安心。但是也有很多是变了的，大家都不会主动去喝酒了，也不再争着去吃那些并不好吃的食物了，剩了满冰箱里的啤酒，超过总数一半的西瓜，泡面也只拆了几包。更多的同学是坐着看着其他人，或者找本科相熟的好友聊上几句，&lt;strong&gt;似乎这一次才是真正的散伙饭&lt;/strong&gt;，慢慢地出现可见的距离。已经工作的同学似乎不愿意提起平时上班的细节，感觉这次端午对于他们而言，更像是一次短暂的逃离。其实我能想象到一部分上班的苦恼，但是估计实际只会更不想让人提起。从北京，上海，深圳，杭州等地赶来的同学兴致都很高，该变的都变了，没有变的还是没有变。&lt;/p&gt;
+&lt;p&gt;身处某一个时间范围内，可能会不自觉地放大对自己感受的认知。疫情的恐慌，答辩的紧张感，毕业的兴奋与忧虑，入职的新鲜感，这些感受在经历的那个时间段内都是很强烈并且以为会持续很久的，但是不久就会归于平淡，耗费心力去经历与平息那些突如其来的其他感受。就算后面再谈起相关的情节也不会再有那么深刻的感觉。
+在今年，终于看完了阿西莫夫的《银河帝国》系列，印象中整套书出现过很多这样的场景，一个或者一小群人所做的小事儿对很长一段时间内所处环境的格局产生巨大的影响，有一个细节在后面才发现，这些推动情节发展的人物本来就不是普通人，都有着被设定好的宿命。现实中大部分人不是这样，只会像作品中的普通人一样在生活细节上发生变化，比如戴口罩。&lt;/p&gt;
 
-&lt;p&gt;       还在读研的同学好像都面临着同样的问题，论文和毕业。都在吐槽论文难发，住宿环境有多差，实验室的老板有可怕，虽然不是同一导师，同一学校。已经工作的同学有部分已经感觉到了学历带来的压力，但前期而言，本科和硕士还是差别不大。大家普遍都感觉更靠近中年了，精力已经下滑，熬夜带来的影响也越来越大，明明是昨天发生的事情，感觉和已经一周以前一样。上班的同学，作息变得更规律了。有和我一样变胖的，也有因为焦虑变瘦的。已经工作的，岗位各不相同，问起将来想要从事的工作，基本都是互联网，差点忘了我们的专业是那个听起来高大上的，通信卓越工程师。&lt;/p&gt;
+&lt;p&gt;我们都是普通人，勇敢地生活着就是在见证历史，所以见证历史并没有什么用。&lt;/p&gt;
 
-&lt;p&gt;       有些想说的话还是埋在心底，没有说出口。一直有种预感，不说就没有机会了，但是又看到了前路漫漫，大概已经不会再有交集，说了也只是徒增感伤。原班长收集了外省前来武汉的火车票，留作纪念，最后超出的预算，几个组织者是知道的，班长也没让大家一起出。后面同样作为班长和小小的管理者，知道组织活动的不易，这一点真的委屈班长了。订的二十寸的纪念蛋糕不算完美，我点燃的蜡烛，班长按着学号一个一个切下属于每个人名字的那一块时，还是挺难受的，有好几位同学接过蛋糕，后来并没有吃。&lt;/p&gt;
+&lt;h3 id=&quot;在还是学生的时候&quot;&gt;在还是学生的时候&lt;/h3&gt;
 
-&lt;p&gt;       躺在唱歌房间里的沙发上，裹着被子，迷迷糊糊地睡了两个半小时，房间里空调开的26度却有些冷，盖上被子又有些燥热，中间梦到了要写的接口和自己计划完成的任务，醒来时却非常清醒。煮了泡面蒸了馒头，吃的同学不多。大家都不愿意说话，从开始到分开的时候，一个人也没敢提出下次相聚。离别只说了普通的再见。&lt;/p&gt;
+&lt;p&gt;大概五年前的某个冬天，外面天气很好，自己在鉴主某个自习室里写实验报告，写着写着突然蹦出一个想法 这么好的天气，去外面晒晒太阳看看书多好呀，等以后工作了有时间了一定要去好好体验一下这种闲适。那时的自己并不知道，最适合的享受这种闲适的就再想到的那一刻，或者后面的那几年，还是学生的时候。&lt;br /&gt;
+有时候想，学生的特征大概可以归纳为，有束缚有保护的围栏，只要按照规则去执行，总有一天能够“出栏”。出栏后，又可能留念那个稳定并见证自己成长的环境。&lt;br /&gt;
+不得不承认，自己本质上是不爱学习的。在还是学生的时候，更多的是在按照规则执行该做的是“任务”。一旦不再是这个角色，就会去追寻自己更感兴趣的东西，工作之后这种感觉真实的有些可怕。&lt;/p&gt;
 
-&lt;p&gt;       其他班同学知道我们有这次班聚，表达的都是羡慕，经历之后却觉得很平常。整个聚会没有炫耀没有攀比，大部分是过去，有一些现在，却很少有未来。虽然是一次过程很平常的聚会，感觉它可能又是大部分同学这辈子最特别的一次班级聚会。&lt;/p&gt;
+&lt;h3 id=&quot;工作与工作的陷阱&quot;&gt;工作与工作的陷阱&lt;/h3&gt;
 
-&lt;p&gt;       我们啊，都在慢慢开始&lt;strong&gt;真正的生活&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;关于工作的部分，我觉得自己差一点掉进了工作的陷阱。刚开始工作的几个月，每天下班后就只想着玩一玩儿游戏或者看看视频，不知不觉就会熬到比较晚，第二天醒来去工作，晚上回来又是如此，渐渐以为自己适应了工作。直到自己觉得很久没有看书，也没了支配自己时间的愉悦感时，才发现问题有些不对，这样持续下去自己会被陷进去，既没有成长也不利于身心健康，我将其称为“工作的陷阱”。慢慢回想起这种状态与自己当初选择这份工作的目的和预期是不相符的，自己需要一些变化去调剂现有的状态。后面的几个月，下班后我会尝试学一些自己感兴趣的东西，至少在下班后的时间里有自己的意识，知道自己在做什么，即使没学什么东西，也要让时间过的有些感觉。我觉得这种状态会是很多刚从学生进入工作的同学都会遇到的，希望早些意识到这一点。
+我记得，一次闲谈中，同事说和我同龄的同学现在都很少有自己兴趣了，前几年都还有其他爱好，现在都是理财（炒股）了。听到这个，既有些羡慕又有些无奈，这样没啥不好，毕竟谁不喜欢钱呢。那些慢慢失去的爱好，总会有一天因为兴致而拾起来。&lt;/p&gt;
 
+&lt;h3 id=&quot;自己的生活&quot;&gt;自己的生活&lt;/h3&gt;
+&lt;p&gt;头发不知不觉就留长了，自己一直不想去剪短。感觉自己的生活也是如此，随意了好多。休息的时候做做饭，看看剧，过着平凡的生活，每天留出一些时间和有趣的人视频感觉也挺好。几个月前就着部门团建的机会第一次体会到了“海阔天空”的场景，这种感觉是很难忘的。体验没有经历过的生活是追求自由的一种方式，这一年算是完成了一些。&lt;/p&gt;
+
+&lt;h3 id=&quot;还有一些希望&quot;&gt;还有一些希望&lt;/h3&gt;
+&lt;p&gt;比以前更迫切地希望自己能有所成长，能够做到一定程度的独当一面，无论是工作上还是处理生活的琐事上都更沉稳一些。此外，少一些焦虑，多一些积累和积蓄。空闲的时候多看几本书，也要开始养植物了。多和熟悉的朋友交流，继续学习探索生活的乐趣。今年的总结有些匆忙，希望能够有机会完善和丰富。&lt;/p&gt;
+
+&lt;p&gt;By SkylineBin (2020.12.31)&lt;/p&gt;
 </description>
-        <pubDate>Tue, 19 Jun 2018 09:31:25 +0800</pubDate>
-        <link>http://localhost:4000/ThatClassParty/</link>
-        <guid isPermaLink="true">http://localhost:4000/ThatClassParty/</guid>
+        <pubDate>Fri, 01 Jan 2021 06:40:31 +0800</pubDate>
+        <link>http://localhost:4000/Summaryof2020/</link>
+        <guid isPermaLink="true">http://localhost:4000/Summaryof2020/</guid>
         
         <category>Summary</category>
         
         <category>Life</category>
         
-        <category>Classmates</category>
+        <category>Work</category>
         
         
         <category>SkylineBin</category>
@@ -164,54 +127,115 @@
       </item>
     
       <item>
-        <title>关于情感的认知</title>
-        <description>&lt;p&gt;       一个月前就想记录一下对这个话题的理解和一些新的想法了，直到现在才开始认真记录。如果不强制创造一个写东西的机会，只怕是还要等几个月了。不记录下来，慢慢地就会忘记，后面如果想起来还以为是新的，这种思维的绕圈，想想就觉得痛苦。&lt;/p&gt;
+        <title>工作几个月以来的节点</title>
+        <description>&lt;h3 id=&quot;写在前面&quot;&gt;写在前面&lt;/h3&gt;
 
-&lt;h2 id=&quot;不懂与不会&quot;&gt;不懂与不会&lt;/h2&gt;
-&lt;p&gt;       我一直认为大多数人是不懂什么是 爱 的，像我一样。实话说，从小到大，我从没有在自己身边真正切切地感受到 爱，对于单身狗而言，现在关注的这个 爱，自然不是关爱。显然是那个 &lt;strong&gt;爱情&lt;/strong&gt;。我至今也忘不了，在我还是青年的时候，遇到的那次关于爱情无声的辩论。其实想想也不算辩论，虽然各有论点，但没有交互，就不算辩。那还是在14人的大宿舍，正值《非诚勿扰》刚刚开播，14个17岁的少年在午睡前的短暂闲聊里提到了这个至今没有理顺的关于“爱”的话题，打开话题的由头已经被我忘了，只记得一位已经忘了名字的舍友当时似乎无比心酸，“现在哪里还有爱情，没有钱什么都不是，有钱才是王道”。当时的我还是那个只知道死学的傻小子，我默默地回了一句，“爱情是有的，只是你没有遇到”，我反驳的声音极小，只有和我床铺对着的那位还记得名字的舍友诚意满满地笑了，“对，只是还没遇到”。&lt;br /&gt;
-       那时，我们是不懂“爱”的，无论是把爱情和金钱绑定的舍友，还是期待遇到爱情的那个自己。和大多数花+雨季的少男少女一样，那时是不懂爱的。只是一直想法单纯，知道否定，同样知道神圣与美好，对未来还充满希望。&lt;br /&gt;
-       后面遇到了很多相对来说更优秀的人，慢慢确定自己喜欢什么，慢慢知道了什么是喜欢，什么又是爱。知道了什么是爱，却又遇到了一直被忽视的问题，自己原来不会爱，不会展示和表达自己的爱。&lt;br /&gt;
-       这里的不会，大概和很多原因有关了。原生家庭的影响只是让我知道了生活的辛酸和不宜，极少出现的爱在混沌的生活里总是不会引入注意，没能了解什么是爱，更不要提学会如何去爱了；《自卑与超越》这本书我没有看完，前几年的成长阶段无时无刻不展现着自己的自卑，缺乏自信让自己不敢去表达，这也是永远学不会的一个原因；和气温吞的性格是适合做朋友的，如果再加上有一些过人的能力，做普通朋友总是不太难，就算非常喜欢，还是会划一条线，把自己隔在线的另一侧，越退越远；犹豫加上不主动，总是错失很多表达的机会，畏首畏尾，早已经不能用单纯来形容。&lt;br /&gt;
-       后来，就算知道了不会的原因，还是没有学会如何去爱。总是有期待，总是猜测对方的想法，总是懊悔错失的机会，却还是相信“如果开始，就走到最后”，又在担忧自己的选择会不会让对方难堪。还没去爱之前，就已疲惫不堪。舍不得放不下，又习惯了一个人思考，一个人生活，像是学英语，一直都没学会。&lt;/p&gt;
+&lt;p&gt;很久没有认真写总结了，打开自己电脑的 VSCode 时，界面还停留在上次没写完的大学相关的总结上面，那个总结至今还未写完，在这方面对自己是真的有些不满意了。工作之后就是这样，上班仿佛抽干了人所有的精力，下班之后就失去了做很多事情的兴致，刚从学校转变到工作更是如此。前几天应leader的八月份的要求，写了一篇与工作相关的入职三个月总结，里面主要是在公司做的事情不能直接发出来。我觉得单纯从自己的角度也还是要写一篇，记录一下自己刚开始工作这段时间的心路历程，留下一个小的节点。&lt;/p&gt;
 
-&lt;h2 id=&quot;喜欢的两种解释&quot;&gt;喜欢的两种解释&lt;/h2&gt;
-&lt;p&gt;       喜欢 和 爱 是有关联的，我不相信“一见钟情”，“一见钟情”只能算是 喜欢。所有的爱，都是由喜欢过渡来的，即使时间只有几秒。所以，喜欢是前提。&lt;br /&gt;
-       喜欢一个人，我赞同可分为这两种，“真的喜欢这个人” 与 “喜欢和这个人现在的这种关系”。前者是需要对被喜欢的人有很深的了解，知道“他”的很多优缺点，但还是选择喜欢，并且会自发地维护自己喜欢的那个人。后者大概是大多数“喜欢”的类型，和某个人现在的关系还算不错，可能“他”很优秀，能够帮到自己，或者自己在“他”面前有展示好的一面的机会，或者可以满足虚荣心，自己也知道，可能换一个人有相同的能力或地位或者和自己的交互经历，自己也会喜欢。&lt;br /&gt;
-       真的喜欢这个人，是有机会转换成爱情的，会美满的哪一种，只是可能会缺少机会。而 喜欢和这个人现在的这种关系，就比较脆弱，因为现实的联系很容易就会断，联系断了，关系也会慢慢变化，喜欢也会慢慢消失。第一种喜欢很大程度上会越来越喜欢，程度只增不减，除非知道自己永远也没机会再喜欢下去了。&lt;/p&gt;
+&lt;h3 id=&quot;工作这件事儿&quot;&gt;工作这件事儿&lt;/h3&gt;
 
-&lt;h2 id=&quot;现实可给的希望&quot;&gt;现实可给的希望&lt;/h2&gt;
-&lt;p&gt;       这原本是三月的想法，八月才最终理出来，有时候不是没有选择，而是选择太多，有太多可能。如果加上了自己的条件，经过筛选，符合促成爱情的选择已寥寥无几，还是要把握好机会。对着床铺的那位兄弟和他女友最近终于要将五年异地的爱情拉的更近一些了，似乎也快修成正果了，这是一个好的苗头。&lt;br /&gt;
-       爱情是有的，总是会遇到的。&lt;/p&gt;
+&lt;p&gt;还没毕业之前，刷过几个月脉脉，当时因为没有身处互联网行业也没真正在公司实习过，看职言不能体会到工作的痛苦。这几个月真正经历了工作却很少刷脉脉了，因为很多东西真实且让人焦虑，本来让人焦虑的事情就很多，在属于自己的时间里更不想主动焦虑，不过有时候看看自己公司的圈子，有些和我同期入职新同学的抱怨，让我感同身受以为是自己发的。过去三个月差不多一直处在适应阶段，并不仅仅是适应自己在公司需要完成的需求，而是对于工作这件事本身的适应。用一句通俗的话描述，工作这段时间自己的状态类似“阶段性水土不服”，具体来说，一段时间里可能激情满满，对生活和未来充满信心，可过段时间就很迷茫和焦虑，想自己未来到底能够成长到哪一步。两种状态穿插在时间线上，并不好受。&lt;/p&gt;
+
+&lt;h4 id=&quot;当前公司的工作体验&quot;&gt;当前公司的工作体验&lt;/h4&gt;
+&lt;p&gt;单从在公司工作的体验上来看，工作其实并没有那么痛苦，身边的同学（同事）都是聪明人，具体体现是很少说废话，你说的话大家都能很快理解，效率很高，这一点儿没多少可以挑剔的。还有一个是大多时候没有层级关系的限制，大家合作完成一件事情，保证需求顺利高效稳定地上线，就结束了这个需求带来的联系，这个在最开始的感觉还是很顺滑的。除了后面一个项目有人抢着表现自己是owner，又喜欢开效率不高的会让人很不舒服以外，其他部分没太多可挑剔的点，在公司工作确实让自己看到了与自己职业相关的更大的世界。一定程度上，完善了是对互联网行业的认知。公司的文化真的很适合优秀的工程师，虽然这个有时候也被用来束缚自己。这几个月的工作还算紧凑，基本处于还没完成上一个需求，就要做下一个需求的需求分析，估计这是以后的常态，这一点我也能接受。让人难受的是被倒排的体验，特别是自己什么都不懂的时候就被排好了需求上线的时间，这个真的给了自己很大的心理压力。另一点是能够听到更多有经验并且优秀的人分享技术，让自己处在流动的技术中，在精力不足的时候可以被动地拓宽所了解的技术领域，现阶段的自己还是信息的接收者。&lt;/p&gt;
+
+&lt;h4 id=&quot;工作之后的心态变化&quot;&gt;工作之后的心态变化&lt;/h4&gt;
+&lt;p&gt;之前看到过一个讲工作经历的帖子，里面说找工作最大的悲哀是拿了一堆offer却只能去一家公司，然后又都归零，重新开始。最开始工作时，自己在心理上把自己的定位和姿态放在了最低的位置，就是周围的人都比自己学校好技术水平好，迫使自己不得不更快地熟悉公司流程体验自己的价值，这种操作不是长久之计，毕竟自闭久了可能就接受现实了。后来，慢慢发现，技术水平里面有些能力就是信息差和时间，有些能力是智商碾压，后者不能纠结，只能接受现实。前者可以通过积累慢慢补齐，所以我常用周报来安慰自己以重建信心。&lt;/p&gt;
+
+&lt;h4 id=&quot;工作之后生活的变化&quot;&gt;工作之后生活的变化&lt;/h4&gt;
+&lt;p&gt;“没有自己的生活。”&lt;br /&gt;
+在比较忙的时候，上面这句话很真实，这句话也常被当做从事互联网行业相关从业者的标签，另一个标签是发际线问题。在周末能够有两天假期的大周里，周天还是可以有精力做一些自己的事情。我通常是去附近的公园走走，这个通常目前不多。而只休息一天的小周就真的没有很好的体验了，前一两个月自己一直在适应，现在基本无感了。只能学习更好的时间管理技能，让自己有感兴趣的事情，从而有自己的生活。每天下班后与女朋友视频那段时间算是我唯一能感受到生活的时光了，而我自己有时候还想压榨这个时间去学东西（只是有想法）。每天的工作更多是耗费精力，让自己感觉没有休息，让晚上报复性熬夜，这一点真的不好，必须要想办法做好管理和调整需要的心态建设。&lt;/p&gt;
+
+&lt;h3 id=&quot;这几个月的生活&quot;&gt;这几个月的生活&lt;/h3&gt;
+
+&lt;p&gt;自己一个人离开学校来这个城市生活，第一次拥有自己一个人的小房间，这些都是从未有过的体验，体验过后才能说“不过如此”，当然过程总是新鲜但又不轻松，我觉得这些经历都有一个统一的原则“自己对自己负责”。这一点儿我觉得自己还算努力，找中介看房，自己买喜欢的书架组装，安装喜欢的大桌子，买喜欢的床单被罩，犹豫再三后买自己喜欢的游戏主机，休息时买想吃的菜做饭，这些生活的细微变化，能让我感到发自内心的舒适，这种生活的体验以前几乎是没有的。我觉得这些是现在可以触摸到的自由。总体来说，我喜欢这部分生活。&lt;br /&gt;
+当然，也有另外一部分的生活，上班路上骑车摔了自己消毒处理伤口没告诉任何熟悉的人，感冒了两周没好后感觉像是变成了慢性咽炎，小周休息太累的时候除了做饭基本能躺一天，这些生活的细节都挺狼狈却又有些无可奈何。&lt;br /&gt;
+总体来说，我已经慢慢适应了这样的生活，虽然还缺乏一定的条理，慢慢来吧。
+至于更遥远的将来，很多长期以来的想法我现在还坚持着，毕竟大家都有不同的观念，而观念这个东西很难被改变，自己觉得合适就好，让自己心里觉得踏实一些。&lt;/p&gt;
+
+&lt;p&gt;写这篇文字的时候正好是中秋，自己住的房间能够看到远处的月亮，确实很圆，也想不到其他更多感性的描述。今后这类总结性的文字定位是给自己看，所以也不会有太多不好意思，想要多一些记录生活的细节。此外，之前挖下的坑，含泪也要填完的。&lt;/p&gt;
+
+&lt;p&gt;By SkylineBin (2020.10.01)&lt;/p&gt;
 </description>
-        <pubDate>Sun, 25 Mar 2018 16:51:31 +0800</pubDate>
-        <link>http://localhost:4000/aboutLove/</link>
-        <guid isPermaLink="true">http://localhost:4000/aboutLove/</guid>
+        <pubDate>Fri, 02 Oct 2020 07:18:31 +0800</pubDate>
+        <link>http://localhost:4000/SummaryofLastQuarter/</link>
+        <guid isPermaLink="true">http://localhost:4000/SummaryofLastQuarter/</guid>
         
         <category>Life</category>
         
-        <category>Love</category>
+        <category>Summary</category>
         
         <category>Thinking</category>
         
+        
+        <category>SkylineBin</category>
+        
+      </item>
+    
+      <item>
+        <title>英语会议期刊论文写作注意事项</title>
+        <description>&lt;blockquote&gt; &lt;p&gt;以下内容写于 2018.09.24 by SkylineBin&lt;/p&gt; &lt;/blockquote&gt; &lt;p&gt;      最近开始着手毕业需要的论文了，虽然思绪还是有一些不清晰，但整体的模型应该算是基本确定下来了，也不能一直看论文，正好实验室读博的学长推荐了一个关于英文论文写作的良心 up 主，看了一部分他提到的英文论文写作技巧(规范)，又结合专业英语时导师讲的一部分内容，整理一下整体的流程和思路，也为后面写作打一点基础。&lt;/p&gt; &lt;p&gt;      其实，一开始看这个写 SCI 系列的视频，我是被这一系列视频的展开逻辑和呈现形式所吸引的。毕竟 SCI 论文也不好发，打着这个名头要有对应的价值。整个系列视频逻辑清晰，形式更像是先写板书后期再配音上去的，并且该加速的时候视频本身已经给加速了。很多东西写出来之后来理解真的会很清晰很多，很多干货满满的技术贴也是一样。图文并茂，逻辑清晰，重点突出，易于理解的文章总是会受欢迎的，看来呈现自己观点和理解的文字还是要练习，还有很多很多优秀的人值得学习。本篇文章记录的顺序基本和系列视频一致，从陈述事实到基于这个事实展开的一篇论文的写作，尽量做到保留原系列视频的逻辑清晰的高度。&lt;/p&gt; &lt;p&gt;&lt;br /&gt;&lt;/p&gt; &lt;h2 id=&quot;facts-事实&quot;&gt;Facts 事实&lt;/h2&gt; &lt;ol&gt; &lt;li&gt;论文结构(Paper Structure) &lt;ul&gt; &lt;li&gt;题目 Title&lt;/li&gt; &lt;li&gt;摘要 Abstract&lt;/li&gt; &lt;li&gt;引言/文献综述 Introduction/Linterature Review&lt;/li&gt; &lt;li&gt;研究方法 Method&lt;/li&gt; &lt;li&gt;结果/讨论 Result/Discussion&lt;/li&gt; &lt;li&gt;结论 Conclusion&lt;/li&gt; &lt;li&gt;参考文献 Reference&lt;/li&gt; &lt;/ul&gt; &lt;/li&gt; &lt;li&gt;行文顺序&lt;/li&gt; &lt;/ol&gt; &lt;table&gt; &lt;thead&gt; &lt;tr&gt; &lt;th style=&quot;text-align: center&quot;&gt;编号&lt;/th&gt; &lt;th style=&quot;text-align: center&quot;&gt;第一步&lt;/th&gt; &lt;th style=&quot;text-align: center&quot;&gt;第二步&lt;/th&gt; &lt;th style=&quot;text-align: center&quot;&gt;第三步&lt;/th&gt; &lt;th style=&quot;text-align: center&quot;&gt;第四步&lt;/th&gt; &lt;th style=&quot;text-align: center&quot;&gt;第五步&lt;/th&gt; &lt;th style=&quot;text-align: center&quot;&gt;第六步&lt;/th&gt; &lt;th style=&quot;text-align: center&quot;&gt;第七步&lt;/th&gt; &lt;/tr&gt; &lt;/thead&gt; &lt;tbody&gt; &lt;tr&gt; &lt;td style=&quot;text-align: center&quot;&gt;1&lt;/td&gt; &lt;td style=&quot;text-align: center&quot;&gt;Start&lt;/td&gt; &lt;td style=&quot;text-align: center&quot;&gt;-&lt;/td&gt; &lt;td style=&quot;text-align: center&quot;&gt;-&lt;/td&gt; &lt;td style=&quot;text-align: center&quot;&gt;-&lt;/td&gt; &lt;td style=&quot;text-align: center&quot;&gt;-&lt;/td&gt; &lt;td style=&quot;text-align: center&quot;&gt;-&lt;/td&gt; &lt;td style=&quot;text-align: center&quot;&gt;-&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td...</description>
+        <pubDate>Tue, 26 May 2020 18:49:31 +0800</pubDate>
+        <link>http://localhost:4000/EnglishPaperWritingSkills/</link>
+        <guid isPermaLink="true">http://localhost:4000/EnglishPaperWritingSkills/</guid>
+        
         <category>Summary</category>
         
+        <category>Papers</category>
+        
+        <category>Academia</category>
+        
+        <category>English</category>
+        
         
         <category>SkylineBin</category>
         
       </item>
     
       <item>
-        <title>操作系统--磁盘调度算法</title>
-        <description>&lt;p&gt;      这篇文章是参考好几篇博客而整理的关于磁盘I/O调度算法的内容，都比较基础，应该也挺重要。文中涉及到的代码的&lt;strong&gt;完整源码&lt;/strong&gt;都放在了我的Github&lt;a href=&quot;https://github.com/skylinebin/AlgorithmPractice/tree/master/Disk%20Scheduling%20Algorithm&quot;&gt;关于算法部分&lt;/a&gt;当中了。&lt;/p&gt; &lt;h2 id=&quot;磁盘调度算法&quot;&gt;磁盘调度算法&lt;/h2&gt; &lt;p&gt;      在操作系统中，各个进程可能会不断提出不同的对磁盘进行读/写操作的请求，有时候这些进程的发送请求的速度比磁盘响应的还要快，所以需要为每个磁盘设备建立一个等待队列，这就是磁盘调度。磁盘调度的目的是减少磁盘访问延迟，磁盘访问延迟可以定义为：&lt;/p&gt; &lt;blockquote&gt; &lt;p&gt;磁盘访问延迟 = 队列时间 + 控制器时间 + 寻道时间 + 旋转时间 + 传输时间&lt;/p&gt; &lt;/blockquote&gt; &lt;p&gt;      磁盘调度的目的是减小延迟，前两项可以忽略，寻道时间是磁盘访问延迟的主要考虑部分。因此，使用&lt;strong&gt;磁盘调度算法&lt;/strong&gt;来尽可能减少磁盘寻道时间。&lt;/p&gt; &lt;h3 id=&quot;一磁盘调度算法&quot;&gt;一、磁盘调度算法&lt;/h3&gt; &lt;p&gt;      常用的磁盘调度算法通常有以下四种：FCFS(先来先服务算法)、SSTF(最短寻道时间优先算法)、SCAN(电梯扫描算法)、CSCAN(循环电梯扫描算法)。&lt;/p&gt; &lt;h4 id=&quot;1先来先服务算法fcfs-first-come-first-serve&quot;&gt;1.先来先服务算法（FCFS, First Come First Serve）&lt;/h4&gt; &lt;p&gt;      先来先服务算法是一种最简单的磁盘调度算法，它&lt;strong&gt;根据进程请求访问磁盘的先后次序进行调度&lt;/strong&gt;。&lt;br /&gt;       例如：当前磁道磁头位于地址为42的磁道，现有6条访问磁道请求。(模拟地址为0~99的磁盘磁道)&lt;br /&gt;       Current Location：42&lt;br /&gt;       Access Request:&lt;/p&gt; &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;0 | 1 | 2 | 3 | 4 | 5 ---|----|---|----|----|---- 29 | 84 | 1 | 89 | 51 | 94 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt; &lt;p&gt;      使用FCFS算法对磁盘磁道访问请求进行处理：&lt;/p&gt; &lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;//@author SkylineBin&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;fcfssort&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;dataA&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;current&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;){&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// dataA是按请求顺序排列的磁道访问请求，current是当前磁道磁头位置&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span...</description>
-        <pubDate>Sat, 20 Jan 2018 03:51:31 +0800</pubDate>
-        <link>http://localhost:4000/DiskSchedulingAlgorithm/</link>
-        <guid isPermaLink="true">http://localhost:4000/DiskSchedulingAlgorithm/</guid>
+        <title>一个节点 继续前行 (2019年终总结)</title>
+        <description>&lt;h3 id=&quot;写在前面&quot;&gt;写在前面&lt;/h3&gt;
+
+&lt;p&gt;很久没有静下心来写东西了。在开始今年的总结之前，又翻看了前面两年记下的总结，当时的一些想法现在已经不再有了，但还是要感谢那个有些努力并且愿意去思考的自己。最近这段时间知道了如何去经历自己的生活，也失去了很多表达和记录的欲望，这个大概是大多成年人的最终形态吧。节点的作用在于记录和总结已经经历的时间，以避免很久之后忘记那些比较重要的细节或者当时认为很重要的想法。今年也会按照这个思路，理一下自己的想法，然后继续前行。&lt;/p&gt;
+
+&lt;h3 id=&quot;自己与这个世界&quot;&gt;自己与这个世界&lt;/h3&gt;
+
+&lt;p&gt;大佬们在对听众分享自己的经历时总会夹带着一些私货，常是对时事的态度，更多时候的是在传达自己的思考方式以及对这个世界的理解，社会分工越精细就会导致个体理解世界越困难，大佬们还擅长把真相从有趣的事情里面表露出来，如果有人引路，了解这个世界的成本会更低。从这个角度来看无论是公众号，短视频还是Vlog都降低了认识世界的门槛，在此之前是要多读书的，不过唯一不变的大概是主动并且对这个世界还有兴趣。相比于之前几年，自己这一年有了更多次机会来通过实践认识世界。终于也有了早上在宿舍，中午就能出现在另一个城市(今年是北京、上海和杭州)街头的体验，走在另一个的城市更能感受到在社会的毒打下自己与其他人并没有多少区别，都只是在为自己的事情忙碌，甚至忙碌是主动或被动的区别也只存在各自的意识中，成年人的世界是大家都很难，在实践中遵守规则可以让大家稍微轻松一些。作为一位相对坚定的悲观主义者，除了满足自己的兴趣之外，了解这个世界最大的好处是增加安全感，未知带来的恐慌极大可能会让自己盲从，甚至无能狂怒，这些缺乏安全感的行为很多时候是第一反应，了解好的应对策略和运行规律能够帮到自己以及身边的人更多。&lt;/p&gt;
+
+&lt;h3 id=&quot;技术这条路&quot;&gt;技术这条路&lt;/h3&gt;
+
+&lt;p&gt;这一年在技术上有了一点提升，主要是通过秋招补足了一定量的基础知识，搭建了基础的知识体系，然后基本能够做到一定程度的融会贯通。在有了意向之后，从八月开始，想通过面试来检查自己在技术上的不足，参加了差不多近三十家五十次技术面试，一开始总是比较难的，虽然后面也一直很难。最后结果还是能够满意的，毕竟有了很多次与有经验的前辈交流的机会，也得到了很多有用的建议，大多数二面与三面面试官都倾向从项目的整体入手来判断除了基础知识以外的个人能力，在多数大佬看来全栈似乎是理所当然的。后来在线下与思考方式相似的人交流之后也基本能够确定，技术的边界是很难界定的，解决问题是目的也是重要的评判标准。此外，很多之前因为兴趣学的东西在面试中得到了前辈的肯定，这可以被当作是一种激励，主动去尝试并参与是一种非常奇妙的技能。当然，认识到与优秀同学的差距也是这一年在技术上的收获之一，自己目前的顶点其实是大佬们的起点这种感觉并不好受，比较幸运的是大多数差距可以通过开放和共享的知识来慢慢弥补。技术的提升是需要特意留出时间和精力慢慢钻研的，速成的效果并不会太好，琐碎的忙碌往往会掩盖住自己的不足，让自己以为自己很厉害，还是要做出东西吧。人类的本质复读机又出现了，我觉得前一年这一句总结的挺好：做的更多，做的更好，时常练习。&lt;/p&gt;
+
+&lt;h3 id=&quot;学术这个分支&quot;&gt;学术这个分支&lt;/h3&gt;
+
+&lt;p&gt;相比于学习技术，学习做学术在这一年并未给我带来太多乐趣，根本原因还是太菜。年少气盛的时候也不能高估自己的能力，特别是学术能力，开题时确定的实验远比看上去复杂只能不断简化。去年投的会议论文整整一年才检索很让人心酸，因为找工作期刊论文零零散散写了半年也让人很难受，好在也慢慢有了一些自己的东西，实验的部分能够用学到的技术按照模式重写代码来简化流程。这几年的学术研究更像是探索了一个新的领域，按照逻辑大胆给出假设，然后小心翼翼地尝试去验证，中间主要通过看论文去窥探归纳别人是怎么做研究，借鉴和尝试其他领域用过的方法，根据自己需要解决的问题加以改进。整个过程除了保证逻辑和流程没什么问题外，大多时候并没弄明白自己所做的对于已经臃肿的科学探索有什么贡献，有这种想法的小伙伴肯定不止我一个，毕竟我们大多数并没有学术天赋。很遗憾在学术上这一年没有达到前一年所期望的要求，或许是自己过去的要求太高，那就稍稍降低一点儿要求，虽然现在仍然在担心毕不了业。&lt;/p&gt;
+
+&lt;h3 id=&quot;选择与自由&quot;&gt;选择与自由&lt;/h3&gt;
+
+&lt;p&gt;这一年自己对最优解和近似最优解又有了进一步的认识，理论上问题的复杂程度越高，寻找最优解的难度越大(算法性能没有改进的话)，这个时候够用的近似最优解是最佳选择。而现实中的选择还掺杂着复杂的人性判断(得不到的永远有它的优点)，选什么都会后悔，只要没选最差的就都是最好的选择，要安心过自己的生活。这一年也意识到完美主义给追求自由带来的限制，追求完美会让自己的心理压力一直很高，不那么追求完美可以做的快很多，也能得到更多的内心满足，更有可能随心所欲地生活。有意识地做出选择，愿意承担自己所做决定的后果和潜在的困扰，这种自由真的挺好。&lt;/p&gt;
+
+&lt;h3 id=&quot;情感&quot;&gt;情感&lt;/h3&gt;
+
+&lt;p&gt;很幸运，从这一年里的某一天开始我不再是一个人，能够遇到志趣相投又能互相体谅的女生，确实是我的荣幸。本质的善良，天性的温厚，开阔的胸襟一点儿也不少，这种体验充满新奇却又似乎很熟悉。从喜欢到爱是的这个过程，过去很长一段时间我都在摸索却始终没有学会，遇到 GSM 之后的某一天我好像已经学会了。美好的情感来之不易且需要缘分，我从内心愿意认真维护两个人的感情。&lt;br /&gt;
+真挚的感情应该地久天长。&lt;br /&gt;
+&lt;img src=&quot;https://sdns.skylinebin.com/images/2019/us.jpg&quot; alt=&quot;us&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;这也是生活&quot;&gt;这也是生活&lt;/h3&gt;
+&lt;p&gt;这一年里，在生活中有意识地多些变化，这样对维持生活的新鲜感确实有很大的帮助，新的变化总能带来一些小乐趣，这样挺好。虽然在 Tal 的幸福课里学会的时常感激生活中的人和事物只坚持了两个月的时间，留下的记录却能回忆起当时的一些细节，这个做法是可以坚持的。这一年除了技术和学术书之外看了十本想看的书，不多不少。这一年中有了更多次周末上午不去实验室而没心生愧疚，向自己妥协一些并没什么不好。&lt;/p&gt;
+
+&lt;h3 id=&quot;一些希望&quot;&gt;一些希望&lt;/h3&gt;
+
+&lt;p&gt;写到现在也勉强算是一篇完整的总结了，和去年一样又到了31号，今年的执行力比去年差一点点，但也做了很多想做就马上做的事情。今年想明年总是会像去年想今年一样，想要有些新奇的体验，这一年算是实现了大部分。2020年没有什么可以说出来的规划，还是希望自己能静心多读些书，多去体验一些不一样的生活。最后希望明年还没有失去追求新奇的好奇心，也还能保留对探索生活的乐趣。&lt;/p&gt;
+
+&lt;p&gt;By SkylineBin (2019.12.31)&lt;/p&gt;
+</description>
+        <pubDate>Wed, 01 Jan 2020 06:40:31 +0800</pubDate>
+        <link>http://localhost:4000/Summaryof2019/</link>
+        <guid isPermaLink="true">http://localhost:4000/Summaryof2019/</guid>
         
-        <category>System</category>
+        <category>Summary</category>
         
-        <category>Algorithm</category>
-        
-        <category>DiskScheduling</category>
+        <category>Life</category>
         
         <category>Work</category>
         
@@ -221,17 +245,89 @@
       </item>
     
       <item>
-        <title>Markdown使用指南</title>
-        <description>&lt;h1 id=&quot;markdown文档编写规范&quot;&gt;MarkDown文档编写规范&lt;/h1&gt; &lt;blockquote&gt; &lt;p&gt;by SkylineBin&lt;/p&gt; &lt;/blockquote&gt; &lt;h3 id=&quot;1选用markdown原因及应用背景&quot;&gt;1.选用Markdown原因及应用背景&lt;/h3&gt; &lt;ul&gt; &lt;li&gt;Markdown是一种电子邮件风格的标记语言，&lt;strong&gt;语法简单&lt;/strong&gt;，语法兼容HTML，能够形成很好布局排版页面，排版好后有极好的可读性。&lt;/li&gt; &lt;li&gt;Markdown文件能被所有文本编辑器打开，兼容性很强，也可轻松转换成其他格式的电子书。&lt;/li&gt; &lt;li&gt;本项目所在的gitee(码云)，能够自动解析&lt;em&gt;.md&lt;/em&gt;的文件，可以网页阅读排版好的文档，方便后期查阅整理。&lt;/li&gt; &lt;/ul&gt; &lt;h3 id=&quot;2推荐使用的markdown写作软件&quot;&gt;2.推荐使用的Markdown写作软件&lt;/h3&gt; &lt;p&gt;Markdown文件可以用任何编辑器编写，但一般的编辑器不能解析文件。本项目主要是优秀方法整理和技术总结应该也用不到特别复杂的语法，但是排版对文档逻辑的展现有辅助作用，所以还是推荐使用可以预览的Markdown编辑器。下面推荐两款比较好用的软件：&lt;/p&gt; &lt;ul&gt; &lt;li&gt; &lt;p&gt;&lt;a href=&quot;https://atom.io/&quot;&gt;Atom&lt;/a&gt; 是著名的程序员社交网站&lt;strong&gt;Github&lt;/strong&gt;推出的一款编辑器，操作简单，功能强大，当前文档就是在这款软件上编写的。重点是&lt;strong&gt;支持Markdown文件的预览&lt;/strong&gt;。编写界面如下图所示： &lt;img src=&quot;https://store.skylinebin.com/image/markdown/Atompage.png&quot; alt=&quot;Atom工程界面&quot; /&gt;&lt;/p&gt; &lt;/li&gt; &lt;li&gt; &lt;p&gt;&lt;a href=&quot;https://code.visualstudio.com/&quot;&gt;VSCode&lt;/a&gt; 是微软大佬推出的一款免费开源跨平台的代码编辑器，功能真的强大，这段话是在VSCode里编写的。同样&lt;strong&gt;支持Markdown文件的预览&lt;/strong&gt;，编写界面如下图所示： &lt;img src=&quot;https://store.skylinebin.com/image/markdown/VSCodepage.png&quot; alt=&quot;VSCode工程界面&quot; /&gt;&lt;/p&gt; &lt;/li&gt; &lt;/ul&gt; &lt;p&gt;以上两款软件都支持文件目录，可以很方便创建整理文件。&lt;br /&gt; &lt;em&gt;注：个人更喜欢Atom，看起来更简洁，操作也更简单。但VSCode会更稳定。&lt;/em&gt;&lt;/p&gt; &lt;h3 id=&quot;3markdown基本语法及举例&quot;&gt;3.Markdown基本语法及举例&lt;/h3&gt; &lt;p&gt;前面有提到，Markdown的语法很简单，用起来也会很顺手。先推荐几篇快速上手的文章，这些文章会更完整，大概十分钟左右可以上手编辑文档。之后会针对常用的Markdown语法给出参考。&lt;/p&gt; &lt;ul&gt; &lt;li&gt;1.简书默认支持Markdown语法，&lt;a href=&quot;http://www.jianshu.com/p/q81RER&quot;&gt;献给写作者的 Markdown 新手指南&lt;/a&gt; 这篇文章是针对写作者写的，具有普适性。&lt;/li&gt; &lt;li&gt;2.&lt;a href=&quot;http://wowubuntu.com/markdown/#list&quot;&gt;Markdown 语法说明&lt;/a&gt; 给出的语法比较全，可以作为参考。&lt;/li&gt; &lt;/ul&gt; &lt;h3 id=&quot;markdown常用语法&quot;&gt;Markdown常用语法&lt;/h3&gt; &lt;h4 id=&quot;31-markdown标题&quot;&gt;3.1 Markdown标题&lt;/h4&gt; &lt;p&gt;Markdown文档中使用每行开头的 &lt;em&gt;#&lt;/em&gt; 号来判定是否为标题，一共六级，对应 &lt;em&gt;#&lt;/em&gt; 号的个数:&lt;/p&gt; &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# 一级标题 ## 二级标题 ### 三级标题 #### 四级标题 ##### 五级标题 ###### 六级标题 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt; &lt;p&gt;需要注意的是，&lt;em&gt;#&lt;/em&gt; 号与 后面标题名称之间应该有空格。&lt;/p&gt; &lt;h4 id=&quot;32-markdown换行与段落&quot;&gt;3.2 Markdown换行与段落&lt;/h4&gt; &lt;p&gt;Markdown里可以使用回车换行，但 &lt;strong&gt;前提&lt;/strong&gt; 是上一行的末尾要多余两个空格。这样Markdown才可解析出正确的指令。&lt;br /&gt; Markdown中支持HTML里的&amp;lt; br / &amp;gt; 换行符，但一般不使用这个。&lt;/p&gt; &lt;h4 id=&quot;33-markdown图片插入与链接引用&quot;&gt;3.3 Markdown图片插入与链接引用&lt;/h4&gt; &lt;p&gt;Markdown中使用[ ]和( )构成的符号来引入连接或者插入图片。&lt;br...</description>
-        <pubDate>Wed, 17 Jan 2018 04:51:31 +0800</pubDate>
-        <link>http://localhost:4000/UsingMarkdown/</link>
-        <guid isPermaLink="true">http://localhost:4000/UsingMarkdown/</guid>
+        <title>2019秋招技术点分享总结</title>
+        <description>&lt;h2 id=&quot;2019-年秋招前端工程师技术点总结&quot;&gt;2019 年秋招前端工程师技术点总结&lt;/h2&gt; &lt;blockquote&gt; &lt;p&gt;by SkylineBin（2019.11.24）&lt;/p&gt; &lt;/blockquote&gt; &lt;p&gt;上周二的时候给实验室的学弟学妹分享了一下自己今年秋招找工作的经验，分享会讲了挺久，除了讲需要准备的技术知识更多讲的是自己对整个秋招过程的理解和一些特别的经历。实验室的分享会是从上上届开始的，上上届的那位学长(现在在网易)讲的时候我也在场，当时自己刚研一处于想迫切了解互联网的状态，那次的分享会对我的影响还是比较大的。去年的实验室学长学姐的分享会是我组织的，当时找工作的九个人基本都安排了交流，反响也挺好，今年终于轮到我们讲了。在分享会之前，自己整理了一下之前面试那段时间写的面试经历，把出现频率较高的知识点理了一下写了一份文档。所以有了这一份粗略的文档，以下内容是精炼过后的，只会下面的知识点显然不能成为一位优秀的前端工程师，但是作为一名&lt;strong&gt;初级的前端工程师&lt;/strong&gt;不能不会或者没去思考下面的一些基础。&lt;/p&gt; &lt;h3 id=&quot;计算机基础知识含计算机网络操作系统等&quot;&gt;计算机基础知识(含计算机网络，操作系统等)&lt;/h3&gt; &lt;h4 id=&quot;项目基础&quot;&gt;项目基础&lt;/h4&gt; &lt;ul&gt; &lt;li&gt;项目运行环境&lt;/li&gt; &lt;li&gt;版本协同开发&lt;/li&gt; &lt;li&gt;项目运行维护&lt;/li&gt; &lt;/ul&gt; &lt;h4 id=&quot;计算机网络&quot;&gt;计算机网络&lt;/h4&gt; &lt;ul&gt; &lt;li&gt;五层结构与 OSI 七层结构模型 以及对应的协议&lt;/li&gt; &lt;li&gt;TCP 协议的细节&lt;/li&gt; &lt;li&gt;UDP 与 TCP 各自的特点与区别&lt;/li&gt; &lt;li&gt;HTTP 协议的响应状态码&lt;/li&gt; &lt;li&gt;HTTP 协议的特点，HTTPS 的协议的优点与特征(1.0，1.1 与&lt;strong&gt;2.0&lt;/strong&gt;…)&lt;/li&gt; &lt;li&gt;DNS 的作用，以及实现流程&lt;/li&gt; &lt;li&gt;计算机网络安全(网络攻击手段)&lt;/li&gt; &lt;li&gt;HTTP 响应的头字段(request 和 response 包含字段的细节)&lt;/li&gt; &lt;li&gt;HTTP 中使用的方法(GET、PUT、OPTIONS等)&lt;/li&gt; &lt;/ul&gt; &lt;h4 id=&quot;操作系统&quot;&gt;操作系统&lt;/h4&gt; &lt;ul&gt; &lt;li&gt;进程与线程的区别&lt;/li&gt; &lt;li&gt;线程安全&lt;/li&gt; &lt;li&gt;垃圾回收机制&lt;/li&gt; &lt;li&gt;流量控制与拥塞控制&lt;/li&gt; &lt;/ul&gt; &lt;h3 id=&quot;算法准备&quot;&gt;算法准备&lt;/h3&gt; &lt;h4 id=&quot;知识点&quot;&gt;知识点&lt;/h4&gt; &lt;ul&gt; &lt;li&gt;数据结构：栈，队列，链表，树与二叉树，图&lt;/li&gt; &lt;li&gt;字符串处理&lt;/li&gt; &lt;li&gt;排序算法&lt;/li&gt; &lt;li&gt;递归与非递归&lt;/li&gt; &lt;li&gt;Hash 原理的应用（字典）&lt;/li&gt; &lt;li&gt;BFS 与 DFS&lt;/li&gt; &lt;li&gt;动态规划(一维、二维)&lt;/li&gt; &lt;/ul&gt; &lt;h4 id=&quot;练习的内容&quot;&gt;练习的内容&lt;/h4&gt; &lt;p&gt;1.《剑指 Offer》（67 题）&lt;br /&gt; 2.LeetCode (100 题左右)&lt;br /&gt; 3.牛客网互联网公司历年真题&lt;br /&gt; 4.牛客网算法课程（左程云）&lt;/p&gt; &lt;h4 id=&quot;实践平台&quot;&gt;实践平台&lt;/h4&gt; &lt;p&gt;1.&lt;a href=&quot;https://www.nowcoder.com/activity/oj&quot;&gt;牛客网在线编程&lt;/a&gt;&lt;br /&gt; 2.&lt;a href=&quot;https://www.acmcoder.com/&quot;&gt;赛码网&lt;/a&gt;&lt;br /&gt; 3.&lt;a href=&quot;https://leetcode.com/&quot;&gt;LeetCode&lt;/a&gt;&lt;/p&gt; &lt;h4 id=&quot;关于算法的建议&quot;&gt;关于算法的建议&lt;/h4&gt; &lt;p&gt;1.保存自己写的有效代码&lt;/p&gt; &lt;p&gt;2.输入与输出，有自己的风格和练习&lt;/p&gt; &lt;h3 id=&quot;前端技术准备&quot;&gt;前端技术准备&lt;/h3&gt;...</description>
+        <pubDate>Sun, 01 Dec 2019 23:29:31 +0800</pubDate>
+        <link>http://localhost:4000/ShareMyExperienceAboutFED/</link>
+        <guid isPermaLink="true">http://localhost:4000/ShareMyExperienceAboutFED/</guid>
         
-        <category>Markdown</category>
+        <category>Life</category>
         
-        <category>Project</category>
+        <category>Summary</category>
         
-        <category>Work</category>
+        <category>FED</category>
+        
+        
+        <category>SkylineBin</category>
+        
+      </item>
+    
+      <item>
+        <title>JavaScript 函数柯里化与反柯里化 </title>
+        <description>&lt;h2 id=&quot;javascript-函数柯里化currying与反柯里化uncurrying&quot;&gt;JavaScript 函数柯里化(currying)与反柯里化(uncurrying)&lt;/h2&gt; &lt;h3 id=&quot;javascript-函数柯里化&quot;&gt;JavaScript 函数柯里化&lt;/h3&gt; &lt;p&gt;函数柯里化(function currying) 是高级函数中的一种较为普遍的应用技巧，其基本方法和函数绑定一样，即&lt;strong&gt;使用一个闭包返回一个函数&lt;/strong&gt;。函数柯里化的特点是，当调用柯里化函数时，返回的函数还需要设置一些传入的参数。&lt;/p&gt; &lt;p&gt;柯里化函数常见的动态创建步骤是：&lt;strong&gt;调用另一个函数并为它传入要柯里化的函数和必要参数&lt;/strong&gt;。&lt;/p&gt; &lt;p&gt;通用的柯里化函数写法如下：&lt;/p&gt; &lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;curry&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;fn&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;args&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;Array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;prototype&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;slice&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;call&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;arguments&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(){&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;innerArgs&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;Array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;prototype&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;slice&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;call&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;arguments&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;finalArgs&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;concat&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;innerArgs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;fn&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;apply&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;finalArgs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;add&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;num1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;num2&lt;/span&gt;&lt;span...</description>
+        <pubDate>Mon, 08 Jul 2019 23:54:21 +0800</pubDate>
+        <link>http://localhost:4000/JavaScriptCurryingandUncurrying/</link>
+        <guid isPermaLink="true">http://localhost:4000/JavaScriptCurryingandUncurrying/</guid>
+        
+        <category>JavaScript</category>
+        
+        <category>Code</category>
+        
+        <category>FrontEnd</category>
+        
+        
+        <category>SkylineBin</category>
+        
+      </item>
+    
+      <item>
+        <title>JavaScript 中的数组操作</title>
+        <description>&lt;p&gt;本文主要包含两部分，其中前半部分用于整理 JavaScript 中的数组方法。后半部分整理常使用的数组操作。&lt;/p&gt; &lt;h2 id=&quot;javascript-中的数组方法&quot;&gt;JavaScript 中的数组方法&lt;/h2&gt; &lt;h3 id=&quot;es5中处理数组常用方法&quot;&gt;ES5中处理数组常用方法&lt;/h3&gt; &lt;p&gt;处理数组时常使用的方法如下：&lt;/p&gt; &lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;colors&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;red&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;blue&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;green&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt; &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt; &lt;h4 id=&quot;转换方法&quot;&gt;转换方法&lt;/h4&gt; &lt;ul&gt; &lt;li&gt;&lt;strong&gt;colors.toString()&lt;/strong&gt;&lt;br /&gt; 输出拼接的字符串 “red,blue,green”，原数组不变&lt;/li&gt; &lt;li&gt;&lt;strong&gt;colors.valueOf()&lt;/strong&gt; 返回数组本身 [“red”, “blue”, “green”] ，原数组不变&lt;/li&gt; &lt;li&gt;&lt;strong&gt;colors.join()&lt;/strong&gt;&lt;br /&gt; 返回拼接符号的字符串，原数组不变&lt;/li&gt; &lt;/ul&gt; &lt;h4 id=&quot;栈方法&quot;&gt;栈方法&lt;/h4&gt; &lt;ul&gt; &lt;li&gt;&lt;strong&gt;colors.push()&lt;/strong&gt;&lt;br /&gt; push 进一项参数，原数组多一项&lt;/li&gt; &lt;li&gt;&lt;strong&gt;colors.pop()&lt;/strong&gt;&lt;br /&gt; 弹出返回最后一项，原有数组少一项&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;栈方法把数组当作一个栈&lt;/p&gt; &lt;h4 id=&quot;队列方法&quot;&gt;队列方法&lt;/h4&gt; &lt;ul&gt; &lt;li&gt;&lt;strong&gt;colors.shift()&lt;/strong&gt;&lt;br /&gt; 第一项返回出列，原有数组少一项&lt;/li&gt; &lt;li&gt;&lt;strong&gt;colors.push()&lt;/strong&gt;&lt;br /&gt; push 进数组一项参数&lt;/li&gt; &lt;li&gt;&lt;strong&gt;colors.unshift()&lt;/strong&gt;&lt;br /&gt; 在数组前端添加一项或若干项数据，返回数组长度，数组发生变化&lt;/li&gt; &lt;/ul&gt; &lt;h4 id=&quot;重排序方法&quot;&gt;重排序方法&lt;/h4&gt; &lt;ul&gt; &lt;li&gt;&lt;strong&gt;colors.reverse()&lt;/strong&gt;&lt;br /&gt; 对数组进行逆序操作，返回的是整个数组&lt;/li&gt; &lt;li&gt;&lt;strong&gt;colors.sort()&lt;/strong&gt; 对数组进行排序操作，可传入比较的函数，返回的是数组本身(已排序)&lt;/li&gt; &lt;/ul&gt; &lt;h4 id=&quot;操作方法&quot;&gt;操作方法&lt;/h4&gt; &lt;ul&gt; &lt;li&gt;&lt;strong&gt;colors.concat(‘black’)&lt;/strong&gt; 返回数组副本，并添加字符串或数组，不影响原数组&lt;/li&gt; &lt;li&gt;&lt;strong&gt;colors.slice()&lt;/strong&gt;&lt;br /&gt; 返回数组指定位置或者范围，不影响原数组&lt;/li&gt; &lt;li&gt;&lt;strong&gt;colors.splice()&lt;/strong&gt;&lt;br /&gt; &lt;strong&gt;删除&lt;/strong&gt;数组指定起始位置的若干项数据 &lt;code...</description>
+        <pubDate>Wed, 03 Jul 2019 06:04:21 +0800</pubDate>
+        <link>http://localhost:4000/ArrayinJavaScript/</link>
+        <guid isPermaLink="true">http://localhost:4000/ArrayinJavaScript/</guid>
+        
+        <category>JavaScript</category>
+        
+        <category>Code</category>
+        
+        <category>FrontEnd</category>
+        
+        
+        <category>SkylineBin</category>
+        
+      </item>
+    
+      <item>
+        <title>JavaScript 中的this、call 和 apply </title>
+        <description>&lt;h2 id=&quot;javascript-中的-thisapplycall&quot;&gt;JavaScript 中的 this,apply,call&lt;/h2&gt; &lt;p&gt;本文主要是对 JavaScript 中常用的 this，apply 和 call 的使用方法和区别进行整理和解析，主要参考了&lt;a href=&quot;http://www.ituring.com.cn/book/1632&quot;&gt;曾探的《JavaScript 设计模式》&lt;/a&gt;中的讲解过程并添加了一些实际使用的细节，以方便使用有遗漏时查阅。&lt;/p&gt; &lt;h3 id=&quot;javascript-中的-this-解析&quot;&gt;JavaScript 中的 this 解析&lt;/h3&gt; &lt;p&gt;JavaScript 中的 this 总是&lt;strong&gt;指向一个对象&lt;/strong&gt;，具体指向哪个对象是&lt;strong&gt;在运行时基于函数的执行环境动态绑定的&lt;/strong&gt;。&lt;/p&gt; &lt;h4 id=&quot;this-的指向&quot;&gt;this 的指向&lt;/h4&gt; &lt;p&gt;在实际应用中，this 的指向大致可以分为以下四种：&lt;/p&gt; &lt;ul&gt; &lt;li&gt; &lt;p&gt;&lt;strong&gt;作为对象的方法调用&lt;/strong&gt;&lt;br /&gt; 作对象方法调用，this指向该对象本身&lt;/p&gt; &lt;/li&gt; &lt;li&gt; &lt;p&gt;&lt;strong&gt;作为普通函数调用&lt;/strong&gt;&lt;br /&gt; 当函数不作为对象的属性被调用时，就是普通函数方式。此时的 this 总是指向全局对象。浏览器中的全局对象是 window 对象。Node.js 中的 this 是一个空的对象字面量 ‘{}’&lt;/p&gt; &lt;/li&gt; &lt;li&gt; &lt;p&gt;&lt;strong&gt;构造器调用&lt;/strong&gt;&lt;br /&gt; 通常情况，构造器里的this就指向返回的这个对象，如果返回的是个对象字面量，则this指向这个对象，原有通过this声明的属性不再存在&lt;/p&gt; &lt;/li&gt; &lt;li&gt; &lt;p&gt;&lt;strong&gt;Function.prototype.call 或者 Function.prototype.apply 调用&lt;/strong&gt;&lt;br /&gt; Function.prototype.call 或 Function.prototype.apply 可以动态改变传入函数的 this&lt;/p&gt; &lt;/li&gt; &lt;/ul&gt; &lt;p&gt;以上四种基本囊括了 JavaScript 中所有 this 的用法。&lt;/p&gt; &lt;h4 id=&quot;this-语义的丢失&quot;&gt;this 语义的丢失&lt;/h4&gt; &lt;p&gt;以下代码经常出现：&lt;/p&gt; &lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;obj&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;MyName&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;seven&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;getName&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(){&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt;...</description>
+        <pubDate>Mon, 24 Jun 2019 05:42:31 +0800</pubDate>
+        <link>http://localhost:4000/ThisandCallandApplyinJavaScript/</link>
+        <guid isPermaLink="true">http://localhost:4000/ThisandCallandApplyinJavaScript/</guid>
+        
+        <category>JavaScript</category>
+        
+        <category>Code</category>
+        
+        <category>FrontEnd</category>
+        
+        
+        <category>SkylineBin</category>
+        
+      </item>
+    
+      <item>
+        <title>JavaScript 中的继承机制</title>
+        <description>&lt;h2 id=&quot;javascript-继承&quot;&gt;JavaScript 继承&lt;/h2&gt; &lt;p&gt;本文主要包括 JavaScript 原生继承机制以及 ES6 中 class 使用的 extends 继承。&lt;/p&gt; &lt;h3 id=&quot;javascript-类式继承&quot;&gt;JavaScript 类式继承&lt;/h3&gt; &lt;p&gt;类式继承的核心在于，&lt;strong&gt;通过子类的原型 prototype 对父类实例化来实现&lt;/strong&gt;。即 子类的原型是父类的实例。&lt;/p&gt; &lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// 类式继承&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;SuperClass&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;superValue&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;books&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;JavaScript&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;HTML5&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;CSS3&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// 父类原型上的方法&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;SuperClass&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;prototype&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;getSuperValue&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(){&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;superValue&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;SubClass&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;subValue&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;...</description>
+        <pubDate>Wed, 22 May 2019 05:42:31 +0800</pubDate>
+        <link>http://localhost:4000/JavaScriptInheritance/</link>
+        <guid isPermaLink="true">http://localhost:4000/JavaScriptInheritance/</guid>
+        
+        <category>JavaScript</category>
+        
+        <category>Code</category>
+        
+        <category>FrontEnd</category>
         
         
         <category>SkylineBin</category>
