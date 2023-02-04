@@ -100,3 +100,5 @@ pwa:
   precache_glob_ignores: # Optional
     - sw-register.js
     - "fonts/**/*"
+
+livereload: true

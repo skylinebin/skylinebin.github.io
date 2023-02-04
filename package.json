@@ -4,7 +4,8 @@
   "description": "One jekyll blog template.",
   "main": "gulpfile.js",
   "scripts": {
-    "dev": "bundle exec jekyll serve --livereload"
+    "dev": "bundle exec jekyll serve --livereload",
+    "dev-live": "bundle exec jekyll serve --watch"
   },
   "keywords": [
     "frontend",

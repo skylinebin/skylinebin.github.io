@@ -1,7 +1,7 @@
                         importScripts("/assets/js/workbox-v3.6.3/workbox-sw.js");
             workbox.setConfig({modulePathPrefix: "/assets/js/workbox-v3.6.3"});
 
-            self.__precacheManifest = [{"url":"/index.html","revision":"4326376a6029c94054feed912d17eca4"},{"url":"/Summaryof2021/","revision":"23474821a830117eeee70dc457ce4992"},{"url":"/Summaryof2020/","revision":"ba3a9c5cc0caa60f00cbf654344976b7"},{"url":"/SummaryofLastQuarter/","revision":"772e5054972208ba44cd6550052f22a9"},{"url":"/EnglishPaperWritingSkills/","revision":"243ec645a587754c5c20e0c122c125c4"},{"url":"/Summaryof2019/","revision":"fea095e29a502a1b51c44447a7641337"}];
+            self.__precacheManifest = [{"url":"/index.html","revision":"4d22c5ae1c4b7ad9c09429b1aae00162"},{"url":"/Summaryof2021/","revision":"1d58ff103c5fc7d2e469107a993f53cd"},{"url":"/Summaryof2020/","revision":"fadc5e807a2f098563dc337c8d5f7ebc"},{"url":"/SummaryofLastQuarter/","revision":"38ad1de6d7d3084b5d5e37db65fc06ab"},{"url":"/EnglishPaperWritingSkills/","revision":"520651156da0b559b1d60ef3601aaaa6"},{"url":"/Summaryof2019/","revision":"a2045c172e24ff6412f8a4b288f251f7"}];
             // service-worker.js 
 
 // set names for both precache & runtime cache
